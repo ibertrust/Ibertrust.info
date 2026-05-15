@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
@@ -109,24 +109,24 @@
 <div class="bg-surface-container-lowest border border-outline-variant/50 rounded-xl p-10">
 <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2" style="">Request Consultation</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg" style="">Submit your details and a specialized consultant will contact you within 24 business hours.</p>
-<form class="space-y-6">
+<form class="space-y-6" action="https://formsubmit.co/veerleansems@gmail.com" method="POST">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="flex flex-col space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant" for="first_name" style="">First Name</label>
-<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="first_name" placeholder="Enter first name" type="text"/>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="first_name" name="first_name" placeholder="Enter first name" type="text" required/>
 </div>
 <div class="flex flex-col space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant" for="last_name" style="">Last Name</label>
-<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="last_name" placeholder="Enter last name" type="text"/>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="last_name" name="last_name" placeholder="Enter last name" type="text" required/>
 </div>
 </div>
 <div class="flex flex-col space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant" for="email" style="">Corporate Email</label>
-<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="email" placeholder="email@company.com" type="email"/>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="email" name="email" placeholder="email@company.com" type="email" required/>
 </div>
 <div class="flex flex-col space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant" for="service" style="">Service of Interest</label>
-<select class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md appearance-none" id="service">
+<select class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md appearance-none" id="service" name="service" required>
 <option>Select a compliance service</option>
 <option>AML/KYC Advisory</option>
 <option>Regulatory Risk Assessment</option>
@@ -136,10 +136,10 @@
 </div>
 <div class="flex flex-col space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant" for="message" style="">Requirement Details</label>
-<textarea class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="message" placeholder="How can our compliance team assist you?" rows="4"></textarea>
+<textarea class="bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="message" name="message" placeholder="How can our compliance team assist you?" rows="4" required></textarea>
 </div>
 <div class="flex items-start space-x-3 py-2">
-<input class="mt-1 rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" id="consent" type="checkbox"/>
+<input class="mt-1 rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" id="consent" name="consent" value="agreed" type="checkbox" required/>
 <label class="font-label-sm text-label-sm text-on-surface-variant leading-tight" for="consent" style="">
                                         I consent to Ibertrust Global processing my data in accordance with the Privacy Policy for the purpose of this inquiry.
                                     </label>
