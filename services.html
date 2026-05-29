@@ -1,341 +1,431 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-primary-fixed-variant": "#005229", "secondary-fixed-dim": "#afceb3", "inverse-surface": "#2d312d", "on-secondary-fixed": "#05200f", "error-container": "#ffdad6", "inverse-on-surface": "#eff2eb", "on-surface": "#181d19", "outline-variant": "#bfc9be", "on-surface-variant": "#404940", "secondary-container": "#cbebce", surface: "#f7faf4", background: "#f7faf4", "on-error-container": "#93000a", "surface-bright": "#f7faf4", "surface-container-highest": "#e0e3dd", "on-tertiary": "#ffffff", "inverse-primary": "#8cd79f", "on-primary-fixed": "#00210d", "on-tertiary-container": "#040504", "primary-container": "#3c8554", "tertiary-fixed-dim": "#c7c7c3", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#324d38", "surface-container-high": "#e6e9e3", "tertiary-container": "#777774", "surface-container-low": "#f1f5ee", "surface-tint": "#206b3d", "tertiary-fixed": "#e3e2df", "surface-container": "#ecefe9", "primary-fixed-dim": "#8cd79f", "on-tertiary-fixed": "#1b1c1a", tertiary: "#5e5e5c", primary: "#206b3d", "on-tertiary-fixed-variant": "#464744", "surface-container-lowest": "#ffffff", "primary-fixed": "#a7f4b9", error: "#ba1a1a", "surface-variant": "#e0e3dd", outline: "#707a70", "on-error": "#ffffff", "surface-dim": "#d8dbd5", "on-secondary-container": "#4f6b54", secondary: "#49654e", "on-background": "#181d19", "on-secondary": "#ffffff", "on-primary-container": "#000702", "secondary-fixed": "#cbebce"}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}, spacing: {unit: "8px", "container-max": "1200px", "stack-lg": "32px", margin: "32px", "stack-md": "16px", "stack-sm": "8px", gutter: "24px"}, fontFamily: {"headline-md": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-md": ["32px", {lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500"}], "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}], "label-sm": ["12px", {lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600"}], "headline-sm": ["24px", {lineHeight: "32px", fontWeight: "600"}], "headline-lg": ["48px", {lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}]}}}};</script>
-<style>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#005229", "secondary-fixed-dim": "#afceb3", "inverse-surface": "#2d312d", "on-secondary-fixed": "#05200f", "error-container": "#ffdad6", "inverse-on-surface": "#eff2eb", "on-surface": "#181d19", "outline-variant": "#bfc9be", "on-surface-variant": "#404940", "secondary-container": "#cbebce", surface: "#f7faf4", background: "#f7faf4", "on-error-container": "#93000a", "surface-bright": "#f7faf4", "surface-container-highest": "#e0e3dd", "on-tertiary": "#ffffff", "inverse-primary": "#8cd79f", "on-primary-fixed": "#00210d", "on-tertiary-container": "#040504", "primary-container": "#3c8554", "tertiary-fixed-dim": "#c7c7c3", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#324d38", "surface-container-high": "#e6e9e3", "tertiary-container": "#777774", "surface-container-low": "#f1f5ee", "surface-tint": "#206b3d", "tertiary-fixed": "#e3e2df", "surface-container": "#ecefe9", "primary-fixed-dim": "#8cd79f", "on-tertiary-fixed": "#1b1c1a", tertiary: "#5e5e5c", primary: "#206b3d", "on-tertiary-fixed-variant": "#464744", "surface-container-lowest": "#ffffff", "primary-fixed": "#a7f4b9", error: "#ba1a1a", "surface-variant": "#e0e3dd", outline: "#707a70", "on-error": "#ffffff", "surface-dim": "#d8dbd5", "on-secondary-container": "#4f6b54", secondary: "#49654e", "on-background": "#181d19", "on-secondary": "#ffffff", "on-primary-container": "#000702", "secondary-fixed": "#cbebce" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { unit: "8px", "container-max": "1200px", "stack-lg": "32px", margin: "32px", "stack-md": "16px", "stack-sm": "8px", gutter: "24px" }, fontFamily: { "headline-md": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"] }, fontSize: { "headline-md": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "600" }], "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         body {
             font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
+
 <body class="bg-surface text-on-surface flex flex-col min-h-screen">
-<!-- TopNavBar -->
-<header class="w-full border-b border-slate-100 sticky top-0 z-50 bg-white">
-<nav class="max-w-[1200px] mx-auto px-8 h-20 flex items-center justify-between">
-<div class="text-lg font-bold tracking-tighter uppercase text-primary">Ibertrust Global s.l.</div>
-<div class="hidden md:flex items-center gap-8 h-full">
-<a class="text-slate-600 hover:text-blue-600 transition-colors font-label-md text-label-md" href="index.html">Home</a>
-<a class="font-semibold border-b-2 pb-1 font-label-md text-label-md text-primary border-primary" href="services.html">Services</a>
-<a class="text-slate-600 hover:text-blue-600 transition-colors font-label-md text-label-md" href="about.html">About Us</a>
-</div>
-<div class="flex items-center gap-4">
-<a class="px-6 py-2 bg-primary text-on-primary rounded font-label-md text-label-md hover:opacity-90 active:scale-[0.98] transition-all inline-block" href="contact.html">Get Started</a>
-</div>
-</nav>
-</header>
-<main class="flex-grow">
-<!-- Hero Section -->
-<section class="bg-white py-24 border-b border-outline-variant/30">
-<div class="max-w-[1200px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div class="flex flex-col gap-6">
-<span class="text-primary font-label-sm text-label-sm tracking-widest uppercase">GPSR Partnership Services</span>
-<h1 class="font-headline-lg text-headline-lg text-on-surface">Precision Compliance Simplified.</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                        Navigating the General Product Safety Regulation doesn't have to be complex. Ibertrust Global S.L. provides an end-to-end framework to ensure your products meet all EU requirements through institutional-grade oversight.
+    <!-- TopNavBar -->
+    <header class="w-full border-b border-slate-100 sticky top-0 z-50 bg-white">
+        <nav class="max-w-[1200px] mx-auto px-8 h-20 flex items-center justify-between">
+            <div class="text-lg font-bold tracking-tighter uppercase text-primary">Ibertrust Global s.l.</div>
+            <div class="hidden md:flex items-center gap-8 h-full">
+                <a class="text-slate-600 hover:text-blue-600 transition-colors font-label-md text-label-md"
+                    href="index.html">Home</a>
+                <a class="font-semibold border-b-2 pb-1 font-label-md text-label-md text-primary border-primary"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 hover:text-blue-600 transition-colors font-label-md text-label-md"
+                    href="about.html">About Us</a>
+                <a class="text-slate-600 hover:text-blue-600 transition-colors font-label-md text-label-md text-primary border-primary"
+                    href="services.html">Compliance</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="px-6 py-2 bg-primary text-on-primary rounded font-label-md text-label-md hover:opacity-90 active:scale-[0.98] transition-all inline-block"
+                    href="contact.html">Get Started</a>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="bg-white py-24 border-b border-outline-variant/30">
+            <div class="max-w-[1200px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="flex flex-col gap-6">
+                    <span class="text-primary font-label-sm text-label-sm tracking-widest uppercase">GPSR Partnership
+                        Services</span>
+                    <h1 class="font-headline-lg text-headline-lg text-on-surface">Precision Compliance Simplified.</h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Navigating the General Product Safety Regulation doesn't have to be complex. Ibertrust Global
+                        S.L. provides an end-to-end framework to ensure your products meet all EU requirements through
+                        institutional-grade oversight.
                     </p>
-<div class="flex gap-4">
-<a class="px-8 py-3 bg-primary text-on-primary rounded font-label-md text-label-md inline-block" href="contact.html">Inquire Now</a>
-</div>
-</div>
-<div class="relative">
-<div class="aspect-video bg-slate-100 rounded-lg overflow-hidden shadow-sm border border-outline-variant/20">
-<img alt="Professional documentation workspace" class="w-full h-full object-cover" data-alt="Modern high-end office desk with organized documents and a laptop, soft natural lighting and professional corporate atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDADs-RWhdHlsBVI6_VVRN3Xa1Wcv-XlBjPcKg7pE7jhZIG74DBqqnFYWS0paulCSWV6iLjkc9xq4chhm7qwat9FrL03pJVekfE2Q6On6oaxZ6fmsNJeLBNfb_kQ1QWTE7BwQdh4p-FE1oBPiNet_o4ZkIfDXuMV0wuctRAxHUoWm3lFrs-9E1ApJ4-b4bfHMkPaUGMq5FlqqNaP9RjbdLrCIJoi3TZpim0pGSW6q-cq4O5RSHWuiCzmwKEU8b_CTpWb7VASjIrMfs"/>
-</div>
-<div class="absolute -bottom-6 -left-6 bg-white p-6 border border-outline-variant/30 shadow-lg rounded max-w-[240px]">
-<div class="flex items-center gap-2 mb-2">
-<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
-<span class="font-label-sm text-label-sm uppercase">Certified EU-AR</span>
-</div>
-<p class="text-[12px] text-on-surface-variant">Fully authorized representative services for global manufacturers entering the EU market.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Our Comprehensive Services Section -->
-<section class="py-24 bg-white" id="services">
-<div class="max-w-[1200px] mx-auto px-8">
-<div class="mb-16 text-center">
-<h2 class="font-headline-md text-headline-md mb-4">Comprehensive Compliance Solutions</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Specialized services designed to bridge global manufacturers with European regulatory standards through expert oversight and operational support.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- 1. EU Representative -->
-<div class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
-<div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
-</div>
-<h3 class="font-headline-sm text-[18px] mb-3">EU Representative</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
-                            Acting as European representatives for e-commerce businesses from China or other countries under the law of GPSR.
+                    <div class="flex gap-4">
+                        <a class="px-8 py-3 bg-primary text-on-primary rounded font-label-md text-label-md inline-block"
+                            href="contact.html">Inquire Now</a>
+                        <button
+                            class="px-8 py-3 border border-outline text-on-surface rounded font-label-md text-label-md">Download
+                            Brochure</button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="aspect-video bg-slate-100 rounded-lg overflow-hidden shadow-sm border border-outline-variant/20">
+                        <img alt="Professional documentation workspace" class="w-full h-full object-cover"
+                            data-alt="Modern high-end office desk with organized documents and a laptop, soft natural lighting and professional corporate atmosphere"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDADs-RWhdHlsBVI6_VVRN3Xa1Wcv-XlBjPcKg7pE7jhZIG74DBqqnFYWS0paulCSWV6iLjkc9xq4chhm7qwat9FrL03pJVekfE2Q6On6oaxZ6fmsNJeLBNfb_kQ1QWTE7BwQdh4p-FE1oBPiNet_o4ZkIfDXuMV0wuctRAxHUoWm3lFrs-9E1ApJ4-b4bfHMkPaUGMq5FlqqNaP9RjbdLrCIJoi3TZpim0pGSW6q-cq4O5RSHWuiCzmwKEU8b_CTpWb7VASjIrMfs" />
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white p-6 border border-outline-variant/30 shadow-lg rounded max-w-[240px]">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="material-symbols-outlined text-primary"
+                                data-icon="verified_user">verified_user</span>
+                            <span class="font-label-sm text-label-sm uppercase">Certified EU-AR</span>
+                        </div>
+                        <p class="text-[12px] text-on-surface-variant">Fully authorized representative services for
+                            global manufacturers entering the EU market.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Comprehensive Services Section -->
+        <section class="py-24 bg-white" id="services">
+            <div class="max-w-[1200px] mx-auto px-8">
+                <div class="mb-16 text-center">
+                    <h2 class="font-headline-md text-headline-md mb-4">Comprehensive Compliance Solutions</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Specialized services
+                        designed to bridge global manufacturers with European regulatory standards through expert
+                        oversight and operational support.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- 1. EU Representative -->
+                    <div
+                        class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+                        </div>
+                        <h3 class="font-headline-sm text-[18px] mb-3">EU Representative</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
+                            Acting as European representatives for e-commerce businesses from China or other countries
+                            under the law of GPSR.
                         </p>
-</div>
-<!-- 2. Warehouse storage -->
-<div class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
-<div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="warehouse">warehouse</span>
-</div>
-<h3 class="font-headline-sm text-[18px] mb-3">Warehouse Storage</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
-                            Offering warehouse storage services with flexible cooperation models to suit your logistics and distribution needs.
+                    </div>
+                    <!-- 2. Warehouse storage -->
+                    <div
+                        class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined" data-icon="warehouse">warehouse</span>
+                        </div>
+                        <h3 class="font-headline-sm text-[18px] mb-3">Warehouse Storage</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
+                            Offering warehouse storage services with flexible cooperation models to suit your logistics
+                            and distribution needs.
                         </p>
-</div>
-<!-- 3. EPR services -->
-<div class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
-<div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="recycling">recycling</span>
-</div>
-<h3 class="font-headline-sm text-[18px] mb-3">EPR Services</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
-                            Authorised representation and full compliance EPR services including packaging, battery, and WEEE across Europe.
+                    </div>
+                    <!-- 3. EPR services -->
+                    <div
+                        class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined" data-icon="recycling">recycling</span>
+                        </div>
+                        <h3 class="font-headline-sm text-[18px] mb-3">EPR Services</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
+                            Authorised representation and full compliance EPR services including packaging, battery, and
+                            WEEE across Europe.
                         </p>
-</div>
-<!-- 4. VAT Representative -->
-<div class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
-<div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
-</div>
-<h3 class="font-headline-sm text-[18px] mb-3">VAT Representative</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
-                            Providing dedicated VAT Authorized representative services to manage your tax obligations in European jurisdictions.
+                    </div>
+                    <!-- 4. VAT Representative -->
+                    <div
+                        class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+                        </div>
+                        <h3 class="font-headline-sm text-[18px] mb-3">VAT Representative</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
+                            Providing dedicated VAT Authorized representative services to manage your tax obligations in
+                            European jurisdictions.
                         </p>
-</div>
-<!-- 5. Customs, imports and exports -->
-<div class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group lg:col-span-2">
-<div class="flex flex-col md:flex-row gap-6">
-<div class="w-12 h-12 shrink-0 bg-primary/10 rounded flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
-</div>
-<div>
-<h3 class="font-headline-sm text-[18px] mb-3">Customs, Imports &amp; Exports</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
-                                    Over 15 years of experience handling goods by clearance, import, and export around the world. We navigate complex trade barriers to ensure your supply chain remains uninterrupted.
+                    </div>
+                    <!-- 5. Customs, imports and exports -->
+                    <div
+                        class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group lg:col-span-2">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div
+                                class="w-12 h-12 shrink-0 bg-primary/10 rounded flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+                            </div>
+                            <div>
+                                <h3 class="font-headline-sm text-[18px] mb-3">Customs, Imports &amp; Exports</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
+                                    Over 15 years of experience handling goods by clearance, import, and export around
+                                    the world. We navigate complex trade barriers to ensure your supply chain remains
+                                    uninterrupted.
                                 </p>
-</div>
-</div>
-</div>
-<!-- 6. CPNP -->
-<div class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
-<div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
-</div>
-<h3 class="font-headline-sm text-[18px] mb-3">CPNP</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
-                            Comprehensive cosmetic CPNP (Cosmetic Products Notification Portal) notification services in Europe.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6. CPNP -->
+                    <div
+                        class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+                        </div>
+                        <h3 class="font-headline-sm text-[18px] mb-3">CPNP</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
+                            Comprehensive cosmetic CPNP (Cosmetic Products Notification Portal) notification services in
+                            Europe.
                         </p>
-</div>
-<!-- 7. EPREL -->
-<div class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
-<div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
-</div>
-<h3 class="font-headline-sm text-[18px] mb-3">EPREL</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
+                    </div>
+                    <!-- 7. EPREL -->
+                    <div
+                        class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+                        </div>
+                        <h3 class="font-headline-sm text-[18px] mb-3">EPREL</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
                             Expert guidance for EPREL electronic compliance notification for energy-related products.
                         </p>
-</div>
-<!-- 8. EUDR -->
-<div class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group lg:col-span-2">
-<div class="flex flex-col md:flex-row gap-6">
-<div class="w-12 h-12 shrink-0 bg-primary/10 rounded flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="forest">forest</span>
-</div>
-<div>
-<h3 class="font-headline-sm text-[18px] mb-3">EUDR Notification</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
-                                    Strategic assistance with EUDR (European Union Deforestation Regulation) notification, ensuring your products meet new sustainability and sourcing transparency mandates.
+                    </div>
+                    <!-- 8. EUDR -->
+                    <div
+                        class="p-8 bg-surface rounded-lg border border-outline-variant/30 hover:border-primary/30 transition-all group lg:col-span-2">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div
+                                class="w-12 h-12 shrink-0 bg-primary/10 rounded flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined" data-icon="forest">forest</span>
+                            </div>
+                            <div>
+                                <h3 class="font-headline-sm text-[18px] mb-3">EUDR Notification</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">
+                                    Strategic assistance with EUDR (European Union Deforestation Regulation)
+                                    notification, ensuring your products meet new sustainability and sourcing
+                                    transparency mandates.
                                 </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- The Simplified Approach - Bento Grid -->
-<section class="py-24 bg-surface" id="audit-process">
-<div class="max-w-[1200px] mx-auto px-8">
-<div class="mb-16 text-center">
-<h2 class="font-headline-md text-headline-md mb-4">The 'Simplified Compliance' Approach</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Our four-pillar methodology transforms regulatory hurdles into streamlined operational workflows.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
-<!-- Pillar 1 -->
-<div class="md:col-span-8 bg-white border border-outline-variant/50 p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-300">
-<div>
-<div class="w-12 h-12 rounded flex items-center justify-center mb-6 bg-secondary-container">
-<span class="material-symbols-outlined text-secondary" data-icon="policy">policy</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm mb-4">Verification &amp; Analysis</h3>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
-                                We perform rigorous technical file audits and compliance assessments to identify gaps before they become liabilities. Our team reviews labeling, safety documentation, and risk assessments to ensure alignment with GPSR 2023/988.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Simplified Approach - Bento Grid -->
+        <section class="py-24 bg-surface" id="audit-process">
+            <div class="max-w-[1200px] mx-auto px-8">
+                <div class="mb-16 text-center">
+                    <h2 class="font-headline-md text-headline-md mb-4">The 'Simplified Compliance' Approach</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Our four-pillar
+                        methodology transforms regulatory hurdles into streamlined operational workflows.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+                    <!-- Pillar 1 -->
+                    <div
+                        class="md:col-span-8 bg-white border border-outline-variant/50 p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-300">
+                        <div>
+                            <div class="w-12 h-12 rounded flex items-center justify-center mb-6 bg-secondary-container">
+                                <span class="material-symbols-outlined text-secondary" data-icon="policy">policy</span>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm mb-4">Verification &amp; Analysis</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                                We perform rigorous technical file audits and compliance assessments to identify gaps
+                                before they become liabilities. Our team reviews labeling, safety documentation, and
+                                risk assessments to ensure alignment with GPSR 2023/988.
                             </p>
-</div>
-<a class="flex items-center gap-2 text-primary font-label-md text-label-md hover:underline" href="#audit-process"><span>Explore Audit Process</span><span class="material-symbols-outlined text-sm text-secondary">arrow_forward</span></a>
-</div>
-<!-- Pillar 2 -->
-<div class="md:col-span-4 bg-primary text-on-primary p-10 flex flex-col justify-between">
-<div>
-<div class="w-12 h-12 rounded bg-white/20 flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white" data-icon="account_balance">account_balance</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm mb-4">EU-AR Representation</h3>
-<p class="font-body-md text-body-md opacity-90">
-                                Serving as your institutional legal anchor in the EU, managing all communications with market surveillance authorities.
+                        </div>
+                        <a class="flex items-center gap-2 text-primary font-label-md text-label-md hover:underline"
+                            href="#audit-process"><span>Explore Audit Process</span><span
+                                class="material-symbols-outlined text-sm text-secondary">arrow_forward</span></a>
+                    </div>
+                    <!-- Pillar 2 -->
+                    <div class="md:col-span-4 bg-primary text-on-primary p-10 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded bg-white/20 flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-white"
+                                    data-icon="account_balance">account_balance</span>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm mb-4">EU-AR Representation</h3>
+                            <p class="font-body-md text-body-md opacity-90">
+                                Serving as your institutional legal anchor in the EU, managing all communications with
+                                market surveillance authorities.
                             </p>
-</div>
-<div class="mt-8">
-<ul class="space-y-3 font-label-md text-label-md opacity-80">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]" data-icon="check_circle">check_circle</span> Legal Entity Status</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]" data-icon="check_circle">check_circle</span> Tech-File Custody</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]" data-icon="check_circle">check_circle</span> Authority Point-of-Contact</li>
-</ul>
-</div>
-</div>
-<!-- Pillar 3 -->
-<div class="md:col-span-4 bg-white border border-outline-variant/50 p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-300">
-<div>
-<div class="w-12 h-12 rounded bg-secondary-container flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-secondary" data-icon="notification_important">notification_important</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm mb-4">Recall Management</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                                Real-time response protocols for product safety incidents and corrective action coordination.
+                        </div>
+                        <div class="mt-8">
+                            <ul class="space-y-3 font-label-md text-label-md opacity-80">
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]"
+                                        data-icon="check_circle">check_circle</span> Legal Entity Status</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]"
+                                        data-icon="check_circle">check_circle</span> Tech-File Custody</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]"
+                                        data-icon="check_circle">check_circle</span> Authority Point-of-Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Pillar 3 -->
+                    <div
+                        class="md:col-span-4 bg-white border border-outline-variant/50 p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-300">
+                        <div>
+                            <div class="w-12 h-12 rounded bg-secondary-container flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-secondary"
+                                    data-icon="notification_important">notification_important</span>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm mb-4">Recall Management</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">
+                                Real-time response protocols for product safety incidents and corrective action
+                                coordination.
                             </p>
-</div>
-</div>
-<!-- Pillar 4 -->
-<div class="md:col-span-8 bg-slate-100 border border-outline-variant/50 p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-300 overflow-hidden relative">
-<div class="relative z-10">
-<div class="w-12 h-12 rounded bg-white flex items-center justify-center mb-6 border border-outline-variant/20">
-<span class="material-symbols-outlined text-primary" data-icon="monitoring">monitoring</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm mb-4">Market Surveillance Support</h3>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
-                                Continuous monitoring of regulatory changes and active management of compliance requests from all 27 EU member states.
+                        </div>
+                    </div>
+                    <!-- Pillar 4 -->
+                    <div
+                        class="md:col-span-8 bg-slate-100 border border-outline-variant/50 p-10 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-300 overflow-hidden relative">
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 rounded bg-white flex items-center justify-center mb-6 border border-outline-variant/20">
+                                <span class="material-symbols-outlined text-primary"
+                                    data-icon="monitoring">monitoring</span>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm mb-4">Market Surveillance Support</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                                Continuous monitoring of regulatory changes and active management of compliance requests
+                                from all 27 EU member states.
                             </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Compliance Table Style Section -->
-<section class="py-24 bg-white" id="pricing-obligations">
-<div class="max-w-[1200px] mx-auto px-8">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-<div class="max-w-xl">
-<h2 class="font-headline-md text-headline-md mb-4">GPSR Core Obligations</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">A breakdown of critical requirements we manage on your behalf under the new regulatory framework.</p>
-</div>
-<div class="bg-surface p-4 rounded-lg flex gap-4 border border-outline-variant/20">
-<div class="flex items-center gap-2">
-<span class="w-3 h-3 bg-green-500 rounded-full"></span>
-<span class="font-label-sm text-label-sm uppercase">Active Management</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="w-3 h-3 bg-blue-500 rounded-full"></span>
-<span class="font-label-sm text-label-sm uppercase">Technical Oversight</span>
-</div>
-</div>
-</div>
-<div class="overflow-x-auto">
-<table class="w-full text-left border-collapse">
-<thead>
-<tr class="border-b border-outline-variant">
-<th class="py-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Requirement Domain</th>
-<th class="py-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Specific Mandate</th>
-<th class="py-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Our Solution</th>
-<th class="py-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Priority</th>
-</tr>
-</thead>
-<tbody>
-<tr class="hover:bg-slate-50 transition-colors border-b border-outline-variant/30">
-<td class="py-8 align-top">
-<span class="font-headline-sm text-[18px] text-on-surface">Economic Operator</span>
-</td>
-<td class="py-8 align-top font-body-md text-body-md text-on-surface-variant max-w-xs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Compliance Table Style Section -->
+        <section class="py-24 bg-white" id="pricing-obligations">
+            <div class="max-w-[1200px] mx-auto px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div class="max-w-xl">
+                        <h2 class="font-headline-md text-headline-md mb-4">GPSR Core Obligations</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant">A breakdown of critical
+                            requirements we manage on your behalf under the new regulatory framework.</p>
+                    </div>
+                    <div class="bg-surface p-4 rounded-lg flex gap-4 border border-outline-variant/20">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                            <span class="font-label-sm text-label-sm uppercase">Active Management</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
+                            <span class="font-label-sm text-label-sm uppercase">Technical Oversight</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-outline-variant">
+                                <th
+                                    class="py-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+                                    Requirement Domain</th>
+                                <th
+                                    class="py-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+                                    Specific Mandate</th>
+                                <th
+                                    class="py-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+                                    Our Solution</th>
+                                <th
+                                    class="py-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+                                    Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-slate-50 transition-colors border-b border-outline-variant/30">
+                                <td class="py-8 align-top">
+                                    <span class="font-headline-sm text-[18px] text-on-surface">Economic Operator</span>
+                                </td>
+                                <td class="py-8 align-top font-body-md text-body-md text-on-surface-variant max-w-xs">
                                     Mandatory EU-established entity for every product sold online or offline.
                                 </td>
-<td class="py-8 align-top">
-<span class="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 text-[12px] font-semibold rounded-full uppercase tracking-tighter">Ibertrust AR Service</span>
-</td>
-<td class="py-8 align-top">
-<span class="font-label-md text-label-md text-error">CRITICAL</span>
-</td>
-</tr>
-<tr class="hover:bg-slate-50 transition-colors border-b border-outline-variant/30">
-<td class="py-8 align-top">
-<span class="font-headline-sm text-[18px] text-on-surface">Technical File</span>
-</td>
-<td class="py-8 align-top font-body-md text-body-md text-on-surface-variant max-w-xs">
+                                <td class="py-8 align-top">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 text-[12px] font-semibold rounded-full uppercase tracking-tighter">Ibertrust
+                                        AR Service</span>
+                                </td>
+                                <td class="py-8 align-top">
+                                    <span class="font-label-md text-label-md text-error">CRITICAL</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors border-b border-outline-variant/30">
+                                <td class="py-8 align-top">
+                                    <span class="font-headline-sm text-[18px] text-on-surface">Technical File</span>
+                                </td>
+                                <td class="py-8 align-top font-body-md text-body-md text-on-surface-variant max-w-xs">
                                     Maintenance of 10-year accessibility for safety documentation.
                                 </td>
-<td class="py-8 align-top">
-<span class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 text-[12px] font-semibold rounded-full uppercase tracking-tighter">Vault Storage &amp; Audit</span>
-</td>
-<td class="py-8 align-top">
-<span class="font-label-md text-label-md text-primary">HIGH</span>
-</td>
-</tr>
-<tr class="hover:bg-slate-50 transition-colors">
-<td class="py-8 align-top">
-<span class="font-headline-sm text-[18px] text-on-surface">Product Traceability</span>
-</td>
-<td class="py-8 align-top font-body-md text-body-md text-on-surface-variant max-w-xs">
+                                <td class="py-8 align-top">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 text-[12px] font-semibold rounded-full uppercase tracking-tighter">Vault
+                                        Storage &amp; Audit</span>
+                                </td>
+                                <td class="py-8 align-top">
+                                    <span class="font-label-md text-label-md text-primary">HIGH</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-8 align-top">
+                                    <span class="font-headline-sm text-[18px] text-on-surface">Product
+                                        Traceability</span>
+                                </td>
+                                <td class="py-8 align-top font-body-md text-body-md text-on-surface-variant max-w-xs">
                                     Batch, serial number, and manufacturer identification requirements.
                                 </td>
-<td class="py-8 align-top">
-<span class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 text-[12px] font-semibold rounded-full uppercase tracking-tighter">Labelling Verification</span>
-</td>
-<td class="py-8 align-top">
-<span class="font-label-md text-label-md text-primary">HIGH</span>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<!-- Call to Action -->
-<section class="py-24 bg-on-primary-fixed-variant text-on-primary">
-<div class="max-w-[1200px] mx-auto px-8 text-center flex flex-col items-center">
-<h2 class="font-headline-md text-headline-md mb-6">Ready to Secure Your EU Market Access?</h2>
-<p class="font-body-lg text-body-lg mb-10 max-w-2xl opacity-90">
-                    Join hundreds of global manufacturers who trust Ibertrust Global for their compliance foundation. Secure, reliable, and expert-led.
+                                <td class="py-8 align-top">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 text-[12px] font-semibold rounded-full uppercase tracking-tighter">Labelling
+                                        Verification</span>
+                                </td>
+                                <td class="py-8 align-top">
+                                    <span class="font-label-md text-label-md text-primary">HIGH</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action -->
+        <section class="py-24 bg-on-primary-fixed-variant text-on-primary">
+            <div class="max-w-[1200px] mx-auto px-8 text-center flex flex-col items-center">
+                <h2 class="font-headline-md text-headline-md mb-6">Ready to Secure Your EU Market Access?</h2>
+                <p class="font-body-lg text-body-lg mb-10 max-w-2xl opacity-90">
+                    Join hundreds of global manufacturers who trust Ibertrust Global for their compliance foundation.
+                    Secure, reliable, and expert-led.
                 </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a class="px-10 py-4 bg-white text-primary rounded font-label-md text-label-md font-bold shadow-xl hover:bg-surface transition-all inline-block" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;add=contact@ibertrust.info" target="_blank">Schedule a Consultation</a>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full border-t border-slate-200 mt-auto bg-slate-50">
-<div class="max-w-[1200px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="flex flex-col gap-2 md:items-start items-center text-center md:text-left">
-<div class="text-md font-semibold text-slate-900">Ibertrust Global S.L.</div>
-<div class="font-inter text-xs text-slate-500 mb-2">&copy; 2024 Ibertrust Global S.L. All rights reserved.</div>
-<div class="flex flex-col gap-1 font-inter text-xs text-slate-500">
-<div class="flex items-center justify-center md:justify-start gap-2"><span class="material-symbols-outlined text-[14px]">location_on</span> Carrer de Pablo Iglesias, 1, 12003 Castelló</div>
-<div class="flex items-center justify-center md:justify-start gap-2"><span class="material-symbols-outlined text-[14px]">phone</span> +34 600256836</div>
-<div class="flex items-center justify-center md:justify-start gap-2"><span class="material-symbols-outlined text-[14px]">mail</span> contact@ibertrust.info</div>
-</div>
-</div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors" href="contact.html">Privacy Policy</a>
-<a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors" href="contact.html">Terms of Service</a>
-<a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors" href="contact.html">GPSR Compliance</a>
-<a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors" href="contact.html">Cookie Settings</a>
-<a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors" href="contact.html">Contact</a>
-</div>
-</div>
-</footer>
-</body></html>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a class="px-10 py-4 bg-white text-primary rounded font-label-md text-label-md font-bold shadow-xl hover:bg-surface transition-all inline-block"
+                        href="contact.html">Schedule a Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-200 mt-auto bg-slate-50">
+        <div class="max-w-[1200px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col gap-2">
+                <div class="text-md font-semibold text-slate-900">Ibertrust Global S.L.</div>
+                <div class="font-inter text-xs text-slate-500">Â© 2024 Ibertrust Global S.L. All rights reserved.</div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors"
+                    href="privacy.html">Privacy Policy</a>
+                <a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors"
+                    href="contact.html">Terms of Service</a>
+                <a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors"
+                    href="contact.html">GPSR Compliance</a>
+                <a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors"
+                    href="contact.html">Cookie Settings</a>
+                <a class="font-inter text-xs text-slate-500 hover:text-blue-600 transition-colors"
+                    href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
 
-
+</html>
