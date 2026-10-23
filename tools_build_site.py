@@ -112,7 +112,7 @@ def page(lang,path,title,desc,body,extra_ld=None):
 <link rel="icon" href="/logo.png"><link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script></head><body>
 <header><div class="wrap nav"><a href="{p}/" style="text-decoration:none;color:inherit"><img src="/logo.png" alt="IberTrust Global logo"><b>IberTrust Global</b></a><ul>{nav}</ul>
-<span><a class="btn" href="mailto:{EMAIL}">{t['quote']}</a><span class="lang"><a href="/{path}">EN</a><a href="/es/{path}">ES</a><a href="/zh/{path}">中文</a></span></span></div></header>
+<span><a class="btn" href="{p}/quote.html">{t['quote']}</a><span class="lang"><a href="/{path}">EN</a><a href="/es/{path}">ES</a><a href="/zh/{path}">中文</a></span></span></div></header>
 <main>{body}</main>
 <footer><div class="wrap grid"><div><b style="color:#fff">IberTrust Global S.L.</b><br>CIF B21813506<br>{t['based']}<br><a href="mailto:{EMAIL}">{EMAIL}</a> · +34 600 256 836</div>
 <div>{''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S[:6])}</div>
@@ -123,9 +123,9 @@ def page(lang,path,title,desc,body,extra_ld=None):
   return me
 # BLOG: add new articles here; every article needs 'en','es','zh' = (title, html body). Optional 'date'.
 POSTS=[('gpsr-responsible-person-guide',{
- 'en':('What an EU Responsible Person does under GPSR','<p>Since 13 December 2024, Regulation (EU) 2023/988 (GPSR) requires that most consumer products sold in the EU have an economic operator established in the Union. Its name, postal and electronic address must appear on the product, packaging or accompanying documents, and in online listings.</p><h2>Main tasks</h2><ul><li>Verify technical documentation and the EU declaration where applicable</li><li>Cooperate with market surveillance authorities</li><li>Inform authorities about risks and support corrective actions</li></ul><h2>Next step</h2><p>Write to '+EMAIL+' for a review of your labels and documentation.</p>'),
- 'es':('Qué hace una Persona Responsable con el GPSR','<p>Desde el 13 de diciembre de 2024, el Reglamento (UE) 2023/988 (GPSR) exige que la mayoría de productos de consumo vendidos en la UE tengan un operador económico establecido en la Unión, cuyos datos figuren en el producto, el envase o la documentación y en los anuncios online.</p><h2>Tareas principales</h2><ul><li>Verificar la documentación técnica</li><li>Cooperar con las autoridades de vigilancia del mercado</li><li>Informar de riesgos y apoyar acciones correctoras</li></ul><p>Escriba a '+EMAIL+' para revisar su etiquetado.</p>'),
- 'zh':('GPSR 下的欧盟负责人到底做什么？','<p>自 2024 年 12 月 13 日起，《通用产品安全法规》（EU）2023/988（GPSR）要求：在欧盟销售的大多数消费品，都必须有一家设在欧盟境内的经济经营者。它的名称、邮寄地址和电子联系方式，需要标注在产品、包装或随附文件上，线上 listing 中也要展示。</p><p>对中国跨境卖家来说，这意味着光有中国工厂地址已经不够，产品上市前就要把欧盟负责人的信息准备好。</p><h2>欧盟负责人的主要职责</h2><ul><li>核查技术文件，以及适用时的欧盟符合性声明</li><li>配合市场监管机构的问询和检查</li><li>发现风险时通报主管机构，并协助整改</li></ul><h2>下一步</h2><p>欢迎发邮件至 '+EMAIL+'，我们可以帮您审核标签和相关文件。</p>')})]
+ 'en':('What an EU Responsible Person does under GPSR','<p>Since 13 December 2024, Regulation (EU) 2023/988 (GPSR) requires that most consumer products sold in the EU have an economic operator established in the Union. Its name, postal and electronic address must appear on the product, packaging or accompanying documents, and in online listings.</p><h2>Main tasks</h2><ul><li>Verify technical documentation and the EU declaration where applicable</li><li>Cooperate with market surveillance authorities</li><li>Inform authorities about risks and support corrective actions</li></ul><h2>Next step</h2><p>Use our <a href="/quote.html">quote form</a> or write to '+EMAIL+' for a review of your labels and documentation.</p>'),
+ 'es':('Qué hace una Persona Responsable con el GPSR','<p>Desde el 13 de diciembre de 2024, el Reglamento (UE) 2023/988 (GPSR) exige que la mayoría de productos de consumo vendidos en la UE tengan un operador económico establecido en la Unión, cuyos datos figuren en el producto, el envase o la documentación y en los anuncios online.</p><h2>Tareas principales</h2><ul><li>Verificar la documentación técnica</li><li>Cooperar con las autoridades de vigilancia del mercado</li><li>Informar de riesgos y apoyar acciones correctoras</li></ul><p>Rellene nuestro <a href="/es/quote.html">formulario</a> o escriba a '+EMAIL+' para revisar su etiquetado.</p>'),
+ 'zh':('GPSR 下的欧盟负责人到底做什么？','<p>自 2024 年 12 月 13 日起，《通用产品安全法规》（EU）2023/988（GPSR）要求：在欧盟销售的大多数消费品，都必须有一家设在欧盟境内的经济经营者。它的名称、邮寄地址和电子联系方式，需要标注在产品、包装或随附文件上，线上 listing 中也要展示。</p><p>对中国跨境卖家来说，这意味着光有中国工厂地址已经不够，产品上市前就要把欧盟负责人的信息准备好。</p><h2>欧盟负责人的主要职责</h2><ul><li>核查技术文件，以及适用时的欧盟符合性声明</li><li>配合市场监管机构的问询和检查</li><li>发现风险时通报主管机构，并协助整改</li></ul><h2>下一步</h2><p>欢迎填写<a href="/zh/quote.html">询价表单</a>或发邮件至 '+EMAIL+'，我们可以帮您审核标签和相关文件。</p>')})]
 urls=[]
 for lang in ['en','es','zh']:
   t=T[lang]; p=PFX[lang]
@@ -137,9 +137,9 @@ for lang in ['en','es','zh']:
   why_es=['Un interlocutor para GPSR, EPR, envases, RAEE, pilas y CPNP','Empresa española (CIF B21813506) establecida en la UE','Atención en inglés, español y chino mandarín','Experiencia práctica con e-commerce y marketplaces','Alta clara: mandato, documentos, revisión de etiquetas, registro']
   why_zh=['GPSR、EPR、包装、WEEE、电池、CPNP 一个窗口统一对接','西班牙注册公司（CIF B21813506），在欧盟境内设有实体','中文、英文、西班牙语沟通，无语言障碍','熟悉跨境电商和各大平台的合规要求','流程清晰：签署委托、收集资料、审核标签、完成注册']
   why=''.join(f'<div class="card">✔ {w}</div>' for w in {'en':why_en,'es':why_es,'zh':why_zh}[lang])
-  cta=f'<section><div class="wrap"><div class="cta"><h2>{t["ready"]}</h2><p>{t["readyp"]}</p><a class="btn" href="mailto:{EMAIL}">{EMAIL}</a></div></div></section>'
+  cta=f'<section><div class="wrap"><div class="cta"><h2>{t["ready"]}</h2><p>{t["readyp"]}</p><a class="btn" href="{p}/quote.html">{t["quote"]}</a><p style="margin-top:14px;font-size:14px;opacity:.85">{EMAIL}</p></div></div></section>'
   home=f"""<div class="hero"><div class="wrap"><p>{t['tag']}</p><h1>{t['h1']}</h1><p>{t['lead']}</p>
-<p><a class="btn" href="mailto:{EMAIL}">{t['quote']}</a> <a class="btn alt" href="{p}/services/">{t['all']}</a></p>
+<p><a class="btn" href="{p}/quote.html">{t['quote']}</a> <a class="btn alt" href="{p}/services/">{t['all']}</a></p>
 <div class="trust"><span>GPSR (EU) 2023/988</span><span>RD 1055/2022</span><span>WEEE</span><span>(EU) 2023/1542</span><span>CPNP</span><span>EN · ES · 中文</span></div></div></div>
 <section><div class="wrap"><h2>{t['services']}</h2><div class="grid">{cards}</div></div></section>
 <section class="muted"><div class="wrap"><h2>{t['why']}</h2><div class="grid">{why}</div></div></section>
@@ -149,14 +149,14 @@ for lang in ['en','es','zh']:
   for s in S:
     title,short,bul=L(s,lang)
     sld={"@context":"https://schema.org","@type":"Service","name":title,"description":short,"provider":{"@type":"Organization","name":"IberTrust Global S.L."},"areaServed":"EU"}
-    body=f'<div class="hero"><div class="wrap"><h1>{title}</h1><p>{short}</p><a class="btn" href="mailto:{EMAIL}?subject={title}">{t["quote"]}</a></div></div><section><div class="wrap"><h2>{t["inc"]}</h2><ul>'+''.join(f'<li>{b}</li>' for b in bul)+f'</ul><p><a href="{p}/faq.html">{t["faq"]}</a> · <a href="{p}/services/">{t["all"]}</a></p></div></section>{cta}'
+    body=f'<div class="hero"><div class="wrap"><h1>{title}</h1><p>{short}</p><a class="btn" href="{p}/quote.html?service={s[0]}">{t["quote"]}</a></div></div><section><div class="wrap"><h2>{t["inc"]}</h2><ul>'+''.join(f'<li>{b}</li>' for b in bul)+f'</ul><p><a href="{p}/faq.html">{t["faq"]}</a> · <a href="{p}/services/">{t["all"]}</a></p></div></section>{cta}'
     urls.append(page(lang,f'services/{s[0]}.html',title+' | IberTrust Global',short,body,[sld]))
   about_en='<p>IberTrust Global S.L. is a Spanish company (CIF B21813506) providing EU product compliance services to manufacturers and online sellers from outside the EU. We act as EU Responsible Person, EPR authorised representative and regulatory contact, and help with Spanish NIF/VAT and cosmetics notifications.</p><p>Our team supports clients in English, Spanish and Mandarin Chinese and works with local environmental compliance partners in Spain.</p>'
   about_es='<p>IberTrust Global S.L. es una empresa española (CIF B21813506) que presta servicios de cumplimiento de producto en la UE a fabricantes y vendedores online de fuera de la UE: Persona Responsable, representante autorizado EPR, NIF/IVA y notificaciones de cosméticos.</p><p>Atendemos en inglés, español y chino mandarín y colaboramos con socios locales de cumplimiento ambiental en España.</p>'
   about_zh='<p>IberTrust Global S.L. 是一家西班牙公司（CIF B21813506），专为欧盟以外的工厂和跨境电商卖家提供欧盟产品合规服务。我们可以担任欧盟负责人、EPR 授权代表和监管对接人，并协助办理西班牙税号（NIF）/增值税以及化妆品通报。</p><p>团队可用中文、英文和西班牙语服务客户，并与西班牙本地的环保合规伙伴合作。</p>'
   urls.append(page(lang,'about.html',t['about']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["about"]}</h1>{ {"en":about_en,"es":about_es,"zh":about_zh}[lang] }<p>{t["based"]}.</p></div></section>{cta}'))
   urls.append(page(lang,'faq.html',t['faq']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["faq"]}</h1>{faqhtml}</div></section>{cta}',[faqld]))
-  ct=f'<section><div class="wrap"><h1>{t["contact"]}</h1><div class="grid"><div class="card"><h3>{'邮箱' if lang=='zh' else 'Email'}</h3><a href="mailto:{EMAIL}">{EMAIL}</a></div><div class="card"><h3>{'电话 / WhatsApp' if lang=='zh' else 'Tel / WhatsApp'}</h3>+34 600 256 836</div><div class="card"><h3>IberTrust Global S.L.</h3>CIF B21813506<br>{t["based"]}</div></div><p>{t["readyp"]}</p></div></section>'
+  ct=f'<section><div class="wrap"><h1>{t["contact"]}</h1><div class="grid"><div class="card"><h3>{'邮箱' if lang=='zh' else 'Email'}</h3><a href="mailto:{EMAIL}">{EMAIL}</a><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div><div class="card"><h3>{'电话 / WhatsApp' if lang=='zh' else 'Tel / WhatsApp'}</h3>+34 600 256 836</div><div class="card"><h3>IberTrust Global S.L.</h3>CIF B21813506<br>{t["based"]}</div></div><p>{t["readyp"]}</p></div></section>'
   urls.append(page(lang,'contact.html',t['contact']+' | IberTrust Global',t['readyp'],ct))
   posts=[(sl,P[lang][0]) for sl,P in POSTS]
   lst=''.join(f'<div class="card"><h3><a href="{p}/blog/{sl}.html">{ti}</a></h3></div>' for sl,ti in posts)
@@ -165,6 +165,25 @@ for lang in ['en','es','zh']:
     ti,txt=P[lang]; pub=P.get('date',TODAY)
     art={"@context":"https://schema.org","@type":"Article","headline":ti,"inLanguage":HL[lang],"datePublished":pub,"author":{"@type":"Organization","name":"IberTrust Global S.L."},"publisher":{"@type":"Organization","name":"IberTrust Global S.L."}}
     urls.append(page(lang,f'blog/{sl}.html',ti+' | IberTrust Global',ti,f'<section><div class="wrap"><article><h1>{ti}</h1><p><small>{pub} · IberTrust Global</small></p>{txt}</article></div></section>',[art]))
+
+QF={'en':dict(t='Request a quote',intro='Tell us about your company and products. We reply by email with a tailored proposal.',co='Company',em='Email',pr='Products / platforms (e.g. toys on Amazon DE)',sv='Services needed',ms='Message',send='Send request',alt='Prefer email? Write to us directly:',copy='Copy',copied='Copied',subj='New quote request – ibertrust.info',ty='Thank you',typ='We have received your request and will reply by email.',back='Back to home'),
+ 'es':dict(t='Solicitar presupuesto',intro='Cuéntenos sobre su empresa y sus productos. Le responderemos por email con una propuesta a medida.',co='Empresa',em='Email',pr='Productos / plataformas (p. ej. juguetes en Amazon ES)',sv='Servicios que necesita',ms='Mensaje',send='Enviar solicitud',alt='¿Prefiere el email? Escríbanos directamente:',copy='Copiar',copied='Copiado',subj='Nueva solicitud de presupuesto (ES) – ibertrust.info',ty='Gracias',typ='Hemos recibido su solicitud y le responderemos por email.',back='Volver al inicio'),
+ 'zh':dict(t='获取方案',intro='请简单介绍您的公司和产品，我们会通过邮件回复定制方案。',co='公司名称',em='邮箱',pr='产品 / 销售平台（例如：玩具，亚马逊德国站）',sv='需要的服务',ms='补充说明',send='提交',alt='也可以直接发邮件给我们：',copy='复制',copied='已复制',subj='新询价（中文）– ibertrust.info',ty='提交成功',typ='我们已收到您的需求，会尽快通过邮件回复您。',back='返回首页')}
+for lang in ['en','es','zh']:
+  t=T[lang]; p=PFX[lang]; q=QF[lang]
+  boxes=''.join(f'<label style="display:block"><input type="checkbox" name="services" value="{L(s,"en")[0]}" data-slug="{s[0]}"> {L(s,lang)[0]}</label>' for s in S)
+  inp='style="width:100%;padding:10px;border:1px solid #c9d2de;border-radius:8px;font:inherit;margin:4px 0 14px"'
+  body=f"""<section><div class="wrap"><h1>{q['t']}</h1><p>{q['intro']}</p><div class="grid" style="align-items:start">
+<form class="card" action="https://formsubmit.co/{EMAIL}" method="POST">
+<input type="hidden" name="_subject" value="{q['subj']}"><input type="hidden" name="_next" value="{D}{p}/thanks.html"><input type="hidden" name="_template" value="table"><input type="hidden" name="_language" value="{lang}">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<label>{q['co']}<input name="company" required {inp}></label><label>{q['em']}<input type="email" name="email" required {inp}></label>
+<label>{q['pr']}<input name="products_platforms" {inp}></label><fieldset style="border:0;padding:0;margin:0 0 14px"><legend><b>{q['sv']}</b></legend>{boxes}</fieldset>
+<label>{q['ms']}<textarea name="message" rows="5" {inp}></textarea></label><button class="btn" type="submit" style="border:0;cursor:pointer;font:inherit;font-weight:600">{q['send']}</button></form>
+<div class="card"><p>{q['alt']}</p><p><b id="em">{EMAIL}</b> <button type="button" class="btn alt" style="padding:6px 12px;cursor:pointer;font:inherit" onclick="navigator.clipboard.writeText('{EMAIL}').then(()=>this.textContent='{q['copied']}')">{q['copy']}</button></p><p>+34 600 256 836</p></div></div></div></section>
+<script>var sv=new URLSearchParams(location.search).get('service');if(sv)document.querySelectorAll('input[data-slug]').forEach(function(c){{if(c.dataset.slug==sv)c.checked=true}});</script>"""
+  urls.append(page(lang,'quote.html',q['t']+' | IberTrust Global',q['intro'],body))
+  page(lang,'thanks.html',q['ty']+' | IberTrust Global',q['typ'],f'<section><div class="wrap"><h1>{q["ty"]}</h1><p>{q["typ"]}</p><p><a class="btn" href="{p}/">{q["back"]}</a></p></div></section>')
 os.makedirs(R+'/assets',exist_ok=True); open(R+'/assets/style.css','w').write(CSS)
 open(R+'/blog/_post-template.html','w').write('<!-- Copy blog/gpsr-responsible-person-guide.html, change <title>, meta description, og:*, canonical/hreflang, Article JSON-LD (headline, datePublished), <h1> and body; or better: add the post (en/es/zh) to POSTS in /workspace/build_site.py and rerun it — it regenerates /, /es/, /zh/, blog indexes and sitemap.xml. -->\n')
 urls+= [D+'/privacy.html',D+'/terms.html']
