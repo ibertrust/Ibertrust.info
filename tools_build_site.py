@@ -6,6 +6,14 @@ S=[ # slug, EN title, EN short, EN body bullets, ES title, ES short, ES bullets
  ['EU address for product labels and marketplace listings','Point of contact for market surveillance authorities','Custody of technical documentation and safety information','Label and documentation review against GPSR requirements','Support with corrective actions, withdrawals and recalls'],
  'Persona Responsable en la UE (GPSR)','Actuamos como operador económico establecido en la UE según el Reglamento (UE) 2023/988 para fabricantes y vendedores de fuera de la UE.',
  ['Dirección en la UE para etiquetas y marketplaces','Punto de contacto con las autoridades de vigilancia del mercado','Custodia de la documentación técnica','Revisión de etiquetado y documentación GPSR','Apoyo en acciones correctoras, retiradas y recuperaciones']),
+('uk-responsible-person','UK Responsible Person / Authorised Representative','UK-established responsible person or authorised representative for non-UK manufacturers whose products need one under UK product law.',
+ ['Name and UK address for product labels, packaging and listings','Point of contact for UK market surveillance authorities','Holding the declaration of conformity and technical documentation where UK rules require it','Label and documentation review for the UK market'],
+ 'Persona Responsable / Representante autorizado en Reino Unido','Persona responsable o representante autorizado establecido en Reino Unido para fabricantes de fuera del país cuyos productos lo necesitan según la normativa británica.',
+ ['Nombre y dirección en Reino Unido para etiquetas, envases y anuncios','Punto de contacto con las autoridades de vigilancia del mercado británicas','Custodia de la declaración de conformidad y documentación técnica cuando lo exija la norma','Revisión de etiquetado y documentación para Reino Unido']),
+('turkey-authorised-representative','Turkey Authorised Representative','Authorised representative established in Türkiye for manufacturers placing products on the Turkish market.',
+ ['Authorised representative appointment under a written mandate','Name and address in Türkiye for labels and documentation','Point of contact for Turkish market surveillance authorities','Keeping the declaration of conformity and technical documentation available'],
+ 'Representante autorizado en Turquía','Representante autorizado establecido en Turquía para fabricantes que comercializan productos en el mercado turco.',
+ ['Designación como representante autorizado mediante mandato escrito','Nombre y dirección en Turquía para etiquetas y documentación','Punto de contacto con las autoridades turcas de vigilancia del mercado','Disponibilidad de la declaración de conformidad y documentación técnica']),
 ('epr-packaging-spain','Spain Packaging EPR (Royal Decree 1055/2022)','Producer registration and authorised representation for packaging placed on the Spanish market.',
  ['Registration in the Spanish producer register for packaging','Authorised representative for producers not established in Spain','Joining a collective EPR scheme (SCRAP)','Periodic packaging declarations','Guidance on labelling and PPWR changes'],
  'EPR de envases en España (RD 1055/2022)','Registro de productores y representación autorizada para envases puestos en el mercado español.',
@@ -34,10 +42,6 @@ S=[ # slug, EN title, EN short, EN body bullets, ES title, ES short, ES bullets
  ['NIF application for non-resident companies','VAT registration and fiscal representation','Liaison with the Spanish Tax Agency (AEAT)'],
  'NIF y representación de IVA en España','NIF para empresas extranjeras y servicios de representante fiscal de IVA.',
  ['Solicitud de NIF para empresas no residentes','Alta en IVA y representación fiscal','Gestión ante la AEAT']),
-('customs-import-export','Customs, Import & Export Support','Practical support with customs clearance and cross-border trade documentation.',
- ['Import/export documentation guidance','Coordination with customs brokers','Economic operator obligations at import'],
- 'Aduanas, importación y exportación','Apoyo práctico en despacho aduanero y documentación de comercio exterior.',
- ['Orientación documental de importación/exportación','Coordinación con agentes de aduanas','Obligaciones del operador en la importación']),
 ]
 FAQ_EN=[('Do non-EU sellers need an EU Responsible Person?','Yes, under GPSR most consumer products placed on the EU market need an economic operator established in the EU, whose name and contact details appear on the product, packaging or accompanying documents.'),
 ('Can one provider cover GPSR and EPR?','Yes. IberTrust Global handles EU Responsible Person, Spain packaging EPR, WEEE, batteries and CPNP so you have one point of contact.'),
@@ -51,6 +55,10 @@ FAQ_ES=[('¿Necesita un vendedor de fuera de la UE una Persona Responsable?','S�
 ZH_S={ # slug: (title, short, bullets)
 'gpsr-eu-responsible-person':('欧盟负责人（GPSR）','根据《通用产品安全法规》（EU）2023/988，我们作为设在欧盟境内的经济经营者，为欧盟以外的工厂和跨境卖家担任欧盟负责人。',
  ['提供可印在产品标签和平台 listing 上的欧盟地址','作为市场监管机构的对接联系人','保管技术文件和产品安全信息','按 GPSR 要求审核标签和随附文件','协助处理整改、下架和召回']),
+'uk-responsible-person':('英国负责人 / 授权代表','为英国境外制造商提供设在英国的负责人或授权代表，适用于英国产品法规要求指定英国经营者的产品。',
+ ['提供可印在标签、包装和 listing 上的英国名称和地址','作为英国市场监管机构的对接联系人','按英国法规要求保管符合性声明和技术文件','针对英国市场审核标签和文件']),
+'turkey-authorised-representative':('土耳其授权代表','为向土耳其市场投放产品的制造商，提供设在土耳其的授权代表。',
+ ['通过书面委托指定授权代表','提供用于标签和文件的土耳其名称和地址','作为土耳其市场监管机构的对接联系人','确保符合性声明和技术文件可随时提供']),
 'epr-packaging-spain':('西班牙包装 EPR（皇家法令 1055/2022）','为投放西班牙市场的包装办理生产者注册，并担任授权代表。',
  ['在西班牙包装生产者登记系统完成注册','为未在西班牙设立实体的生产者担任授权代表','协助加入集体 EPR 回收体系（SCRAP）','定期申报包装数据','解读包装标识要求及欧盟新包装法规（PPWR）变化']),
 'weee':('WEEE / 电子电气设备 EPR','为电子电气设备办理生产者注册、授权代表和申报。',
@@ -65,8 +73,6 @@ ZH_S={ # slug: (title, short, bullets)
  ['判断产品是否属于相关商品范围','协助准备尽职调查声明','收集供应商信息']),
 'spain-nif-vat':('西班牙税号（NIF）与增值税代理','为外国公司申请西班牙税号（NIF），并提供增值税税务代表服务。',
  ['为非居民公司申请 NIF','增值税登记和税务代表','对接西班牙税务局（AEAT）']),
-'customs-import-export':('清关与进出口支持','在清关和跨境贸易单证方面提供实操支持。',
- ['进出口单证指导','对接报关行','进口环节的经营者义务说明']),
 }
 FAQ_ZH=[('欧盟以外的卖家需要欧盟负责人吗？','需要。GPSR 实施后，投放欧盟市场的大多数消费品都必须有一家设在欧盟境内的经济经营者，其名称和联系方式要标注在产品、包装或随附文件上。'),
 ('GPSR 和 EPR 能交给同一家服务商吗？','可以。IberTrust Global 同时提供欧盟负责人、西班牙包装 EPR、WEEE、电池和化妆品 CPNP 服务，您只需对接一个窗口。'),
@@ -83,6 +89,14 @@ DET={ # slug: lang: (scope, docs, problems)
  'en':('Non-food consumer products sold in the EU, online or offline, by manufacturers without an EU establishment. Products under sector rules (e.g. toys, electronics) still need an EU economic operator; GPSR fills the gaps those rules leave.',['Product photos and the current label/packaging artwork','Instructions and safety information in the languages of the target markets','Test reports, technical documentation and EU declaration of conformity where applicable','Manufacturer name, postal and electronic address','List of marketplaces and countries'],['Listings blocked or suppressed for missing Responsible Person details','Label shows only a non-EU address','Responsible Person details on the product do not match the listing','No traceability information (type, batch or serial number)']),
  'es':('Productos de consumo no alimentarios vendidos en la UE, online u offline, por fabricantes sin establecimiento en la UE. Los productos con normativa sectorial (juguetes, electrónica…) también necesitan un operador económico en la UE; el GPSR cubre lo que esas normas no regulan.',['Fotos del producto y arte final de etiqueta/envase','Instrucciones e información de seguridad en los idiomas de los mercados','Informes de ensayo, documentación técnica y declaración UE de conformidad cuando aplique','Nombre, dirección postal y electrónica del fabricante','Lista de marketplaces y países'],['Anuncios bloqueados por falta de datos de la Persona Responsable','La etiqueta solo muestra una dirección fuera de la UE','Los datos del producto no coinciden con los del anuncio','Falta información de trazabilidad (tipo, lote o número de serie)']),
  'zh':('适用于由欧盟境外制造商在欧盟线上或线下销售的非食品类消费品。玩具、电子产品等有专门法规的品类，同样需要欧盟经济经营者；GPSR 用来补足这些法规没有覆盖的部分。',['产品图片和当前的标签 / 包装设计稿','目标市场语言版本的说明书和安全信息','适用时提供检测报告、技术文件和欧盟符合性声明（DoC）','制造商名称、邮寄地址和电子联系方式','销售平台和国家清单'],['因缺少欧盟负责人信息，listing 被屏蔽或下架','标签上只有中国地址','产品上的负责人信息和 listing 不一致','缺少型号、批号或序列号等追溯信息'])},
+'uk-responsible-person':{
+ 'en':('Manufacturers outside the UK selling into Great Britain whose products fall under UK rules that require a UK-established economic operator, for example products that carry UKCA marking and cosmetics under the UK Cosmetics Regulation. Requirements for Northern Ireland follow EU rules and are checked separately.',['Product list and photos','Current label and packaging artwork','Declaration of conformity and technical documentation / test reports','Manufacturer name and address','Marketplaces and sales channels in the UK'],['Listing blocked for missing UK responsible person details','Label shows only an EU or non-UK address','Unclear whether the product needs a UK representative at all','Responsible person request rejected because company name or address does not match']),
+ 'es':('Fabricantes de fuera de Reino Unido que venden en Gran Bretaña productos sujetos a normas británicas que exigen un operador económico establecido allí, por ejemplo productos con marcado UKCA y cosméticos bajo el UK Cosmetics Regulation. Irlanda del Norte sigue normas de la UE y se analiza aparte.',['Lista y fotos de productos','Arte actual de etiqueta y envase','Declaración de conformidad y documentación técnica / ensayos','Nombre y dirección del fabricante','Marketplaces y canales en Reino Unido'],['Anuncio bloqueado por falta de persona responsable en Reino Unido','La etiqueta solo muestra una dirección de la UE o de fuera de Reino Unido','Duda sobre si el producto necesita representante británico','Solicitud rechazada porque el nombre o la dirección no coinciden']),
+ 'zh':('适用于向英国（大不列颠）销售、产品属于英国法规要求指定英国境内经营者的英国境外制造商，例如需加贴 UKCA 标志的产品，以及受英国化妆品法规管辖的化妆品。北爱尔兰沿用欧盟规则，需要单独判断。',['产品清单和图片','当前的标签和包装设计稿','符合性声明、技术文件或检测报告','制造商名称和地址','英国销售平台和渠道'],['缺少英国负责人信息导致 listing 被屏蔽','标签上只有欧盟或非英国地址','不确定产品是否需要英国代表','负责人申请因公司名称或地址不一致被驳回'])},
+'turkey-authorised-representative':{
+ 'en':('Manufacturers outside Türkiye placing products on the Turkish market under Law No. 7223 on product safety and technical regulations and the related product regulations, where an authorised representative established in Türkiye is appointed.',['Product list and photos','Declaration of conformity and technical documentation','Label and user instructions','Manufacturer name and address','Turkish importers, distributors or marketplaces involved'],['No Turkish contact point on the product or documents','Documentation not available on request from authorities','Unclear split of obligations between importer and authorised representative']),
+ 'es':('Fabricantes de fuera de Turquía que comercializan productos en el mercado turco conforme a la Ley n.º 7223 de seguridad de productos y reglamentos técnicos y la normativa de producto correspondiente, cuando designan un representante autorizado establecido en Turquía.',['Lista y fotos de productos','Declaración de conformidad y documentación técnica','Etiqueta e instrucciones','Nombre y dirección del fabricante','Importadores, distribuidores o marketplaces turcos implicados'],['Sin punto de contacto en Turquía en el producto o los documentos','Documentación no disponible cuando la piden las autoridades','Reparto de obligaciones poco claro entre importador y representante']),
+ 'zh':('适用于依据土耳其第 7223 号《产品安全与技术法规法》及相关产品法规，向土耳其市场投放产品、并指定土耳其境内授权代表的境外制造商。',['产品清单和图片','符合性声明和技术文件','标签和使用说明','制造商名称和地址','涉及的土耳其进口商、经销商或平台'],['产品或文件上没有土耳其联系点','主管机构要求时拿不出文件','进口商和授权代表之间的义务划分不清'])},
 'epr-packaging-spain':{
  'en':('Companies that place packaged products on the Spanish market, including sellers shipping to Spanish consumers through marketplaces. Producers not established in Spain can act through an authorised representative.',['Company registration documents','List of packaging types and materials (box, film, filler…)','Packaging weight per unit by material','Units sold or expected in Spain','Sales channels and marketplaces'],['Marketplace asks for a Spanish producer registration number','Packaging weights by material not available','Unclear who is the producer: brand, importer or seller','Labelling questions under the new EU packaging regulation (PPWR)']),
  'es':('Empresas que ponen productos envasados en el mercado español, incluidos vendedores que envían a consumidores en España por marketplaces. Los productores no establecidos en España pueden actuar mediante un representante autorizado.',['Documentación registral de la empresa','Tipos de envase y materiales (caja, film, relleno…)','Peso de envase por unidad y material','Unidades vendidas o previstas en España','Canales de venta y marketplaces'],['El marketplace pide el número de registro de productor','No se dispone del peso de envases por material','No está claro quién es el productor: marca, importador o vendedor','Dudas de etiquetado con el nuevo PPWR'])
@@ -111,10 +125,6 @@ DET={ # slug: lang: (scope, docs, problems)
  'en':('Foreign companies that need a Spanish tax identification number (NIF) or VAT registration, for example to hold stock in Spain or to register for EPR.',['Certificate of incorporation and articles','Director or legal representative ID','Power of attorney','Any official translation or apostille required for your documents'],['Foreign documents not legalised or translated','Requests for further information from the Tax Agency (AEAT)','Unclear whether VAT registration in Spain is needed']),
  'es':('Empresas extranjeras que necesitan NIF o alta en IVA en España, por ejemplo para tener stock en España o registrarse en EPR.',['Certificado de constitución y estatutos','Identificación del administrador o representante','Poder de representación','Traducción jurada o apostilla cuando se exija'],['Documentos extranjeros sin legalizar o traducir','Requerimientos de la AEAT','Duda sobre si hace falta el alta en IVA']),
  'zh':('适用于需要申请西班牙税号（NIF）或增值税登记的外国公司，例如在西班牙存放库存或办理 EPR 注册时。',['公司注册证书和公司章程','董事或法定代表人身份证件','授权委托书','按要求提供的宣誓翻译或海牙认证'],['境外文件没有认证或翻译','西班牙税务局（AEAT）要求补充资料','不确定是否需要在西班牙登记增值税'])},
-'customs-import-export':{
- 'en':('Companies importing goods into the EU through Spain or exporting from Spain who need help with documents and coordination.',['Commercial invoice and packing list','EORI number','Product descriptions and HS codes','Compliance documents for the goods (e.g. declarations of conformity)'],['Wrong or inconsistent HS codes','No EORI number','Goods held for missing compliance documents']),
- 'es':('Empresas que importan a la UE por España o exportan desde España y necesitan ayuda con documentación y coordinación.',['Factura comercial y packing list','Número EORI','Descripción de productos y códigos HS','Documentos de cumplimiento (p. ej. declaraciones de conformidad)'],['Códigos HS erróneos o incoherentes','Sin número EORI','Mercancía retenida por falta de documentos']),
- 'zh':('适用于经西班牙进口到欧盟、或从西班牙出口，需要单证和协调支持的企业。',['商业发票和装箱单','EORI 号','产品描述和 HS 编码','货物的合规文件（如符合性声明）'],['HS 编码错误或前后不一致','没有 EORI 号','因缺少合规文件被海关扣货'])},
 }
 FAQS=[ # slug, lang:(question, answer, article title, article html)
 ('do-i-need-eu-responsible-person-gpsr',{
@@ -161,22 +171,22 @@ FAQS=[ # slug, lang:(question, answer, article title, article html)
 ABOUT={
 'en':'''<p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA (Ibertrust Global, S.L.) is a Spanish company providing product compliance services for selling in Europe.</p>
 <h2>Who we serve</h2><ul><li>Manufacturers and brands outside the EU</li><li>Cross-border e-commerce sellers</li><li>Channel partners such as agencies, logistics providers and service providers who need a reliable compliance partner for their clients</li></ul>
-<h2>What we cover</h2><ul><li>Responsible Person under GPSR for the EU, and responsible person services for the UK and Turkey</li><li>Spanish packaging law (Royal Decree 1055/2022): producer registration and authorised representation</li><li>WEEE and batteries EPR in Spain</li><li>Spanish NIF and VAT</li><li>Cosmetics Responsible Person and CPNP notification</li></ul>
-<h2>Why work with us</h2><ul><li>A local Spanish company, established in the EU</li><li>We work in Chinese, English and Spanish</li><li>One point of contact for GPSR, EPR, CPNP and tax registration</li><li>Hands-on experience resolving marketplace compliance rejections and listing blocks</li></ul>
+<h2>What we cover</h2><ul><li>Responsible Person under GPSR for the EU, <a href="/services/uk-responsible-person.html">UK Responsible Person</a> and <a href="/services/turkey-authorised-representative.html">Turkey Authorised Representative</a></li><li>Spanish packaging law (Royal Decree 1055/2022): producer registration and authorised representation</li><li>WEEE and batteries EPR in Spain</li><li>Spanish NIF and VAT</li><li>Cosmetics Responsible Person and CPNP notification</li></ul>
+<h2>Why work with us</h2><ul><li>A local Spanish company, established in the EU</li><li>We work in Chinese, English and Spanish</li><li>One point of contact for GPSR, EPR, CPNP and tax registration</li><li>Hands-on experience diagnosing and fixing rejected responsible-person requests on marketplaces: store not listed in the agreement, company name mismatch, wrong address</li></ul>
 <h2>How working with us goes</h2><ol>{proc}</ol>
-<h2>Platforms our clients sell on</h2><p>We regularly handle the compliance requirements of marketplaces such as Amazon, Temu and SHEIN.</p>''',
+<h2>Platforms our clients sell on</h2><ul><li>Amazon — including responsible-person requests handled through Amazon Compliance Central</li><li>Temu</li><li>SHEIN</li></ul>''',
 'es':'''<p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA (Ibertrust Global, S.L.) es una empresa española de servicios de cumplimiento de producto para vender en Europa.</p>
 <h2>A quién ayudamos</h2><ul><li>Fabricantes y marcas de fuera de la UE</li><li>Vendedores de e-commerce transfronterizo</li><li>Socios de canal —agencias, operadores logísticos y proveedores de servicios— que necesitan un socio de cumplimiento fiable para sus clientes</li></ul>
-<h2>Qué cubrimos</h2><ul><li>Persona Responsable GPSR en la UE, y servicios de persona responsable para Reino Unido y Turquía</li><li>Ley de envases en España (RD 1055/2022): registro de productor y representación autorizada</li><li>EPR de RAEE y pilas en España</li><li>NIF e IVA en España</li><li>Persona Responsable de cosméticos y notificación CPNP</li></ul>
-<h2>Por qué trabajar con nosotros</h2><ul><li>Empresa española, establecida en la UE</li><li>Trabajamos en chino, inglés y español</li><li>Un único interlocutor para GPSR, EPR, CPNP y registros fiscales</li><li>Experiencia práctica resolviendo rechazos y bloqueos de cumplimiento en marketplaces</li></ul>
+<h2>Qué cubrimos</h2><ul><li>Persona Responsable GPSR en la UE, <a href="/es/services/uk-responsible-person.html">Persona Responsable en Reino Unido</a> y <a href="/es/services/turkey-authorised-representative.html">Representante autorizado en Turquía</a></li><li>Ley de envases en España (RD 1055/2022): registro de productor y representación autorizada</li><li>EPR de RAEE y pilas en España</li><li>NIF e IVA en España</li><li>Persona Responsable de cosméticos y notificación CPNP</li></ul>
+<h2>Por qué trabajar con nosotros</h2><ul><li>Empresa española, establecida en la UE</li><li>Trabajamos en chino, inglés y español</li><li>Un único interlocutor para GPSR, EPR, CPNP y registros fiscales</li><li>Experiencia práctica diagnosticando y corrigiendo solicitudes de persona responsable rechazadas en marketplaces: tienda no incluida en el contrato, nombre de empresa que no coincide, dirección incorrecta</li></ul>
 <h2>Cómo trabajamos</h2><ol>{proc}</ol>
-<h2>Plataformas</h2><p>Gestionamos habitualmente los requisitos de cumplimiento de marketplaces como Amazon, Temu y SHEIN.</p>''',
+<h2>Plataformas</h2><ul><li>Amazon — incluidas solicitudes de persona responsable gestionadas a través de Amazon Compliance Central</li><li>Temu</li><li>SHEIN</li></ul>''',
 'zh':'''<p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA（Ibertrust Global, S.L.）是一家西班牙公司，为进入欧洲市场的产品提供合规服务。</p>
 <h2>我们服务谁</h2><ul><li>欧盟以外的工厂和品牌</li><li>跨境电商卖家</li><li>渠道合作伙伴：代运营、物流、服务商等需要可靠合规伙伴来服务自己客户的机构</li></ul>
-<h2>服务范围</h2><ul><li>GPSR 欧盟负责人，以及英国、土耳其负责人服务</li><li>西班牙包装法（皇家法令 1055/2022）：生产者注册和授权代表</li><li>西班牙 WEEE 和电池 EPR</li><li>西班牙税号（NIF）和增值税</li><li>化妆品欧盟负责人与 CPNP 通报</li></ul>
-<h2>为什么选择我们</h2><ul><li>西班牙本地公司，在欧盟境内设立</li><li>中文、英文、西班牙语沟通</li><li>GPSR、EPR、CPNP、税号一个窗口对接</li><li>处理过平台合规审核驳回、listing 被屏蔽等实际问题</li></ul>
+<h2>服务范围</h2><ul><li>GPSR 欧盟负责人、<a href="/zh/services/uk-responsible-person.html">英国负责人</a>、<a href="/zh/services/turkey-authorised-representative.html">土耳其授权代表</a></li><li>西班牙包装法（皇家法令 1055/2022）：生产者注册和授权代表</li><li>西班牙 WEEE 和电池 EPR</li><li>西班牙税号（NIF）和增值税</li><li>化妆品欧盟负责人与 CPNP 通报</li></ul>
+<h2>为什么选择我们</h2><ul><li>西班牙本地公司，在欧盟境内设立</li><li>中文、英文、西班牙语沟通</li><li>GPSR、EPR、CPNP、税号一个窗口对接</li><li>实际诊断并解决过平台上被驳回的负责人申请：店铺未列入委托协议、公司名称不一致、地址错误等</li></ul>
 <h2>合作流程</h2><ol>{proc}</ol>
-<h2>常见平台</h2><p>我们经常处理亚马逊（Amazon）、Temu、SHEIN 等平台的合规要求。</p>'''}
+<h2>常见平台</h2><ul><li>亚马逊（Amazon）——包括通过 Amazon Compliance Central 处理负责人申请</li><li>Temu</li><li>SHEIN</li></ul>'''}
 
 CSS="""*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:#1b2430;line-height:1.6}a{color:#0b5cad}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}header{border-bottom:1px solid #e5e9f0;background:#fff;position:sticky;top:0;z-index:5}
@@ -221,8 +231,8 @@ def page(lang,path,title,desc,body,extra_ld=None):
 <span><a class="btn" href="{p}/quote.html">{t['quote']}</a><span class="lang"><a href="/{path}">EN</a><a href="/es/{path}">ES</a><a href="/zh/{path}">中文</a></span></span></div></header>
 <main>{body}</main>
 <footer><div class="wrap grid"><div><b style="color:#fff">IberTrust Global S.L.</b><br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a><br>+34 600 256 836 · <a href="{WA}">WhatsApp</a></div>
-<div>{''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S[:6])}</div>
-<div><a href="/privacy.html">{'隐私政策' if lang=='zh' else 'Privacy'}</a><br><a href="/terms.html">{'使用条款' if lang=='zh' else 'Terms'}</a><br>© {datetime.date.today().year} IberTrust Global S.L.</div></div></footer></body></html>"""
+<div>{''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S if s[0]!='eudr')}</div>
+<div><a href="{p}/privacy.html">{ {'en':'Privacy','es':'Privacidad','zh':'隐私政策'}[lang] }</a><br><a href="{p}/terms.html">{ {'en':'Terms','es':'Condiciones','zh':'使用条款'}[lang] }</a><br>© {datetime.date.today().year} IberTrust Global S.L.</div></div></footer></body></html>"""
   out=os.path.join(R,(p[1:]+'/' if p else '')+path)
   if out.endswith('/'): out+='index.html'
   os.makedirs(os.path.dirname(out),exist_ok=True); open(out,'w').write(html)
@@ -245,10 +255,11 @@ for lang in ['en','es','zh']:
   why_zh=['GPSR、EPR、包装、WEEE、电池、CPNP 一个窗口统一对接','西班牙注册公司（CIF B21813506），在欧盟境内设有实体','中文、英文、西班牙语沟通，无语言障碍','熟悉跨境电商和各大平台的合规要求','流程清晰：签署委托、收集资料、审核标签、完成注册']
   why=''.join(f'<div class="card">✔ {w}</div>' for w in {'en':why_en,'es':why_es,'zh':why_zh}[lang])
   cta=f'<section><div class="wrap"><div class="cta"><h2>{t["ready"]}</h2><p>{t["readyp"]}</p><a class="btn" href="{p}/quote.html">{t["quote"]}</a><p style="margin-top:14px;font-size:14px;opacity:.85">{EMAIL}</p></div></div></section>'
+  homecards=''.join(f'<div class="card"><h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p><a href="{p}/services/{s[0]}.html">→</a></div>' for s in S if s[0]!='eudr')
   home=f"""<div class="hero"><div class="wrap"><p>{t['tag']}</p><h1>{t['h1']}</h1><p>{t['lead']}</p>
 <p><a class="btn" href="{p}/quote.html">{t['quote']}</a> <a class="btn alt" href="{p}/services/">{t['all']}</a></p>
 <div class="trust"><span>GPSR (EU) 2023/988</span><span>RD 1055/2022</span><span>WEEE</span><span>(EU) 2023/1542</span><span>CPNP</span><span>EN · ES · 中文</span></div></div></div>
-<section><div class="wrap"><h2>{t['services']}</h2><div class="grid">{cards}</div></div></section>
+<section><div class="wrap"><h2>{t['services']}</h2><div class="grid">{homecards}</div></div></section>
 <section class="muted"><div class="wrap"><h2>{t['why']}</h2><div class="grid">{why}</div></div></section>
 <section><div class="wrap"><h2>{t['faq']}</h2>{faqhtml}</div></section>{cta}"""
   urls.append(page(lang,'',('IberTrust Global | EU Responsible Person, GPSR & EPR in Spain' if lang=='en' else 'IberTrust Global | Persona Responsable UE, GPSR y EPR en España'),t['lead'],home,[faqld]))
@@ -285,7 +296,7 @@ for lang in ['en','es','zh']:
   boxes=''.join(f'<label style="display:block"><input type="checkbox" name="services" value="{L(s,"en")[0]}" data-slug="{s[0]}"> {L(s,lang)[0]}</label>' for s in S)
   inp='style="width:100%;padding:10px;border:1px solid #c9d2de;border-radius:8px;font:inherit;margin:4px 0 14px"'
   body=f"""<section><div class="wrap"><h1>{q['t']}</h1><p>{q['intro']}</p><div class="grid" style="align-items:start">
-<form class="card" action="https://formsubmit.co/{EMAIL}" method="POST">
+<form class="card" action="https://formsubmit.co/63aebdc2f0f34b7a546950f214acf887" method="POST">
 <input type="hidden" name="_subject" value="{q['subj']}"><input type="hidden" name="_next" value="{D}{p}/thanks.html"><input type="hidden" name="_template" value="table"><input type="hidden" name="_language" value="{lang}">
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <label>{q['co']}<input name="company" required {inp}></label><label>{q['em']}<input type="email" name="email" required {inp}></label>
@@ -295,9 +306,51 @@ for lang in ['en','es','zh']:
 <script>var sv=new URLSearchParams(location.search).get('service');if(sv)document.querySelectorAll('input[data-slug]').forEach(function(c){{if(c.dataset.slug==sv)c.checked=true}});</script>"""
   urls.append(page(lang,'quote.html',q['t']+' | IberTrust Global',q['intro'],body))
   page(lang,'thanks.html',q['ty']+' | IberTrust Global',q['typ'],f'<section><div class="wrap"><h1>{q["ty"]}</h1><p>{q["typ"]}</p><p><a class="btn" href="{p}/">{q["back"]}</a></p></div></section>')
+CO='IBERTRUST GLOBAL, SOCIEDAD LIMITADA (Ibertrust Global, S.L.), NIF B21813506, '+ADDR+', '+EMAIL+', +34 600 256 836'
+LEGAL={
+'en':{'privacy':('Privacy Policy',f'''<h2>Data controller</h2><p>{CO}.</p>
+<h2>What data we process</h2><ul><li>Data you send us through the quote form or by email, WhatsApp or phone: company name, contact name, email, phone, product and sales information, and the content of your message</li><li>Technical data needed to deliver the website (such as IP address), processed by our hosting provider</li></ul><p>This website does not use advertising or analytics cookies.</p>
+<h2>Purposes and legal basis</h2><ul><li>Answering your enquiry and preparing a proposal: steps taken at your request before a contract (Art. 6(1)(b) GDPR)</li><li>Providing contracted services: performance of a contract</li><li>Meeting legal, tax and regulatory obligations: legal obligation (Art. 6(1)(c) GDPR)</li></ul>
+<h2>Recipients</h2><p>Service providers acting on our behalf: website hosting (GitHub Pages), form delivery (FormSubmit) and email service. Some may process data outside the European Economic Area under the safeguards provided for in the GDPR. When a service requires it, data is shared with the competent authorities, registers or collective schemes. We do not sell personal data.</p>
+<h2>Retention</h2><p>Enquiries are kept while needed to handle them and, if a contract follows, for the duration of the relationship and the periods required by law.</p>
+<h2>Your rights</h2><p>You can request access, rectification, erasure, restriction, objection and portability by writing to {EMAIL}. You may also lodge a complaint with the Spanish Data Protection Agency (AEPD, www.aepd.es).</p>'''),
+ 'terms':('Terms of Use',f'''<h2>Website owner</h2><p>{CO}.</p>
+<h2>Purpose of this website</h2><p>This website provides general information about our product compliance services. The content is not legal advice for a specific case and may not reflect the latest regulatory changes. Requirements depend on the product, the market and the sales channel.</p>
+<h2>Services</h2><p>Services are provided only under a written proposal and a mandate or service agreement accepted by both parties. Their scope, fees and conditions are set out in those documents, which prevail over this website.</p>
+<h2>Intellectual property</h2><p>Texts, design and logo on this website belong to Ibertrust Global, S.L. and may not be reproduced without permission.</p>
+<h2>Liability</h2><p>We take care to keep the content accurate but do not guarantee it is complete or up to date. We are not responsible for third-party websites linked from this site.</p>
+<h2>Applicable law</h2><p>These terms are governed by Spanish law.</p>''')},
+'es':{'privacy':('Política de privacidad',f'''<h2>Responsable del tratamiento</h2><p>{CO}.</p>
+<h2>Qué datos tratamos</h2><ul><li>Los que nos envía por el formulario, email, WhatsApp o teléfono: empresa, nombre de contacto, email, teléfono, información de productos y ventas y el contenido de su mensaje</li><li>Datos técnicos necesarios para servir la web (como la dirección IP), tratados por nuestro proveedor de alojamiento</li></ul><p>Esta web no utiliza cookies publicitarias ni de analítica.</p>
+<h2>Finalidades y base jurídica</h2><ul><li>Atender su consulta y preparar una propuesta: medidas precontractuales a petición suya (art. 6.1.b RGPD)</li><li>Prestar los servicios contratados: ejecución del contrato</li><li>Cumplir obligaciones legales, fiscales y regulatorias: obligación legal (art. 6.1.c RGPD)</li></ul>
+<h2>Destinatarios</h2><p>Proveedores que actúan por nuestra cuenta: alojamiento web (GitHub Pages), envío de formularios (FormSubmit) y correo electrónico. Algunos pueden tratar datos fuera del Espacio Económico Europeo con las garantías previstas en el RGPD. Cuando el servicio lo exige, se comunican datos a las autoridades, registros o sistemas colectivos competentes. No vendemos datos personales.</p>
+<h2>Conservación</h2><p>Las consultas se conservan el tiempo necesario para atenderlas y, si hay contrato, durante la relación y los plazos legales.</p>
+<h2>Sus derechos</h2><p>Puede ejercer los derechos de acceso, rectificación, supresión, limitación, oposición y portabilidad escribiendo a {EMAIL}, y reclamar ante la Agencia Española de Protección de Datos (www.aepd.es).</p>'''),
+ 'terms':('Condiciones de uso',f'''<h2>Titular de la web</h2><p>{CO}.</p>
+<h2>Finalidad</h2><p>Esta web ofrece información general sobre nuestros servicios de cumplimiento de producto. No constituye asesoramiento jurídico para un caso concreto y puede no reflejar los últimos cambios normativos. Los requisitos dependen del producto, el mercado y el canal de venta.</p>
+<h2>Servicios</h2><p>Los servicios se prestan solo con una propuesta escrita y un mandato o contrato aceptado por ambas partes, que fijan alcance, honorarios y condiciones y prevalecen sobre esta web.</p>
+<h2>Propiedad intelectual</h2><p>Los textos, el diseño y el logotipo pertenecen a Ibertrust Global, S.L. y no pueden reproducirse sin permiso.</p>
+<h2>Responsabilidad</h2><p>Procuramos que el contenido sea correcto, pero no garantizamos que esté completo o actualizado. No respondemos de webs de terceros enlazadas.</p>
+<h2>Legislación aplicable</h2><p>Estas condiciones se rigen por la ley española.</p>''')},
+'zh':{'privacy':('隐私政策',f'''<h2>数据控制者</h2><p>{CO}。</p>
+<h2>我们处理哪些数据</h2><ul><li>您通过询价表单、邮件、WhatsApp 或电话提供的信息：公司名称、联系人、邮箱、电话、产品和销售信息及留言内容</li><li>网站运行所需的技术数据（如 IP 地址），由网站托管服务商处理</li></ul><p>本网站不使用广告或统计类 Cookie。</p>
+<h2>处理目的和法律依据</h2><ul><li>答复咨询、准备方案：应您要求采取的订约前措施（GDPR 第 6(1)(b) 条）</li><li>提供已签约的服务：履行合同</li><li>履行法律、税务和监管义务：法定义务（GDPR 第 6(1)(c) 条）</li></ul>
+<h2>数据接收方</h2><p>代表我们提供服务的供应商：网站托管（GitHub Pages）、表单传送（FormSubmit）和邮件服务。部分供应商可能在欧洲经济区以外处理数据，并采取 GDPR 规定的保障措施。服务需要时，会向主管机构、登记系统或集体回收体系提供数据。我们不出售个人数据。</p>
+<h2>保存期限</h2><p>咨询信息保存至处理完毕；如签订合同，则在合作期间及法定期限内保存。</p>
+<h2>您的权利</h2><p>您可发邮件至 {EMAIL}，行使查阅、更正、删除、限制处理、反对和数据可携带等权利，也可向西班牙数据保护局（AEPD，www.aepd.es）投诉。</p>'''),
+ 'terms':('使用条款',f'''<h2>网站所有者</h2><p>{CO}。</p>
+<h2>网站用途</h2><p>本网站介绍我们的产品合规服务，内容仅供一般参考，不构成针对具体情况的法律意见，也可能未反映最新的法规变化。具体要求取决于产品、市场和销售渠道。</p>
+<h2>服务</h2><p>服务以双方确认的书面方案和委托书或服务协议为准，其中约定服务范围、费用和条件，效力优先于本网站内容。</p>
+<h2>知识产权</h2><p>本网站的文字、设计和标识归 Ibertrust Global, S.L. 所有，未经许可不得转载。</p>
+<h2>责任</h2><p>我们尽力确保内容准确，但不保证其完整或最新；对本站链接的第三方网站不承担责任。</p>
+<h2>适用法律</h2><p>本条款适用西班牙法律。</p>''')}}
+for lang in ['en','es','zh']:
+  for k in ['privacy','terms']:
+    ti,bd=LEGAL[lang][k]
+    urls.append(page(lang,k+'.html',ti+' | IberTrust Global',ti+' – IBERTRUST GLOBAL, SOCIEDAD LIMITADA',f'<section><div class="wrap"><h1>{ti}</h1>{bd}</div></section>'))
+
 os.makedirs(R+'/assets',exist_ok=True); open(R+'/assets/style.css','w').write(CSS)
 open(R+'/blog/_post-template.html','w').write('<!-- Copy blog/gpsr-responsible-person-guide.html, change <title>, meta description, og:*, canonical/hreflang, Article JSON-LD (headline, datePublished), <h1> and body; or better: add the post (en/es/zh) to POSTS in /workspace/build_site.py and rerun it — it regenerates /, /es/, /zh/, blog indexes and sitemap.xml. -->\n')
-urls+= [D+'/privacy.html',D+'/terms.html']
 open(R+'/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{u}</loc><lastmod>{TODAY}</lastmod></url>\n' for u in urls)+'</urlset>\n')
 open(R+'/robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /legacy/\nSitemap: {D}/sitemap.xml\n')
 print(len(urls),'urls')
