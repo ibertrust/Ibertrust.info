@@ -1,5 +1,6 @@
 import os, json, datetime
-R='/workspace/ibertrust-site'; D='https://ibertrust.info'; TODAY=datetime.date.today().isoformat()
+from zoneinfo import ZoneInfo
+R=os.environ.get('SITE_ROOT','/workspace/ibertrust-site'); D='https://ibertrust.info'; TODAY=datetime.datetime.now(ZoneInfo('Europe/Madrid')).date().isoformat()
 EMAIL='contact@ibertrust.info'
 S=[ # slug, EN title, EN short, EN body bullets, ES title, ES short, ES bullets
 ('gpsr-eu-responsible-person','EU Responsible Person (GPSR)','Act as your EU-established economic operator under Regulation (EU) 2023/988 for non-EU manufacturers and e-commerce sellers.',
@@ -198,7 +199,8 @@ CSS="""*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,s
 section{padding:56px 0}.muted{background:#f5f7fa}.trust{display:flex;flex-wrap:wrap;gap:12px}.trust span{background:rgba(255,255,255,.15);color:#fff;border-radius:20px;padding:6px 14px;font-size:14px}
 details{border-bottom:1px solid #e5e9f0;padding:14px 0}summary{font-weight:600;cursor:pointer}footer{background:#0b2545;color:#cfd8e3;padding:40px 0;font-size:14px}footer a{color:#fff}
 .lang a{margin-left:8px;font-size:14px}.cta{background:#0b2545;color:#fff;border-radius:14px;padding:36px;text-align:center}
-@media(max-width:760px){.nav ul{display:none}.nav>a>b{display:none}.nav .btn{padding:8px 12px;font-size:13px;white-space:nowrap}.nav>span{display:flex;align-items:center;gap:8px;white-space:nowrap}.nav .lang a{margin-left:4px;font-size:13px}.hero h1{font-size:32px}}"""
+.navt{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}.navbtn{display:none}
+@media(max-width:760px){.nav{position:relative}.navbtn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;font-size:13px;font-weight:600;padding:7px 10px;border:1px solid #cfd6df;border-radius:8px;margin-left:auto;margin-right:8px;white-space:nowrap}.navt:focus-visible+.navbtn{outline:2px solid #1b2430}.nav ul{display:none}.navt:checked~ul{display:flex;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid #e3e7ec;box-shadow:0 8px 16px rgba(0,0,0,.08);z-index:50;padding:6px 0}.navt:checked~ul a{display:block;padding:12px 20px}.nav>a>b{display:none}.nav .btn{padding:8px 12px;font-size:13px;white-space:nowrap}.nav>span{display:flex;align-items:center;gap:8px;white-space:nowrap}.nav .lang a{margin-left:4px;font-size:13px}.hero h1{font-size:32px}}"""
 T={'en':dict(home='Home',services='Services',about='About',faq='FAQ',blog='Insights',contact='Contact',quote='Get a quote',all='All services',
  tag='EU product compliance for global sellers',h1='Your EU Responsible Person and EPR partner in Spain',
  lead='IberTrust Global S.L. helps non-EU manufacturers and e-commerce sellers meet GPSR, EPR, packaging, WEEE, batteries and CPNP obligations — with one point of contact.',
@@ -216,6 +218,27 @@ def L(s,lang):  # title, short, bullets for a service tuple
   return (s[1],s[2],s[3]) if lang=='en' else (s[4],s[5],s[6]) if lang=='es' else ZH_S[s[0]]
 ORG={"@context":"https://schema.org","@type":["ProfessionalService","LocalBusiness"],"name":"IberTrust Global S.L.","url":D+"/","logo":D+"/logo.png","email":EMAIL,"telephone":"+34600256836","vatID":"B21813506",
  "legalName":"IBERTRUST GLOBAL, SOCIEDAD LIMITADA","taxID":"B21813506","sameAs":[],"address":{"@type":"PostalAddress","streetAddress":"C/ Pablo Iglesias, 1, Entresuelo A","postalCode":"12003","addressLocality":"Castelló de la Plana","addressRegion":"Castellón","addressCountry":"ES"},"areaServed":"EU","knowsLanguage":["en","es","zh"]}
+
+import re as _re, glob as _glob
+def _pubdate(lang,sl):
+  # keep the date already published on the live page so rebuilds don't shift it
+  fp=R+PFX[lang]+f'/blog/{sl}.html'
+  if os.path.exists(fp):
+    m=_re.search(r'<small>(\d{4}-\d{2}-\d{2}) ·',open(fp,encoding='utf-8').read())
+    if m: return m.group(1)
+  return TODAY
+def _extra_posts(lang):
+  # hand-written article pages that exist in the repo but are not in POSTS: keep them in index + sitemap
+  known={sl for sl,_ in POSTS}; out=[]
+  for fp in _glob.glob(R+PFX[lang]+'/blog/*.html'):
+    sl=os.path.basename(fp)[:-5]
+    if sl in known or sl=='index' or sl.startswith('_'): continue
+    h=open(fp,encoding='utf-8').read(); m=_re.search(r'<h1>(.*?)</h1>',h,_re.S)
+    if not m: continue
+    d=_re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})',h) or _re.search(r'(\d{4}-\d{2}-\d{2})',h)
+    out.append((d.group(1) if d else '',sl,m.group(1)))
+  return sorted(out,reverse=True)
+
 MENU={'':'Menu','/es':'Menú','/zh':'菜单'}
 def page(lang,path,title,desc,body,extra_ld=None):
   t=T[lang]; p=PFX[lang]
@@ -318,11 +341,13 @@ for lang in ['en','es','zh']:
   urls.append(page(lang,'faq.html',t['faq']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["faq"]}</h1>{faqhtml}</div></section>{cta}',[faqld]))
   ct=f'<section><div class="wrap"><h1>{t["contact"]}</h1><div class="grid"><div class="card"><h3>{'邮箱' if lang=='zh' else 'Email'}</h3><a href="mailto:{EMAIL}">{EMAIL}</a><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div><div class="card"><h3>{'电话 / WhatsApp' if lang=='zh' else 'Tel / WhatsApp'}</h3>+34 600 256 836<br><a href="{WA}">WhatsApp</a></div><div class="card"><h3>IBERTRUST GLOBAL, SOCIEDAD LIMITADA</h3>NIF B21813506<br>{ADDR}</div></div><p>{t["readyp"]}</p></div></section>'
   urls.append(page(lang,'contact.html',t['contact']+' | IberTrust Global',t['readyp'],ct))
-  posts=[(sl,P[lang][0]) for sl,P in POSTS]
+  ex=_extra_posts(lang)
+  posts=[(sl,ti) for _,sl,ti in ex]+[(sl,P[lang][0]) for sl,P in POSTS]
   lst=''.join(f'<div class="card"><h3><a href="{p}/blog/{sl}.html">{ti}</a></h3></div>' for sl,ti in posts)
   urls.append(page(lang,'blog/',t['blog']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["blog"]}</h1><div class="grid">{lst}</div></div></section>'))
+  urls.extend(f'{D}{p}/blog/{sl}.html' for _,sl,_ in ex)
   for sl,P in POSTS:
-    ti,txt=P[lang]; pub=P.get('date',TODAY)
+    ti,txt=P[lang]; pub=P.get('date') or _pubdate(lang,sl)
     art={"@context":"https://schema.org","@type":"Article","headline":ti,"inLanguage":HL[lang],"datePublished":pub,"author":{"@type":"Organization","name":"IberTrust Global S.L."},"publisher":{"@type":"Organization","name":"IberTrust Global S.L."}}
     urls.append(page(lang,f'blog/{sl}.html',ti+' | IberTrust Global',ti,f'<section><div class="wrap"><article><h1>{ti}</h1><p><small>{pub} · IberTrust Global</small></p>{txt}</article></div></section>',[art]))
 
@@ -387,7 +412,7 @@ for lang in ['en','es','zh']:
     ti,bd=LEGAL[lang][k]
     urls.append(page(lang,k+'.html',ti+' | IberTrust Global',ti+' – IBERTRUST GLOBAL, SOCIEDAD LIMITADA',f'<section><div class="wrap"><h1>{ti}</h1>{bd}</div></section>'))
 
-os.makedirs(R+'/assets',exist_ok=True); open(R+'/assets/style.css','w').write(CSS)
+os.makedirs(R+'/assets',exist_ok=True); open(R+'/assets/style.css','w',encoding='utf-8').write(CSS)
 open(R+'/blog/_post-template.html','w').write('<!-- Copy blog/gpsr-responsible-person-guide.html, change <title>, meta description, og:*, canonical/hreflang, Article JSON-LD (headline, datePublished), <h1> and body; or better: add the post (en/es/zh) to POSTS in /workspace/build_site.py and rerun it — it regenerates /, /es/, /zh/, blog indexes and sitemap.xml. -->\n')
 open(R+'/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{u}</loc><lastmod>{TODAY}</lastmod></url>\n' for u in urls)+'</urlset>\n')
 open(R+'/robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /legacy/\nSitemap: {D}/sitemap.xml\n')
