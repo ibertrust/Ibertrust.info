@@ -305,6 +305,182 @@ POSTS+=[('gpsr-marketplace-sweep-2026-listing-information',{
  'es':('Barrido de marketplaces de la UE 2026: el 42% de los anuncios no cumplía la información del GPSR. Los tres datos que su anuncio debe mostrar','<p>El 7 de septiembre de 2026 la Comisión Europea y las autoridades nacionales de vigilancia del mercado publicaron los resultados del <strong>barrido de seguridad de productos 2026</strong>. Entre mayo y julio revisaron casi 1.700 anuncios de artículos de puericultura y material de gimnasio en 35 marketplaces y enviaron <strong>560 requerimientos</strong> a los marketplaces por anuncios no conformes.</p><p>Los marketplaces mejoraron mucho: el 91% estaba registrado en el portal Safety Gate con un punto de contacto para las autoridades (53% en 2025) y todos tenían un punto único de contacto para consumidores (64% en 2025). Los anuncios de los vendedores no siguieron el mismo ritmo.</p><h2>Qué falló</h2><ul><li>Solo el <strong>58%</strong> de los anuncios mostraba a la vez los tres datos exigidos: datos del fabricante, persona responsable en la UE e identificación del producto.</li><li>Según la autoridad alemana SGD Süd, que participó en el barrido, los datos del fabricante estaban completos en el 81% de los anuncios, la identificación del producto en casi el 70% y la persona responsable en la UE en el 82%.</li><li>La persona responsable se revisó a fondo en 727 anuncios. Solo el <strong>22%</strong> cumplía todos los requisitos revisados, y ya se habían adoptado medidas en 143 casos.</li></ul><p>Es decir, no basta con nombrar una persona responsable. Las autoridades comprueban si es real, está establecida en la UE y responde.</p><h2>Los tres datos, según el artículo 19 del GPSR</h2><ol><li><strong>Fabricante:</strong> nombre, nombre comercial registrado o marca, dirección postal y electrónica.</li><li><strong>Persona responsable en la UE</strong> (si el fabricante no está establecido en la UE): nombre, dirección postal y electrónica del operador económico en la Unión.</li><li><strong>Identificación del producto:</strong> imagen, tipo y cualquier otro identificador (modelo, lote o número de serie), además de advertencias e información de seguridad en la lengua del país de venta.</li></ol><h2>Carencias habituales en vendedores de fuera de la UE</h2><ul><li>La persona responsable figura en la caja pero no en el anuncio, o al revés</li><li>Un “representante” que es solo un buzón, tiene dirección fuera de la UE o no contesta a las autoridades</li><li>Una sola persona responsable para toda la cuenta, aunque el mandato no cubra algunas marcas o variantes</li><li>Anuncios sin modelo ni lote, de modo que el producto no se puede rastrear</li><li>Advertencias solo en inglés en anuncios para España, Francia o Alemania</li></ul><h2>Qué hacer esta semana</h2><ol><li>Exportar los anuncios activos y revisar los tres datos en cada SKU, no solo en los más vendidos.</li><li>Confirmar que su persona responsable tiene mandato escrito, conserva la documentación técnica y puede responder a una autoridad en pocos días.</li><li>Hacer coincidir los datos de la etiqueta, el envase y el anuncio.</li><li>Empezar por productos infantiles, deportivos y eléctricos: son las categorías en las que más se centran las autoridades.</li></ol><h2>¿Necesita una persona responsable que supere estas revisiones?</h2><p>IberTrust Global S.L. actúa como persona responsable en la UE desde España para fabricantes y vendedores de fuera de la UE, y revisa sus etiquetas y anuncios según el GPSR. Envíenos su lista de productos y sus canales de venta.</p><p><strong><a href="/es/quote.html?service=gpsr-eu-responsible-person">Solicitar revisión de anuncios GPSR →</a></strong><br>O escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p><p><small>Fuentes: Comisión Europea y autoridades nacionales, resultados del barrido de seguridad de productos 2026 (7 de septiembre de 2026), según Agence Europe y LexisNexis; SGD Süd (vigilancia del mercado de Renania-Palatinado), “SGD Süd beteiligt sich an EU-weiten Überprüfungen” (30 de septiembre de 2026); Reglamento (UE) 2023/988 (GPSR), artículos 9, 16 y 19 (EUR-Lex). Información general, no asesoramiento jurídico.</small></p>'),
  'zh':('欧盟 2026 年平台专项检查：42% 的 listing 缺 GPSR 信息，商品页必须有这三项','<p>2026 年 9 月 7 日，欧盟委员会和各国市场监管机构公布了 <strong>2026 年产品安全专项检查（sweep）</strong>结果。5 月至 7 月间，监管机构在 35 个线上平台检查了近 1,700 条婴童用品和健身器材 listing，并就不合规 listing 向平台发出 <strong>560 份整改令</strong>。</p><p>平台自己进步很快：91% 已在 Safety Gate 门户注册并指定了对监管机构的联系点（2025 年为 53%），100% 设立了统一的消费者联系点（2025 年为 64%）。卖家的 listing 却没跟上。</p><h2>问题出在哪</h2><ul><li>只有 <strong>58%</strong> 的 listing 同时具备三项必需信息：制造商信息、欧盟负责人、产品识别信息。</li><li>参与检查的德国监管机构 SGD Süd 公布：制造商信息完整的占 81%，产品识别信息充分的近 70%，标明欧盟负责人的占 82%。</li><li>其中 727 条 listing 对欧盟负责人做了深入核查，只有 <strong>22%</strong> 满足全部核查要求，已有 143 起采取了措施。</li></ul><p>也就是说，光写一个负责人名字不够。监管机构会查这个负责人是否真实存在、是否设在欧盟、能否联系上。</p><h2>GPSR 第 19 条要求的三项信息</h2><ol><li><strong>制造商：</strong>名称、注册商号或注册商标、邮寄地址和电子联系方式。</li><li><strong>欧盟负责人</strong>（制造商不在欧盟时）：欧盟境内经济经营者的名称、邮寄地址和电子联系方式。</li><li><strong>产品识别：</strong>产品图片、型号及其他识别信息（型号、批号或序列号），以及销售国语言的警示和安全信息。</li></ol><h2>欧盟境外卖家常见漏洞</h2><ul><li>包装上印了负责人，listing 里没有；或者反过来</li><li>“代表”只是一个信箱、地址在欧盟以外，或者监管来信从不回复</li><li>整个账号只填一个负责人，但委托书并没覆盖部分品牌或变体</li><li>listing 没有型号、批号，产品无法追溯</li><li>在西班牙、法国、德国站的警示语只有英文</li></ul><h2>本周就能做的事</h2><ol><li>导出所有在售 listing，逐个 SKU 核对这三项，不只看爆款。</li><li>确认欧盟负责人有书面委托、保存了技术文件，并能在几天内答复监管机构。</li><li>让标签、包装和 listing 上的信息保持一致。</li><li>优先处理婴童、运动和电子电器类产品，这几类是监管反复抽查的重点。</li></ol><h2>需要经得起核查的欧盟负责人？</h2><p>IberTrust Global S.L. 在西班牙为欧盟境外工厂和平台卖家担任欧盟负责人，并按 GPSR 核对标签和 listing 信息。把产品清单和销售渠道发给我们即可。</p><p><strong><a href="/zh/quote.html?service=gpsr-eu-responsible-person">申请 GPSR listing 核对 →</a></strong><br>或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p><p><small>来源：European Commission and national authorities, results of the 2026 product safety sweep (7 September 2026)，据 Agence Europe 与 LexisNexis 报道；SGD Süd（德国莱茵兰-普法尔茨州市场监管机构），“SGD Süd beteiligt sich an EU-weiten Überprüfungen”（2026 年 9 月 30 日）；Regulation (EU) 2023/988 (GPSR), Articles 9, 16 and 19 (EUR-Lex)。本文为一般性信息，不构成法律意见。</small></p>')})]
 urls=[]
+_N='spanish-nif-without-apostille-online-sellers'
+TR_EN='''<p><em>From our case files · written AEAT information reply obtained by IberTrust (ref. 2026CTE81350003S, 28 Oct 2026)</em></p>
+<p>The company documents were ready: a fresh registry certificate, in English, from a non-EU home country. Then came the next quote on the client's desk — a sworn translator in Spain, per page, with a waiting list. “Do we really need this,” the client asked, “if the document is already in English?”</p>
+<p>It is a fair question. Spanish authorities usually ask for an <em>official</em> translation of foreign documents. But when we asked the Spanish Tax Agency (AEAT) in writing about NIF applications from online sellers, its reply contained a sentence that changes the answer for three languages.</p>
+
+<h2>What the AEAT reply says, word for word</h2>
+<p>Citing Article 15 of Law 39/2015 (common administrative procedure), the reply says the AEAT <em>may</em> require a sworn translation when the documents are not in Spanish, and then:</p>
+<blockquote>“En el caso de que dichos documentos estén emitidos en francés, inglés, o italiano, se admitirá una traducción no oficial al castellano, si bien dicha traducción deberá ir acompañada de una declaración responsable de la persona que actúe como representante de la entidad para el trámite censal en la que manifieste que la traducción que se aporta responde al contenido íntegro del documento aportado.”</blockquote>
+<p>Broken down:</p>
+<ul><li><strong>Which documents:</strong> “the documentation provided for the assignment of the NIF” that is issued in <strong>French, English or Italian</strong>.</li>
+<li><strong>What is accepted:</strong> an <strong>unofficial</strong> Spanish translation — no sworn translator needed.</li>
+<li><strong>The condition:</strong> a <em>declaración responsable</em> (responsible declaration).</li>
+<li><strong>Who signs it:</strong> the person acting as the company's representative for the census (NIF) procedure.</li>
+<li><strong>What it must state:</strong> that the translation corresponds to the <strong>full content</strong> of the original document.</li></ul>
+
+<h2>Is it only for online sellers? Be careful here</h2>
+<p>The sentence itself is worded generally (“the documentation provided for the assignment of the NIF”). But in the reply it sits inside the special section for sellers through platforms or websites, and the conclusion links it to the company's <strong>NIF N</strong> in that case: online sellers must complete both procedures, “pero en el caso del NIF N con las especialidades que hemos mencionado anteriormente en cuanto a la Apostilla de la Haya y la necesidad de traducción jurada.”</p>
+<p>Our reading: we rely on it for the <strong>company's NIF N under the online-seller special case</strong> (seller with a VIES-valid VAT number from another EU state, plus a platform certificate). We do not assume it applies to the representative's NIF M or to the general route; there, we plan for official translation unless the AEAT confirms otherwise. The reply is information under Article 87 of the General Tax Law, not a binding ruling.</p>
+
+<h2>Why it matters</h2>
+<ul><li><strong>Time:</strong> no waiting for a sworn translator's slot. Your team, or your Spanish agent, can prepare the translation the same day.</li>
+<li><strong>Cost:</strong> sworn translation is charged per page; registry extracts and articles of association can be long.</li>
+<li><strong>Fewer moving parts:</strong> combined with the apostille exemption for company identification documents in the online-seller case (see <a href="/blog/'''+'spanish-nif-without-apostille-online-sellers'+'''.html">our NIF-without-apostille guide</a>), the whole company file can be put together without notaries or translators abroad — except the power of attorney, which we still notarise and apostille.</li></ul>
+
+<h2>Which documents still need an official translation</h2>
+<p>Anything in another language: <strong>Chinese, German, Hebrew, Turkish, Japanese</strong> and so on. An unofficial translation of a Chinese business licence, for example, does not fall within the rule as worded. The general part of the reply says official translation can be done by a sworn translator registered in Spain or through consular or diplomatic representations.</p>
+
+<h2>Practical tips from our files</h2>
+<ol><li><strong>Ask for the certificate in English at source.</strong> Where your home registry or tax authority can issue the certificate of existence in English, request it that way. One choice at the counter can remove the sworn-translation step.</li>
+<li><strong>Translate everything on the page.</strong> Stamps, footnotes, annexes. The declaration says “contenido íntegro” — the full content.</li>
+<li><strong>Keep layout parallel.</strong> Same headings and order as the original makes the reviewer's job easy.</li>
+<li><strong>Right signer.</strong> The declaration is signed by the person acting as the company's representative for the NIF procedure, not by the translator.</li>
+<li><strong>Mention it in the cover note.</strong> We cite Article 15 of Law 39/2015 and the language of each document.</li></ol>
+
+<h2>Sample declaration (example only)</h2>
+<p><em>Example wording for illustration. It is not an official AEAT form; adapt it to your case.</em></p>
+<blockquote>DECLARACIÓN RESPONSABLE<br>D./Dña. [nombre], con NIF [número], en calidad de representante de la entidad [denominación] para el trámite censal de solicitud de NIF, DECLARA bajo su responsabilidad que la traducción al castellano que se aporta del documento [título del documento, fecha de expedición], emitido en [inglés/francés/italiano], responde al contenido íntegro del documento aportado.<br>En [lugar], a [fecha].<br>Firma:</blockquote>
+
+<h2>Common mistakes</h2>
+<ul><li>Using a machine translation that skips stamps or annexes.</li>
+<li>Sending an unofficial translation of a German or Chinese document.</li>
+<li>Forgetting the declaration, or having the translator sign it instead of the representative.</li>
+<li>Assuming the rule also removes the apostille for every document — those are separate questions.</li>
+<li>Applying it outside the online-seller NIF N case without checking first.</li></ul>
+
+<h2>FAQ</h2>
+<h3>Do I need a sworn translator for an English company certificate?</h3><p>Under the AEAT reply, an unofficial Spanish translation plus a responsible declaration is accepted for documents in English, French or Italian. We apply this to the company's NIF N in the online-seller case.</p>
+<h3>Who signs the declaration?</h3><p>The person acting as the company's representative for the NIF census procedure.</p>
+<h3>What must the declaration say?</h3><p>That the translation provided corresponds to the full content of the original document.</p>
+<h3>Does it work for Chinese or German documents?</h3><p>No. Only French, English and Italian are named; other languages need an official translation.</p>
+<h3>Does it apply to the NIF M of the representative?</h3><p>The reply does not say so clearly. We plan for the general translation rules there.</p>
+
+<h2>Want us to check your documents?</h2>
+<p>IberTrust Global S.L. prepares NIF M and NIF N applications for non-EU online sellers, including translations, declarations and the cover note. Send us your documents and we will tell you which ones need an official translation.</p>
+<p><strong><a href="/quote.html?service=spain-nif-vat">Request a Spanish NIF quote →</a></strong><br>Or email <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+<p><small>Source: written AEAT information reply obtained by IberTrust (ref. 2026CTE81350003S, 28 Oct 2026); Law 39/2015, Art. 15; Law 58/2003, Art. 87. General information, not legal advice.</small></p>'''
+TR_ES='''<p><em>De nuestros expedientes · contestación escrita de información de la AEAT obtenida por IberTrust (ref. 2026CTE81350003S, 28 oct 2026)</em></p>
+<p>Los documentos de la empresa estaban listos: un certificado registral reciente, en inglés, de un país de fuera de la UE. Luego llegó el siguiente presupuesto: un traductor jurado en España, por página y con lista de espera. «¿De verdad hace falta», preguntó el cliente, «si el documento ya está en inglés?».</p>
+<p>Es una buena pregunta. La Administración española suele pedir traducción <em>oficial</em> de los documentos extranjeros. Pero cuando preguntamos por escrito a la AEAT por el NIF de vendedores online, su contestación incluía una frase que cambia la respuesta para tres idiomas.</p>
+
+<h2>Qué dice exactamente la contestación</h2>
+<p>Con cita del artículo 15 de la Ley 39/2015, la AEAT indica que <em>podrá</em> exigir traducción jurada si los documentos no están en castellano, y añade:</p>
+<blockquote>«En el caso de que dichos documentos estén emitidos en francés, inglés, o italiano, se admitirá una traducción no oficial al castellano, si bien dicha traducción deberá ir acompañada de una declaración responsable de la persona que actúe como representante de la entidad para el trámite censal en la que manifieste que la traducción que se aporta responde al contenido íntegro del documento aportado.»</blockquote>
+<ul><li><strong>Qué documentos:</strong> la documentación aportada para la asignación del NIF emitida en <strong>francés, inglés o italiano</strong>.</li>
+<li><strong>Qué se admite:</strong> traducción <strong>no oficial</strong> al castellano.</li>
+<li><strong>Condición:</strong> una declaración responsable.</li>
+<li><strong>Quién firma:</strong> la persona que actúe como representante de la entidad para el trámite censal.</li>
+<li><strong>Qué debe manifestar:</strong> que la traducción responde al <strong>contenido íntegro</strong> del documento.</li></ul>
+
+<h2>¿Solo para vendedores online? Cuidado</h2>
+<p>La frase está redactada en términos generales, pero en la contestación aparece dentro del caso especial de comercializadores por plataformas o páginas web, y la conclusión la vincula al <strong>NIF N</strong> en ese caso: «pero en el caso del NIF N con las especialidades que hemos mencionado anteriormente en cuanto a la Apostilla de la Haya y la necesidad de traducción jurada».</p>
+<p>Nuestra lectura: la aplicamos al <strong>NIF N de la entidad en el caso especial de vendedor online</strong> (NIF-IVA de otro Estado de la UE válido en VIES y certificado de la plataforma). No damos por hecho que se aplique al NIF M del representante ni a la vía general. Es información del artículo 87 de la LGT, no una consulta vinculante.</p>
+
+<h2>Por qué importa</h2>
+<ul><li><strong>Tiempo:</strong> sin esperar turno de traductor jurado.</li>
+<li><strong>Coste:</strong> la traducción jurada se cobra por página y los extractos y estatutos pueden ser largos.</li>
+<li><strong>Menos trámites:</strong> junto con la exención de apostilla para los documentos de identificación de la entidad (ver <a href="/es/blog/spanish-nif-without-apostille-online-sellers.html">nuestra guía del NIF sin apostilla</a>), el expediente de la empresa se prepara sin traductores ni notarios en origen, salvo el poder, que seguimos aportando notarial y apostillado.</li></ul>
+
+<h2>Qué documentos siguen necesitando traducción oficial</h2>
+<p>Todos los demás idiomas: <strong>chino, alemán, hebreo, turco, japonés</strong>, etc. La parte general de la contestación indica que la traducción oficial puede hacerla un traductor jurado registrado en España o realizarse a través de representaciones consulares o diplomáticas.</p>
+
+<h2>Consejos prácticos</h2>
+<ol><li><strong>Pida el certificado en inglés en origen</strong>, si su registro o autoridad fiscal lo ofrece.</li>
+<li><strong>Traduzca todo:</strong> sellos, notas y anexos («contenido íntegro»).</li>
+<li><strong>Mantenga la misma estructura</strong> que el original.</li>
+<li><strong>Firmante correcto:</strong> el representante para el trámite censal, no el traductor.</li>
+<li><strong>Menciónelo en la nota de presentación</strong>, con el artículo 15 de la Ley 39/2015.</li></ol>
+
+<h2>Modelo de declaración (solo ejemplo)</h2>
+<p><em>Redacción de ejemplo con fines ilustrativos. No es un modelo oficial de la AEAT; adáptela a su caso.</em></p>
+<blockquote>DECLARACIÓN RESPONSABLE<br>D./Dña. [nombre], con NIF [número], en calidad de representante de la entidad [denominación] para el trámite censal de solicitud de NIF, DECLARA bajo su responsabilidad que la traducción al castellano que se aporta del documento [título del documento, fecha de expedición], emitido en [inglés/francés/italiano], responde al contenido íntegro del documento aportado.<br>En [lugar], a [fecha].<br>Firma:</blockquote>
+
+<h2>Errores frecuentes</h2>
+<ul><li>Traducción automática que omite sellos o anexos.</li>
+<li>Traducción no oficial de un documento en alemán o chino.</li>
+<li>Olvidar la declaración, o que la firme el traductor.</li>
+<li>Confundir traducción y apostilla: son cuestiones distintas.</li>
+<li>Aplicarlo fuera del NIF N de vendedor online sin comprobarlo antes.</li></ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Necesito traductor jurado para un certificado en inglés?</h3><p>Según la contestación de la AEAT, se admite traducción no oficial con declaración responsable para documentos en inglés, francés o italiano. Lo aplicamos al NIF N en el caso de vendedor online.</p>
+<h3>¿Quién firma la declaración?</h3><p>La persona que actúe como representante de la entidad para el trámite censal.</p>
+<h3>¿Qué debe decir?</h3><p>Que la traducción responde al contenido íntegro del documento aportado.</p>
+<h3>¿Sirve para documentos en chino o alemán?</h3><p>No. Solo se citan francés, inglés e italiano.</p>
+<h3>¿Se aplica al NIF M del representante?</h3><p>La contestación no lo aclara. Ahí seguimos las reglas generales de traducción.</p>
+
+<h2>¿Revisamos sus documentos?</h2>
+<p>IberTrust Global S.L. prepara las solicitudes de NIF M y NIF N para vendedores online de fuera de la UE, con traducciones, declaraciones y nota de presentación.</p>
+<p><strong><a href="/es/quote.html?service=spain-nif-vat">Solicitar presupuesto de NIF →</a></strong><br>O escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+<p><small>Fuente: contestación escrita de información de la AEAT obtenida por IberTrust (ref. 2026CTE81350003S, 28 oct 2026); Ley 39/2015, art. 15; Ley 58/2003, art. 87. Información general, no asesoramiento jurídico.</small></p>'''
+TR_ZH='''<p><em>来自我们的实操案例 · IberTrust 取得的西班牙税务局（AEAT）书面信息答复（编号 2026CTE81350003S，2026 年 10 月 28 日）</em></p>
+<p>公司文件已经备好：一份刚开出的、英文的公司注册证明。接着客户桌上又多了一份报价——西班牙宣誓翻译，按页收费，还要排队。客户问：“文件本来就是英文的，真的还要宣誓翻译吗？”</p>
+<p>问得好。西班牙政府部门通常要求外国文件做<em>官方</em>翻译。但我们就网上卖家申请税号书面询问西班牙税务局时，答复里有一句话，对三种语言改变了答案。</p>
+
+<h2>税局答复原文</h2>
+<p>答复援引第 39/2015 号法律第 15 条，说文件不是西语时税局<em>可以</em>要求宣誓翻译，随后写道：</p>
+<blockquote>“En el caso de que dichos documentos estén emitidos en francés, inglés, o italiano, se admitirá una traducción no oficial al castellano, si bien dicha traducción deberá ir acompañada de una declaración responsable de la persona que actúe como representante de la entidad para el trámite censal en la que manifieste que la traducción que se aporta responde al contenido íntegro del documento aportado.”</blockquote>
+<ul><li><strong>适用文件：</strong>为办理 NIF 提交的、以<strong>法语、英语或意大利语</strong>出具的文件。</li>
+<li><strong>接受什么：</strong><strong>非官方</strong>西语译文，不需要宣誓翻译。</li>
+<li><strong>条件：</strong>附一份“责任声明”（declaración responsable）。</li>
+<li><strong>谁签：</strong>在税务登记手续中担任公司代表的人（不是翻译）。</li>
+<li><strong>声明内容：</strong>所附译文与原件<strong>内容完整一致</strong>。</li></ul>
+
+<h2>只适用于网上卖家吗？这里要谨慎</h2>
+<p>这句话本身写得比较宽泛，但在答复里它放在“通过平台或网站销售”的特殊情形部分，结论也把它和该情形下公司的 <strong>NIF N</strong> 联系在一起：“pero en el caso del NIF N con las especialidades que hemos mencionado anteriormente en cuanto a la Apostilla de la Haya y la necesidad de traducción jurada”。</p>
+<p>我们的理解：只在<strong>网上卖家特殊情形下公司的 NIF N</strong> 使用（已有 VIES 有效的其他欧盟国家增值税号 + 平台证明）。不默认适用于法定代表人的 NIF M，也不默认适用于一般流程。这份答复依《税收总法》第 87 条属信息性答复，不是有约束力的裁定。</p>
+
+<h2>为什么省事</h2>
+<ul><li><strong>省时间：</strong>不用排宣誓翻译的档期，当天就能准备译文。</li>
+<li><strong>省费用：</strong>宣誓翻译按页计费，注册证明、公司章程往往很长。</li>
+<li><strong>少环节：</strong>配合网上卖家公司识别文件免海牙（见<a href="/zh/blog/spanish-nif-without-apostille-online-sellers.html">西班牙税号免海牙认证指南</a>），公司材料基本不用在国外找公证和翻译——授权书除外，我们仍做公证加海牙。</li></ul>
+
+<h2>哪些仍需官方翻译</h2>
+<p>其他所有语言：<strong>中文、德语、希伯来语、土耳其语、日语</strong>等。比如中文营业执照，只附非官方译文不符合答复写明的规则。答复的一般部分说明，官方翻译可由在西班牙注册的宣誓翻译完成，或通过领事、外交机构办理。</p>
+
+<h2>实操建议（中国卖家重点看）</h2>
+<ol><li><strong>在原籍国直接要英文版证明。</strong>如果当地登记机关或税务机关能出英文的存续证明，就要英文版，可直接省掉宣誓翻译这一步。</li>
+<li><strong>整页都要翻：</strong>印章、脚注、附件都要译——声明写的是“内容完整”。</li>
+<li><strong>版式对应：</strong>译文标题和顺序与原件一致，方便审核。</li>
+<li><strong>签字人要对：</strong>由办理税务登记的公司代表签，不是翻译签。</li>
+<li><strong>在说明信里写明：</strong>引用第 39/2015 号法律第 15 条，并列出每份文件的语言。</li></ol>
+
+<h2>声明范本（仅为示例）</h2>
+<p><em>以下为示例措辞，仅供参考，不是税局官方表格，请按实际情况调整。</em></p>
+<blockquote>DECLARACIÓN RESPONSABLE<br>D./Dña. [nombre], con NIF [número], en calidad de representante de la entidad [denominación] para el trámite censal de solicitud de NIF, DECLARA bajo su responsabilidad que la traducción al castellano que se aporta del documento [título del documento, fecha de expedición], emitido en [inglés/francés/italiano], responde al contenido íntegro del documento aportado.<br>En [lugar], a [fecha].<br>Firma:</blockquote>
+
+<h2>常见错误</h2>
+<ul><li>机器翻译漏掉印章或附件。</li>
+<li>中文或德文文件只附非官方译文。</li>
+<li>忘了附声明，或让翻译来签声明。</li>
+<li>把翻译和海牙认证混为一谈——是两件事。</li>
+<li>不核实就用在网上卖家 NIF N 以外的情形。</li></ul>
+
+<h2>常见问题</h2>
+<h3>英文的公司证明还需要宣誓翻译吗？</h3><p>按税局答复，英、法、意文件可用非官方西语译文加责任声明。我们在网上卖家特殊情形下的公司 NIF N 中使用。</p>
+<h3>声明由谁签？</h3><p>在税务登记手续中担任公司代表的人。</p>
+<h3>声明要写什么？</h3><p>所附译文与原件内容完整一致。</p>
+<h3>中文、德文文件可以吗？</h3><p>不可以，答复只列了法语、英语和意大利语。</p>
+<h3>法定代表人的 NIF M 也适用吗？</h3><p>答复没有写清楚，我们按一般翻译规则准备。</p>
+
+<h2>需要我们帮您核对文件吗？</h2>
+<p>IberTrust Global S.L. 为欧盟以外的网上卖家准备 NIF M 和 NIF N 申请，包括译文、声明和说明信。把文件发给我们，我们告诉您哪些必须官方翻译。</p>
+<p><strong><a href="/zh/quote.html?service=spain-nif-vat">获取西班牙税号方案 →</a></strong><br>或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>
+<p><small>来源：IberTrust 取得的西班牙税务局书面信息答复（编号 2026CTE81350003S，2026 年 10 月 28 日）；第 39/2015 号法律第 15 条；第 58/2003 号法律第 87 条。本文为一般性信息，不构成法律意见。</small></p>'''
+def _faq2(h,mk):
+  qa=_re.findall(r'<h3>(.*?)</h3><p>(.*?)</p>',h.split(mk)[1])
+  return {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":_re.sub('<[^>]+>','',a)}} for q,a in qa]}
+POSTS.insert(0,('spanish-nif-translation-english-french-italian-no-sworn-translator',{'date':'2026-10-31',
+ 'en':('Spanish NIF: no sworn translation for English, French or Italian documents — what the AEAT reply says',TR_EN),
+ 'es':('NIF en España sin traductor jurado: documentos en inglés, francés o italiano según la AEAT',TR_ES),
+ 'zh':('西班牙税号免官方翻译：英文、法文、意大利文文件只需非官方译文加声明',TR_ZH),
+ 'desc':{'en':'AEAT written reply: for the Spanish NIF, English, French or Italian documents can be filed with an unofficial Spanish translation plus a responsible declaration. Scope, sample wording, mistakes.',
+  'es':'Contestación de la AEAT: para el NIF, documentos en inglés, francés o italiano con traducción no oficial y declaración responsable. Alcance, modelo de declaración y errores.',
+  'zh':'西班牙税务局书面答复：申请 NIF 时，英、法、意文件可用非官方西语译文加责任声明，无需宣誓翻译。适用范围、声明范本与常见错误。'},
+ 'faq':{'en':_faq2(TR_EN,'<h2>FAQ</h2>'),'es':_faq2(TR_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(TR_ZH,'<h2>常见问题</h2>')}}))
+
 for lang in ['en','es','zh']:
   t=T[lang]; p=PFX[lang]
   cards=''.join(f'<div class="card"><h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p><a href="{p}/services/{s[0]}.html">→</a></div>' for s in S)
@@ -349,7 +525,7 @@ for lang in ['en','es','zh']:
   for sl,P in POSTS:
     ti,txt=P[lang]; pub=P.get('date') or _pubdate(lang,sl)
     art={"@context":"https://schema.org","@type":"Article","headline":ti,"inLanguage":HL[lang],"datePublished":pub,"author":{"@type":"Organization","name":"IberTrust Global S.L."},"publisher":{"@type":"Organization","name":"IberTrust Global S.L."}}
-    urls.append(page(lang,f'blog/{sl}.html',ti+' | IberTrust Global',ti,f'<section><div class="wrap"><article><h1>{ti}</h1><p><small>{pub} · IberTrust Global</small></p>{txt}</article></div></section>',[art]))
+    urls.append(page(lang,f'blog/{sl}.html',ti+' | IberTrust Global',P.get('desc',{}).get(lang,ti),f'<section><div class="wrap"><article><h1>{ti}</h1><p><small>{pub} · IberTrust Global</small></p>{txt}</article></div></section>',[art]+([P['faq'][lang]] if 'faq' in P else [])))
 
 QF={'en':dict(t='Request a quote',intro='Tell us about your company and products. We reply by email with a tailored proposal.',co='Company',em='Email',pr='Products / platforms (e.g. toys on Amazon DE)',sv='Services needed',ms='Message',send='Send request',alt='Prefer email? Write to us directly:',copy='Copy',copied='Copied',subj='New quote request – ibertrust.info',ty='Thank you',typ='We have received your request and will reply by email.',back='Back to home'),
  'es':dict(t='Solicitar presupuesto',intro='Cuéntenos sobre su empresa y sus productos. Le responderemos por email con una propuesta a medida.',co='Empresa',em='Email',pr='Productos / plataformas (p. ej. juguetes en Amazon ES)',sv='Servicios que necesita',ms='Mensaje',send='Enviar solicitud',alt='¿Prefiere el email? Escríbanos directamente:',copy='Copiar',copied='Copiado',subj='Nueva solicitud de presupuesto (ES) – ibertrust.info',ty='Gracias',typ='Hemos recibido su solicitud y le responderemos por email.',back='Volver al inicio'),
