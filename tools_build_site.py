@@ -216,6 +216,7 @@ def L(s,lang):  # title, short, bullets for a service tuple
   return (s[1],s[2],s[3]) if lang=='en' else (s[4],s[5],s[6]) if lang=='es' else ZH_S[s[0]]
 ORG={"@context":"https://schema.org","@type":["ProfessionalService","LocalBusiness"],"name":"IberTrust Global S.L.","url":D+"/","logo":D+"/logo.png","email":EMAIL,"telephone":"+34600256836","vatID":"B21813506",
  "legalName":"IBERTRUST GLOBAL, SOCIEDAD LIMITADA","taxID":"B21813506","sameAs":[],"address":{"@type":"PostalAddress","streetAddress":"C/ Pablo Iglesias, 1, Entresuelo A","postalCode":"12003","addressLocality":"Castelló de la Plana","addressRegion":"Castellón","addressCountry":"ES"},"areaServed":"EU","knowsLanguage":["en","es","zh"]}
+MENU={'':'Menu','/es':'Menú','/zh':'菜单'}
 def page(lang,path,title,desc,body,extra_ld=None):
   t=T[lang]; p=PFX[lang]
   alt_en=D+'/'+path; alt_es=D+'/es/'+path; alt_zh=D+'/zh/'+path; me=D+p+'/'+path
@@ -227,7 +228,7 @@ def page(lang,path,title,desc,body,extra_ld=None):
 <meta property="og:type" content="website"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{me}"><meta property="og:image" content="{D}/logo.png"><meta name="twitter:card" content="summary">
 <link rel="icon" href="/logo.png"><link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script></head><body>
-<header><div class="wrap nav"><a href="{p}/" style="text-decoration:none;color:inherit"><img src="/logo.png" alt="IberTrust Global logo"><b>IberTrust Global</b></a><ul>{nav}</ul>
+<header><div class="wrap nav"><a href="{p}/" style="text-decoration:none;color:inherit"><img src="/logo.png" alt="IberTrust Global logo"><b>IberTrust Global</b></a><input type="checkbox" id="navt" class="navt" aria-label="{MENU.get(p,'Menu')}"><label for="navt" class="navbtn"><span aria-hidden="true">☰</span> {MENU.get(p,'Menu')}</label><ul>{nav}</ul>
 <span><a class="btn" href="{p}/quote.html">{t['quote']}</a><span class="lang"><a href="/{path}">EN</a><a href="/es/{path}">ES</a><a href="/zh/{path}">中文</a></span></span></div></header>
 <main>{body}</main>
 <footer><div class="wrap grid"><div><b style="color:#fff">IberTrust Global S.L.</b><br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a><br>+34 600 256 836 · <a href="{WA}">WhatsApp</a></div>
