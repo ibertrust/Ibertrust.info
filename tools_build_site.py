@@ -255,7 +255,7 @@ def page(lang,path,title,desc,body,extra_ld=None):
 <span><a class="btn" href="{p}/quote.html">{t['quote']}</a><span class="lang"><a href="/{path}">EN</a><a href="/es/{path}">ES</a><a href="/zh/{path}">中文</a></span></span></div></header>
 <main>{body}</main>
 <footer><div class="wrap grid"><div><b style="color:#fff">IberTrust Global S.L.</b><br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a><br>+34 600 256 836 · <a href="{WA}">WhatsApp</a></div>
-<div>{''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S if not s[0].startswith('eudr'))}</div>
+<div>{''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S)}</div>
 <div><a href="{p}/privacy.html">{ {'en':'Privacy','es':'Privacidad','zh':'隐私政策'}[lang] }</a><br><a href="{p}/terms.html">{ {'en':'Terms','es':'Condiciones','zh':'使用条款'}[lang] }</a><br>© {datetime.date.today().year} IberTrust Global S.L.</div></div></footer></body></html>"""
   out=os.path.join(R,(p[1:]+'/' if p else '')+path)
   if out.endswith('/'): out+='index.html'
@@ -647,7 +647,7 @@ for lang in ['en','es','zh']:
   why_zh=['GPSR、EPR、包装、WEEE、电池、CPNP 一个窗口统一对接','西班牙注册公司（CIF B21813506），在欧盟境内设有实体','中文、英文、西班牙语沟通，无语言障碍','熟悉跨境电商和各大平台的合规要求','流程清晰：签署委托、收集资料、审核标签、完成注册']
   why=''.join(f'<div class="card">✔ {w}</div>' for w in {'en':why_en,'es':why_es,'zh':why_zh}[lang])
   cta=f'<section><div class="wrap"><div class="cta"><h2>{t["ready"]}</h2><p>{t["readyp"]}</p><a class="btn" href="{p}/quote.html">{t["quote"]}</a><p style="margin-top:14px;font-size:14px;opacity:.85">{EMAIL}</p></div></div></section>'
-  homecards=''.join(f'<div class="card"><h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p><a href="{p}/services/{s[0]}.html">→</a></div>' for s in S if not s[0].startswith('eudr'))
+  homecards=''.join(f'<div class="card"><h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p><a href="{p}/services/{s[0]}.html">→</a></div>' for s in S)
   home=f"""<div class="hero"><div class="wrap"><p>{t['tag']}</p><h1>{t['h1']}</h1><p>{t['lead']}</p>
 <p><a class="btn" href="{p}/quote.html">{t['quote']}</a> <a class="btn alt" href="{p}/services/">{t['all']}</a></p>
 <div class="trust"><span>GPSR (EU) 2023/988</span><span>RD 1055/2022</span><span>WEEE</span><span>(EU) 2023/1542</span><span>CPNP</span><span>EN · ES · 中文</span></div></div></div>
