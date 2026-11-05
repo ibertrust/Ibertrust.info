@@ -11,6 +11,10 @@ S=[ # slug, EN title, EN short, EN body bullets, ES title, ES short, ES bullets
  ['Name and UK address for product labels, packaging and listings','Point of contact for UK market surveillance authorities','Holding the declaration of conformity and technical documentation where UK rules require it','Label and documentation review for the UK market'],
  'Persona Responsable / Representante autorizado en Reino Unido','Persona responsable o representante autorizado establecido en Reino Unido para fabricantes de fuera del país cuyos productos lo necesitan según la normativa británica.',
  ['Nombre y dirección en Reino Unido para etiquetas, envases y anuncios','Punto de contacto con las autoridades de vigilancia del mercado británicas','Custodia de la declaración de conformidad y documentación técnica cuando lo exija la norma','Revisión de etiquetado y documentación para Reino Unido']),
+('mdr-eu-authorised-representative','Medical Devices EU Authorised Representative (MDR)','EU authorised representative under Regulation (EU) 2017/745 for non-EU manufacturers. IberTrust is registered in EUDAMED with an SRN.',
+ ['Article 11 authorised representative mandate','EUDAMED actor registration already in place (SRN)','Point of contact for competent authorities','Custody of technical documentation and EU declaration of conformity at the disposal of authorities','From €800/year for Class I (higher classes quoted by risk class)'],
+ 'Representante autorizado UE para productos sanitarios (MDR)','Representante autorizado según el Reglamento (UE) 2017/745 para fabricantes de fuera de la UE. IberTrust está registrado en EUDAMED con SRN.',
+ ['Mandato de representante autorizado (art. 11)','Registro de actor en EUDAMED ya efectuado (SRN)','Punto de contacto con las autoridades competentes','Custodia de la documentación técnica y la declaración UE de conformidad','Desde 800 €/año para clase I (clases superiores según riesgo)']),
 ('turkey-authorised-representative','Turkey Authorised Representative','Authorised representative established in Türkiye for manufacturers placing products on the Turkish market.',
  ['Authorised representative appointment under a written mandate','Name and address in Türkiye for labels and documentation','Point of contact for Turkish market surveillance authorities','Keeping the declaration of conformity and technical documentation available'],
  'Representante autorizado en Turquía','Representante autorizado establecido en Turquía para fabricantes que comercializan productos en el mercado turco.',
@@ -58,6 +62,8 @@ ZH_S={ # slug: (title, short, bullets)
  ['提供可印在产品标签和平台 listing 上的欧盟地址','作为市场监管机构的对接联系人','保管技术文件和产品安全信息','按 GPSR 要求审核标签和随附文件','协助处理整改、下架和召回']),
 'uk-responsible-person':('英国负责人 / 授权代表','为英国境外制造商提供设在英国的负责人或授权代表，适用于英国产品法规要求指定英国经营者的产品。',
  ['提供可印在标签、包装和 listing 上的英国名称和地址','作为英国市场监管机构的对接联系人','按英国法规要求保管符合性声明和技术文件','针对英国市场审核标签和文件']),
+'mdr-eu-authorised-representative':('医疗器械欧盟授权代表（MDR）','根据法规 (EU) 2017/745，为非欧盟制造商担任欧盟授权代表。IberTrust 已在 EUDAMED 完成授权代表登记并获 SRN。',
+ ['第 11 条授权代表委托','已完成 EUDAMED 主体登记（SRN）','作为主管当局联系人','保管技术文件与欧盟符合性声明供当局调阅','I 类起 €800/年（更高类别按风险分类报价）']),
 'turkey-authorised-representative':('土耳其授权代表','为向土耳其市场投放产品的制造商，提供设在土耳其的授权代表。',
  ['通过书面委托指定授权代表','提供用于标签和文件的土耳其名称和地址','作为土耳其市场监管机构的对接联系人','确保符合性声明和技术文件可随时提供']),
 'epr-packaging-spain':('西班牙包装 EPR（皇家法令 1055/2022）','为投放西班牙市场的包装办理生产者注册，并担任授权代表。',
@@ -86,6 +92,10 @@ PROC={'en':['Send us your products, target countries and sales channels (quote f
 'zh':['通过表单或邮件告诉我们产品、目标国家和销售渠道','我们确认服务范围，并发出书面方案','签署委托书 / 服务协议','您按上面的清单提供资料，我们审核并指出缺漏','完成注册或指定，并告诉您标签和 listing 上应填写的信息','后续：按要求定期申报、对接主管机构、同步法规变化']}
 H={'en':('Scope','Documents we usually ask for','How it works','Common problems we help with'),'es':('Alcance','Documentación habitual','Cómo trabajamos','Problemas frecuentes'),'zh':('适用范围','通常需要的资料','办理流程','常见问题')}
 DET={ # slug: lang: (scope, docs, problems)
+'mdr-eu-authorised-representative':{
+ 'en':('Non-EU manufacturers of medical devices placing products on the EU market under MDR 2017/745 who need an EU-established authorised representative. IberTrust is registered in EUDAMED with an SRN.',['Company details and written AR mandate','Device list with class and Basic UDI-DI / UDI where available','EU declaration of conformity and technical documentation','Label / IFU showing the authorised representative'],['Missing EUDAMED actor or mandate link','Authorities requesting technical documentation at short notice','Unclear device classification before appointment']),
+ 'es':('Fabricantes de fuera de la UE que comercializan productos sanitarios bajo el MDR 2017/745 y necesitan un representante autorizado establecido en la UE. IberTrust está registrado en EUDAMED con SRN.',['Datos de la empresa y mandato escrito de RA','Lista de productos con clase y Basic UDI-DI / UDI si existe','Declaración UE de conformidad y documentación técnica','Etiqueta / IFU con el representante autorizado'],['Falta el vínculo de actor o mandato en EUDAMED','Autoridades que piden la documentación técnica con poco plazo','Clasificación poco clara antes del nombramiento']),
+ 'zh':('依据 MDR 2017/745 向欧盟投放医疗器械、需要欧盟授权代表的非欧盟制造商。IberTrust 已在 EUDAMED 完成登记并获 SRN。',['公司资料与书面授权代表委托书','产品清单（分类及 Basic UDI-DI / UDI，如有）','欧盟符合性声明与技术文件','标明授权代表的标签 / 说明书'],['EUDAMED 主体或委托关联不全','主管当局短时间要求提供技术文件','委任前分类不清'])},
 'gpsr-eu-responsible-person':{
  'en':('Non-food consumer products sold in the EU, online or offline, by manufacturers without an EU establishment. Products under sector rules (e.g. toys, electronics) still need an EU economic operator; GPSR fills the gaps those rules leave.',['Product photos and the current label/packaging artwork','Instructions and safety information in the languages of the target markets','Test reports, technical documentation and EU declaration of conformity where applicable','Manufacturer name, postal and electronic address','List of marketplaces and countries'],['Listings blocked or suppressed for missing Responsible Person details','Label shows only a non-EU address','Responsible Person details on the product do not match the listing','No traceability information (type, batch or serial number)']),
  'es':('Productos de consumo no alimentarios vendidos en la UE, online u offline, por fabricantes sin establecimiento en la UE. Los productos con normativa sectorial (juguetes, electrónica…) también necesitan un operador económico en la UE; el GPSR cubre lo que esas normas no regulan.',['Fotos del producto y arte final de etiqueta/envase','Instrucciones e información de seguridad en los idiomas de los mercados','Informes de ensayo, documentación técnica y declaración UE de conformidad cuando aplique','Nombre, dirección postal y electrónica del fabricante','Lista de marketplaces y países'],['Anuncios bloqueados por falta de datos de la Persona Responsable','La etiqueta solo muestra una dirección fuera de la UE','Los datos del producto no coinciden con los del anuncio','Falta información de trazabilidad (tipo, lote o número de serie)']),
@@ -564,7 +574,7 @@ _upd('epr-europe',('epr-europe','EPR Registration in Other EU Countries','Produc
 for i,s in enumerate(S):
   if s[0]=='spain-nif-vat':
     S[i]=(s[0],s[1],s[2],s[3]+['Quarterly and annual VAT returns (Modelo 303 and Modelo 390)','Recapitulative statement (Modelo 349) and OSS returns','Spanish electronic certificate for online filings'],s[4],s[5],s[6]+['Declaraciones trimestrales y resumen anual de IVA (modelos 303 y 390)','Declaración recapitulativa (modelo 349) y declaraciones OSS','Certificado electrónico para trámites en línea'])
-_ORDER=['gpsr-eu-responsible-person','uk-responsible-person','turkey-authorised-representative','epr-packaging-spain','weee','batteries','epr-europe','cpnp-cosmetics','cpsr-cosmetic-safety-report','eprel-energy-label','eudr','eudr-traceability-report','spain-nif-vat']
+_ORDER=['gpsr-eu-responsible-person','mdr-eu-authorised-representative','uk-responsible-person','turkey-authorised-representative','epr-packaging-spain','weee','batteries','epr-europe','cpnp-cosmetics','cpsr-cosmetic-safety-report','eprel-energy-label','eudr','eudr-traceability-report','spain-nif-vat']
 S.sort(key=lambda s:_ORDER.index(s[0]))
 ZH_S.update({
 'cpnp-cosmetics':('化妆品欧盟负责人与 CPNP 通报','依据化妆品法规（EC）1223/2009，提供 CPNP 通报和化妆品欧盟负责人服务。',
@@ -610,6 +620,9 @@ DET.update({
 })
 DET['spain-nif-vat']={'en':DET['spain-nif-vat']['en'],'es':DET['spain-nif-vat']['es'],'zh':DET['spain-nif-vat']['zh']}
 WHAT={ # slug: lang: "what it is" paragraph
+'mdr-eu-authorised-representative':{'en':'Under Regulation (EU) 2017/745 (MDR), manufacturers established outside the EU must designate an authorised representative established in the Union. The representative is registered in EUDAMED, acts as contact point for competent authorities and keeps the technical documentation available. IberTrust already holds an EUDAMED SRN as authorised representative.',
+ 'es':'Según el Reglamento (UE) 2017/745 (MDR), los fabricantes establecidos fuera de la UE deben designar un representante autorizado establecido en la Unión. El representante se registra en EUDAMED, actúa como punto de contacto de las autoridades y mantiene disponible la documentación técnica. IberTrust ya dispone de un SRN en EUDAMED como representante autorizado.',
+ 'zh':'根据法规 (EU) 2017/745（MDR），设立在欧盟以外的制造商须指定欧盟境内授权代表。授权代表在 EUDAMED 登记，作为主管当局联系人，并保管技术文件供调阅。IberTrust 已作为授权代表取得 EUDAMED SRN。'},
 'cpnp-cosmetics':{'en':'The Cosmetic Products Notification Portal (CPNP) is the European Commission\'s online portal for notifying cosmetic products. Under Article 13 of Regulation (EC) 1223/2009, the Responsible Person notifies each product in the CPNP before it is placed on the EU market. The notification includes, among other things, the product category and name, the Responsible Person, the country of origin for imported products, the frame formulation, the presence of nanomaterials or CMR substances, and the original label with a photo of the packaging.',
  'es':'El Portal de Notificación de Productos Cosméticos (CPNP) es el portal en línea de la Comisión Europea para notificar productos cosméticos. Según el artículo 13 del Reglamento (CE) 1223/2009, la Persona Responsable notifica cada producto en el CPNP antes de introducirlo en el mercado de la UE. La notificación incluye, entre otros datos, la categoría y el nombre del producto, la Persona Responsable, el país de origen en caso de importación, la formulación marco, la presencia de nanomateriales o sustancias CMR y el etiquetado original con una fotografía del envase.',
  'zh':'CPNP（化妆品通报门户）是欧盟委员会用于化妆品通报的在线系统。根据化妆品法规（EC）1223/2009 第 13 条，负责人须在产品投放欧盟市场前，在 CPNP 中逐个通报。通报内容包括产品类别和名称、负责人、进口产品的原产国、框架配方、是否含纳米材料或 CMR 物质，以及原始标签和包装照片等。'},
@@ -630,6 +643,9 @@ WHAT={ # slug: lang: "what it is" paragraph
  'zh':'生产者延伸责任（EPR）要求生产者为其包装、电子电气设备和电池产生的废弃物负责。EPR 按国家执行：每个成员国都有自己的登记系统、回收体系、申报周期和收费，很多国家还要求未在当地设立实体的生产者指定授权代表。'},
 }
 SPROC={ # slug: lang: process steps (overrides PROC)
+'mdr-eu-authorised-representative':{'en':['Send the device list, class and available documentation','We confirm scope and send a written proposal','Sign the authorised representative mandate','We link the mandate in EUDAMED and act as contact point','We hold documentation for authorities and support vigilance correspondence'],
+ 'es':['Nos envía la lista de productos, la clase y la documentación disponible','Confirmamos el alcance y enviamos una propuesta escrita','Firma del mandato de representante autorizado','Vinculamos el mandato en EUDAMED y actuamos como punto de contacto','Custodiamos la documentación y apoyamos la correspondencia de vigilancia'],
+ 'zh':['发送产品清单、分类和现有文件','我们确认范围并发出书面方案','签署授权代表委托书','我们在 EUDAMED 关联委托并作为联系人','保管文件供当局调阅，并协助监管往来']},
 'cpnp-cosmetics':{'en':['Send the product list, INCI formulas and label artwork (quote form or email)','We check scope and missing documents and send a written proposal','Sign the Responsible Person mandate','We review the CPSR, PIF and label; you correct anything we flag','We submit the CPNP notification and send you the confirmation','We keep the PIF available for authorities and update the notification when something changes'],
  'es':['Nos envía la lista de productos, las fórmulas INCI y el arte de etiqueta (formulario o email)','Revisamos el alcance y la documentación que falta y le enviamos una propuesta escrita','Firma del mandato de Persona Responsable','Revisamos CPSR, PIF y etiqueta; usted corrige lo que señalemos','Presentamos la notificación CPNP y le enviamos la confirmación','Custodiamos el PIF para las autoridades y actualizamos la notificación cuando algo cambia'],
  'zh':['通过表单或邮件发送产品清单、INCI 配方和标签设计稿','我们确认范围和缺漏资料，并发出书面方案','签署负责人委托书','我们审核 CPSR、PIF 和标签，您按意见修改','我们提交 CPNP 通报并把确认信息发给您','我们保管 PIF 以备主管机构查阅，信息变化时更新通报']},
@@ -647,6 +663,7 @@ SPROC={ # slug: lang: process steps (overrides PROC)
  'zh':['发送产品类别和供应链概况','我们确定范围（每份报告一个产品类别）和时间安排','您和供应商按上面清单提供资料','我们分析资料和地块，必要时请您补充说明','您收到包含结论和建议的报告','证据档案用于支持您的 DDS']},
 }
 REL={ # slug: (related services, related blog posts)
+'mdr-eu-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person','eprel-energy-label'],['how-to-get-eu-compliance-quote']),
 'gpsr-eu-responsible-person':(['uk-responsible-person','turkey-authorised-representative','cpnp-cosmetics','eprel-energy-label'],['gpsr-responsible-person-guide','do-i-need-eu-responsible-person-gpsr','gpsr-marketplace-sweep-2026-listing-information','marketplace-representative-confirmation-rejected-entity-mismatch','eu-product-liability-directive-2026-non-eu-sellers-responsible-person']),
 'uk-responsible-person':(['gpsr-eu-responsible-person','turkey-authorised-representative'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
 'turkey-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
@@ -661,14 +678,14 @@ REL={ # slug: (related services, related blog posts)
 'eudr-traceability-report':(['eudr'],['eudr-dds-who-files-one-statement-many-shipments','how-to-get-eu-compliance-quote']),
 'spain-nif-vat':(['epr-packaging-spain','epr-europe'],['spanish-nif-without-apostille-online-sellers','spanish-nif-translation-english-french-italian-no-sworn-translator']),
 }
-GROUPS=[('rep',{'en':'Representatives','es':'Representantes','zh':'代表服务'},['gpsr-eu-responsible-person','uk-responsible-person','turkey-authorised-representative']),
+GROUPS=[('rep',{'en':'Representatives','es':'Representantes','zh':'代表服务'},['gpsr-eu-responsible-person','mdr-eu-authorised-representative','uk-responsible-person','turkey-authorised-representative']),
 ('epr',{'en':'EPR (extended producer responsibility)','es':'EPR (responsabilidad ampliada del productor)','zh':'EPR 生产者延伸责任'},['epr-packaging-spain','weee','batteries','epr-europe']),
 ('reg',{'en':'Product notifications and registrations','es':'Notificaciones y registros de producto','zh':'产品通报与注册'},['cpnp-cosmetics','cpsr-cosmetic-safety-report','eprel-energy-label']),
 ('eudr',{'en':'EUDR (deforestation)','es':'EUDR (deforestación)','zh':'EUDR 零毁林'},['eudr','eudr-traceability-report']),
 ('tax',{'en':'Spanish tax registration','es':'Registro fiscal en España','zh':'西班牙税务'},['spain-nif-vat'])]
-SVC_DESC={'en':'IberTrust Global services: EU, UK and Turkey representatives, EPR for packaging, WEEE and batteries in Spain and other EU countries, CPNP, CPSR, EPREL, EUDR and Spanish NIF/VAT.',
- 'es':'Servicios de IberTrust Global: representantes en la UE, Reino Unido y Turquía, EPR de envases, RAEE y pilas en España y otros países de la UE, CPNP, CPSR, EPREL, EUDR y NIF/IVA en España.',
- 'zh':'IberTrust Global 服务：欧盟、英国、土耳其代表，西班牙及欧盟其他国家的包装、WEEE、电池 EPR，CPNP、CPSR、EPREL、EUDR，以及西班牙税号和增值税。'}
+SVC_DESC={'en':'IberTrust Global services: EU, UK and Turkey representatives, medical-device MDR authorised representative, EPR for packaging, WEEE and batteries in Spain and other EU countries, CPNP, CPSR, EPREL, EUDR and Spanish NIF/VAT.',
+ 'es':'Servicios de IberTrust Global: representantes en la UE, Reino Unido y Turquía, representante autorizado MDR, EPR de envases, RAEE y pilas en España y otros países de la UE, CPNP, CPSR, EPREL, EUDR y NIF/IVA en España.',
+ 'zh':'IberTrust Global 服务：欧盟、英国、土耳其代表，医疗器械 MDR 授权代表，西班牙及欧盟其他国家的包装、WEEE、电池 EPR，CPNP、CPSR、EPREL、EUDR，以及西班牙税号和增值税。'}
 SL={'en':dict(what='What it is',do='What we do',rel='Related services',art='Related articles',ask='Ask about this service',form='Request a quote for this service',or_='or email',note='We reply by email with a written proposal.'),
  'es':dict(what='Qué es',do='Qué hacemos',rel='Servicios relacionados',art='Artículos relacionados',ask='Consulte por este servicio',form='Solicitar presupuesto de este servicio',or_='o escriba a',note='Le responderemos por email con una propuesta escrita.'),
  'zh':dict(what='这是什么',do='我们做什么',rel='相关服务',art='相关文章',ask='咨询这项服务',form='获取这项服务的方案',or_='或发邮件至',note='我们会通过邮件回复书面方案。')}
