@@ -92,7 +92,7 @@ FAQ_ZH=[('欧盟以外的卖家需要欧盟负责人吗？','需要。GPSR 实�
 ('你们支持哪些语言？','中文、英文和西班牙语。'),
 ('怎么获取报价方案？','请发邮件至 '+EMAIL+'，说明您的产品类别、目标市场和销售渠道，我们会根据情况给出定制方案。')]
 ADDR='C/ Pablo Iglesias, 1, Entresuelo A, 12003 Castelló de la Plana (Castellón), España'
-WA='https://wa.me/34600256836'
+WA='https://wa.me/34611904867'
 PROC={'en':['Send us your products, target countries and sales channels (quote form or email)','We confirm the scope and send a written proposal','Sign the mandate / service agreement','You send the documents listed above; we review them and flag gaps','We complete the registration or appointment and confirm the details to put on labels and listings','Ongoing: periodic declarations, authority contact and regulatory updates where applicable'],
 'es':['Nos envía productos, países y canales de venta (formulario o email)','Confirmamos el alcance y le enviamos una propuesta por escrito','Firma del mandato / contrato de servicio','Nos envía la documentación indicada; la revisamos y señalamos lo que falta','Realizamos el registro o la designación y le confirmamos los datos para etiquetas y anuncios','Seguimiento: declaraciones periódicas, contacto con autoridades y novedades normativas cuando aplique'],
 'zh':['通过表单或邮件告诉我们产品、目标国家和销售渠道','我们确认服务范围，并发出书面方案','签署委托书 / 服务协议','您按上面的清单提供资料，我们审核并指出缺漏','完成注册或指定，并告诉您标签和 listing 上应填写的信息','后续：按要求定期申报、对接主管机构、同步法规变化']}
@@ -236,7 +236,7 @@ T={'en':dict(home='Home',services='Services',about='About',faq='FAQ',blog='Insig
 PFX={'en':'','es':'/es','zh':'/zh'}; HL={'en':'en','es':'es','zh':'zh-Hans'}
 def L(s,lang):  # title, short, bullets for a service tuple
   return (s[1],s[2],s[3]) if lang=='en' else (s[4],s[5],s[6]) if lang=='es' else ZH_S[s[0]]
-ORG={"@context":"https://schema.org","@type":["ProfessionalService","LocalBusiness"],"name":"IberTrust Global S.L.","url":D+"/","logo":D+"/logo.png","email":EMAIL,"telephone":"+34600256836","vatID":"B21813506",
+ORG={"@context":"https://schema.org","@type":["ProfessionalService","LocalBusiness"],"name":"IberTrust Global S.L.","url":D+"/","logo":D+"/logo.png","email":EMAIL,"telephone":"+34611904867","vatID":"B21813506",
  "legalName":"IBERTRUST GLOBAL, SOCIEDAD LIMITADA","taxID":"B21813506","sameAs":[],"address":{"@type":"PostalAddress","streetAddress":"C/ Pablo Iglesias, 1, Entresuelo A","postalCode":"12003","addressLocality":"Castelló de la Plana","addressRegion":"Castellón","addressCountry":"ES"},"areaServed":"EU","knowsLanguage":["en","es","zh"]}
 
 import re as _re, glob as _glob
@@ -274,7 +274,7 @@ def page(lang,path,title,desc,body,extra_ld=None):
 <header><div class="wrap nav"><a href="{p}/" style="text-decoration:none;color:inherit"><img src="/logo.png" alt="IberTrust Global logo"><b>IberTrust Global</b></a><input type="checkbox" id="navt" class="navt" aria-label="{MENU.get(p,'Menu')}"><label for="navt" class="navbtn"><span aria-hidden="true">☰</span> {MENU.get(p,'Menu')}</label><ul>{nav}</ul>
 <span><a class="btn" href="{p}/quote.html">{t['quote']}</a><span class="lang"><a href="/{path}">EN</a><a href="/es/{path}">ES</a><a href="/zh/{path}">中文</a></span></span></div></header>
 <main>{body}</main>
-<footer><div class="wrap grid"><div><b style="color:#fff">IberTrust Global S.L.</b><br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a><br>+34 600 256 836 · <a href="{WA}">WhatsApp</a></div>
+<footer><div class="wrap grid"><div><b style="color:#fff">IberTrust Global S.L.</b><br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a><br>+34 611 90 48 67 · <a href="{WA}">WhatsApp</a></div>
 <div>{''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S)}</div>
 <div><a href="{p}/privacy.html">{ {'en':'Privacy','es':'Privacidad','zh':'隐私政策'}[lang] }</a><br><a href="{p}/terms.html">{ {'en':'Terms','es':'Condiciones','zh':'使用条款'}[lang] }</a><br>© {datetime.date.today().year} IberTrust Global S.L.</div></div></footer></body></html>"""
   out=os.path.join(R,(p[1:]+'/' if p else '')+path)
@@ -763,9 +763,9 @@ for lang in ['en','es','zh']:
   about_zh='<p>IberTrust Global S.L. 是一家西班牙公司（CIF B21813506），专为欧盟以外的工厂和跨境电商卖家提供欧盟产品合规服务。我们可以担任欧盟负责人、EPR 授权代表和监管对接人，并协助办理西班牙税号（NIF）/增值税以及化妆品通报。</p><p>团队可用中文、英文和西班牙语服务客户，并与西班牙本地的环保合规伙伴合作。</p>'
   ab=ABOUT[lang].replace('{proc}',''.join(f'<li>{x}</li>' for x in PROC[lang]))
   cd={'en':'Company details','es':'Datos de la empresa','zh':'公司信息'}[lang]
-  urls.append(page(lang,'about.html',t['about']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["about"]}</h1>{ab}<h2>{cd}</h2><p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA<br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a> · +34 600 256 836 · <a href="{WA}">WhatsApp</a></p><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div></section>{cta}'))
+  urls.append(page(lang,'about.html',t['about']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["about"]}</h1>{ab}<h2>{cd}</h2><p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA<br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a> · +34 611 90 48 67 · <a href="{WA}">WhatsApp</a></p><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div></section>{cta}'))
   urls.append(page(lang,'faq.html',t['faq']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["faq"]}</h1>{faqhtml}</div></section>{cta}',[faqld]))
-  ct=f'<section><div class="wrap"><h1>{t["contact"]}</h1><div class="grid"><div class="card"><h3>{'邮箱' if lang=='zh' else 'Email'}</h3><a href="mailto:{EMAIL}">{EMAIL}</a><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div><div class="card"><h3>{'电话 / WhatsApp' if lang=='zh' else 'Tel / WhatsApp'}</h3>+34 600 256 836<br><a href="{WA}">WhatsApp</a></div><div class="card"><h3>IBERTRUST GLOBAL, SOCIEDAD LIMITADA</h3>NIF B21813506<br>{ADDR}</div></div><p>{t["readyp"]}</p></div></section>'
+  ct=f'<section><div class="wrap"><h1>{t["contact"]}</h1><div class="grid"><div class="card"><h3>{'邮箱' if lang=='zh' else 'Email'}</h3><a href="mailto:{EMAIL}">{EMAIL}</a><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div><div class="card"><h3>{'电话 / WhatsApp' if lang=='zh' else 'Tel / WhatsApp'}</h3>+34 611 90 48 67<br><a href="{WA}">WhatsApp</a></div><div class="card"><h3>IBERTRUST GLOBAL, SOCIEDAD LIMITADA</h3>NIF B21813506<br>{ADDR}</div></div><p>{t["readyp"]}</p></div></section>'
   urls.append(page(lang,'contact.html',t['contact']+' | IberTrust Global',t['readyp'],ct))
   ex=_extra_posts(lang)
   posts=[(sl,ti) for _,sl,ti in ex]+[(sl,P[lang][0]) for sl,P in POSTS]
@@ -791,11 +791,11 @@ for lang in ['en','es','zh']:
 <label>{q['co']}<input name="company" required {inp}></label><label>{q['em']}<input type="email" name="email" required {inp}></label>
 <label>{q['pr']}<input name="products_platforms" {inp}></label><fieldset style="border:0;padding:0;margin:0 0 14px"><legend><b>{q['sv']}</b></legend>{boxes}</fieldset>
 <label>{q['ms']}<textarea name="message" rows="5" {inp}></textarea></label><button class="btn" type="submit" style="border:0;cursor:pointer;font:inherit;font-weight:600">{q['send']}</button></form>
-<div class="card"><p>{q['alt']}</p><p><b id="em">{EMAIL}</b> <button type="button" class="btn alt" style="padding:6px 12px;cursor:pointer;font:inherit" onclick="navigator.clipboard.writeText('{EMAIL}').then(()=>this.textContent='{q['copied']}')">{q['copy']}</button></p><p>+34 600 256 836 · <a href="{WA}">WhatsApp</a></p><p><small>IBERTRUST GLOBAL, SOCIEDAD LIMITADA · NIF B21813506<br>{ADDR}</small></p></div></div></div></section>
+<div class="card"><p>{q['alt']}</p><p><b id="em">{EMAIL}</b> <button type="button" class="btn alt" style="padding:6px 12px;cursor:pointer;font:inherit" onclick="navigator.clipboard.writeText('{EMAIL}').then(()=>this.textContent='{q['copied']}')">{q['copy']}</button></p><p>+34 611 90 48 67 · <a href="{WA}">WhatsApp</a></p><p><small>IBERTRUST GLOBAL, SOCIEDAD LIMITADA · NIF B21813506<br>{ADDR}</small></p></div></div></div></section>
 <script>var sv=new URLSearchParams(location.search).get('service');if(sv)document.querySelectorAll('input[data-slug]').forEach(function(c){{if(c.dataset.slug==sv)c.checked=true}});</script>"""
   urls.append(page(lang,'quote.html',q['t']+' | IberTrust Global',q['intro'],body))
   page(lang,'thanks.html',q['ty']+' | IberTrust Global',q['typ'],f'<section><div class="wrap"><h1>{q["ty"]}</h1><p>{q["typ"]}</p><p><a class="btn" href="{p}/">{q["back"]}</a></p></div></section>')
-CO='IBERTRUST GLOBAL, SOCIEDAD LIMITADA (Ibertrust Global, S.L.), NIF B21813506, '+ADDR+', '+EMAIL+', +34 600 256 836'
+CO='IBERTRUST GLOBAL, SOCIEDAD LIMITADA (Ibertrust Global, S.L.), NIF B21813506, '+ADDR+', '+EMAIL+', +34 611 90 48 67'
 LEGAL={
 'en':{'privacy':('Privacy Policy',f'''<h2>Data controller</h2><p>{CO}.</p>
 <h2>What data we process</h2><ul><li>Data you send us through the quote form or by email, WhatsApp or phone: company name, contact name, email, phone, product and sales information, and the content of your message</li><li>Technical data needed to deliver the website (such as IP address), processed by our hosting provider</li></ul><p>This website does not use advertising or analytics cookies.</p>
