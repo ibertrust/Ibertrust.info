@@ -579,7 +579,7 @@ POSTS.insert(0,('eu-customs-product-identifiers-ecommerce-gpsr-label-listing',{'
  'faq':{'en':_faq2(PI_EN,'<h2>FAQ</h2>'),'es':_faq2(PI_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(PI_ZH,'<h2>常见问题</h2>')}}))
 
 # ---- Post 2026-11-10: Spain 2026 packaging declaration is a split year (RD 1055/2022 -> PPWR on 12 August) ----
-SY_SRC_EN='<p><small>Sources: MITECO, “<a href="https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/registro-productores-producto/registro-productores-producto-seccion-envases.html">Registro de Productores de Producto. Sección envases</a>” (sections 3 and 4, consulted 10 November 2026); MITECO, Subdirección General de Residuos, “<a href="https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/sgecocir/envases/260813_NOTA%20INSCRIPCION%20RPP_nuevo%20PPWR_.pdf">Nota interpretativa … definición de productor … Reglamento (UE) 2025/40</a>”, version 2, 13 August 2026; <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-22690">Royal Decree 1055/2022</a>, Articles 2(t), 16, 17(2) and Annex IV; <a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj">Regulation (EU) 2025/40 (PPWR)</a>, Articles 3, 44 and 45; Law 7/2022, Article 108. General information, not legal advice.</small></p>\n'
+SY_SRC_EN='<p><small>Sources: MITECO, “<a href="https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/registro-productores-producto/registro-productores-producto-seccion-envases.html">Registro de Productores de Producto. Sección envases</a>” (sections 3 and 4, consulted 10 November 2026); MITECO, Subdirección General de Residuos, “<a href="https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/sgecocir/envases/260813_NOTA%20INSCRIPCION%20RPP_nuevo%20PPWR_.pdf">Nota interpretativa … definición de productor … Reglamento (UE) 2025/40</a>”, version 2, 13 August 2026; <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-22690">Royal Decree 1055/2022</a>, Articles 2(t), 2(e), 16, 17(2), 17(5) and Annex IV; <a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj">Regulation (EU) 2025/40 (PPWR)</a>, Articles 3, 44 and 45; Law 7/2022, Article 108. General information, not legal advice.</small></p>\n'
 SY_EN='''<p><em>Spain · packaging EPR · declaration of 2026 packaging, filed 2 January – 31 March 2027 · based on MITECO guidance</em></p>
 <p><strong>Hypothetical example</strong> of a typical scenario: a brand based outside the EU sells kitchen tools to consumers in Spain, through a marketplace and its own website. It is registered in the packaging section of Spain’s Producer Register through its authorised representative. In January its fulfilment provider will send a spreadsheet: kilos of cardboard and plastic shipped to Spain in 2026, one total per material for the whole year.</p>
 <p>For 2026 that spreadsheet will not be enough. Spain’s environment ministry (MITECO) says the declaration of packaging placed on the Spanish market in 2026 must follow the producer rules that applied <strong>on the date each package was marketed</strong>. Those rules changed on <strong>12 August 2026</strong>, when the EU Packaging and Packaging Waste Regulation (PPWR, Regulation (EU) 2025/40) began to apply. Depending on your situation before and after that date, you declare the whole of 2026, only 1 January – 11 August, or only 12 August – 31 December.</p>
@@ -588,7 +588,7 @@ SY_EN='''<p><em>Spain · packaging EPR · declaration of 2026 packaging, filed 2
 <h2>Why 2026 is a split year</h2>
 <p>Until 11 August 2026 the “producer” was defined by Royal Decree 1055/2022. From 12 August the PPWR definition prevails. MITECO describes the two as broadly compatible, but the differences hit online sellers directly:</p>
 <ul>
-<li><strong>Transport, service and primary-production packaging.</strong> The manufacturer, importer or distributor that first makes these available in Spain is now their producer. The PPWR treats e-commerce packaging, the box or mailer that delivers an online order, as a type of transport packaging.</li>
+<li><strong>Transport, service and primary-production packaging.</strong> The manufacturer, importer or distributor that first makes these available in Spain is now their producer. Under Article 3(1)(8) of Regulation (EU) 2025/40, e-commerce packaging is defined as transport packaging used to deliver products in the context of a sale online or through other distance sales to the end user. The box or mailer used to ship an order is therefore transport packaging, not sales packaging.</li>
 <li><strong>Direct sales from abroad.</strong> A manufacturer, importer or distributor established in another Member State or outside the EU that sells packaged products, or transport packaging, directly to end users in Spain is the producer there (PPWR Article 3(1)(15)(c) and (d)) and must appoint an authorised representative in Spain.</li>
 <li><strong>Marketplaces are no longer the fallback.</strong> Under the Royal Decree, when packaged products from outside Spain were sold through a platform and the producer had not appointed a representative, the platform acted subsidiarily as producer and used the simplified declaration. MITECO says platforms lose that role from 12 August. Instead they must check your registration and obtain your self-certification before letting you sell.</li>
 <li><strong>Own-brand goods made by someone else.</strong> The company that orders the product under its own brand is the producer. Only if it is a micro-enterprise does the manufacturer become the producer, and only when that manufacturer is located in Spain.</li>
@@ -602,8 +602,8 @@ SY_EN='''<p><em>Spain · packaging EPR · declaration of 2026 packaging, filed 2
 <tr><td>Producer only under the PPWR</td><td>12 August – 31 December 2026 only</td></tr>
 </table>
 <p>For transport, service and primary-production packaging MITECO applies the same logic, with one addition: operators that already declared these packages under a voluntary agreement under the Royal Decree, and are producers under the PPWR, declare the whole year.</p>
-<p>A non-EU brand selling its packaged products straight to Spanish consumers usually sits in the first row for its sales packaging, because the Royal Decree already required it to appoint a Spanish representative (Article 17(2)). The shipping box and filler are the part to check case by case: if they were not treated as yours before 12 August, the third row is the one to discuss with your representative.</p>
-<p>The cut-off is the date of the <strong>sales contract</strong>, in MITECO’s words. For online orders, keep the order date in your data, not only the dispatch or invoice date, so the split can be shown either way.</p>
+<p>A non-EU brand that sells its own packaged products directly to consumers in Spain usually sits in the first row for its sales packaging: Articles 2(t) and 17(2) of the Royal Decree already required it to appoint a representative in Spain. The shipping box and filler need a separate look. Where the seller packs and ships the order itself, Article 2(e) treats that seller as the packer of the packaging used in distance sales. Where the transport packaging is provided by a courier or a marketplace, Article 17(5) has those companies fulfil the financial and information obligations on behalf of the producers. MITECO also states that if transport, service or primary-production packaging only becomes your producer responsibility under the PPWR from 12 August, you declare only the period after 12 August; if you already declared it under a voluntary agreement under the Royal Decree and you remain the producer, you declare the whole year. Check with your authorised representative whether you pack the orders yourself or a courier or marketplace supplies the box; do not assume the third row applies, and do not assume you must declare the whole year.</p>
+<p>In MITECO’s own words, the cut-off is the date of the “sales contracts for the products” (<em>fecha de contratos de venta de productos</em>): which producer rules applied on the day the packaging was marketed. Do not substitute the dispatch date or the invoice date. For online orders, keep both the order date and the date the seller confirmed or accepted the order; if those two dates are the same, the order date can be used to make the split; if they differ, use the date the contract was formed.</p>
 
 <h2>What the declaration asks for</h2>
 <p>Annex IV(2) of the Royal Decree asks for the <strong>weight by material and the number of units</strong> of packaging placed on the market, broken down for each producer responsibility scheme (SCRAP) by category (household, commercial, industrial) and by single-use or reusable. Every element counts: the main body, caps and closures, handles, applicators, seals, and fastening and protection elements such as straps, filling material, bubble wrap, string and corner pieces.</p>
@@ -612,7 +612,7 @@ SY_EN='''<p><em>Spain · packaging EPR · declaration of 2026 packaging, filed 2
 <h2>Step by step: prepare now, file from 2 January</h2>
 <ol>
 <li><strong>Decide your case for each packaging type</strong>: the sales packaging of your products, the e-commerce boxes and fillers, and any other packaging that reaches Spanish end users. Write down which period applies to each.</li>
-<li><strong>Export your 2026 orders to Spanish end users</strong> with order date, SKU, quantity and channel, and split them at 11/12 August.</li>
+<li><strong>Export your 2026 orders to Spanish end users</strong> with the order date, the date the seller confirmed or accepted the order, SKU, quantity and channel, and split them at 11/12 August.</li>
 <li><strong>Build a packaging bill of materials per SKU</strong>: each component, its material, weight in grams, category and whether it is single-use or reusable. Ask your fulfilment provider for the box and filler specification per order type, so you can declare them where they fall within your case.</li>
 <li><strong>Multiply and total</strong>: units × component weight, summed by material, category, period and SCRAP. Keep the unit counts too.</li>
 <li><strong>Compare your data with your registration.</strong> The categories and the SCRAP for each category must match what you will declare. MITECO’s ordinary window to change them runs from <strong>1 October to 31 December</strong> each year. A SCRAP membership certificate must be attached within one month of joining.</li>
@@ -626,7 +626,7 @@ SY_EN='''<p><em>Spain · packaging EPR · declaration of 2026 packaging, filed 2
 <li><strong>One annual total per material</strong>, with no split at 12 August and no unit counts.</li>
 <li><strong>Leaving out small components</strong>: caps, seals, straps, filling material, bubble wrap.</li>
 <li><strong>Assuming the marketplace still declares for you.</strong> After 12 August it checks your registration; it is not the producer of your packaging. MITECO notes a platform may take on certain financial obligations under a written mandate, producer by producer, but that has to be agreed and set up.</li>
-<li><strong>Using only the dispatch or invoice date</strong> for orders around the cut-off.</li>
+<li><strong>Using only the dispatch or invoice date</strong> for orders around the cut-off, or treating the order date as the cut-off when it differs from the date the contract was formed.</li>
 <li><strong>Declaring a category or SCRAP that is not on your registration.</strong> Fix the registration before 31 December, not in March.</li>
 <li><strong>Counting packaging that a Spanish importer or distributor first made available in Spain.</strong> In that flow, the Spanish company is the producer.</li>
 </ul>
@@ -640,7 +640,7 @@ SY_EN='''<p><em>Spain · packaging EPR · declaration of 2026 packaging, filed 2
 </ul>
 
 <h2>FAQ</h2>
-<h3>I registered in October 2026. Do I only declare from October?</h3><p>MITECO ties the periods to when you were the producer, not to your registration date. Packages you placed on the market as producer before registering are part of the picture; agree with your representative how to handle them.</p>
+<h3>I registered in October 2026. Do I only declare from October?</h3><p>MITECO ties the periods to when you were the producer, not to your registration date. Packaging you already placed on the Spanish market in 2026, before your registration was completed, still has to be included in the corresponding period, provided you were the producer under the rules that applied at the time. At registration we collect the first year you placed packaged goods on the Spanish market and the weights by material for that year, and we declare those volumes between 2 January and 31 March next year. What to check with your authorised representative is how to split the data and how to keep the evidence — not whether to leave out volumes from before registration automatically.</p>
 <h3>Is 31 December a deadline for the declaration?</h3><p>No. 31 December closes the ordinary window to change your registered categories and SCRAPs. The 2026 declaration is filed from 2 January to 31 March 2027.</p>
 <h3>I placed under 15 tonnes. Do I still declare?</h3><p>Yes. Below 15 tonnes a year you use the simplified procedure, but the declaration is still required.</p>
 <h3>Can my SCRAP file the declaration for me?</h3><p>In Spain only with a prior power of representation registered in the Electronic Register of Powers (REA). MITECO says schemes cannot file directly without it.</p>
@@ -659,7 +659,7 @@ SY_ES='''<p><em>España · RAP de envases · declaración de los envases de 2026
 <h2>Por qué 2026 es un año partido</h2>
 <p>Hasta el 11 de agosto de 2026 el «productor» lo definía el Real Decreto 1055/2022. Desde el 12 de agosto prevalece la definición del PPWR. El MITECO las considera compatibles a grandes rasgos, pero las diferencias afectan de lleno a los vendedores en línea:</p>
 <ul>
-<li><strong>Envases de transporte, de servicio y de producción primaria.</strong> El fabricante, importador o distribuidor que los comercializa por primera vez en España pasa a ser su productor. El PPWR trata el envase de comercio electrónico, la caja o el sobre con el que se entrega un pedido en línea, como un tipo de envase de transporte.</li>
+<li><strong>Envases de transporte, de servicio y de producción primaria.</strong> El fabricante, importador o distribuidor que los comercializa por primera vez en España pasa a ser su productor. Conforme al artículo 3, apartado 1, punto 8, del Reglamento (UE) 2025/40, el envase de comercio electrónico se define como el envase de transporte utilizado para entregar productos en el marco de una venta en línea o de otras ventas a distancia al usuario final. Por tanto, la caja o el sobre con el que se envía un pedido es un envase de transporte, no un envase de venta.</li>
 <li><strong>Ventas directas desde el extranjero.</strong> El fabricante, importador o distribuidor establecido en otro Estado miembro o fuera de la UE que vende productos envasados, o envases de transporte, directamente a usuarios finales en España es el productor allí (artículo 3.1.15, letras c) y d), del PPWR) y debe designar un representante autorizado en España.</li>
 <li><strong>Los marketplaces dejan de ser la red de seguridad.</strong> Con el Real Decreto, cuando se vendían por una plataforma productos envasados procedentes de fuera de España y el productor no había designado representante, la plataforma actuaba subsidiariamente como productor y usaba la declaración simplificada. El MITECO indica que desde el 12 de agosto las plataformas pierden ese papel. En su lugar, deben comprobar su inscripción y obtener su autocertificación antes de permitirle vender.</li>
 <li><strong>Productos de marca propia fabricados por otro.</strong> Es productor quien encarga el producto con su propia marca. Solo si es una microempresa pasa a ser productor el fabricante, y solo cuando ese fabricante está situado en España.</li>
@@ -673,8 +673,8 @@ SY_ES='''<p><em>España · RAP de envases · declaración de los envases de 2026
 <tr><td>Productor solo según el PPWR</td><td>Solo del 12 de agosto al 31 de diciembre de 2026</td></tr>
 </table>
 <p>Para los envases de transporte, de servicio y de producción primaria el MITECO aplica la misma lógica, con un añadido: los operadores que ya declaraban estos envases mediante un acuerdo voluntario conforme al Real Decreto y que son productores según el PPWR declaran el año completo.</p>
-<p>Una marca de fuera de la UE que vende sus productos envasados directamente a consumidores españoles suele estar en la primera fila para sus envases de venta, porque el Real Decreto ya le exigía designar un representante en España (artículo 17.2). La caja de envío y el relleno son lo que hay que revisar caso por caso: si antes del 12 de agosto no se consideraban suyos, la tercera fila es la que debe comentar con su representante.</p>
-<p>La fecha de corte es, en palabras del MITECO, la del <strong>contrato de venta</strong>. En los pedidos en línea, conserve en sus datos la fecha del pedido, no solo la de envío o factura, para poder justificar la separación en cualquier caso.</p>
+<p>Una marca de fuera de la UE que vende sus propios productos envasados directamente a consumidores en España suele estar en la primera fila para sus envases de venta: los artículos 2.t) y 17.2 del Real Decreto ya le exigían designar un representante en España. La caja de envío y el relleno hay que examinarlos por separado. Si el vendedor embala y envía el pedido él mismo, el artículo 2.e) considera envasador de esos envases empleados en las ventas a distancia a dicho vendedor. Si el envase de transporte lo facilita una empresa de mensajería o una plataforma, el artículo 17.5 dispone que sean ellas quienes, en nombre de los productores, cumplan las obligaciones financieras y de información. El MITECO también indica que, si los envases de transporte, de servicio o de producción primaria solo pasan a ser su responsabilidad como productor conforme al PPWR a partir del 12 de agosto, declare únicamente el periodo posterior a esa fecha; si ya los declaraba mediante un acuerdo voluntario conforme al Real Decreto y sigue siendo productor, declare el año completo. Compruebe con su representante autorizado si embala usted mismo los pedidos o si la caja la facilita un mensajero o una plataforma; no dé por sentado que corresponde la tercera fila, ni que deba declarar el año entero.</p>
+<p>En palabras del propio MITECO, la fecha de corte es la de los «contratos de venta de productos» (<em>fecha de contratos de venta de productos</em>): qué normativa de productor se aplicaba el día en que se comercializó el envase. No la sustituya por la fecha de envío ni por la de factura. En los pedidos en línea, conserve tanto la fecha del pedido como la fecha en que el vendedor confirmó o aceptó el pedido; si ambas coinciden, la fecha del pedido puede servir para hacer la separación; si no coinciden, prevalece la fecha de perfeccionamiento del contrato.</p>
 
 <h2>Qué pide la declaración</h2>
 <p>El anexo IV, apartado 2, del Real Decreto exige el <strong>peso por tipo de material y el número de unidades</strong> de los envases puestos en el mercado, desglosados para cada sistema de responsabilidad ampliada (SCRAP) por categoría (doméstico, comercial, industrial) y según sean de un solo uso o reutilizables. Cuentan todos los elementos: el elemento principal, tapas, tapones y cierres, asas, aplicadores, precintos y los elementos de fijación y protección como flejes, material de relleno, plástico de burbujas, cordel o cantoneras.</p>
@@ -683,7 +683,7 @@ SY_ES='''<p><em>España · RAP de envases · declaración de los envases de 2026
 <h2>Paso a paso: preparar ahora, presentar desde el 2 de enero</h2>
 <ol>
 <li><strong>Determine su supuesto para cada tipo de envase</strong>: los envases de venta de sus productos, las cajas y el relleno de comercio electrónico y cualquier otro envase que llegue a usuarios finales en España. Anote qué periodo corresponde a cada uno.</li>
-<li><strong>Exporte sus pedidos de 2026 a usuarios finales en España</strong> con fecha de pedido, SKU, cantidad y canal, y sepárelos entre el 11 y el 12 de agosto.</li>
+<li><strong>Exporte sus pedidos de 2026 a usuarios finales en España</strong> con la fecha del pedido, la fecha en que el vendedor confirmó o aceptó el pedido, el SKU, la cantidad y el canal, y sepárelos entre el 11 y el 12 de agosto.</li>
 <li><strong>Prepare una lista de materiales de envase por SKU</strong>: cada componente, su material, su peso en gramos, su categoría y si es de un solo uso o reutilizable. Pida a su operador logístico la especificación de cajas y relleno por tipo de pedido, para declararlos cuando entren en su supuesto.</li>
 <li><strong>Multiplique y sume</strong>: unidades × peso del componente, totalizado por material, categoría, periodo y SCRAP. Conserve también el número de unidades.</li>
 <li><strong>Compare sus datos con su inscripción.</strong> Las categorías y el SCRAP de cada categoría deben coincidir con lo que va a declarar. El plazo ordinario del MITECO para modificarlos va del <strong>1 de octubre al 31 de diciembre</strong> de cada año. El certificado de adhesión al SCRAP debe adjuntarse en el plazo de un mes desde la adhesión.</li>
@@ -697,7 +697,7 @@ SY_ES='''<p><em>España · RAP de envases · declaración de los envases de 2026
 <li><strong>Un total anual por material</strong>, sin separar el 12 de agosto y sin número de unidades.</li>
 <li><strong>Olvidar los componentes pequeños</strong>: tapones, precintos, flejes, relleno, plástico de burbujas.</li>
 <li><strong>Suponer que el marketplace sigue declarando por usted.</strong> Después del 12 de agosto comprueba su inscripción; no es el productor de sus envases. El MITECO señala que una plataforma puede asumir ciertas obligaciones financieras mediante mandato escrito, productor por productor, pero eso hay que acordarlo y formalizarlo.</li>
-<li><strong>Usar solo la fecha de envío o de factura</strong> en los pedidos cercanos a la fecha de corte.</li>
+<li><strong>Usar solo la fecha de envío o de factura</strong> en los pedidos cercanos a la fecha de corte, o tomar la fecha del pedido como corte cuando no coincida con la de perfeccionamiento del contrato.</li>
 <li><strong>Declarar una categoría o un SCRAP que no figura en su inscripción.</strong> Corrija la inscripción antes del 31 de diciembre, no en marzo.</li>
 <li><strong>Contar envases que un importador o distribuidor español comercializó por primera vez en España.</strong> En ese flujo, el productor es la empresa española.</li>
 </ul>
@@ -711,7 +711,7 @@ SY_ES='''<p><em>España · RAP de envases · declaración de los envases de 2026
 </ul>
 
 <h2>Preguntas frecuentes</h2>
-<h3>Me inscribí en octubre de 2026. ¿Solo declaro desde octubre?</h3><p>El MITECO vincula los periodos a cuándo era usted productor, no a la fecha de inscripción. Los envases que puso en el mercado como productor antes de inscribirse forman parte del cuadro; acuerde con su representante cómo tratarlos.</p>
+<h3>Me inscribí en octubre de 2026. ¿Solo declaro desde octubre?</h3><p>El MITECO vincula los periodos a cuándo era usted productor, no a la fecha de inscripción. En 2026, los envases que ya hubiera puesto en el mercado español antes de completar la inscripción también deben incluirse en el periodo correspondiente, siempre que, conforme a la normativa aplicable en ese momento, usted fuera el productor. En la inscripción recabamos el primer año en que comercializó productos envasados en España y el peso por material de ese año, y declaramos esos volúmenes entre el 2 de enero y el 31 de marzo del año siguiente. Lo que hay que revisar con el representante autorizado es cómo desglosar los datos y cómo conservar las pruebas, no si se excluyen automáticamente las cantidades anteriores a la inscripción.</p>
 <h3>¿El 31 de diciembre es un plazo de la declaración?</h3><p>No. El 31 de diciembre cierra el plazo ordinario para modificar las categorías y los SCRAP inscritos. La declaración de 2026 se presenta del 2 de enero al 31 de marzo de 2027.</p>
 <h3>Puse en el mercado menos de 15 toneladas. ¿Tengo que declarar?</h3><p>Sí. Por debajo de 15 toneladas al año se usa el procedimiento simplificado, pero la declaración sigue siendo obligatoria.</p>
 <h3>¿Puede mi SCRAP presentar la declaración por mí?</h3><p>En España solo con un apoderamiento previo inscrito en el Registro Electrónico de Apoderamientos (REA). El MITECO indica que los sistemas no pueden hacerlo directamente sin él.</p>
@@ -720,7 +720,7 @@ SY_ES='''<p><em>España · RAP de envases · declaración de los envases de 2026
 <h2>¿Quiere revisar sus datos de envases de 2026 antes de declarar?</h2>
 <p>IberTrust Global S.L. actúa como representante autorizado para la RAP de envases en España y prepara inscripciones y declaraciones anuales para vendedores establecidos fuera de España. Envíenos la exportación de pedidos de 2026, las especificaciones de sus envases y su inscripción actual, y le diremos qué periodo corresponde a cada tipo de envase y qué falta.</p>
 <p><strong><a href="/es/quote.html?service=epr-packaging-spain">Solicitar revisión de la declaración de envases de 2026 →</a></strong><br>O escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
-'''+SY_SRC_EN.replace('<small>Sources:','<small>Fuentes:').replace('sections 3 and 4, consulted 10 November 2026','apartados 3 y 4, consultado el 10 de noviembre de 2026').replace('version 2, 13 August 2026','versión 2, 13 de agosto de 2026').replace('>Royal Decree 1055/2022</a>, Articles 2(t), 16, 17(2) and Annex IV','>Real Decreto 1055/2022</a>, artículos 2.t), 16, 17.2 y anexo IV').replace('>Regulation (EU) 2025/40 (PPWR)</a>, Articles 3, 44 and 45','>Reglamento (UE) 2025/40 (PPWR)</a>, artículos 3, 44 y 45').replace('Law 7/2022, Article 108. General information, not legal advice.','Ley 7/2022, artículo 108. Información general, no asesoramiento jurídico.')
+'''+SY_SRC_EN.replace('<small>Sources:','<small>Fuentes:').replace('sections 3 and 4, consulted 10 November 2026','apartados 3 y 4, consultado el 10 de noviembre de 2026').replace('version 2, 13 August 2026','versión 2, 13 de agosto de 2026').replace('>Royal Decree 1055/2022</a>, Articles 2(t), 2(e), 16, 17(2), 17(5) and Annex IV','>Real Decreto 1055/2022</a>, artículos 2.t), 2.e), 16, 17.2, 17.5 y anexo IV').replace('>Regulation (EU) 2025/40 (PPWR)</a>, Articles 3, 44 and 45','>Reglamento (UE) 2025/40 (PPWR)</a>, artículos 3, 44 y 45').replace('Law 7/2022, Article 108. General information, not legal advice.','Ley 7/2022, artículo 108. Información general, no asesoramiento jurídico.')
 
 SY_ZH='''<p><em>西班牙 · 包装 EPR · 2026 年包装数据申报，申报期 2027 年 1 月 2 日至 3 月 31 日 · 依据西班牙生态转型部（MITECO）指引</em></p>
 <p><strong>假设案例</strong>（典型场景）：一家欧盟境外的品牌通过电商平台和自建站向西班牙消费者卖厨房用品，已通过授权代表在西班牙生产者登记册（Registro de Productores de Producto）包装部分完成注册。明年 1 月，物流商会发来一张表：2026 年发往西班牙的纸板和塑料各多少公斤，每种材质一个全年总数。</p>
@@ -730,7 +730,7 @@ SY_ZH='''<p><em>西班牙 · 包装 EPR · 2026 年包装数据申报，申报�
 <h2>为什么 2026 年要拆成两段</h2>
 <p>2026 年 8 月 11 日之前，“生产者”由皇家法令 1055/2022 定义；8 月 12 日起以 PPWR 的定义为准。MITECO 认为两者大体一致，但差异恰好落在网上卖家身上：</p>
 <ul>
-<li><strong>运输包装、服务包装和初级生产包装。</strong>首次在西班牙投放这些包装的制造商、进口商或分销商，现在就是它们的生产者。PPWR 把电商包装——寄送网购订单用的纸箱或快递袋——视为运输包装的一种。</li>
+<li><strong>运输包装、服务包装和初级生产包装。</strong>首次在西班牙投放这些包装的制造商、进口商或分销商，现在就是它们的生产者。按法规 (EU) 2025/40 第 3 条第 1 款第 8 项，电商包装的定义就是：在网上销售或其他远程销售中，用于向终端用户交付产品的运输包装。因此寄送订单用的外箱、快递袋属于运输包装，不是销售包装。</li>
 <li><strong>从境外直接销售。</strong>设立在其他成员国或欧盟以外、把带包装产品或运输包装直接卖给西班牙终端用户的制造商、进口商或分销商，就是在西班牙的生产者（PPWR 第 3 条第 1 款第 15 项 c、d 目），须在西班牙指定授权代表。</li>
 <li><strong>平台不再兜底。</strong>按皇家法令，西班牙境外的带包装产品经平台销售、而生产者没有指定代表时，平台以补充身份充当生产者，并用简易申报。MITECO 说明，8 月 12 日起平台不再承担这一角色，改为在允许您销售前核查您的注册并取得您的自我声明。</li>
 <li><strong>委托他人生产的自有品牌产品。</strong>以自己品牌下单定制产品的一方是生产者；只有当它是微型企业、且制造商位于西班牙时，制造商才是生产者。</li>
@@ -744,8 +744,8 @@ SY_ZH='''<p><em>西班牙 · 包装 EPR · 2026 年包装数据申报，申报�
 <tr><td>仅按 PPWR 才是生产者</td><td>仅 2026 年 8 月 12 日至 12 月 31 日</td></tr>
 </table>
 <p>运输包装、服务包装和初级生产包装按同样逻辑处理，另有一种情形：此前已依皇家法令下的自愿协议申报这类包装、按 PPWR 又是生产者的经营者，申报全年。</p>
-<p>欧盟境外品牌把自己的带包装产品直接卖给西班牙消费者的，其销售包装通常属于第一行，因为皇家法令本来就要求它在西班牙指定代表（第 17 条第 2 款）。需要逐案核对的是外箱和填充物：如果 8 月 12 日之前它们不算您的，就要和您的授权代表讨论是否适用第三行。</p>
-<p>MITECO 的原话是以<strong>销售合同的日期</strong>为准。网上订单请在数据里保留下单日期，而不只是发货日或开票日，这样无论按哪种口径都能说明拆分依据。</p>
+<p>欧盟境外品牌把自己的带包装产品直接卖给西班牙消费者的，其销售包装通常属于第一行：皇家法令第 2 条 t 项和第 17 条第 2 款本来就要求它在西班牙指定代表。外箱和填充物要单独看。卖家自己装箱寄出的，第 2 条 e 项把远程销售所用包装的灌装商定为该卖家；若运输包装由快递或平台提供，则按第 17 条第 5 款由它们代为履行资金和信息义务。MITECO 还写明：运输包装、服务包装和初级生产包装若只在 8 月 12 日之后才按 PPWR 成为您的生产者责任，这一段只报 8 月 12 日以后；此前已按皇家法令下的自愿协议申报、且现在仍是生产者的，报全年。请和授权代表按您实际是自己装箱、还是快递或平台提供外箱来判断，不要默认走第三行，也不要默认全年都报。</p>
+<p>MITECO 的原话是以「产品销售合同的日期」（<em>fecha de contratos de venta de productos</em>）为准，看该包装被商业化当天适用哪一套生产者规则。不要用发货日或开票日代替。网上订单请同时保留下单日期和商家确认或接受订单的日期；这两天一致时，下单日就可以作为拆分依据，不一致时以合同成立日为准。</p>
 
 <h2>申报要填什么</h2>
 <p>皇家法令附件四第 2 项要求申报投放市场的包装的<strong>各材质重量和数量（件数）</strong>，按每个生产者责任组织（SCRAP）、按类别（家用、商用、工业）、按一次性或可重复使用分别列出。所有部件都算：主体，盖子、瓶塞和其他封口件，提手、涂抹器、封条，以及捆扎带、填充物、气泡膜、绳子、护角等固定和保护件。</p>
@@ -754,7 +754,7 @@ SY_ZH='''<p><em>西班牙 · 包装 EPR · 2026 年包装数据申报，申报�
 <h2>分步操作：现在准备，1 月 2 日起申报</h2>
 <ol>
 <li><strong>按包装类型判断您属于哪种情形</strong>：产品的销售包装、电商外箱和填充物、以及其他到达西班牙终端用户的包装，逐一写下适用的时间段。</li>
-<li><strong>导出 2026 年发给西班牙终端用户的订单</strong>，含下单日期、SKU、数量和渠道，以 8 月 11/12 日为界拆开。</li>
+<li><strong>导出 2026 年发给西班牙终端用户的订单</strong>，含下单日期、商家确认或接受订单的日期、SKU、数量和渠道，以 8 月 11/12 日为界拆开。</li>
 <li><strong>按 SKU 建包装物料清单</strong>：每个部件的材质、克重、类别，以及一次性还是可重复使用。向物流商要各类订单所用外箱和填充物的规格，属于您申报范围的就一并申报。</li>
 <li><strong>相乘汇总</strong>：件数 × 部件重量，按材质、类别、时间段和 SCRAP 汇总；件数也要保留。</li>
 <li><strong>把数据和注册信息对一遍。</strong>注册的包装类别和每个类别对应的 SCRAP，必须和您要申报的一致。MITECO 的常规修改窗口是每年 <strong>10 月 1 日至 12 月 31 日</strong>。加入 SCRAP 后须在一个月内上传会员证明。</li>
@@ -768,7 +768,7 @@ SY_ZH='''<p><em>西班牙 · 包装 EPR · 2026 年包装数据申报，申报�
 <li><strong>每种材质只报一个全年总数</strong>，没有按 8 月 12 日拆分，也没有件数。</li>
 <li><strong>漏掉小部件</strong>：瓶盖、封条、捆扎带、填充物、气泡膜。</li>
 <li><strong>以为平台还在替您申报。</strong>8 月 12 日之后平台只核查您的注册，不是您包装的生产者。MITECO 提到平台可以凭书面委托、逐个生产者承担某些资金义务，但这需要双方约定并办好。</li>
-<li><strong>临界日期前后的订单只用发货日或开票日。</strong></li>
+<li><strong>临界日期前后的订单只用发货日或开票日，或在下单日与合同成立日不一致时仍按下单日拆分。</strong></li>
 <li><strong>申报了注册信息里没有的类别或 SCRAP。</strong>注册信息要在 12 月 31 日前改好，不要等到 3 月。</li>
 <li><strong>把西班牙进口商或分销商首次投放的包装算成自己的。</strong>这种渠道下，生产者是那家西班牙公司。</li>
 </ul>
@@ -782,7 +782,7 @@ SY_ZH='''<p><em>西班牙 · 包装 EPR · 2026 年包装数据申报，申报�
 </ul>
 
 <h2>常见问题</h2>
-<h3>我是 2026 年 10 月才注册的，只报 10 月以后吗？</h3><p>MITECO 把申报时间段和您何时是生产者挂钩，而不是和注册日期挂钩。注册前您作为生产者投放的包装也在范围内，具体如何处理请与授权代表商定。</p>
+<h3>我是 2026 年 10 月才注册的，只报 10 月以后吗？</h3><p>MITECO 把申报时间段和您何时是生产者挂钩，而不是和注册日期挂钩。2026 年里，只要在相应规则下您是生产者，注册完成前已经投放西班牙市场的包装也要计入对应时间段。我们登记时会收集首次投放西班牙的年份和该年各材质重量，明年 1 月 2 日至 3 月 31 日按这些投放量申报；需要和授权代表核对的是数据怎么拆、证据怎么留，而不是把注册前的量自动排除。</p>
 <h3>12 月 31 日是申报截止日吗？</h3><p>不是。12 月 31 日是修改注册类别和 SCRAP 的常规窗口截止日。2026 年数据在 2027 年 1 月 2 日至 3 月 31 日申报。</p>
 <h3>投放量不到 15 吨，还要申报吗？</h3><p>要。年投放量低于 15 吨走简易程序，但仍须申报。</p>
 <h3>SCRAP 能替我申报吗？</h3><p>在西班牙，必须事先在电子授权登记处（REA）登记授权。MITECO 说明，没有授权，生产者责任组织不能直接代报。</p>
@@ -791,7 +791,7 @@ SY_ZH='''<p><em>西班牙 · 包装 EPR · 2026 年包装数据申报，申报�
 <h2>申报前想先核对 2026 年包装数据？</h2>
 <p>IberTrust Global S.L. 担任西班牙包装 EPR 授权代表，为西班牙境外卖家办理注册和年度申报。把 2026 年订单导出、包装规格和当前注册信息发给我们，我们告诉您每类包装适用哪个时间段、还缺什么。</p>
 <p><strong><a href="/zh/quote.html?service=epr-packaging-spain">申请 2026 年包装申报核对 →</a></strong><br>或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>
-'''+'<p><small>来源：MITECO，“<a href="https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/registro-productores-producto/registro-productores-producto-seccion-envases.html">Registro de Productores de Producto. Sección envases</a>”（第 3、4 节，2026 年 11 月 10 日查阅）；MITECO 废弃物司，“<a href="https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/sgecocir/envases/260813_NOTA%20INSCRIPCION%20RPP_nuevo%20PPWR_.pdf">关于法规 (EU) 2025/40 生产者定义的解释说明</a>”，第 2 版，2026 年 8 月 13 日；<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-22690">皇家法令 1055/2022</a> 第 2 条 t 项、第 16 条、第 17 条第 2 款及附件四；<a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj">法规 (EU) 2025/40（PPWR）</a>第 3、44、45 条；第 7/2022 号法律第 108 条。本文为一般性信息，不构成法律意见。</small></p>\n'
+'''+'<p><small>来源：MITECO，“<a href="https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/registro-productores-producto/registro-productores-producto-seccion-envases.html">Registro de Productores de Producto. Sección envases</a>”（第 3、4 节，2026 年 11 月 10 日查阅）；MITECO 废弃物司，“<a href="https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/sgecocir/envases/260813_NOTA%20INSCRIPCION%20RPP_nuevo%20PPWR_.pdf">关于法规 (EU) 2025/40 生产者定义的解释说明</a>”，第 2 版，2026 年 8 月 13 日；<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-22690">皇家法令 1055/2022</a> 第 2 条 t 项和 e 项、第 16 条、第 17 条第 2 款和第 5 款及附件四；<a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj">法规 (EU) 2025/40（PPWR）</a>第 3、44、45 条；第 7/2022 号法律第 108 条。本文为一般性信息，不构成法律意见。</small></p>\n'
 
 POSTS.insert(0,('spain-packaging-declaration-2026-split-year-ppwr',{'date':'2026-11-10',
  'en':('Spain’s 2026 packaging declaration is a split year: report by the 12 August cut-off, and fix your registration before 31 December',SY_EN),
