@@ -802,6 +802,235 @@ POSTS.insert(0,('spain-packaging-declaration-2026-split-year-ppwr',{'date':'2026
   'zh':'西班牙 2026 年包装申报（2027 年 1 月 2 日至 3 月 31 日）按每笔销售当天适用的生产者规则判断。如何以 8 月 12 日拆分数据、要准备什么、12 月 31 日前的注册修改窗口与常见错误。'},
  'faq':{'en':_faq2(SY_EN,'<h2>FAQ</h2>'),'es':_faq2(SY_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(SY_ZH,'<h2>常见问题</h2>')}}))
 
+# ---- 2026-11-11 post: MITECO packaging registration, draft vs filed ----
+MR_SRC={'en':'Sources','es':'Fuentes','zh':'来源'}
+def _mrsrc(lang):
+  tail={'en':'IberTrust Global S.L. filing practice on MITECO’s electronic office (November 2026). General information, not legal advice.',
+        'es':'práctica de IberTrust Global S.L. en la sede electrónica del MITECO (noviembre de 2026). Información general, no asesoramiento jurídico.',
+        'zh':'IberTrust Global S.L. 在 MITECO 电子办事处的实际办理经验（2026 年 11 月）。本文为一般性信息，不构成法律意见。'}[lang]
+  return ('<p><small>'+MR_SRC[lang]+('：' if lang=='zh' else ': ')+'MITECO, “<a href="https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/registro-productores-producto/registro-productores-producto-seccion-envases.html">Registro de Productores de Producto. Sección envases</a>”; MITECO, Subdirección General de Residuos, “<a href="https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/sgecocir/envases/260813_NOTA%20INSCRIPCION%20RPP_nuevo%20PPWR_.pdf">Nota interpretativa … definición de productor … Reglamento (UE) 2025/40</a>”, 13 August 2026; <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-22690">Royal Decree 1055/2022</a>; <a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj">Regulation (EU) 2025/40 (PPWR)</a>; '+tail+'</small></p>')
+MR_EN='''<p><em>Spain · packaging EPR · producer registration at MITECO · from our own filings</em></p>
+<p><strong>Hypothetical example</strong> of a situation we have seen in practice: late in the evening, a seller’s team finishes the online form to register the company in the packaging section of Spain’s Producer Register. A pop-up shows a reference in the format <code>ENV/2026/…</code>. Someone copies it into the compliance tracker, marks the task “registered” and passes the number to the marketplace account manager. The next morning, a look at the ministry’s portal shows the application still sitting in the drafts folder. Nothing was ever filed.</p>
+<p>The form is long, sessions time out, and the electronic signature runs in a separate desktop application. It is easy to stop one screen too early. This article explains how to tell a filed registration from a saved draft, what proof to keep, and where people usually slip.</p>
+
+<h2>Why this matters more after 12 August 2026</h2>
+<p>Producers based outside Spain that sell packaged goods directly to consumers in Spain must be registered in the packaging section of the Producer Register kept by Spain’s environment ministry (MITECO), through an authorised representative (Royal Decree 1055/2022). Since the EU Packaging and Packaging Waste Regulation (PPWR, Regulation (EU) 2025/40) began to apply on 12 August 2026, marketplaces are no longer the fallback producer for those sellers. MITECO expects them to check the producer’s registration and obtain its self-certification before letting it sell.</p>
+<p>A reference number that belongs to an unfiled draft will not survive that check. And the packaging you keep shipping in the meantime is still yours to declare.</p>
+
+<h2>Draft or filed: how to tell</h2>
+<table>
+<tr><th>What you see</th><th>Saved draft</th><th>Filed application</th></tr>
+<tr><td>An <code>ENV/…</code> reference in a pop-up while filling in</td><td>Can appear</td><td>Yes</td></tr>
+<tr><td>Application listed under <em>Mis Borradores</em> (my drafts)</td><td>Yes</td><td>No</td></tr>
+<tr><td>Electronic signature completed (<em>Firmar y registrar</em>)</td><td>No</td><td>Yes</td></tr>
+<tr><td>Final screen “<em>Solicitud finalizada con éxito</em>”</td><td>No</td><td>Yes</td></tr>
+<tr><td>Registry entry number starting with <code>REGAGE</code></td><td>No</td><td>Yes</td></tr>
+<tr><td>Listed under <em>Mis Solicitudes</em> (my applications) with a downloadable <code>datosFormulario.pdf</code></td><td>No</td><td>Yes</td></tr>
+</table>
+<p>The rule we now apply on every file is simple: an ENV reference on its own proves nothing. Only the success screen together with a REGAGE entry number counts, and the filed form is downloaded the same day.</p>
+
+<h2>Step by step: the filing sequence on MITECO’s portal</h2>
+<ol>
+<li><strong>Representation first.</strong> If an authorised representative or adviser files for the producer, its power of representation for the MITECO procedures should be registered and accepted in Spain’s Electronic Register of Powers (REA) before filing. Where the producer already holds a Spanish electronic certificate, the power can be granted online and signed with both certificates; otherwise a notarised and apostilled power of attorney is usually needed, and it goes through a legal review first.</li>
+<li><strong>Open the procedure</strong> “<em>Inscripción en el registro de productores de producto</em>” in MITECO’s electronic office, for packaging.</li>
+<li><strong>Complete the form</strong>: company and representative data, packaging categories (household, commercial, industrial), single-use or reusable, and the producer responsibility scheme (SCRAP) for each category.</li>
+<li><strong>Attach the documents</strong> (<em>Adjuntar documentación</em>), such as the SCRAP membership certificate where you already have it.</li>
+<li><strong>Sign and register</strong> (<em>Firmar y registrar</em>). The signature runs through AutoFirma, the Spanish government’s signing application. If it freezes or cannot connect, close it completely, including anything still running in the background, and try again. Do not close the browser tab and assume it went through.</li>
+<li><strong>Finish</strong> (<em>Finalización</em>). Wait for “<em>Solicitud finalizada con éxito</em>” and the REGAGE number. Take a screenshot.</li>
+<li><strong>Download the filed form.</strong> In <em>Zona Personal &gt; Mis Solicitudes</em>, leave the procedure field empty and choose how you filed (on behalf of someone through REA, or with your own certificate), or search by the producer’s tax number. Download <code>datosFormulario.pdf</code> for that application and store it in the producer’s file.</li>
+<li><strong>Clean up the drafts folder.</strong> If another draft for the same producer is still in <em>Mis Borradores</em>, check that it is not the version you actually meant to file.</li>
+</ol>
+
+<h2>What to keep in the compliance file</h2>
+<ul>
+<li>Screenshot of the success screen, with date and time</li>
+<li>The REGAGE entry number</li>
+<li>The ENV reference of the <em>filed</em> application, not of a draft</li>
+<li><code>datosFormulario.pdf</code> downloaded from <em>Mis Solicitudes</em></li>
+<li>The REA power-of-representation reference, if a representative filed</li>
+<li>The SCRAP membership certificate</li>
+</ul>
+<p>When a marketplace or a business customer asks for proof of registration, send the filed form and the numbers together, not a screenshot of a pop-up.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Recording the pop-up ENV reference as the registration number</strong> before the signature step.</li>
+<li><strong>Leaving the session after attaching documents</strong>, without ever reaching <em>Firmar y registrar</em>.</li>
+<li><strong>Assuming AutoFirma signed because its window disappeared.</strong> Only the success screen confirms it.</li>
+<li><strong>Filing before the REA power is accepted</strong>, so the representative is not yet entitled to act for the producer.</li>
+<li><strong>Not downloading the filed form</strong>, then hunting for it weeks later when a platform asks.</li>
+<li><strong>Two parallel drafts for the same producer</strong> with different categories or schemes, one signed and one not.</li>
+</ul>
+
+<h2>Who this does not apply to</h2>
+<ul>
+<li><strong>Brands that only sell to a Spain-based importer or distributor</strong> that first makes the goods available in Spain. That company is the producer and registers.</li>
+<li><strong>Electrical equipment and batteries.</strong> They have their own registers and procedures (for electrical equipment, the RII-AEE), with their own proof.</li>
+<li><strong>Other EU countries.</strong> Each Member State runs its own register and portal.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Is the ENV number my registration number?</h3><p>Not on its own. An ENV-format reference can already appear while the application is still a draft. Treat it as valid only once the application is signed, the success screen appears and you hold a REGAGE entry number.</p>
+<h3>What is a REGAGE number?</h3><p>It is the entry number given by the Spanish central administration’s electronic registry. It shows that the application was actually submitted, and when.</p>
+<h3>Where do I find proof later?</h3><p>In Zona Personal, under Mis Solicitudes, in MITECO’s electronic office. The filed form can be downloaded there as datosFormulario.pdf.</p>
+<h3>My application is in Mis Borradores. What now?</h3><p>A draft has not been submitted. Open it, check every section and attachment, then complete the signature and finalisation steps and keep the new REGAGE number.</p>
+<h3>Will the marketplace check my registration?</h3><p>Since 12 August 2026 MITECO expects marketplaces to check that producers selling packaged products to Spanish consumers are registered and to obtain their self-certification before allowing them to sell.</p>
+
+<h2>Not sure your Spanish packaging registration was really filed?</h2>
+<p>IberTrust Global S.L. acts as authorised representative for packaging EPR in Spain and files registrations on MITECO’s portal for sellers based outside Spain. Send us the references you have, and we will check whether the application was filed and what is missing.</p>
+<p><strong><a href="/quote.html?service=epr-packaging-spain">Request a packaging registration check →</a></strong><br>Or email <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_mrsrc('en')
+MR_ES='''<p><em>España · RAP de envases · inscripción del productor en el MITECO · desde nuestras propias tramitaciones</em></p>
+<p><strong>Ejemplo hipotético</strong> de una situación que hemos visto en la práctica: a última hora de la tarde, el equipo de un vendedor termina el formulario en línea para inscribir la empresa en la sección de envases del Registro de Productores de Producto. Aparece una ventana con una referencia del tipo <code>ENV/2026/…</code>. Alguien la copia en su hoja de seguimiento, marca la tarea como “inscrito” y pasa el número al gestor de cuenta del marketplace. A la mañana siguiente, al entrar en el portal del ministerio, la solicitud sigue en la carpeta de borradores. Nunca se presentó.</p>
+<p>El formulario es largo, la sesión caduca y la firma electrónica se hace en una aplicación de escritorio aparte. Es fácil quedarse a una pantalla del final. Este artículo explica cómo distinguir una inscripción presentada de un borrador guardado, qué justificantes conservar y dónde suele fallar el proceso.</p>
+
+<h2>Por qué importa más desde el 12 de agosto de 2026</h2>
+<p>Los productores establecidos fuera de España que venden productos envasados directamente a consumidores en España deben estar inscritos en la sección de envases del Registro de Productores de Producto del Ministerio para la Transición Ecológica (MITECO), a través de un representante autorizado (Real Decreto 1055/2022). Desde que el Reglamento europeo de envases y residuos de envases (PPWR, Reglamento (UE) 2025/40) empezó a aplicarse el 12 de agosto de 2026, los marketplaces ya no actúan como productor subsidiario de esos vendedores. El MITECO espera que comprueben la inscripción del productor y obtengan su autocertificación antes de permitirle vender.</p>
+<p>Una referencia que pertenece a un borrador no presentado no supera esa comprobación. Y los envases que sigue enviando mientras tanto siguen siendo suyos a efectos de declaración.</p>
+
+<h2>Borrador o presentada: cómo distinguirlo</h2>
+<table>
+<tr><th>Lo que ve</th><th>Borrador guardado</th><th>Solicitud presentada</th></tr>
+<tr><td>Una referencia <code>ENV/…</code> en una ventana emergente durante el relleno</td><td>Puede aparecer</td><td>Sí</td></tr>
+<tr><td>La solicitud figura en <em>Mis Borradores</em></td><td>Sí</td><td>No</td></tr>
+<tr><td>Firma electrónica completada (<em>Firmar y registrar</em>)</td><td>No</td><td>Sí</td></tr>
+<tr><td>Pantalla final “<em>Solicitud finalizada con éxito</em>”</td><td>No</td><td>Sí</td></tr>
+<tr><td>Número de asiento registral que empieza por <code>REGAGE</code></td><td>No</td><td>Sí</td></tr>
+<tr><td>Aparece en <em>Mis Solicitudes</em> con <code>datosFormulario.pdf</code> descargable</td><td>No</td><td>Sí</td></tr>
+</table>
+<p>La regla que aplicamos ahora en cada expediente es sencilla: una referencia ENV por sí sola no prueba nada. Solo cuenta la pantalla de éxito junto con un número de asiento REGAGE, y el formulario presentado se descarga el mismo día.</p>
+
+<h2>Paso a paso: la secuencia en el portal del MITECO</h2>
+<ol>
+<li><strong>Primero, la representación.</strong> Si un representante autorizado o asesor presenta por el productor, su poder de representación para los procedimientos del MITECO debe estar inscrito y aceptado en el Registro Electrónico de Apoderamientos (REA) antes de presentar. Si el productor ya tiene certificado electrónico español, el poder puede otorgarse en línea y firmarse con ambos certificados; si no, normalmente hace falta un poder notarial apostillado, que pasa antes por un bastanteo.</li>
+<li><strong>Abrir el procedimiento</strong> “<em>Inscripción en el registro de productores de producto</em>” en la sede electrónica del MITECO, para envases.</li>
+<li><strong>Rellenar el formulario</strong>: datos de la empresa y del representante, categorías de envases (doméstico, comercial, industrial), de un solo uso o reutilizables, y el sistema de responsabilidad ampliada (SCRAP) de cada categoría.</li>
+<li><strong>Adjuntar documentación</strong>, por ejemplo el certificado de adhesión al SCRAP si ya lo tiene.</li>
+<li><strong>Firmar y registrar.</strong> La firma se hace con AutoFirma, la aplicación de firma de la Administración. Si se bloquea o no conecta, ciérrela por completo, incluido lo que siga ejecutándose en segundo plano, y vuelva a intentarlo. No cierre la pestaña dando por hecho que se ha presentado.</li>
+<li><strong>Finalización.</strong> Espere a “<em>Solicitud finalizada con éxito</em>” y al número REGAGE. Haga una captura de pantalla.</li>
+<li><strong>Descargar el formulario presentado.</strong> En <em>Zona Personal &gt; Mis Solicitudes</em>, deje vacío el campo de procedimiento y elija cómo presentó (en representación a través del REA o con su propio certificado), o busque por el NIF del productor. Descargue <code>datosFormulario.pdf</code> de esa solicitud y guárdelo en el expediente.</li>
+<li><strong>Revisar la carpeta de borradores.</strong> Si queda otro borrador del mismo productor en <em>Mis Borradores</em>, compruebe que no es la versión que realmente quería presentar.</li>
+</ol>
+
+<h2>Qué guardar en el expediente</h2>
+<ul>
+<li>Captura de la pantalla de éxito, con fecha y hora</li>
+<li>El número de asiento REGAGE</li>
+<li>La referencia ENV de la solicitud <em>presentada</em>, no la de un borrador</li>
+<li><code>datosFormulario.pdf</code> descargado de <em>Mis Solicitudes</em></li>
+<li>La referencia del apoderamiento en el REA, si presentó un representante</li>
+<li>El certificado de adhesión al SCRAP</li>
+</ul>
+<p>Cuando un marketplace o un cliente profesional pida prueba de la inscripción, envíe el formulario presentado y los números juntos, no una captura de una ventana emergente.</p>
+
+<h2>Errores habituales</h2>
+<ul>
+<li><strong>Anotar la referencia ENV de la ventana emergente como número de inscripción</strong> antes del paso de firma.</li>
+<li><strong>Salir de la sesión después de adjuntar documentos</strong> sin llegar a <em>Firmar y registrar</em>.</li>
+<li><strong>Dar por firmada la solicitud porque se cerró la ventana de AutoFirma.</strong> Solo la pantalla de éxito lo confirma.</li>
+<li><strong>Presentar antes de que el poder del REA esté aceptado</strong>, de modo que el representante aún no puede actuar por el productor.</li>
+<li><strong>No descargar el formulario presentado</strong> y tener que buscarlo semanas después, cuando lo pide una plataforma.</li>
+<li><strong>Dos borradores paralelos del mismo productor</strong> con categorías o sistemas distintos, uno firmado y otro no.</li>
+</ul>
+
+<h2>A quién no se aplica</h2>
+<ul>
+<li><strong>Marcas que solo venden a un importador o distribuidor establecido en España</strong> que es quien primero comercializa los productos en España. Esa empresa es el productor y se inscribe.</li>
+<li><strong>Aparatos eléctricos y pilas.</strong> Tienen sus propios registros y procedimientos (para aparatos eléctricos, el RII-AEE), con sus propios justificantes.</li>
+<li><strong>Otros países de la UE.</strong> Cada Estado miembro tiene su propio registro y portal.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿El número ENV es mi número de inscripción?</h3><p>No por sí solo. Una referencia con formato ENV puede aparecer cuando la solicitud todavía es un borrador. Considérela válida solo cuando la solicitud esté firmada, aparezca la pantalla de éxito y tenga un número de asiento REGAGE.</p>
+<h3>¿Qué es un número REGAGE?</h3><p>Es el número de asiento del registro electrónico de la Administración General del Estado. Demuestra que la solicitud se presentó realmente, y cuándo.</p>
+<h3>¿Dónde encuentro la prueba más adelante?</h3><p>En Zona Personal, apartado Mis Solicitudes, de la sede electrónica del MITECO. Allí se puede descargar el formulario presentado como datosFormulario.pdf.</p>
+<h3>Mi solicitud está en Mis Borradores. ¿Qué hago?</h3><p>Un borrador no se ha presentado. Ábralo, revise cada apartado y adjunto, complete la firma y la finalización y guarde el nuevo número REGAGE.</p>
+<h3>¿El marketplace comprobará mi inscripción?</h3><p>Desde el 12 de agosto de 2026 el MITECO espera que los marketplaces comprueben que los productores que venden productos envasados a consumidores en España están inscritos y obtengan su autocertificación antes de permitirles vender.</p>
+
+<h2>¿No está seguro de que su inscripción de envases se presentara de verdad?</h2>
+<p>IberTrust Global S.L. actúa como representante autorizado para el RAP de envases en España y presenta inscripciones en el portal del MITECO para vendedores establecidos fuera de España. Envíenos las referencias que tenga y comprobaremos si la solicitud se presentó y qué falta.</p>
+<p><strong><a href="/es/quote.html?service=epr-packaging-spain">Solicitar revisión de la inscripción →</a></strong><br>O escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_mrsrc('es')
+MR_ZH='''<p><em>西班牙 · 包装 EPR · 在 MITECO 办理生产者注册 · 来自我们自己的实际办理</em></p>
+<p><strong>假设案例</strong>，但这种情况我们在实际办理中见过：晚上，一家卖家的团队终于填完了西班牙生产者登记册包装板块的在线注册表。页面弹出一个 <code>ENV/2026/…</code> 格式的编号。有人把它抄进合规进度表，标成“已注册”，还把编号发给了平台的客户经理。第二天早上再登录部里的门户一看，这份申请还躺在草稿箱里，根本没有提交。</p>
+<p>表格很长，会话会超时，电子签名又要在另一个桌面程序里完成，很容易在最后一步之前就停下。本文讲清楚：怎么区分“已提交的注册”和“保存的草稿”、该留哪些凭证、通常在哪一步出错。</p>
+
+<h2>为什么 2026 年 8 月 12 日之后更要紧</h2>
+<p>西班牙境外的生产者若把带包装的产品直接卖给西班牙消费者，必须通过授权代表在西班牙生态转型部（MITECO）的生产者登记册包装板块注册（皇家法令 1055/2022）。欧盟《包装与包装废弃物法规》（PPWR，法规（EU）2025/40）自 2026 年 8 月 12 日起适用后，平台不再替这些卖家充当兜底生产者。MITECO 要求平台在允许卖家销售前，核查其注册情况并取得其自我声明。</p>
+<p>一个属于未提交草稿的编号，过不了这道核查。而在此期间您继续发出的包装，申报责任仍然在您自己身上。</p>
+
+<h2>草稿还是已提交：怎么分辨</h2>
+<table>
+<tr><th>看到的情况</th><th>保存的草稿</th><th>已提交的申请</th></tr>
+<tr><td>填写过程中弹窗显示 <code>ENV/…</code> 编号</td><td>可能出现</td><td>有</td></tr>
+<tr><td>申请出现在 <em>Mis Borradores</em>（我的草稿）</td><td>是</td><td>否</td></tr>
+<tr><td>已完成电子签名（<em>Firmar y registrar</em>）</td><td>否</td><td>是</td></tr>
+<tr><td>最后页面显示“<em>Solicitud finalizada con éxito</em>”（申请成功完成）</td><td>否</td><td>是</td></tr>
+<tr><td>有以 <code>REGAGE</code> 开头的登记入册号</td><td>否</td><td>是</td></tr>
+<tr><td>出现在 <em>Mis Solicitudes</em>（我的申请），可下载 <code>datosFormulario.pdf</code></td><td>否</td><td>是</td></tr>
+</table>
+<p>我们现在每个案子都按一条简单规则办：单独一个 ENV 编号什么都证明不了。只有成功页面加上 REGAGE 入册号才算数，而且当天就把已提交的表格下载下来。</p>
+
+<h2>分步说明：MITECO 门户上的提交顺序</h2>
+<ol>
+<li><strong>先办代理授权。</strong>如果由授权代表或顾问代生产者提交，其办理 MITECO 事项的代理授权应先在西班牙电子授权登记处（REA）登记并被接受。生产者已有西班牙电子证书的，可在线授权、双方证书签名；没有的，通常需要经公证并加注海牙认证的授权书，还要先过法律审查（bastanteo）。</li>
+<li><strong>打开事项</strong>：在 MITECO 电子办事处打开“<em>Inscripción en el registro de productores de producto</em>”（生产者登记），选包装。</li>
+<li><strong>填写表格</strong>：公司和代表信息、包装类别（家用、商用、工业）、一次性或可重复使用，以及每个类别对应的生产者责任组织（SCRAP）。</li>
+<li><strong>上传附件</strong>（<em>Adjuntar documentación</em>），例如已取得的 SCRAP 入会证明。</li>
+<li><strong>签名并登记</strong>（<em>Firmar y registrar</em>）。签名通过西班牙政府的签名程序 AutoFirma 完成。如果卡住或连不上，要把它彻底关掉（包括后台还在运行的进程）再试。不要关掉浏览器页面就以为提交了。</li>
+<li><strong>完成</strong>（<em>Finalización</em>）。等到出现“<em>Solicitud finalizada con éxito</em>”和 REGAGE 编号，截图保存。</li>
+<li><strong>下载已提交的表格。</strong>进入 <em>Zona Personal &gt; Mis Solicitudes</em>，事项一栏留空，选择提交方式（通过 REA 代理提交，或用本人证书提交），或按生产者税号搜索，下载该申请的 <code>datosFormulario.pdf</code>，存入生产者档案。</li>
+<li><strong>清理草稿箱。</strong>如果 <em>Mis Borradores</em> 里还有同一生产者的另一份草稿，确认它不是您真正想提交的那一版。</li>
+</ol>
+
+<h2>合规档案里要留什么</h2>
+<ul>
+<li>成功页面截图（带日期和时间）</li>
+<li>REGAGE 入册号</li>
+<li><em>已提交</em>申请的 ENV 编号，而不是草稿的</li>
+<li>从 <em>Mis Solicitudes</em> 下载的 <code>datosFormulario.pdf</code></li>
+<li>由代表提交时，REA 代理授权的编号</li>
+<li>SCRAP 入会证明</li>
+</ul>
+<p>平台或企业客户要注册证明时，把已提交的表格和这些编号一起发过去，不要只发一张弹窗截图。</p>
+
+<h2>常见错误</h2>
+<ul>
+<li><strong>还没签名，就把弹窗里的 ENV 编号当成注册号记下来。</strong></li>
+<li><strong>上传完附件就退出</strong>，从没走到 <em>Firmar y registrar</em>。</li>
+<li><strong>以为 AutoFirma 窗口消失就是签好了。</strong>只有成功页面才能确认。</li>
+<li><strong>REA 授权还没被接受就提交</strong>，代表还无权代生产者办理。</li>
+<li><strong>没有下载已提交的表格</strong>，几周后平台来要时才到处找。</li>
+<li><strong>同一生产者有两份并行草稿</strong>，类别或 SCRAP 不同，一份签了一份没签。</li>
+</ul>
+
+<h2>哪些情况不适用</h2>
+<ul>
+<li><strong>只卖给西班牙境内进口商或经销商的品牌</strong>，由该公司首先在西班牙投放产品：那家公司才是生产者，由它注册。</li>
+<li><strong>电器电子产品和电池。</strong>它们有各自的登记册和流程（电器电子产品为 RII-AEE），凭证也不同。</li>
+<li><strong>其他欧盟国家。</strong>每个成员国都有自己的登记册和门户。</li>
+</ul>
+
+<h2>常见问题</h2>
+<h3>ENV 编号就是我的注册号吗？</h3><p>单独看不是。申请还是草稿时就可能出现 ENV 格式的编号。只有申请已签名、出现成功页面并拿到 REGAGE 入册号后，才把它当作有效编号。</p>
+<h3>REGAGE 编号是什么？</h3><p>它是西班牙国家行政机关电子登记处给出的入册号，证明申请确实已经提交，以及提交时间。</p>
+<h3>以后去哪里找证明？</h3><p>在 MITECO 电子办事处的 Zona Personal 下的 Mis Solicitudes，可以下载已提交的表格 datosFormulario.pdf。</p>
+<h3>我的申请在 Mis Borradores 里，怎么办？</h3><p>草稿等于没有提交。打开它，逐项核对内容和附件，完成签名和最后一步，并保存新的 REGAGE 编号。</p>
+<h3>平台会核查我的注册吗？</h3><p>自 2026 年 8 月 12 日起，MITECO 要求平台在允许卖家向西班牙消费者销售带包装产品前，核查其是否已注册并取得其自我声明。</p>
+
+<h2>不确定您的西班牙包装注册是否真的提交了？</h2>
+<p>IberTrust Global S.L. 担任西班牙包装 EPR 授权代表，为西班牙境外卖家在 MITECO 门户办理注册。把您手上的编号发给我们，我们帮您核实申请是否已提交、还缺什么。</p>
+<p><strong><a href="/zh/quote.html?service=epr-packaging-spain">申请核查包装注册 →</a></strong><br>或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>
+'''+_mrsrc('zh')
+POSTS.insert(0,('spain-packaging-registration-miteco-draft-vs-filed',{'date':'2026-11-11',
+ 'en':('Spain packaging registration: an ENV number on screen does not mean you are registered — how to check your MITECO filing',MR_EN),
+ 'es':('Inscripción de envases en España: un número ENV en pantalla no significa que esté inscrito — cómo comprobar su solicitud en el MITECO',MR_ES),
+ 'zh':('西班牙包装注册：屏幕上出现 ENV 编号不等于注册成功——如何核实 MITECO 申请真的提交了',MR_ZH),
+ 'desc':{'en':'A saved draft on MITECO’s portal can already show an ENV reference. How to tell a filed Spanish packaging registration from a draft: signature, success screen, REGAGE number, proof to keep, common mistakes.',
+  'es':'Un borrador en la sede del MITECO ya puede mostrar una referencia ENV. Cómo distinguir una inscripción de envases presentada de un borrador: firma, pantalla de éxito, número REGAGE, justificantes y errores.',
+  'zh':'MITECO 门户上的草稿也可能显示 ENV 编号。如何区分已提交的西班牙包装注册和草稿：签名、成功页面、REGAGE 入册号、要保留的凭证和常见错误。'},
+ 'faq':{'en':_faq2(MR_EN,'<h2>FAQ</h2>'),'es':_faq2(MR_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(MR_ZH,'<h2>常见问题</h2>')}}))
+
 # ---- Service pages: extra services, "what it is", per-service process, related links, overview groups (2026-11-02) ----
 def _upd(slug,tup):
   for i,s in enumerate(S):
@@ -934,7 +1163,7 @@ REL={ # slug: (related services, related blog posts)
 'gpsr-eu-responsible-person':(['uk-responsible-person','turkey-authorised-representative','cpnp-cosmetics','eprel-energy-label'],['gpsr-responsible-person-guide','do-i-need-eu-responsible-person-gpsr','gpsr-marketplace-sweep-2026-listing-information','marketplace-representative-confirmation-rejected-entity-mismatch','eu-product-liability-directive-2026-non-eu-sellers-responsible-person','eu-customs-product-identifiers-ecommerce-gpsr-label-listing']),
 'uk-responsible-person':(['gpsr-eu-responsible-person','turkey-authorised-representative'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
 'turkey-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
-'epr-packaging-spain':(['weee','batteries','epr-europe','spain-nif-vat'],['spain-packaging-declaration-2026-split-year-ppwr','spain-packaging-epr-rea-power-of-attorney-bastanteo','packaging-omnibus-authorised-representative-exemption','ppwr-packaging-label-delay-what-applies-now','gpsr-and-epr-one-provider']),
+'epr-packaging-spain':(['weee','batteries','epr-europe','spain-nif-vat'],['spain-packaging-registration-miteco-draft-vs-filed','spain-packaging-declaration-2026-split-year-ppwr','spain-packaging-epr-rea-power-of-attorney-bastanteo','packaging-omnibus-authorised-representative-exemption','ppwr-packaging-label-delay-what-applies-now','gpsr-and-epr-one-provider']),
 'weee':(['batteries','epr-packaging-spain','epr-europe','eprel-energy-label'],['weee-spain-authorised-representative-rii-aee','gpsr-and-epr-one-provider']),
 'batteries':(['weee','epr-packaging-spain','epr-europe'],['battery-epr-built-in-batteries-spain','gpsr-and-epr-one-provider']),
 'epr-europe':(['epr-packaging-spain','weee','batteries','gpsr-eu-responsible-person'],['gpsr-and-epr-one-provider','packaging-omnibus-authorised-representative-exemption','weee-spain-authorised-representative-rii-aee','battery-epr-built-in-batteries-spain']),
