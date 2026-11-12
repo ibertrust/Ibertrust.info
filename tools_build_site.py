@@ -1031,6 +1031,247 @@ POSTS.insert(0,('spain-packaging-registration-miteco-draft-vs-filed',{'date':'20
   'zh':'MITECO 门户上的草稿也可能显示 ENV 编号。如何区分已提交的西班牙包装注册和草稿：签名、成功页面、REGAGE 入册号、要保留的凭证和常见错误。'},
  'faq':{'en':_faq2(MR_EN,'<h2>FAQ</h2>'),'es':_faq2(MR_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(MR_ZH,'<h2>常见问题</h2>')}}))
 
+# ---- 2026-11-12 post: marketplace DoC request to the EU Responsible Person ----
+DC_SRC={'en':'Sources','es':'Fuentes','zh':'来源'}
+def _dcsrc(lang):
+  tail={'en':'IberTrust Global S.L. case files (November 2026), anonymised. General information, not legal advice.',
+        'es':'expedientes de IberTrust Global S.L. (noviembre de 2026), anonimizados. Información general, no asesoramiento jurídico.',
+        'zh':'IberTrust Global S.L. 实际案例（2026 年 11 月），已匿名化。本文为一般性信息，不构成法律意见。'}[lang]
+  return ('<p><small>'+DC_SRC[lang]+('：' if lang=='zh' else ': ')+'<a href="https://eur-lex.europa.eu/eli/reg/2019/1020/oj">Regulation (EU) 2019/1020</a>, Art. 4; <a href="https://eur-lex.europa.eu/eli/reg/2023/988/oj">Regulation (EU) 2023/988 (GPSR)</a>, Arts. 9 and 16; <a href="https://eur-lex.europa.eu/eli/dec/2008/768/oj">Decision No 768/2008/EC</a>, Annex III; <a href="https://eur-lex.europa.eu/eli/dir/2014/30/oj">Directive 2014/30/EU (EMC)</a>, Arts. 2, 11, 15 and Annex IV; <a href="https://eur-lex.europa.eu/eli/dir/2011/65/oj">Directive 2011/65/EU (RoHS)</a>; <a href="https://eur-lex.europa.eu/eli/dir_del/2015/863/oj">Delegated Directive (EU) 2015/863</a>; <a href="https://eur-lex.europa.eu/eli/dir/2014/53/oj">Directive 2014/53/EU (RED)</a>; European Commission, <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022XC0629(04)">The ‘Blue Guide’ on the implementation of EU product rules 2022</a>, sections 4.2.2.5 and 4.4; European Commission, <a href="https://single-market-economy.ec.europa.eu/sectors/toys/toy-safety_en">Toy safety</a>; UK Government, <a href="https://www.gov.uk/guidance/using-the-ukca-marking">Placing UKCA or CE marked products on the market in Great Britain</a>; '+tail+'</small></p>')
+DC_EN='''<p><em>GPSR · EU Responsible Person · marketplace document requests · from our own case files, anonymised</em></p>
+<p>The request reached our Responsible Person mailbox on a Wednesday afternoon. A marketplace compliance team wanted, for each of five ASINs that named us as EU Responsible Person, the EU declaration of conformity and the technical documentation or test reports. Not a sample. All five.</p>
+<p>Four were straightforward: signed declarations, matching reports, sent within days. The fifth turned into a small investigation. One seller had a properly signed DoC, but it named a single ASIN, and the seller had several others on sale. A second file looked complete at first glance: a lab-issued “CE certificate”, an EMC test report and a RoHS report. There was no declaration of conformity in it at all. A third had a genuine manufacturer’s DoC, but it named a different company as authorised representative, and the product was a toy. None of them could go back to the platform as they were.</p>
+<p>Below is what we check before a DoC is returned to a platform, and where sellers most often get stuck. Names, products and numbers from the case have been removed.</p>
+
+<h2>Why the request lands on the Responsible Person</h2>
+<p>For products covered by EU harmonisation legislation, including the EMC Directive 2014/30/EU and the RoHS Directive 2011/65/EU, Article 4 of Regulation (EU) 2019/1020 requires an economic operator established in the EU to verify that the EU declaration of conformity and the technical documentation have been drawn up, to keep the declaration at the disposal of market surveillance authorities, and to provide documentation following a reasoned request. Article 16 of the General Product Safety Regulation (EU) 2023/988 applies the same tasks to the responsible person for consumer products under that Regulation. When a marketplace asks for the DoC, it is in practice checking that the operator named on the listing can do that job.</p>
+<p>It also explains what the Responsible Person cannot do. Under the EMC Directive (Article 15(4)), by drawing up the declaration the manufacturer assumes responsibility for the product’s compliance. Our role is to verify that the declaration exists and matches the product. We do not write or sign a DoC in place of the manufacturer.</p>
+
+<h2>A lab “CE certificate” is not a DoC</h2>
+<p>Test laboratories often issue a one-page “Certificate of Compliance” or “CE certificate” that summarises a test report. It is not the EU declaration of conformity. The lab does not place the product on the market, and its certificate contains no statement that the declaration is issued under the sole responsibility of the manufacturer. The model declaration in Annex III of Decision No 768/2008/EC, and the EMC Directive’s own model in its Annex IV, contain:</p>
+<ul>
+<li>a declaration number (optional under the EMC Directive) and the product, type, batch or serial number</li>
+<li>the name and address of the manufacturer or its authorised representative</li>
+<li>the statement that it is issued under the sole responsibility of the manufacturer</li>
+<li>the object of the declaration, identified so that it can be traced</li>
+<li>the Union legislation complied with</li>
+<li>the harmonised standards or other specifications used, with their dates</li>
+<li>the notified body, where one was involved</li>
+<li>additional information, and “signed for and on behalf of”, with place and date, name, function and signature</li>
+</ul>
+
+<h2>What the platform asks for vs what sellers often send</h2>
+<table>
+<tr><th>Requested</th><th>Often sent instead</th><th>Why it does not work</th></tr>
+<tr><td>EU DoC issued by the manufacturer (or the brand selling under its own name)</td><td>Lab “CE certificate” or “Certificate of Compliance”</td><td>Not issued by the party responsible for the product; no responsibility statement</td></tr>
+<tr><td>A DoC that identifies this ASIN</td><td>The DoC of a sister product listing another ASIN</td><td>Does not identify the product the platform asked about</td></tr>
+<tr><td>EU declaration referring to EU legislation</td><td>UKCA certificate or UK declaration</td><td>Belongs to the Great Britain regime</td></tr>
+<tr><td>Test report covering the model sold</td><td>Report for a test model whose series naming does not clearly cover the model on the product</td><td>The link between product, DoC and evidence breaks</td></tr>
+<tr><td>DoC consistent with the Responsible Person on the listing</td><td>DoC naming another company as authorised representative</td><td>Two different operators for the same product</td></tr>
+</table>
+
+<h2>Step by step: build the DoC around the listing</h2>
+<ol>
+<li><strong>Start from the listing, not from the file.</strong> List every ASIN that names you, per EU marketplace. ASINs on a UK marketplace can differ from those on EU marketplaces; confirm which one is actually on sale in the EU.</li>
+<li><strong>Map each ASIN to the model printed on the product, label and manual.</strong> The Commission’s Blue Guide states that the identification element on the product shall be the same as on the EU declaration of conformity.</li>
+<li><strong>Check the model is inside the report.</strong> Reports often test one model and list series models by a naming pattern. Confirm the model you sell fits that pattern. If it does not, ask the lab or manufacturer before anyone signs.</li>
+<li><strong>Decide who issues it.</strong> Normally the manufacturer. A seller that places the product on the market under its own name or trade mark is treated as the manufacturer under the EMC Directive (Article 11); in that case the seller issues the DoC and we recommend naming the factory as “Produced by”. Where the report applicant, the factory and the seller are three different companies, say how they relate.</li>
+<li><strong>List all applicable legislation in one declaration.</strong> For example EMC 2014/30/EU and RoHS 2011/65/EU as amended by Delegated Directive (EU) 2015/863. Where several acts require a DoC, a single declaration covers them all. A radio module moves the product under the Radio Equipment Directive 2014/53/EU, which the EMC Directive excludes; a built-in battery means checking the Batteries Regulation (EU) 2023/1542 too.</li>
+<li><strong>Copy the standards and their dates from the report.</strong></li>
+<li><strong>Name the supporting reports:</strong> laboratory, report number and date.</li>
+<li><strong>Put the ASIN in the body,</strong> next to the model. The legal model does not mention marketplace identifiers, but the platform matches documents to listings by ASIN.</li>
+<li><strong>Sign it properly:</strong> company, place, actual signing date, name, function, signature and company stamp, as a clear PDF.</li>
+</ol>
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Reusing a signed DoC across ASINs</strong> when it names only one.</li>
+<li><strong>Sending the lab certificate as the DoC.</strong></li>
+<li><strong>A model on the box that the report never mentions,</strong> such as a retail model number that is not obviously part of the tested series.</li>
+<li><strong>Sending the UKCA set</strong> because it sits in the same folder as the CE set.</li>
+<li><strong>A DoC naming another representative,</strong> often left over from an earlier provider or the UK side of the business.</li>
+<li><strong>Forgetting the battery or radio module</strong> when listing legislation.</li>
+<li><strong>Asking the Responsible Person to “just fill one in”.</strong></li>
+</ul>
+
+<h2>Who this does not apply to</h2>
+<ul>
+<li><strong>Toys.</strong> They follow the Toy Safety Directive 2009/48/EC, with its own requirements. Regulation (EU) 2025/2509 will replace it from 1 August 2030, when a digital product passport replaces the declaration. We review toys separately, case by case.</li>
+<li><strong>Products where a notified body is involved.</strong> The DoC must refer to the notified body and its certificate; that review goes beyond this checklist.</li>
+<li><strong>Consumer products not covered by any CE legislation.</strong> There is no EU DoC to ask for; under the GPSR the manufacturer draws up technical documentation instead.</li>
+<li><strong>The UK market.</strong> Separate regime and separate representative.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Can one DoC cover several ASINs?</h3><p>Yes, if they are the same product or models covered by the same evidence. List each ASIN with its model in the declaration. A DoC that names one ASIN does not cover the others.</p>
+<h3>Can the test laboratory sign the DoC?</h3><p>No. The declaration is drawn up by the manufacturer, or its authorised representative where the mandate provides for it. The lab’s certificate is supporting evidence only.</p>
+<h3>The report applicant is a different company from the seller. Is that a problem?</h3><p>Not necessarily, and it is common. The DoC should name the issuing manufacturer, identify the producing factory where it differs, and list the report, so the link from product to evidence is clear.</p>
+<h3>Can my EU Responsible Person write the DoC for me?</h3><p>We do not. The DoC is the manufacturer’s declaration of responsibility. We check it against the listing, the label and the reports, and tell you what is missing.</p>
+<h3>Can I use our UKCA certificate for the EU?</h3><p>No. UKCA belongs to the Great Britain regime. The EU needs an EU declaration referring to EU legislation and the CE marking.</p>
+
+<h2>Has a marketplace asked for your DoC?</h2>
+<p>IberTrust Global S.L. acts as EU Responsible Person under the GPSR for sellers established outside the EU. Send us the request and the documents you have, and we will tell you, ASIN by ASIN, what matches and what the manufacturer still has to provide.</p>
+<p><strong><a href="/quote.html?service=gpsr-eu-responsible-person">Ask for a DoC check →</a></strong><br>Or write to <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_dcsrc('en')
+DC_ES='''<p><em>GPSR · Persona responsable en la UE · solicitudes de documentos de marketplaces · de nuestros expedientes, anonimizado</em></p>
+<p>La solicitud llegó a nuestro buzón de persona responsable un miércoles por la tarde. El equipo de cumplimiento de un marketplace pedía, para cada uno de los cinco ASIN que nos indicaban como persona responsable en la UE, la declaración UE de conformidad y la documentación técnica o los informes de ensayo. No una muestra. Los cinco.</p>
+<p>Cuatro fueron sencillos: declaraciones firmadas, informes coincidentes, enviados en pocos días. El quinto se convirtió en una pequeña investigación. Un vendedor tenía una DoC bien firmada, pero solo mencionaba un ASIN, y tenía varios más a la venta. Un segundo expediente parecía completo a primera vista: un «certificado CE» emitido por el laboratorio, un informe de ensayo EMC y un informe RoHS. No había ninguna declaración de conformidad. Un tercero tenía una DoC auténtica del fabricante, pero nombraba a otra empresa como representante autorizado, y el producto era un juguete. Ninguno podía devolverse a la plataforma tal cual.</p>
+<p>A continuación explicamos qué comprobamos antes de devolver una DoC a una plataforma y dónde se atascan más a menudo los vendedores. Hemos eliminado nombres, productos y números del caso.</p>
+
+<h2>Por qué la solicitud llega a la persona responsable</h2>
+<p>Para los productos sujetos a la legislación de armonización de la Unión, como la Directiva EMC 2014/30/UE y la Directiva RoHS 2011/65/UE, el artículo 4 del Reglamento (UE) 2019/1020 exige que un operador económico establecido en la UE verifique que se han elaborado la declaración UE de conformidad y la documentación técnica, mantenga la declaración a disposición de las autoridades de vigilancia del mercado y facilite la documentación cuando se le presente una solicitud motivada. El artículo 16 del Reglamento general de seguridad de los productos (UE) 2023/988 aplica las mismas tareas a la persona responsable de los productos de consumo incluidos en ese Reglamento. Cuando un marketplace pide la DoC, en la práctica está comprobando que el operador que figura en el anuncio puede cumplir esa función.</p>
+<p>También explica lo que la persona responsable no puede hacer. Según la Directiva EMC (artículo 15, apartado 4), al elaborar la declaración el fabricante asume la responsabilidad de la conformidad del producto. Nuestro papel es verificar que la declaración existe y corresponde al producto. No redactamos ni firmamos una DoC en lugar del fabricante.</p>
+
+<h2>Un «certificado CE» del laboratorio no es una DoC</h2>
+<p>Los laboratorios suelen emitir un «Certificate of Compliance» o «certificado CE» de una página que resume un informe de ensayo. No es la declaración UE de conformidad. El laboratorio no introduce el producto en el mercado, y su certificado no contiene la declaración de que se emite bajo la exclusiva responsabilidad del fabricante. El modelo de declaración del anexo III de la Decisión n.º 768/2008/CE, y el modelo propio de la Directiva EMC en su anexo IV, contienen:</p>
+<ul>
+<li>un número de declaración (opcional según la Directiva EMC) y el producto, tipo, lote o número de serie</li>
+<li>el nombre y la dirección del fabricante o de su representante autorizado</li>
+<li>la declaración de que se expide bajo la exclusiva responsabilidad del fabricante</li>
+<li>el objeto de la declaración, identificado de forma que permita su trazabilidad</li>
+<li>la legislación de la Unión que se cumple</li>
+<li>las normas armonizadas u otras especificaciones aplicadas, con sus fechas</li>
+<li>el organismo notificado, si ha intervenido</li>
+<li>información adicional y «firmado por y en nombre de», con lugar y fecha, nombre, cargo y firma</li>
+</ul>
+
+<h2>Lo que pide la plataforma frente a lo que se envía a menudo</h2>
+<table>
+<tr><th>Lo solicitado</th><th>Lo que se envía a menudo</th><th>Por qué no sirve</th></tr>
+<tr><td>DoC UE emitida por el fabricante (o por la marca que vende con su propio nombre)</td><td>«Certificado CE» o «Certificate of Compliance» del laboratorio</td><td>No la emite quien responde del producto; no hay declaración de responsabilidad</td></tr>
+<tr><td>Una DoC que identifique este ASIN</td><td>La DoC de un producto hermano con otro ASIN</td><td>No identifica el producto por el que pregunta la plataforma</td></tr>
+<tr><td>Declaración UE que cite legislación de la UE</td><td>Certificado UKCA o declaración del Reino Unido</td><td>Pertenece al régimen de Gran Bretaña</td></tr>
+<tr><td>Informe de ensayo que cubra el modelo vendido</td><td>Informe de un modelo de ensayo cuya serie no cubre claramente el modelo del producto</td><td>Se rompe el vínculo entre producto, DoC y pruebas</td></tr>
+<tr><td>DoC coherente con la persona responsable del anuncio</td><td>DoC que nombra a otra empresa como representante autorizado</td><td>Dos operadores distintos para el mismo producto</td></tr>
+</table>
+
+<h2>Paso a paso: construir la DoC a partir del anuncio</h2>
+<ol>
+<li><strong>Empiece por el anuncio, no por el expediente.</strong> Liste cada ASIN que le nombra, por marketplace de la UE. Los ASIN de un marketplace del Reino Unido pueden no coincidir con los de la UE; confirme cuál está realmente a la venta en la UE.</li>
+<li><strong>Asocie cada ASIN al modelo impreso en el producto, la etiqueta y el manual.</strong> La Guía Azul de la Comisión indica que el elemento de identificación del producto debe ser el mismo que figura en la declaración UE de conformidad.</li>
+<li><strong>Compruebe que el modelo está dentro del informe.</strong> Los informes suelen ensayar un modelo y enumerar los modelos de la serie mediante un patrón de nomenclatura. Confirme que el modelo que vende encaja en ese patrón. Si no encaja, pregunte al laboratorio o al fabricante antes de que nadie firme.</li>
+<li><strong>Decida quién la emite.</strong> Normalmente el fabricante. Quien introduce el producto en el mercado con su propio nombre o marca se considera fabricante según la Directiva EMC (artículo 11); en ese caso el vendedor emite la DoC y recomendamos indicar la fábrica como «Produced by». Si el solicitante del informe, la fábrica y el vendedor son tres empresas distintas, explique cómo se relacionan.</li>
+<li><strong>Incluya toda la legislación aplicable en una sola declaración.</strong> Por ejemplo, EMC 2014/30/UE y RoHS 2011/65/UE, modificada por la Directiva Delegada (UE) 2015/863. Cuando varios actos exigen una DoC, una única declaración los cubre todos. Un módulo de radio lleva el producto a la Directiva de equipos radioeléctricos 2014/53/UE, que la Directiva EMC excluye; una batería incorporada obliga a revisar también el Reglamento de pilas (UE) 2023/1542.</li>
+<li><strong>Copie las normas y sus fechas del informe.</strong></li>
+<li><strong>Cite los informes de apoyo:</strong> laboratorio, número de informe y fecha.</li>
+<li><strong>Ponga el ASIN en el cuerpo,</strong> junto al modelo. El modelo legal no menciona identificadores de marketplace, pero la plataforma relaciona documentos y anuncios por ASIN.</li>
+<li><strong>Fírmela correctamente:</strong> empresa, lugar, fecha real de firma, nombre, cargo, firma y sello de la empresa, en un PDF legible.</li>
+</ol>
+
+<h2>Errores frecuentes</h2>
+<ul>
+<li><strong>Reutilizar una DoC firmada para varios ASIN</strong> cuando solo nombra uno.</li>
+<li><strong>Enviar el certificado del laboratorio como DoC.</strong></li>
+<li><strong>Un modelo en la caja que el informe nunca menciona,</strong> por ejemplo un número de modelo comercial que no forma parte claramente de la serie ensayada.</li>
+<li><strong>Enviar el juego UKCA</strong> porque está en la misma carpeta que el juego CE.</li>
+<li><strong>Una DoC que nombra a otro representante,</strong> a menudo heredada de un proveedor anterior o de la parte británica del negocio.</li>
+<li><strong>Olvidar la batería o el módulo de radio</strong> al enumerar la legislación.</li>
+<li><strong>Pedir a la persona responsable que «rellene una».</strong></li>
+</ul>
+
+<h2>A quién no se aplica</h2>
+<ul>
+<li><strong>Juguetes.</strong> Se rigen por la Directiva de seguridad de los juguetes 2009/48/CE, con requisitos propios. El Reglamento (UE) 2025/2509 la sustituirá a partir del 1 de agosto de 2030, cuando un pasaporte digital de producto sustituirá a la declaración. Revisamos los juguetes por separado, caso por caso.</li>
+<li><strong>Productos con intervención de un organismo notificado.</strong> La DoC debe citar al organismo notificado y su certificado; esa revisión va más allá de esta lista.</li>
+<li><strong>Productos de consumo no cubiertos por ninguna legislación de marcado CE.</strong> No hay DoC UE que pedir; según el GPSR, el fabricante elabora en su lugar documentación técnica.</li>
+<li><strong>El mercado del Reino Unido.</strong> Régimen distinto y representante distinto.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Una DoC puede cubrir varios ASIN?</h3><p>Sí, si son el mismo producto o modelos cubiertos por las mismas pruebas. Indique cada ASIN con su modelo en la declaración. Una DoC que nombra un solo ASIN no cubre los demás.</p>
+<h3>¿Puede firmar la DoC el laboratorio de ensayo?</h3><p>No. La declaración la elabora el fabricante, o su representante autorizado cuando el mandato lo prevé. El certificado del laboratorio es solo una prueba de apoyo.</p>
+<h3>El solicitante del informe es una empresa distinta del vendedor. ¿Es un problema?</h3><p>No necesariamente, y es habitual. La DoC debe nombrar al fabricante que la emite, identificar la fábrica productora si es distinta y citar el informe, para que el vínculo entre producto y pruebas quede claro.</p>
+<h3>¿Puede mi persona responsable en la UE redactar la DoC por mí?</h3><p>Nosotros no lo hacemos. La DoC es la declaración de responsabilidad del fabricante. La contrastamos con el anuncio, la etiqueta y los informes, y le indicamos qué falta.</p>
+<h3>¿Puedo usar nuestro certificado UKCA para la UE?</h3><p>No. UKCA pertenece al régimen de Gran Bretaña. En la UE se necesita una declaración UE que cite la legislación de la UE y el marcado CE.</p>
+
+<h2>¿Un marketplace le ha pedido la DoC?</h2>
+<p>IberTrust Global S.L. actúa como persona responsable en la UE según el GPSR para vendedores establecidos fuera de la UE. Envíenos la solicitud y los documentos que tenga, y le diremos, ASIN por ASIN, qué coincide y qué debe aportar todavía el fabricante.</p>
+<p><strong><a href="/es/quote.html?service=gpsr-eu-responsible-person">Solicitar revisión de la DoC →</a></strong><br>O escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_dcsrc('es')
+DC_ZH='''<p><em>GPSR · 欧盟负责人 · 平台索要文件 · 来自我们的实际案例，已匿名化</em></p>
+<p>一个周三下午，平台合规团队的请求发到了我们的负责人邮箱：对五个把我们登记为欧盟负责人的 ASIN，每一个都要提供欧盟符合性声明（DoC）和技术文件或检测报告。不是抽查，五个全要。</p>
+<p>其中四个很顺利：签好字的声明、对得上的报告，几天内就交了。第五个却变成了一次小调查。一个卖家有正式签字的 DoC，但上面只写了一个 ASIN，而他在售的还有好几个。第二份档案乍看很齐：检测机构出的“CE 证书”、一份 EMC 检测报告、一份 RoHS 报告，但里面根本没有符合性声明。第三份有真正的制造商 DoC，可上面写的授权代表是另一家公司，而且产品是玩具。这几份都不能原样交回平台。</p>
+<p>下面讲我们在把 DoC 交回平台前会核对什么，以及卖家最常卡在哪里。案例中的名称、产品和编号均已删去。</p>
+
+<h2>为什么请求会落到负责人头上</h2>
+<p>对于受欧盟协调立法管辖的产品，包括 EMC 指令 2014/30/EU 和 RoHS 指令 2011/65/EU，法规（EU）2019/1020 第 4 条要求在欧盟设立的经济运营者核实欧盟符合性声明和技术文件已经编制，把声明留存备市场监管机构查阅，并在收到说明理由的要求时提供文件。《通用产品安全法规》（EU）2023/988 第 16 条把同样的任务适用于该法规下消费品的负责人。平台来要 DoC，实际上就是在检验：listing 上登记的运营者能不能履行这份职责。</p>
+<p>这也说明了负责人不能做什么。根据 EMC 指令第 15(4) 条，制造商通过编制声明，承担产品合规的责任。我们的角色是核实声明存在、并与产品对得上。我们不替制造商起草或签署 DoC。</p>
+
+<h2>检测机构的“CE 证书”不是 DoC</h2>
+<p>检测机构常出一页纸的“Certificate of Compliance”或“CE 证书”，概括一份检测报告。它不是欧盟符合性声明。检测机构不把产品投放市场，证书上也没有“本声明由制造商承担全部责任出具”的声明。第 768/2008/EC 号决定附件 III 的声明范本，以及 EMC 指令附件 IV 自己的范本，包含：</p>
+<ul>
+<li>声明编号（EMC 指令下为可选）以及产品、型号、批次或序列号</li>
+<li>制造商或其授权代表的名称和地址</li>
+<li>本声明由制造商承担全部责任（sole responsibility）出具的声明</li>
+<li>声明对象，其标识要能追溯</li>
+<li>所符合的欧盟立法</li>
+<li>所采用的协调标准或其他技术规范及其日期</li>
+<li>如有公告机构参与，写明该机构</li>
+<li>补充信息，以及“代表……签署”（signed for and on behalf of），写明地点和日期、姓名、职务和签名</li>
+</ul>
+
+<h2>平台要的 vs 卖家常交错的</h2>
+<table>
+<tr><th>平台要的</th><th>常被交上来的</th><th>为什么不行</th></tr>
+<tr><td>由制造商（或以自己名义销售的品牌方）出具的欧盟 DoC</td><td>检测机构的“CE 证书”或“Certificate of Compliance”</td><td>不是对产品负责的一方出具的；没有责任声明</td></tr>
+<tr><td>能识别这个 ASIN 的 DoC</td><td>同系列另一个产品、写着另一个 ASIN 的 DoC</td><td>识别不出平台问的那个产品</td></tr>
+<tr><td>引用欧盟立法的欧盟声明</td><td>UKCA 证书或英国声明</td><td>属于英国（大不列颠）制度</td></tr>
+<tr><td>覆盖在售型号的检测报告</td><td>测试型号的系列命名并不明确覆盖产品上标注型号的报告</td><td>产品、DoC 和证据之间的链条断了</td></tr>
+<tr><td>与 listing 上负责人一致的 DoC</td><td>写着另一家公司为授权代表的 DoC</td><td>同一产品出现两个不同的运营者</td></tr>
+</table>
+
+<h2>分步说明：围绕 listing 来做 DoC</h2>
+<ol>
+<li><strong>从 listing 出发，而不是从档案出发。</strong>按欧盟各站点列出所有登记了您的 ASIN。英国站的 ASIN 可能和欧盟站不同，要确认实际在欧盟站在售的是哪一个。</li>
+<li><strong>把每个 ASIN 对应到产品、标签和说明书上印的型号。</strong>欧盟委员会《蓝皮指南》（Blue Guide）写明，产品上的识别要素应与欧盟符合性声明上的一致。</li>
+<li><strong>核对型号在报告覆盖范围内。</strong>报告通常只测一个型号，再按命名规则列出系列型号。确认您卖的型号符合这个规则。不符合的，先问检测机构或制造商，再让人签字。</li>
+<li><strong>确定由谁出具。</strong>通常是制造商。以自己的名称或商标把产品投放市场的，按 EMC 指令（第 11 条）视为制造商；这种情况下由卖家出具 DoC，我们建议另写“Produced by”注明工厂。报告申请人、工厂和卖家是三家不同公司时，要写清它们的关系。</li>
+<li><strong>把所有适用立法写进同一份声明。</strong>例如 EMC 2014/30/EU，以及经授权指令（EU）2015/863 修订的 RoHS 2011/65/EU。多部法规都要求 DoC 时，用一份声明涵盖全部。带无线模块的产品归入无线电设备指令 2014/53/EU，EMC 指令本身排除这类设备；内置电池还要一并核查电池法规（EU）2023/1542。</li>
+<li><strong>标准和日期照报告抄。</strong></li>
+<li><strong>写明支持报告：</strong>实验室、报告编号和日期。</li>
+<li><strong>把 ASIN 写进正文，</strong>放在型号旁边。法定范本里没有平台标识，但平台是按 ASIN 把文件和 listing 对上的。</li>
+<li><strong>规范签署：</strong>公司、地点、实际签署日期、姓名、职务、签名和公司章，做成清晰的 PDF。</li>
+</ol>
+
+<h2>常见错误</h2>
+<ul>
+<li><strong>只写了一个 ASIN 的签字 DoC，拿去顶其他 ASIN。</strong></li>
+<li><strong>把检测机构证书当 DoC 交。</strong></li>
+<li><strong>包装上的型号报告里从没出现过，</strong>比如一个零售型号，看不出属于被测系列。</li>
+<li><strong>交了 UKCA 那套，</strong>只因为它和 CE 那套放在同一个文件夹。</li>
+<li><strong>DoC 上写着别的代表，</strong>往往是以前服务商或英国业务留下的。</li>
+<li><strong>列立法时漏了电池或无线模块。</strong></li>
+<li><strong>让负责人“帮忙填一份”。</strong></li>
+</ul>
+
+<h2>哪些情况不适用</h2>
+<ul>
+<li><strong>玩具。</strong>适用玩具安全指令 2009/48/EC，有其自身要求。法规（EU）2025/2509 将自 2030 年 8 月 1 日起取代该指令，届时由数字产品护照取代符合性声明。玩具我们单独、逐案评估。</li>
+<li><strong>有公告机构参与的产品。</strong>DoC 必须引用公告机构及其证书，这超出本清单的范围。</li>
+<li><strong>不受任何 CE 立法管辖的消费品。</strong>没有欧盟 DoC 可要；按 GPSR，由制造商编制技术文件。</li>
+<li><strong>英国市场。</strong>另一套制度，另一个代表。</li>
+</ul>
+
+<h2>常见问题</h2>
+<h3>一份 DoC 能覆盖多个 ASIN 吗？</h3><p>可以，前提是同一产品或由同一份证据覆盖的型号。在声明里逐个写明 ASIN 和对应型号。只写了一个 ASIN 的 DoC 不覆盖其他 ASIN。</p>
+<h3>检测机构能签 DoC 吗？</h3><p>不能。声明由制造商编制，或在委托书有规定时由其授权代表编制。检测机构的证书只是支持证据。</p>
+<h3>报告申请人和卖家不是同一家公司，有问题吗？</h3><p>不一定，而且很常见。DoC 应写明出具声明的制造商，工厂不同时写明生产工厂，并列出报告，让产品到证据的链条清楚可查。</p>
+<h3>欧盟负责人能替我写 DoC 吗？</h3><p>我们不做。DoC 是制造商的责任声明。我们会把它与 listing、标签和报告逐项核对，告诉您缺什么。</p>
+<h3>我们的 UKCA 证书能用于欧盟吗？</h3><p>不能。UKCA 属于英国（大不列颠）制度。欧盟需要引用欧盟立法的欧盟声明和 CE 标志。</p>
+
+<h2>平台来要 DoC 了？</h2>
+<p>IberTrust Global S.L. 依据 GPSR 为欧盟境外卖家担任欧盟负责人。把平台的请求和您手上的文件发给我们，我们按 ASIN 逐个告诉您哪些对得上、哪些还需要制造商补。</p>
+<p><strong><a href="/zh/quote.html?service=gpsr-eu-responsible-person">申请 DoC 核查 →</a></strong><br>或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>
+'''+_dcsrc('zh')
+POSTS.insert(0,('marketplace-doc-request-eu-responsible-person-asin-model-test-report',{'date':'2026-11-12',
+ 'en':('Amazon asked your EU Responsible Person for the DoC: why a lab “CE certificate” is not a DoC, and how to match ASIN, model and test report',DC_EN),
+ 'es':('Amazon pidió la DoC a su persona responsable en la UE: por qué un «certificado CE» del laboratorio no es una DoC y cómo cuadrar ASIN, modelo e informe de ensayo',DC_ES),
+ 'zh':('亚马逊向欧代索要 DoC：为什么检测机构的“CE 证书”不是 DoC，以及怎样把 ASIN、型号和检测报告对上',DC_ZH),
+ 'desc':{'en':'When a marketplace asks your EU Responsible Person for the declaration of conformity of every ASIN: why a lab certificate is not a DoC, what the DoC must contain, how to match ASIN, model and report, common mistakes.',
+  'es':'Cuando un marketplace pide a su persona responsable en la UE la declaración de conformidad de cada ASIN: por qué un certificado del laboratorio no es una DoC, qué debe contener y cómo cuadrar ASIN, modelo e informe.',
+  'zh':'平台向欧盟负责人索要每个 ASIN 的符合性声明时：为什么检测机构证书不是 DoC、DoC 必须包含什么、如何把 ASIN、型号和报告对上，以及常见错误。'},
+ 'faq':{'en':_faq2(DC_EN,'<h2>FAQ</h2>'),'es':_faq2(DC_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(DC_ZH,'<h2>常见问题</h2>')}}))
+
 # ---- Service pages: extra services, "what it is", per-service process, related links, overview groups (2026-11-02) ----
 def _upd(slug,tup):
   for i,s in enumerate(S):
@@ -1160,7 +1401,7 @@ SPROC={ # slug: lang: process steps (overrides PROC)
 REL={ # slug: (related services, related blog posts)
 'mdr-eu-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person','eprel-energy-label'],['how-to-get-eu-compliance-quote']),
 'reach-only-representative':(['gpsr-eu-responsible-person','mdr-eu-authorised-representative','cpnp-cosmetics'],['how-to-get-eu-compliance-quote']),
-'gpsr-eu-responsible-person':(['uk-responsible-person','turkey-authorised-representative','cpnp-cosmetics','eprel-energy-label'],['gpsr-responsible-person-guide','do-i-need-eu-responsible-person-gpsr','gpsr-marketplace-sweep-2026-listing-information','marketplace-representative-confirmation-rejected-entity-mismatch','eu-product-liability-directive-2026-non-eu-sellers-responsible-person','eu-customs-product-identifiers-ecommerce-gpsr-label-listing']),
+'gpsr-eu-responsible-person':(['uk-responsible-person','turkey-authorised-representative','cpnp-cosmetics','eprel-energy-label'],['marketplace-doc-request-eu-responsible-person-asin-model-test-report','gpsr-responsible-person-guide','do-i-need-eu-responsible-person-gpsr','gpsr-marketplace-sweep-2026-listing-information','marketplace-representative-confirmation-rejected-entity-mismatch','eu-product-liability-directive-2026-non-eu-sellers-responsible-person','eu-customs-product-identifiers-ecommerce-gpsr-label-listing']),
 'uk-responsible-person':(['gpsr-eu-responsible-person','turkey-authorised-representative'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
 'turkey-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
 'epr-packaging-spain':(['weee','batteries','epr-europe','spain-nif-vat'],['spain-packaging-registration-miteco-draft-vs-filed','spain-packaging-declaration-2026-split-year-ppwr','spain-packaging-epr-rea-power-of-attorney-bastanteo','packaging-omnibus-authorised-representative-exemption','ppwr-packaging-label-delay-what-applies-now','gpsr-and-epr-one-provider']),
