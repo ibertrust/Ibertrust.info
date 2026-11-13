@@ -1272,6 +1272,229 @@ POSTS.insert(0,('marketplace-doc-request-eu-responsible-person-asin-model-test-r
   'zh':'平台向欧盟负责人索要每个 ASIN 的符合性声明时：为什么检测机构证书不是 DoC、DoC 必须包含什么、如何把 ASIN、型号和报告对上，以及常见错误。'},
  'faq':{'en':_faq2(DC_EN,'<h2>FAQ</h2>'),'es':_faq2(DC_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(DC_ZH,'<h2>常见问题</h2>')}}))
 
+# ---- 2026-11-13 post: DGT written tax consultation for a non-EU seller, representation signed by both sides ----
+TC_SRC={'en':'Sources','es':'Fuentes','zh':'来源'}
+def _tcsrc(lang):
+  tail={'en':'IberTrust Global S.L. case files (November 2026), anonymised. General information, not legal or tax advice.',
+        'es':'expedientes de IberTrust Global S.L. (noviembre de 2026), anonimizados. Información general, no asesoramiento jurídico ni fiscal.',
+        'zh':'IberTrust Global S.L. 实际案例（2026 年 11 月），已匿名化。本文为一般性信息，不构成法律或税务意见。'}[lang]
+  return ('<p><small>'+TC_SRC[lang]+('：' if lang=='zh' else ': ')+'<a href="https://www.boe.es/eli/es/l/2003/12/17/58/con">Ley 58/2003, General Tributaria</a>, arts. 46, 87, 88 and 89; <a href="https://www.boe.es/eli/es/rd/2007/07/27/1065/con">Real Decreto 1065/2007</a>, arts. 66–68; <a href="https://www.boe.es/eli/es/o/2025/11/20/hac1358">Orden HAC/1358/2025</a>, arts. 1 and 2; Dirección General de Tributos, <a href="https://sede.tributos.hacienda.gob.es/DGTributos/consultasdgt.html">Consultas tributarias escritas</a> and <a href="https://sede.tributos.hacienda.gob.es/DGTributos/procedimientos/Consultas_Tributarias_Escritas.shtml">procedure sheet</a>; '+tail+'</small></p>')
+TC_EN='''<p><em>Spanish tax · written consultations to the DGT · representation · from our own case files, anonymised</em></p>
+<p>Earlier this month we filed a written tax consultation with Spain’s Directorate General of Taxes (Dirección General de Tributos, DGT) for a client: a company established outside the EU that sells online to Spanish consumers and needed a clear answer on which documents it must provide to obtain a Spanish NIF. It already had a non-binding information answer from the tax agency; now it wanted one the authorities must follow.</p>
+<p>The consultation went in electronically. A week later a notice arrived through DEHú, the Spanish administration’s electronic notification point. It was not the answer. It was a request to correct a defect, with ten working days to reply. The problem was not the question. It was the representation. The power of attorney we had attached was signed by the client only. The DGT wrote that a power of representation must be signed both by the party granting it and by the representative accepting it, that a company acting as representative must sign electronically, and that anyone signing on behalf of either party must attach the authority that allows them to sign.</p>
+<p>Below is what we now check before a consultation is filed for a seller established outside Spain, so that it goes through the first time. Names and reference numbers have been removed.</p>
+
+<h2>What a written consultation is, and what it is not</h2>
+<p>Under Article 88 of the General Tax Law (Ley 58/2003, LGT), taxpayers may ask the tax administration in writing about the tax regime, classification or characterisation that applies to them. The DGT must answer within six months. If it does not, that does not mean it accepts the view set out in the consultation. Under Article 89, the answer is binding on the tax authorities in their dealings with the person who asked, as long as the consultation was filed in time and the facts described have not changed. The authorities must also apply the same criteria to any other taxpayer whose facts are identical.</p>
+
+<h2>Information answer vs written consultation</h2>
+<table>
+<tr><th></th><th>Information from the tax agency (Art. 87 LGT)</th><th>Written consultation to the DGT (Arts. 88–89 LGT)</th></tr>
+<tr><td>Who answers</td><td>Agencia Tributaria (AEAT)</td><td>Dirección General de Tributos</td></tr>
+<tr><td>Effect</td><td>Informative</td><td>Binding on the tax authorities towards the person who asked, while the facts stay the same</td></tr>
+<tr><td>Time limit</td><td>None set in Article 87</td><td>Six months; silence is not acceptance</td></tr>
+<tr><td>Required content</td><td>None set in Article 87</td><td>Minimum content in Article 66 of Royal Decree 1065/2007</td></tr>
+<tr><td>Appeal</td><td>Not applicable</td><td>No appeal against the answer itself</td></tr>
+</table>
+
+<h2>Who has to be the one asking</h2>
+<p>The law gives the right to ask to the taxpayer, about the regime that applies to that taxpayer (Article 88(1)). Professional bodies and business associations may ask about questions that affect their members in general (Article 88(3)). For a seller, this means the consultation is filed in the seller’s name and describes the seller’s own facts. The adviser appears as representative, not as the party asking.</p>
+
+<h2>Document checklist before filing</h2>
+<ol>
+<li><strong>The consultation letter</strong>, with the minimum content of Article 66(1) of Royal Decree 1065/2007: name and tax number of the taxpayer and, where there is one, of the representative; an express statement of whether any related procedure, appeal or claim is being processed; the question; the background and circumstances, explained clearly; place, date and signature.</li>
+<li><strong>Cross-border details</strong>, if the question concerns a cross-border transaction or a permanent establishment (Article 66(2)): the group the seller belongs to, if any; a description of the business; the States that may be affected; and persons resident in other States who may be affected.</li>
+<li><strong>Proof of representation, signed by both sides.</strong> The DGT offers a voluntary standard representation form, valid for a single request, that can be signed electronically or, where appropriate, by hand (Order HAC/1358/2025, Article 2(b)). Its website says representation may also be proved by any other means valid in law. Under Article 1(a) of the same Order, representation and powers registered with the AEAT may be considered sufficient.</li>
+<li><strong>Proof of the signatories’ authority.</strong> If a director or attorney signs for the seller, or for the representative company, attach the document that gives them that power.</li>
+<li><strong>Supporting documents</strong> that help the DGT form its view (Article 66(3)), for example a previous information answer.</li>
+<li><strong>Electronic filing.</strong> Consultations can be filed electronically, and must be when the taxpayer is obliged to deal with the administration by electronic means (Article 66(5)).</li>
+</ol>
+
+<h2>If a correction request arrives</h2>
+<ol>
+<li>Open the notice and keep the acknowledgement of receipt. The period counts from the day after receipt.</li>
+<li>Read exactly which defect is listed. In our case it was only the representation.</li>
+<li>Collect the missing signatures, from the grantor and from the representative, and the proof of each signatory’s authority.</li>
+<li>Reply through the DGT’s electronic registry, using the secure verification code (CSV) printed on the notice, within the period it gives.</li>
+<li>Without a reply in time, the consultation is treated as withdrawn and archived (Article 66(6) of Royal Decree 1065/2007; Article 88(4) LGT).</li>
+</ol>
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Reusing a power of attorney made for another procedure.</strong> In our case, a notarial power signed only by the client and prepared for a tax registration did not satisfy the DGT on its own.</li>
+<li><strong>No acceptance by the representative.</strong> When the representative is a company, its acceptance must carry its electronic signature.</li>
+<li><strong>Waiting for the answer before meeting a deadline.</strong> The consultation does not interrupt any deadline. If an obligation is due, it still has to be met.</li>
+<li><strong>Filing too late.</strong> A consultation filed after the deadline for the obligation it concerns is not admitted (Article 66(7)).</li>
+<li><strong>Leaving out the statement on pending procedures.</strong> It is mandatory, and answers on questions linked to a procedure that had already started are not binding (Article 89(2)).</li>
+<li><strong>Not watching the electronic mailbox.</strong> Our correction request came through DEHú, with a short deadline. Check it regularly while a consultation is open.</li>
+</ul>
+
+<h2>Who this does not apply to</h2>
+<ul>
+<li><strong>Customs questions.</strong> Article 88(8) LGT leaves consultations on EU customs rules to the Union customs legislation.</li>
+<li><strong>Non-tax questions</strong>, such as packaging or WEEE producer registration with MITECO. The DGT answers on tax regime, classification or characterisation.</li>
+<li><strong>Questions already tied to an open procedure</strong> on the same matter: the answer would not be binding (Article 89(2)).</li>
+<li><strong>Questions that published doctrine already answers.</strong> The DGT itself suggests searching the Ministry of Finance’s tax doctrine database before filing.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Is the DGT’s answer binding?</h3><p>Yes, on the tax authorities in their dealings with the person who asked, provided the consultation was filed in time and the facts have not changed (Article 89(1) LGT). The same criteria apply to other taxpayers with identical facts.</p>
+<h3>How long does the DGT take to answer?</h3><p>The law gives it six months from filing. No answer within that time does not mean your view is accepted (Article 88(6) LGT).</p>
+<h3>Can my adviser file the consultation in its own name?</h3><p>The right to ask belongs to the taxpayer, about its own tax position. The adviser files as your representative, with a representation signed by both of you.</p>
+<h3>Does a pending consultation pause my tax deadlines?</h3><p>No. Deadlines keep running while the DGT studies the question (Article 89(3) LGT).</p>
+<h3>Can I appeal against the answer?</h3><p>No. You can appeal against later decisions that apply the answer, not against the answer itself (Article 89(4) LGT).</p>
+
+<h2>Have a Spanish tax question to put in writing?</h2>
+<p>IberTrust Global S.L. helps sellers established outside Spain with Spanish NIF applications and tax representation, including the paperwork for written consultations. Send us your situation and the documents you already have, and we will tell you what is missing before anything is filed.</p>
+<p><strong><a href="/quote.html?service=spain-nif-vat">Ask about Spanish NIF and tax representation →</a></strong><br>Or write to <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_tcsrc('en')
+TC_ES='''<p><em>Fiscalidad española · consultas tributarias escritas a la DGT · representación · de nuestros expedientes, anonimizado</em></p>
+<p>A principios de este mes presentamos una consulta tributaria escrita ante la Dirección General de Tributos (DGT) para un cliente: una sociedad establecida fuera de la UE que vende por Internet a consumidores españoles y necesitaba una respuesta clara sobre qué documentos debe aportar para obtener un NIF español. Ya tenía una contestación informativa, no vinculante, de la Agencia Tributaria; ahora quería una que la Administración tuviera que seguir.</p>
+<p>La consulta se presentó por vía electrónica. Una semana después llegó una notificación a través de la DEHú, la Dirección Electrónica Habilitada única. No era la contestación. Era un requerimiento de subsanación, con diez días hábiles para responder. El problema no era la pregunta, sino la representación. El poder que habíamos adjuntado lo firmaba solo el cliente. La DGT indicó que el poder de representación debe estar firmado tanto por el representado, que lo otorga, como por el representante, que lo acepta; que, si el representante es una persona jurídica, la firma debe ser electrónica; y que quien firme en nombre de cualquiera de ellos debe adjuntar el apoderamiento que justifica esa firma.</p>
+<p>A continuación, lo que ahora comprobamos antes de presentar una consulta para un vendedor establecido fuera de España, para que prospere a la primera. Hemos eliminado nombres y números de referencia.</p>
+
+<h2>Qué es una consulta tributaria escrita y qué no es</h2>
+<p>Según el artículo 88 de la Ley 58/2003, General Tributaria (LGT), los obligados pueden formular por escrito consultas sobre el régimen, la clasificación o la calificación tributaria que les corresponda. La DGT debe contestar en seis meses. Si no lo hace, eso no implica la aceptación de los criterios expresados en la consulta. Según el artículo 89, la contestación vincula a los órganos de la Administración tributaria en su relación con el consultante, siempre que la consulta se haya formulado en plazo y no se hayan alterado los hechos descritos. Los órganos deben aplicar además esos criterios a cualquier otro obligado con hechos idénticos.</p>
+
+<h2>Información de la Agencia frente a consulta escrita</h2>
+<table>
+<tr><th></th><th>Información de la Agencia Tributaria (art. 87 LGT)</th><th>Consulta escrita a la DGT (arts. 88 y 89 LGT)</th></tr>
+<tr><td>Quién contesta</td><td>Agencia Tributaria (AEAT)</td><td>Dirección General de Tributos</td></tr>
+<tr><td>Efecto</td><td>Informativo</td><td>Vinculante para la Administración tributaria frente al consultante, mientras no cambien los hechos</td></tr>
+<tr><td>Plazo</td><td>No lo fija el artículo 87</td><td>Seis meses; el silencio no es aceptación</td></tr>
+<tr><td>Contenido exigido</td><td>No lo fija el artículo 87</td><td>Contenido mínimo del artículo 66 del Real Decreto 1065/2007</td></tr>
+<tr><td>Recurso</td><td>No aplicable</td><td>No cabe recurso contra la contestación</td></tr>
+</table>
+
+<h2>Quién debe ser el consultante</h2>
+<p>La ley reconoce el derecho a consultar al obligado tributario, sobre el régimen que le corresponde a él (artículo 88.1). Los colegios profesionales y las asociaciones empresariales pueden consultar sobre cuestiones que afecten a la generalidad de sus miembros (artículo 88.3). Para un vendedor, esto significa que la consulta se presenta a su nombre y describe sus propios hechos. El asesor figura como representante, no como consultante.</p>
+
+<h2>Lista de documentos antes de presentar</h2>
+<ol>
+<li><strong>El escrito de consulta</strong>, con el contenido mínimo del artículo 66.1 del Real Decreto 1065/2007: nombre y NIF del obligado tributario y, en su caso, del representante; manifestación expresa de si se está tramitando algún procedimiento, recurso o reclamación relacionado; el objeto de la consulta; los antecedentes y circunstancias, expresados con claridad; lugar, fecha y firma.</li>
+<li><strong>Datos transfronterizos</strong>, si la consulta versa sobre una transacción transfronteriza o un establecimiento permanente (artículo 66.2): grupo al que pertenece el vendedor, en su caso; descripción de la actividad; Estados que puedan verse afectados; y personas residentes en otros Estados que puedan verse afectadas.</li>
+<li><strong>Acreditación de la representación, firmada por ambas partes.</strong> La DGT ofrece un modelo normalizado de representación voluntaria, de uso no obligatorio y válido para una única solicitud, que se puede firmar electrónicamente o, en su caso, de forma manuscrita (Orden HAC/1358/2025, artículo 2.b). Su sede indica que la representación también puede acreditarse por cualquier otro medio válido en Derecho. Según el artículo 1.a de la misma Orden, la representación y los apoderamientos registrados ante la AEAT podrán considerarse suficientes.</li>
+<li><strong>Acreditación de las facultades de los firmantes.</strong> Si firma un administrador o apoderado en nombre del vendedor o de la sociedad representante, adjunte el documento que le otorga esa facultad.</li>
+<li><strong>Documentación de apoyo</strong> que ayude a la DGT a formarse un juicio (artículo 66.3), por ejemplo una contestación informativa previa.</li>
+<li><strong>Presentación electrónica.</strong> Las consultas pueden presentarse por medios electrónicos, y deben presentarse así cuando el obligado esté obligado a relacionarse electrónicamente con la Administración (artículo 66.5).</li>
+</ol>
+
+<h2>Si llega un requerimiento de subsanación</h2>
+<ol>
+<li>Abra la notificación y guarde el acuse de recibo. El plazo cuenta desde el día siguiente a la recepción.</li>
+<li>Lea exactamente qué defecto se señala. En nuestro caso, solo la representación.</li>
+<li>Reúna las firmas que faltan, del representado y del representante, y la acreditación de las facultades de cada firmante.</li>
+<li>Conteste a través del registro electrónico de la DGT, con el código seguro de verificación (CSV) que figura en la notificación, dentro del plazo indicado.</li>
+<li>Si no se contesta en plazo, se le tendrá por desistido y la consulta se archivará (artículo 66.6 del Real Decreto 1065/2007; artículo 88.4 LGT).</li>
+</ol>
+
+<h2>Errores frecuentes</h2>
+<ul>
+<li><strong>Reutilizar un poder hecho para otro procedimiento.</strong> En nuestro caso, un poder notarial firmado solo por el cliente y preparado para un alta censal no bastó por sí solo ante la DGT.</li>
+<li><strong>Falta la aceptación del representante.</strong> Si el representante es una sociedad, su aceptación debe llevar su firma electrónica.</li>
+<li><strong>Esperar la contestación antes de cumplir un plazo.</strong> La consulta no interrumpe ningún plazo. Si una obligación vence, hay que cumplirla igualmente.</li>
+<li><strong>Presentar tarde.</strong> La consulta formulada después del plazo de la obligación a la que se refiere se inadmite (artículo 66.7).</li>
+<li><strong>Omitir la manifestación sobre procedimientos en curso.</strong> Es obligatoria, y las contestaciones sobre cuestiones relacionadas con un procedimiento ya iniciado no son vinculantes (artículo 89.2).</li>
+<li><strong>No vigilar el buzón electrónico.</strong> Nuestro requerimiento llegó por la DEHú, con un plazo corto. Revísela con regularidad mientras la consulta esté abierta.</li>
+</ul>
+
+<h2>A quién no se aplica</h2>
+<ul>
+<li><strong>Cuestiones aduaneras.</strong> El artículo 88.8 LGT remite las consultas sobre normativa aduanera de la Unión a la legislación aduanera de la Unión.</li>
+<li><strong>Cuestiones no tributarias</strong>, como la inscripción como productor de envases o de RAEE en el MITECO. La DGT contesta sobre régimen, clasificación o calificación tributaria.</li>
+<li><strong>Cuestiones ya ligadas a un procedimiento abierto</strong> sobre la misma materia: la contestación no sería vinculante (artículo 89.2).</li>
+<li><strong>Cuestiones ya resueltas por la doctrina publicada.</strong> La propia DGT sugiere buscar antes en la base de doctrina tributaria del Ministerio de Hacienda.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Es vinculante la contestación de la DGT?</h3><p>Sí, para la Administración tributaria en su relación con el consultante, siempre que la consulta se haya presentado en plazo y no hayan cambiado los hechos (artículo 89.1 LGT). Los mismos criterios se aplican a otros obligados con hechos idénticos.</p>
+<h3>¿Cuánto tarda la DGT en contestar?</h3><p>La ley le da seis meses desde la presentación. La falta de contestación en ese plazo no implica que se acepte su criterio (artículo 88.6 LGT).</p>
+<h3>¿Puede mi asesor presentar la consulta en su propio nombre?</h3><p>El derecho a consultar corresponde al obligado tributario, sobre su propia situación. El asesor la presenta como su representante, con una representación firmada por ambos.</p>
+<h3>¿Una consulta pendiente suspende mis plazos?</h3><p>No. Los plazos siguen corriendo mientras la DGT estudia la cuestión (artículo 89.3 LGT).</p>
+<h3>¿Puedo recurrir la contestación?</h3><p>No. Puede recurrir los actos posteriores que apliquen la contestación, no la contestación en sí (artículo 89.4 LGT).</p>
+
+<h2>¿Tiene una cuestión fiscal española que plantear por escrito?</h2>
+<p>IberTrust Global S.L. ayuda a vendedores establecidos fuera de España con la solicitud del NIF español y la representación fiscal, incluida la documentación de las consultas escritas. Envíenos su situación y los documentos que ya tiene, y le diremos qué falta antes de presentar nada.</p>
+<p><strong><a href="/es/quote.html?service=spain-nif-vat">Consultar sobre NIF y representación fiscal →</a></strong><br>O escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_tcsrc('es')
+TC_ZH='''<p><em>西班牙税务 · 向 DGT 提交书面税务咨询 · 代理授权 · 来自我们的实际案例，已匿名化</em></p>
+<p>本月初，我们替一位客户向西班牙税务总局（Dirección General de Tributos，DGT）提交了一份书面税务咨询。客户是一家设立在欧盟以外、通过网络向西班牙消费者销售的公司，想弄清楚申请西班牙税号（NIF）到底要交哪些文件。它手上已经有税务局（AEAT）一份不具约束力的信息答复，这次想要的是税务机关必须遵循的答复。</p>
+<p>咨询以电子方式提交。一周后，西班牙行政机关的统一电子通知平台 DEHú 来了一份通知。那不是答复，而是一份补正要求，限 10 个工作日内回复。问题不在咨询内容，而在代理授权：我们附上的授权书只有客户一方签字。DGT 写明：代理授权必须由授权方（被代理人）签字授予、由代理人签字接受；代理人是法人的，必须用电子签名；任何人代表任一方签字，都要附上证明其有权签字的授权文件。</p>
+<p>下面是我们现在为欧盟境外卖家提交咨询前会核对的事项，争取一次通过。客户名称和各类编号均已删除。</p>
+
+<h2>书面税务咨询是什么，不是什么</h2>
+<p>根据西班牙《税收总法》（第 58/2003 号法律，LGT）第 88 条，纳税义务人可以就适用于自己的税收制度、分类或定性，书面向税务机关提出咨询。DGT 须在六个月内答复；逾期未答复，并不代表认可咨询书中的观点。根据第 89 条，只要咨询是在期限内提出、所述事实没有变化，答复对税务机关在与咨询人的关系上具有约束力；对事实完全相同的其他纳税人，税务机关也应适用同样的标准。</p>
+
+<h2>税务局信息答复与书面咨询对比</h2>
+<table>
+<tr><th></th><th>税务局信息答复（LGT 第 87 条）</th><th>向 DGT 的书面咨询（LGT 第 88–89 条）</th></tr>
+<tr><td>谁来答复</td><td>西班牙税务局（AEAT）</td><td>税务总局（DGT）</td></tr>
+<tr><td>效力</td><td>仅供参考</td><td>事实不变时，对税务机关在与咨询人的关系上有约束力</td></tr>
+<tr><td>答复期限</td><td>第 87 条未规定</td><td>六个月；不答复不等于认可</td></tr>
+<tr><td>内容要求</td><td>第 87 条未规定</td><td>第 1065/2007 号皇家法令第 66 条规定了最低内容</td></tr>
+<tr><td>能否复议</td><td>不适用</td><td>不能针对答复本身提起复议</td></tr>
+</table>
+
+<h2>咨询人必须是谁</h2>
+<p>法律把咨询的权利给了纳税义务人本人，针对的是适用于其本人的制度（第 88 条第 1 款）；行业协会、商会等可就涉及其全体成员的问题提出咨询（第 88 条第 3 款）。对卖家来说，这意味着咨询要以卖家自己的名义提出，描述卖家自己的事实；顾问以代理人身份出现，而不是咨询人。</p>
+
+<h2>提交前的文件清单</h2>
+<ol>
+<li><strong>咨询书</strong>，包含第 1065/2007 号皇家法令第 66 条第 1 款规定的最低内容：纳税义务人及代理人（如有）的名称和税号；明确声明目前是否有相关的程序、复议或申诉正在进行；咨询事项；清楚说明背景和具体情况；地点、日期和签名。</li>
+<li><strong>跨境信息</strong>：咨询涉及跨境交易或常设机构的（第 66 条第 2 款），还要写明卖家所属集团（如有）、业务说明、可能受影响的国家，以及可能受影响的其他国家居民。</li>
+<li><strong>双方签字的代理证明。</strong>DGT 提供一份自愿使用的标准代理授权表，仅对一次申请有效，可电子签名，必要时也可手写签名（第 HAC/1358/2025 号部令第 2 条 b 项）。DGT 网站说明，也可以用其他任何法律认可的方式证明代理关系。根据同一部令第 1 条 a 项，在 AEAT 登记的代理和授权可以视为足够。</li>
+<li><strong>签字人权限证明。</strong>由董事或受托人代表卖家、或代表作为代理人的公司签字的，要附上赋予其签字权的文件。</li>
+<li><strong>辅助材料</strong>：有助于 DGT 形成判断的文件（第 66 条第 3 款），例如此前的信息答复。</li>
+<li><strong>电子提交。</strong>咨询可以电子方式提交；纳税人依法必须以电子方式与行政机关往来的，只能电子提交（第 66 条第 5 款）。</li>
+</ol>
+
+<h2>收到补正要求怎么办</h2>
+<ol>
+<li>打开通知并保存签收回执。期限从收到之日的次日起算。</li>
+<li>看清楚列出的是哪项缺陷。我们这次只有代理授权一项。</li>
+<li>补齐缺少的签字——被代理人一方和代理人一方——以及每位签字人的权限证明。</li>
+<li>在通知给定的期限内，通过 DGT 电子登记处、用通知上印的安全验证码（CSV）提交回复。</li>
+<li>逾期不回复的，视为撤回咨询并归档（第 1065/2007 号皇家法令第 66 条第 6 款；LGT 第 88 条第 4 款）。</li>
+</ol>
+
+<h2>常见错误</h2>
+<ul>
+<li><strong>拿别的程序用的授权书直接套用。</strong>我们这次的公证授权书是为税务登记准备的，只有客户签字，单靠它没有满足 DGT 的要求。</li>
+<li><strong>缺少代理人的接受签字。</strong>代理人是公司的，接受必须用公司的电子签名。</li>
+<li><strong>等答复下来再履行义务。</strong>咨询不会中断任何期限。义务到期了，照样要履行。</li>
+<li><strong>提交太晚。</strong>在相关义务的期限届满之后才提出的咨询，不予受理（第 66 条第 7 款）。</li>
+<li><strong>漏写在办程序的声明。</strong>这项声明是必填的；与已经开始的程序相关的问题，答复没有约束力（第 89 条第 2 款）。</li>
+<li><strong>不看电子邮箱。</strong>我们的补正要求是通过 DEHú 送达的，期限很短。咨询未结期间要定期查看。</li>
+</ul>
+
+<h2>哪些情况不适用</h2>
+<ul>
+<li><strong>海关问题。</strong>LGT 第 88 条第 8 款规定，欧盟海关规则的咨询按欧盟海关法规办理。</li>
+<li><strong>非税务问题</strong>，例如在 MITECO 做包装或 WEEE 生产者注册。DGT 只答复税收制度、分类或定性问题。</li>
+<li><strong>同一事项已有程序在办的</strong>：答复不具约束力（第 89 条第 2 款）。</li>
+<li><strong>已公开的税务解释已经回答过的问题。</strong>DGT 自己也建议提交前先检索财政部的税务解释数据库。</li>
+</ul>
+
+<h2>常见问题</h2>
+<h3>DGT 的答复有约束力吗？</h3><p>有。只要咨询在期限内提出、事实没有变化，答复对税务机关在与咨询人的关系上有约束力（LGT 第 89 条第 1 款）；事实完全相同的其他纳税人也适用同样标准。</p>
+<h3>DGT 多久答复？</h3><p>法律给它六个月，从提交之日起算。期限内未答复，不代表认可您的观点（LGT 第 88 条第 6 款）。</p>
+<h3>顾问能以自己的名义提交咨询吗？</h3><p>咨询的权利属于纳税义务人本人，针对的是其本人的税务情况。顾问以您的代理人身份提交，并附双方签字的代理授权。</p>
+<h3>咨询还没答复，我的申报期限会暂停吗？</h3><p>不会。DGT 研究期间，各项期限照常计算（LGT 第 89 条第 3 款）。</p>
+<h3>可以对答复提起复议吗？</h3><p>不可以。只能对之后适用该答复的行政决定提起复议，不能针对答复本身（LGT 第 89 条第 4 款）。</p>
+
+<h2>有西班牙税务问题需要书面确认？</h2>
+<p>IberTrust Global S.L. 为设立在西班牙以外的卖家办理西班牙税号（NIF）申请和税务代理，包括书面咨询的整套文件。把您的情况和手上的文件发给我们，提交前我们先告诉您还缺什么。</p>
+<p><strong><a href="/zh/quote.html?service=spain-nif-vat">咨询西班牙税号与税务代理 →</a></strong><br>或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>
+'''+_tcsrc('zh')
+POSTS.insert(0,('spain-dgt-written-tax-consultation-non-eu-seller-representation',{'date':'2026-11-13',
+ 'en':('Asking Spain’s tax authority a binding question as a non-EU seller: why the DGT sent our consultation back, and the representation both sides must sign',TC_EN),
+ 'es':('Consulta vinculante a la DGT como vendedor de fuera de la UE: por qué nos requirieron subsanar y la representación que deben firmar ambas partes',TC_ES),
+ 'zh':('欧盟境外卖家向西班牙税务总局（DGT）提书面咨询：我们为什么收到补正要求，代理授权为什么要双方都签',TC_ZH),
+ 'desc':{'en':'How a non-EU seller files a written tax consultation with Spain’s DGT: who must be the consultant, document checklist, the representation signed by grantor and representative, the 10-day correction request, common mistakes.',
+  'es':'Cómo presenta un vendedor de fuera de la UE una consulta tributaria escrita ante la DGT: quién es el consultante, documentos, la representación firmada por ambas partes, el requerimiento de 10 días y errores frecuentes.',
+  'zh':'欧盟境外卖家如何向西班牙 DGT 提交书面税务咨询：咨询人是谁、文件清单、授权方和代理人双方签字的代理授权、10 日补正要求以及常见错误。'},
+ 'faq':{'en':_faq2(TC_EN,'<h2>FAQ</h2>'),'es':_faq2(TC_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(TC_ZH,'<h2>常见问题</h2>')}}))
+
 # ---- Service pages: extra services, "what it is", per-service process, related links, overview groups (2026-11-02) ----
 def _upd(slug,tup):
   for i,s in enumerate(S):
@@ -1413,7 +1636,7 @@ REL={ # slug: (related services, related blog posts)
 'eprel-energy-label':(['weee','batteries','gpsr-eu-responsible-person'],['how-to-get-eu-compliance-quote']),
 'eudr':(['eudr-traceability-report'],['eudr-dds-who-files-one-statement-many-shipments','how-to-get-eu-compliance-quote']),
 'eudr-traceability-report':(['eudr'],['eudr-dds-who-files-one-statement-many-shipments','how-to-get-eu-compliance-quote']),
-'spain-nif-vat':(['epr-packaging-spain','epr-europe'],['spanish-nif-without-apostille-online-sellers','spanish-nif-translation-english-french-italian-no-sworn-translator']),
+'spain-nif-vat':(['epr-packaging-spain','epr-europe'],['spain-dgt-written-tax-consultation-non-eu-seller-representation','spanish-nif-without-apostille-online-sellers','spanish-nif-translation-english-french-italian-no-sworn-translator']),
 }
 GROUPS=[('rep',{'en':'Representatives','es':'Representantes','zh':'代表服务'},['gpsr-eu-responsible-person','mdr-eu-authorised-representative','reach-only-representative','uk-responsible-person','turkey-authorised-representative']),
 ('epr',{'en':'EPR (extended producer responsibility)','es':'EPR (responsabilidad ampliada del productor)','zh':'EPR 生产者延伸责任'},['epr-packaging-spain','weee','batteries','epr-europe']),
