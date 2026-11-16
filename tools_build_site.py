@@ -1495,6 +1495,254 @@ POSTS.insert(0,('spain-dgt-written-tax-consultation-non-eu-seller-representation
   'zh':'欧盟境外卖家如何向西班牙 DGT 提交书面税务咨询：咨询人是谁、文件清单、授权方和代理人双方签字的代理授权、10 日补正要求以及常见错误。'},
  'faq':{'en':_faq2(TC_EN,'<h2>FAQ</h2>'),'es':_faq2(TC_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(TC_ZH,'<h2>常见问题</h2>')}}))
 
+# ---- 2026-11-16 post: EUR 3 customs duty + Union handling fee, pre-sold parcels on a pallet vs genuine bulk import ----
+LV_SRC={'en':'Sources','es':'Fuentes','zh':'来源'}
+def _lvsrc(lang):
+  tail={'en':'General information, not legal or customs advice.','es':'Información general, no asesoramiento jurídico ni aduanero.','zh':'本文为一般性信息，不构成法律或海关意见。'}[lang]
+  return ('<p><small>'+LV_SRC[lang]+('：' if lang=='zh' else ': ')+'European Commission, DG TAXUD, <a href="https://taxation-customs.ec.europa.eu/document/download/053e5b4e-f0be-4f20-9a23-3e3b659a6676_en?filename=Customs+Guidance+on+EUR+3+customs+duty.pdf">“The temporary EUR 3 customs duty and the Union handling fee — Guidance for Member States and Trade” (version of 5 October 2026)</a>, sections 3–7; <a href="https://taxation-customs.ec.europa.eu/news/guidance-and-legal-text-temporary-flat-fee-low-value-imports-which-will-apply-until-1-july-2028-2026-06-08_en">news and Q&amp;A of 8 June 2026</a>; <a href="https://taxation-customs.ec.europa.eu/customs/eu-customs-reform_en">EU Customs Reform page</a>; <a href="https://eur-lex.europa.eu/eli/reg/2026/382/oj">Council Regulation (EU) 2026/382</a>; <a href="https://eur-lex.europa.eu/eli/reg_del/2026/2152/oj">Commission Delegated Regulation (EU) 2026/2152</a>. '+tail+'</small></p>')
+LV_EN='''<p>Picture a seller who ships small home-goods orders from Asia straight to customers in Spain, France and Italy. Since July every parcel under €150 has carried a new customs duty, and since 1 November a second charge. A logistics agent suggests a fix: “Put the week’s orders, already labelled for each customer, on one pallet. We declare it as one bulk import into a Spanish warehouse. One declaration, one line, one charge.”</p>
+<p>It sounds efficient. It is also, almost word for word, the pattern the European Commission’s customs guidance tells customs authorities to look for. Here is how the charges are counted, where a distance sale ends and a genuine bulk import begins, and what to check first.</p>
+
+<h2>The two charges</h2>
+<p><strong>Temporary €3 customs duty.</strong> Since 1 July 2026, Council Regulation (EU) 2026/382 has replaced the old €150 duty exemption with a flat duty of €3 per item in consignments worth up to €150 (intrinsic value) sold in distance sales. It applies whatever VAT scheme is used (IOSS, special arrangements or standard import VAT) and is scheduled to run until 1 July 2028.</p>
+<p><strong>Union handling fee.</strong> Since 1 November 2026, Delegated Regulation (EU) 2026/2152 has set a fee of €2 per item for releasing goods sold in distance sales. It is not limited to consignments up to €150, it is not temporary, and it is not refunded once customs has accepted the declaration.</p>
+<p>Both are owed by the declarant (the seller, the platform or their customs representative), not by the consumer. Under indirect representation, the person represented is a debtor too.</p>
+
+<h2>What counts as one “item”</h2>
+<p>An item is not one physical unit. It is the goods in a consignment that share the same tariff classification, description and, where the declaration asks for it, origin. In practice both charges are applied per declaration line, whatever the quantity on it, and goods with different tariff codes may not be grouped under one line.</p>
+<table>
+<tr><th>Declaration</th><th>Tariff code</th><th>Origin declared?</th><th>Notes</th></tr>
+<tr><td>H7</td><td>6-digit HS code</td><td>No</td><td>Distance sales up to €150 only</td></tr>
+<tr><td>H6</td><td>CN code</td><td>No</td><td>Optional up to €1,000</td></tr>
+<tr><td>H1</td><td>10-digit TARIC code</td><td>Yes</td><td>Required for restricted or excise goods, consignments above €150, and preferential rates (without IOSS)</td></tr>
+</table>
+<p>The Commission’s own example: a €140 parcel with three women’s suits in different fabrics is one line in an H7 or H6 declaration, but three lines in H1, because each fabric has its own TARIC code. The same parcel can carry one charge or three.</p>
+
+<h2>The pallet idea: what customs looks at</h2>
+<p>A distance sale needs a business seller, an EU customer who is not a VAT-registered business, transport arranged by or on behalf of the seller (even indirectly), and goods that are <strong>outside the EU when the sale takes place</strong>. That last point decides most cases. If the customer has already ordered while the goods are still outside the EU, it is a distance sale, however the goods travel afterwards.</p>
+<p>The Commission’s guidance (version of 5 October 2026) adds three points:</p>
+<ul>
+<li>Orders of two consumers that are to be delivered separately are always <strong>two consignments</strong> and need two declarations.</li>
+<li>Goods sold to consumers <strong>before being stored in a customs warehouse</strong> for final distribution count as dispatched from outside the EU, so both charges apply. An amendment covering goods sold while in storage is being prepared.</li>
+<li>Under the <strong>anti-abuse clause</strong> (Article 243(5) of the UCC Implementing Regulation), where goods pass through a chain of sales before entering the EU and one of them is a distance sale, customs considers only the distance sale.</li>
+</ul>
+<p>Indicators include parcels with their own label, barcode or QR code pointing to different destinations, how often the operator files such declarations, and the “buyer” field in H1. If customs concludes a “bulk” declaration was really a group of distance sales, it can recalculate per item, ask for a guarantee, or invite you to replace the declaration, without IOSS. Where a customs debt arises through non-compliance, the operator must prove the import was not linked to a distance sale.</p>
+
+<h2>Distance sale or genuine bulk import?</h2>
+<table>
+<tr><th></th><th>Parcels shipped direct</th><th>Pre-sold parcels on one pallet</th><th>Stock imported first, sold later</th></tr>
+<tr><td>Sale happens</td><td>Goods outside the EU</td><td>Goods outside the EU</td><td>After release for free circulation</td></tr>
+<tr><td>Distance sale?</td><td>Yes</td><td>Yes (anti-abuse clause)</td><td>No</td></tr>
+<tr><td>Customs charges</td><td>€3 per item up to €150, plus handling fee</td><td>Same, recalculated per item</td><td>Normal duty by tariff code, origin and value</td></tr>
+<tr><td>Returns</td><td colspan="2">No invalidation for returned goods up to €150; general refund rules remain; handling fee never refunded</td><td>Normal rules</td></tr>
+</table>
+
+<h2>Step by step before you change your logistics</h2>
+<ol>
+<li><strong>Map each channel:</strong> when the sale happens and where the goods are at that moment.</li>
+<li><strong>Build a classification sheet per SKU</strong> (HS, CN and TARIC codes, origin) and check how many lines a typical basket creates under H7 and H1.</li>
+<li><strong>Agree in writing who the declarant is.</strong> With indirect representation, you are a debtor too.</li>
+<li><strong>Without IOSS,</strong> file in the Member State where delivery ends.</li>
+<li><strong>For real EU stock,</strong> import before you sell and keep the chronology: purchase order, import declaration, warehouse receipt, then customer orders.</li>
+<li><strong>Check the comprehensive guarantee</strong> and make sure its reference amount covers the new charges.</li>
+<li><strong>Align product data:</strong> mandatory product identifiers should match your labels and GPSR file (<a href="/blog/eu-customs-product-identifiers-ecommerce-gpsr-label-listing.html">see our article</a>).</li>
+</ol>
+
+<h2>Common mistakes</h2>
+<ul>
+<li>Treating one pallet as one consignment when the boxes inside are already sold and labelled per customer.</li>
+<li>Counting per parcel instead of per declaration line.</li>
+<li>Assuming the handling fee stops at €150.</li>
+<li>Expecting the charges back automatically when goods are returned.</li>
+<li>Letting the broker choose the declaration and representation without knowing you may be a debtor.</li>
+<li>Moving stock into the EU and forgetting that the product still needs an EU economic operator under GPSR.</li>
+</ul>
+
+<h2>Who this does not apply to</h2>
+<ul>
+<li>Sales to VAT-registered business customers: not distance sales, normal import rules apply.</li>
+<li>Goods already in free circulation and sold from EU stock.</li>
+<li>Customers who collect the goods or arrange transport without the seller’s involvement.</li>
+<li>New means of transport and goods supplied with installation or assembly.</li>
+<li>Consignments above €150: normal duty instead of €3, though the handling fee still applies to distance sales.</li>
+<li>Excise and restricted goods: H1 rules, outside this article’s scope.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Is the €3 duty charged per parcel or per product?</h3><p>Per item, in practice per declaration line. Goods with the same tariff code, description and (where declared) origin share one line, whatever the quantity.</p>
+<h3>Is the €2 handling fee refunded if the customer returns the goods?</h3><p>No. It is not refunded once customs has accepted the declaration. For the €3 duty, invalidation because goods up to €150 came back is no longer possible, although the general refund rules of the Union Customs Code still apply.</p>
+<h3>If I import stock into an EU warehouse first, do I still need an EU Responsible Person?</h3><p>Yes, unless an economic operator established in the EU, such as an EU importer or your own EU company, takes on that role under GPSR. Moving stock into the EU does not by itself meet the requirement.</p>
+<h3>How long will the €3 duty apply?</h3><p>Until 1 July 2028 as scheduled. By 1 December 2027 the Commission must assess whether the EU Customs Data Hub will be ready, and may propose an extension if not.</p>
+
+<h2>Moving from parcels to EU stock?</h2>
+<p>IberTrust Global S.L. helps non-EU sellers set up the EU side of their business: EU Responsible Person under GPSR, packaging, WEEE and battery EPR in Spain, and Spanish tax registration. Tell us how your goods reach EU customers today and how you plan to ship them; we will tell you which EU roles and registrations each option needs.</p>
+<p><strong><a href="/quote.html?service=gpsr-eu-responsible-person">Request an EU Responsible Person proposal →</a></strong><br>Or email <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_lvsrc('en')
+LV_ES='''<p>Imagine un vendedor que envía pequeños pedidos de artículos para el hogar desde Asia directamente a clientes en España, Francia e Italia. Desde julio cada paquete de menos de 150 € soporta un nuevo derecho de aduana y, desde el 1 de noviembre, un segundo cargo. Un agente logístico propone una solución: «Ponemos los pedidos de la semana, ya etiquetados para cada cliente, en un solo palé. Lo declaramos como una única importación a granel en un almacén en España. Una declaración, una línea, un cargo».</p>
+<p>Parece eficiente. Pero es, casi palabra por palabra, el patrón que la guía aduanera de la Comisión Europea pide a las aduanas que vigilen. Le explicamos cómo se cuentan los cargos, dónde termina una venta a distancia y empieza una importación a granel real, y qué revisar antes de cambiar nada.</p>
+
+<h2>Los dos cargos</h2>
+<p><strong>Derecho de aduana temporal de 3 €.</strong> Desde el 1 de julio de 2026, el Reglamento (UE) 2026/382 del Consejo sustituye la antigua franquicia de 150 € por un derecho fijo de 3 € por artículo en envíos de valor intrínseco de hasta 150 € vendidos a distancia. Se aplica con cualquier régimen de IVA (IOSS, régimen especial o IVA de importación ordinario) y está previsto hasta el 1 de julio de 2028.</p>
+<p><strong>Tasa de tramitación de la Unión.</strong> Desde el 1 de noviembre de 2026, el Reglamento Delegado (UE) 2026/2152 fija una tasa de 2 € por artículo por el despacho a libre práctica de mercancías vendidas a distancia. No se limita a envíos de hasta 150 €, no es temporal y no se devuelve una vez que la aduana ha admitido la declaración.</p>
+<p>Ambos los debe el declarante (el vendedor, la plataforma o su representante aduanero), no el consumidor. Con representación indirecta, la persona representada también es deudora.</p>
+
+<h2>Qué es un «artículo»</h2>
+<p>Un artículo no es una unidad física. Son las mercancías de un envío que comparten la misma clasificación arancelaria, la misma descripción y, cuando la declaración lo pide, el mismo origen. En la práctica, ambos cargos se aplican por línea de declaración, sea cual sea la cantidad, y no se pueden agrupar en una línea mercancías con códigos arancelarios distintos.</p>
+<table>
+<tr><th>Declaración</th><th>Código arancelario</th><th>¿Se declara el origen?</th><th>Notas</th></tr>
+<tr><td>H7</td><td>Código SA de 6 dígitos</td><td>No</td><td>Solo ventas a distancia de hasta 150 €</td></tr>
+<tr><td>H6</td><td>Código NC</td><td>No</td><td>Opcional hasta 1.000 €</td></tr>
+<tr><td>H1</td><td>Código TARIC de 10 dígitos</td><td>Sí</td><td>Obligatoria para mercancías con restricciones o sujetas a impuestos especiales, envíos de más de 150 € y tipos preferenciales (sin IOSS)</td></tr>
+</table>
+<p>El ejemplo de la propia Comisión: un paquete de 140 € con tres trajes de mujer de tejidos distintos es una línea en una declaración H7 o H6, pero tres líneas en H1, porque cada tejido tiene su propio código TARIC. El mismo paquete puede soportar un cargo o tres.</p>
+
+<h2>La idea del palé: qué mira la aduana</h2>
+<p>Una venta a distancia requiere un vendedor empresario, un cliente en la UE que no sea empresa registrada a efectos de IVA, transporte organizado por el vendedor o por su cuenta (aunque sea indirectamente) y mercancías que están <strong>fuera de la UE en el momento de la venta</strong>. Este último punto decide la mayoría de los casos. Si el cliente ya ha hecho el pedido mientras la mercancía sigue fuera de la UE, es una venta a distancia, viaje como viaje después.</p>
+<p>La guía de la Comisión (versión del 5 de octubre de 2026) añade tres puntos:</p>
+<ul>
+<li>Los pedidos de dos consumidores que se van a entregar por separado son siempre <strong>dos envíos</strong> y requieren dos declaraciones.</li>
+<li>Las mercancías vendidas a consumidores <strong>antes de almacenarse en un depósito aduanero</strong> para su distribución final se consideran expedidas desde fuera de la UE, por lo que se aplican ambos cargos. Se está preparando una modificación para cubrir también las vendidas durante el almacenamiento.</li>
+<li>Según la <strong>cláusula antiabuso</strong> (artículo 243, apartado 5, del Reglamento de Ejecución del CAU), si las mercancías pasan por una cadena de ventas antes de entrar en la UE y una de ellas es una venta a distancia, la aduana solo tiene en cuenta la venta a distancia.</li>
+</ul>
+<p>Entre los indicios: paquetes con su propia etiqueta, código de barras o QR que apuntan a destinos distintos, la frecuencia con que el operador presenta estas declaraciones y el campo «comprador» de la H1. Si la aduana concluye que una declaración «a granel» era en realidad un conjunto de ventas a distancia, puede recalcular por artículo, exigir una garantía o invitarle a sustituir la declaración, sin IOSS. Si nace una deuda aduanera por incumplimiento, es el operador quien debe probar que la importación no estaba vinculada a una venta a distancia.</p>
+
+<h2>¿Venta a distancia o importación a granel real?</h2>
+<table>
+<tr><th></th><th>Paquetes enviados directamente</th><th>Paquetes ya vendidos en un palé</th><th>Stock importado primero y vendido después</th></tr>
+<tr><td>Momento de la venta</td><td>Mercancía fuera de la UE</td><td>Mercancía fuera de la UE</td><td>Tras el despacho a libre práctica</td></tr>
+<tr><td>¿Venta a distancia?</td><td>Sí</td><td>Sí (cláusula antiabuso)</td><td>No</td></tr>
+<tr><td>Cargos aduaneros</td><td>3 € por artículo hasta 150 €, más tasa de tramitación</td><td>Igual, recalculado por artículo</td><td>Derecho normal según código arancelario, origen y valor</td></tr>
+<tr><td>Devoluciones</td><td colspan="2">No se puede invalidar la declaración por devolución de mercancías de hasta 150 €; siguen las normas generales de reembolso; la tasa de tramitación nunca se devuelve</td><td>Normas generales</td></tr>
+</table>
+
+<h2>Paso a paso antes de cambiar su logística</h2>
+<ol>
+<li><strong>Mapee cada canal:</strong> cuándo se produce la venta y dónde está la mercancía en ese momento.</li>
+<li><strong>Prepare una hoja de clasificación por SKU</strong> (códigos SA, NC y TARIC, origen) y compruebe cuántas líneas genera una cesta típica en H7 y en H1.</li>
+<li><strong>Acuerde por escrito quién es el declarante.</strong> Con representación indirecta, usted también es deudor.</li>
+<li><strong>Sin IOSS,</strong> presente la declaración en el Estado miembro donde termina la entrega.</li>
+<li><strong>Para un stock real en la UE,</strong> importe antes de vender y conserve la cronología: pedido de compra, declaración de importación, recepción en almacén y, después, pedidos de clientes.</li>
+<li><strong>Revise la garantía global</strong> y asegúrese de que su importe de referencia cubre los nuevos cargos.</li>
+<li><strong>Alinee los datos de producto:</strong> los identificadores de producto obligatorios deben coincidir con sus etiquetas y su expediente GPSR (<a href="/es/blog/eu-customs-product-identifiers-ecommerce-gpsr-label-listing.html">vea nuestro artículo</a>).</li>
+</ol>
+
+<h2>Errores frecuentes</h2>
+<ul>
+<li>Tratar un palé como un solo envío cuando las cajas ya están vendidas y etiquetadas por cliente.</li>
+<li>Contar por paquete en lugar de por línea de declaración.</li>
+<li>Suponer que la tasa de tramitación termina en 150 €.</li>
+<li>Esperar que los cargos se devuelvan automáticamente cuando se devuelve la mercancía.</li>
+<li>Dejar que el agente de aduanas elija la declaración y la representación sin saber que usted puede ser deudor.</li>
+<li>Trasladar el stock a la UE y olvidar que el producto sigue necesitando un operador económico en la UE según el GPSR.</li>
+</ul>
+
+<h2>A quién no se aplica</h2>
+<ul>
+<li>Ventas a empresas registradas a efectos de IVA: no son ventas a distancia; se aplican las normas de importación normales.</li>
+<li>Mercancías ya en libre práctica y vendidas desde stock en la UE.</li>
+<li>Clientes que recogen la mercancía u organizan el transporte sin intervención del vendedor.</li>
+<li>Medios de transporte nuevos y bienes entregados con instalación o montaje.</li>
+<li>Envíos de más de 150 €: derecho normal en lugar de 3 €, aunque la tasa de tramitación sigue aplicándose a las ventas a distancia.</li>
+<li>Mercancías sujetas a impuestos especiales o con restricciones: reglas de la H1, fuera del alcance de este artículo.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿El derecho de 3 € se cobra por paquete o por producto?</h3><p>Por artículo, en la práctica por línea de declaración. Las mercancías con el mismo código arancelario, descripción y (cuando se declara) origen comparten una línea, sea cual sea la cantidad.</p>
+<h3>¿Se devuelve la tasa de tramitación de 2 € si el cliente devuelve la mercancía?</h3><p>No. No se devuelve una vez que la aduana ha admitido la declaración. Para el derecho de 3 €, ya no es posible invalidar la declaración porque se devuelvan mercancías de hasta 150 €, aunque siguen aplicándose las normas generales de reembolso del Código Aduanero de la Unión.</p>
+<h3>Si primero importo stock a un almacén en la UE, ¿sigo necesitando una persona responsable en la UE?</h3><p>Sí, salvo que un operador económico establecido en la UE, como un importador de la UE o su propia empresa en la UE, asuma ese papel según el GPSR. Trasladar el stock a la UE no cumple por sí solo el requisito.</p>
+<h3>¿Hasta cuándo se aplicará el derecho de 3 €?</h3><p>Está previsto hasta el 1 de julio de 2028. Antes del 1 de diciembre de 2027 la Comisión debe evaluar si el EU Customs Data Hub estará listo y, si no, puede proponer una prórroga.</p>
+
+<h2>¿Pasa de paquetes a stock en la UE?</h2>
+<p>IberTrust Global S.L. ayuda a vendedores de fuera de la UE a organizar su parte europea: persona responsable en la UE según el GPSR, RAP de envases, RAEE y pilas en España y registro fiscal en España. Cuéntenos cómo llegan hoy sus productos a los clientes de la UE y cómo piensa enviarlos; le diremos qué figuras y registros en la UE necesita cada opción.</p>
+<p><strong><a href="/es/quote.html?service=gpsr-eu-responsible-person">Solicitar propuesta de persona responsable en la UE →</a></strong><br>O escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_lvsrc('es')
+LV_ZH='''<p>设想一位卖家：从亚洲把家居小件订单直接寄给西班牙、法国和意大利的消费者。从 7 月起，每个 150 欧元以下的包裹多了一项新关税；从 11 月 1 日起，又多了第二项费用。物流代理出了个主意：“把一周的订单按客户贴好面单，装在一个托盘上，整托按一票大货进口报到西班牙仓库。一票报关、一行、只收一次。”</p>
+<p>听起来很省事。但这几乎一字不差，就是欧盟委员会海关指南要求各国海关重点查的模式。本文讲清楚这两项费用怎么计、远程销售和真正的大货进口界线在哪里，以及改物流之前要先查什么。</p>
+
+<h2>两项费用</h2>
+<p><strong>3 欧元临时关税。</strong>自 2026 年 7 月 1 日起，理事会法规（EU）2026/382 取消了原来 150 欧元以下免关税的规定，改为：远程销售、内在价值不超过 150 欧元的货件，每个“商品项”征收固定 3 欧元关税。无论用哪种增值税方式（IOSS、特别安排或普通进口增值税）都适用，计划执行到 2028 年 7 月 1 日。</p>
+<p><strong>欧盟处理费。</strong>自 2026 年 11 月 1 日起，授权法规（EU）2026/2152 规定：远程销售的货物放行进入自由流通，每个商品项收 2 欧元处理费。它不限于 150 欧元以下的货件，不是临时措施，海关一旦接受申报就不退。</p>
+<p>两项都由申报人承担（卖家、平台或其报关代理），不由消费者承担。间接代理时，被代理人同样是债务人。</p>
+
+<h2>什么算一个“商品项”</h2>
+<p>商品项不是一件实物。它指同一货件中税则归类相同、品名描述相同、且（申报要求填写时）原产地相同的货物。实际操作中，两项费用都按申报行计，不管这一行有多少件；而且在适用 3 欧元关税时，不同税号的货物不能并成一行。</p>
+<table>
+<tr><th>申报类型</th><th>税号位数</th><th>是否申报原产地</th><th>说明</th></tr>
+<tr><td>H7</td><td>6 位 HS 编码</td><td>否</td><td>仅限 150 欧元以下的远程销售</td></tr>
+<tr><td>H6</td><td>CN 编码</td><td>否</td><td>1,000 欧元以下可选用</td></tr>
+<tr><td>H1</td><td>10 位 TARIC 编码</td><td>是</td><td>受禁限货物、消费税货物、150 欧元以上货件、申请优惠税率（未用 IOSS 时）必须用</td></tr>
+</table>
+<p>欧委会自己的例子：一个 140 欧元的包裹里有三套不同面料的女式套装，用 H7 或 H6 申报是一行；用 H1 申报就是三行，因为每种面料有各自的 TARIC 编码。同一个包裹，可能收一次，也可能收三次。</p>
+
+<h2>“整托报大货”：海关看什么</h2>
+<p>远程销售需要同时满足：卖方是经营者；买方在欧盟、且不是增值税登记企业；运输由卖方或代表卖方安排（间接参与也算）；以及<strong>成交时货物在欧盟境外</strong>。最后一条决定大多数情况：只要客户下单时货物还在欧盟外，就是远程销售，之后怎么运都不改变。</p>
+<p>欧委会指南（2026 年 10 月 5 日版）还明确了三点：</p>
+<ul>
+<li>两位消费者的订单如果要分别送达，永远是<strong>两个货件</strong>，要分两份申报。</li>
+<li>货物在<strong>存入海关保税仓之前</strong>已卖给消费者、入仓只是为最终配送做准备的，视为从欧盟境外发出，两项费用照收。针对在仓储期间售出货物的修订也在准备中。</li>
+<li><strong>反规避条款</strong>（《海关法典实施条例》第 243(5) 条）：货物进入欧盟前经过一连串交易、其中一笔是远程销售的，海关只看那笔远程销售。</li>
+</ul>
+<p>海关参考的迹象包括：托盘里的包裹各有面单、条形码或二维码，指向不同目的地；同一经营者提交此类申报的频率；H1 里的“买方”栏。海关如认定一票“大货”实际是一组远程销售，可以按商品项重新计算、要求提供担保，或请您撤销申报重新申报（新申报不能用 IOSS）。因违规产生关税债务时，要由经营者证明这批进口与远程销售无关。</p>
+
+<h2>远程销售还是真正的大货进口？</h2>
+<table>
+<tr><th></th><th>包裹直发</th><th>已售包裹装一个托盘</th><th>先进口备货、之后再卖</th></tr>
+<tr><td>成交时点</td><td>货在欧盟外</td><td>货在欧盟外</td><td>货物放行进入自由流通之后</td></tr>
+<tr><td>是否远程销售</td><td>是</td><td>是（反规避条款）</td><td>否</td></tr>
+<tr><td>海关费用</td><td>150 欧元以下每商品项 3 欧元，另加处理费</td><td>同左，按商品项重算</td><td>按税号、原产地和价值征普通关税</td></tr>
+<tr><td>退货</td><td colspan="2">150 欧元以下货物因退货不能再撤销申报；一般退税规则仍适用；处理费一律不退</td><td>一般规则</td></tr>
+</table>
+
+<h2>改物流之前，按步骤查</h2>
+<ol>
+<li><strong>逐个渠道梳理：</strong>什么时候成交、成交时货在哪里。</li>
+<li><strong>按 SKU 做归类表</strong>（HS、CN、TARIC 编码和原产地），算一算典型订单在 H7 和 H1 下各会产生几行。</li>
+<li><strong>书面约定谁是申报人。</strong>间接代理时，您也是债务人。</li>
+<li><strong>不用 IOSS 时，</strong>要在最终送达的成员国申报。</li>
+<li><strong>真要在欧盟备货，</strong>就先进口再销售，并留好时间顺序：采购单、进口报关单、入仓记录，然后才是客户订单。</li>
+<li><strong>检查总担保</strong>，确保参考金额覆盖新增费用。</li>
+<li><strong>统一产品数据：</strong>强制申报的产品标识符要与标签和 GPSR 文件一致（<a href="/zh/blog/eu-customs-product-identifiers-ecommerce-gpsr-label-listing.html">见我们的相关文章</a>）。</li>
+</ol>
+
+<h2>常见错误</h2>
+<ul>
+<li>托盘里的箱子已经卖出、按客户贴好面单，却把整托当成一个货件。</li>
+<li>按包裹计，而不是按申报行计。</li>
+<li>以为处理费到 150 欧元就不收了。</li>
+<li>以为退货时这两项费用会自动退回。</li>
+<li>让报关行自己选申报类型和代理方式，却不知道自己也可能是债务人。</li>
+<li>把货搬进欧盟仓，却忘了按 GPSR 产品仍需要一个欧盟境内的经济经营者。</li>
+</ul>
+
+<h2>不适用的情况</h2>
+<ul>
+<li>卖给增值税登记企业：不属于远程销售，按普通进口规则。</li>
+<li>已在欧盟自由流通、从欧盟库存发货销售的货物。</li>
+<li>客户自提或自行安排运输、卖方不参与的。</li>
+<li>新交通工具，以及含安装或组装的供货。</li>
+<li>150 欧元以上的货件：不收 3 欧元而征普通关税，但只要是远程销售，处理费照收。</li>
+<li>消费税货物和受禁限货物：按 H1 规则，不在本文范围内。</li>
+</ul>
+
+<h2>常见问题</h2>
+<h3>3 欧元关税是按包裹收还是按产品收？</h3><p>按商品项收，实际就是按申报行。税号、品名和（如需申报）原产地都相同的货物共用一行，不论数量。</p>
+<h3>客户退货，2 欧元处理费退吗？</h3><p>不退。海关一旦接受申报，处理费就不退。至于 3 欧元关税，150 欧元以下的货物不能再因退货撤销申报，但《欧盟海关法典》的一般退税规则仍然适用。</p>
+<h3>先把货进口到欧盟仓库，还需要欧盟负责人吗？</h3><p>需要，除非有一家设在欧盟的经济经营者（比如欧盟进口商或您自己的欧盟公司）按 GPSR 承担这个角色。光把货搬进欧盟，本身并不满足这项要求。</p>
+<h3>3 欧元关税执行到什么时候？</h3><p>计划到 2028 年 7 月 1 日。欧委会须在 2027 年 12 月 1 日前评估欧盟海关数据中心届时能否就绪；如不能，可提议延长。</p>
+
+<h2>准备从直发包裹改为欧盟备货？</h2>
+<p>IberTrust Global S.L. 帮助欧盟境外卖家搭好欧盟这一侧：GPSR 欧盟负责人，西班牙包装、WEEE 和电池 EPR，以及西班牙税务登记。告诉我们您的货现在怎么到欧盟客户手里、打算以后怎么发，我们告诉您每种方案需要哪些欧盟角色和注册。</p>
+<p><strong><a href="/zh/quote.html?service=gpsr-eu-responsible-person">获取欧盟负责人方案 →</a></strong><br>或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>
+'''+_lvsrc('zh')
+POSTS.insert(0,('eu-3-euro-customs-duty-handling-fee-pre-sold-parcels-pallet-bulk-import',{'date':'2026-11-16',
+ 'en':('Pre-sold parcels on one pallet: why EU customs can still charge the €3 duty and €2 handling fee per item — distance sale vs genuine bulk import',LV_EN),
+ 'es':('Paquetes ya vendidos en un solo palé: por qué la aduana de la UE puede seguir cobrando el derecho de 3 € y la tasa de 2 € por artículo — venta a distancia frente a importación a granel real',LV_ES),
+ 'zh':('已售包裹装一个托盘报大货：为什么欧盟海关仍可按商品项收 3 欧元关税和 2 欧元处理费——远程销售与真正大货进口的界线',LV_ZH),
+ 'desc':{'en':'How the EU €3 customs duty (since 1 July 2026) and €2 Union handling fee (since 1 November 2026) are counted per declaration line, why pre-labelled parcels on a pallet are still distance sales, comparison table, steps, mistakes.',
+  'es':'Cómo se cuentan por línea de declaración el derecho de 3 € (desde el 1 de julio de 2026) y la tasa de tramitación de 2 € (desde el 1 de noviembre de 2026), por qué un palé de paquetes ya vendidos sigue siendo venta a distancia, tabla, pasos y errores.',
+  'zh':'欧盟 3 欧元临时关税（2026 年 7 月 1 日起）和 2 欧元处理费（2026 年 11 月 1 日起）如何按申报行计算，为什么已贴面单的包裹整托申报仍属远程销售，对比表、步骤和常见错误。'},
+ 'faq':{'en':_faq2(LV_EN,'<h2>FAQ</h2>'),'es':_faq2(LV_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(LV_ZH,'<h2>常见问题</h2>')}}))
+
 # ---- Service pages: extra services, "what it is", per-service process, related links, overview groups (2026-11-02) ----
 def _upd(slug,tup):
   for i,s in enumerate(S):
@@ -1624,7 +1872,7 @@ SPROC={ # slug: lang: process steps (overrides PROC)
 REL={ # slug: (related services, related blog posts)
 'mdr-eu-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person','eprel-energy-label'],['how-to-get-eu-compliance-quote']),
 'reach-only-representative':(['gpsr-eu-responsible-person','mdr-eu-authorised-representative','cpnp-cosmetics'],['how-to-get-eu-compliance-quote']),
-'gpsr-eu-responsible-person':(['uk-responsible-person','turkey-authorised-representative','cpnp-cosmetics','eprel-energy-label'],['marketplace-doc-request-eu-responsible-person-asin-model-test-report','gpsr-responsible-person-guide','do-i-need-eu-responsible-person-gpsr','gpsr-marketplace-sweep-2026-listing-information','marketplace-representative-confirmation-rejected-entity-mismatch','eu-product-liability-directive-2026-non-eu-sellers-responsible-person','eu-customs-product-identifiers-ecommerce-gpsr-label-listing']),
+'gpsr-eu-responsible-person':(['uk-responsible-person','turkey-authorised-representative','cpnp-cosmetics','eprel-energy-label'],['eu-3-euro-customs-duty-handling-fee-pre-sold-parcels-pallet-bulk-import','marketplace-doc-request-eu-responsible-person-asin-model-test-report','gpsr-responsible-person-guide','do-i-need-eu-responsible-person-gpsr','gpsr-marketplace-sweep-2026-listing-information','marketplace-representative-confirmation-rejected-entity-mismatch','eu-product-liability-directive-2026-non-eu-sellers-responsible-person','eu-customs-product-identifiers-ecommerce-gpsr-label-listing']),
 'uk-responsible-person':(['gpsr-eu-responsible-person','turkey-authorised-representative'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
 'turkey-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
 'epr-packaging-spain':(['weee','batteries','epr-europe','spain-nif-vat'],['spain-packaging-registration-miteco-draft-vs-filed','spain-packaging-declaration-2026-split-year-ppwr','spain-packaging-epr-rea-power-of-attorney-bastanteo','packaging-omnibus-authorised-representative-exemption','ppwr-packaging-label-delay-what-applies-now','gpsr-and-epr-one-provider']),
