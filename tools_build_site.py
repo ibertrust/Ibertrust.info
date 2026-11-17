@@ -1743,6 +1743,252 @@ POSTS.insert(0,('eu-3-euro-customs-duty-handling-fee-pre-sold-parcels-pallet-bul
   'zh':'欧盟 3 欧元临时关税（2026 年 7 月 1 日起）和 2 欧元处理费（2026 年 11 月 1 日起）如何按申报行计算，为什么已贴面单的包裹整托申报仍属远程销售，对比表、步骤和常见错误。'},
  'faq':{'en':_faq2(LV_EN,'<h2>FAQ</h2>'),'es':_faq2(LV_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(LV_ZH,'<h2>常见问题</h2>')}}))
 
+
+# ---- 2026-11-17 post: Spanish consumer authority requirement to the EU Responsible Person named on a listing ----
+RQ_SRC={'en':'Sources','es':'Fuentes','zh':'来源'}
+def _rqsrc(lang):
+  tail={'en':'IberTrust case files (anonymised). General information, not legal advice.','es':'Expedientes de IberTrust (anonimizados). Información general, no asesoramiento jurídico.','zh':'IberTrust 案卷（已匿名化）。本文为一般性信息，不构成法律意见。'}[lang]
+  return ('<p><small>'+RQ_SRC[lang]+('：' if lang=='zh' else ': ')+'Dirección General de Consumo, <a href="https://www.dsca.gob.es/sites/default/files/consumo_masinfo/Informe_Final_barrido_RSGP_2026.pdf">“Resultados del barrido 2026 sobre control de artículos de puericultura y equipamiento deportivo vendidos online”</a>, sections 2 and 3.3–3.5; <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2023-80684">Regulation (EU) 2023/988 (GPSR)</a>, Articles 3, 16 and 19; <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2019-81079">Regulation (EU) 2019/1020</a>, Article 4; <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565">Law 39/2015</a>, Articles 30 and 43; <a href="https://administracion.gob.es/en/tu-espacio-europeo/derechos-obligaciones/empresas/productos/defectuosos-seguridad">Punto de Acceso General, product safety</a>. '+tail+'</small></p>')
+RQ_EN='''<p>The notice did not arrive by email. It appeared in the electronic notification inbox of the company named as EU Responsible Person on a marketplace listing for a charging cable. A regional consumer inspection office in Spain had already received one reply. Now it wanted more: complete, legible copies, in date order, of every email exchanged that month with the manufacturer, suppliers or intermediaries about safety alerts, withdrawals, technical specifications or conformity. Deadline: ten working days.</p>
+<p>We prepared that reply. The twist: there was no mandate for that product at all. The name had been put on the listing without authorisation. For non-EU sellers, the case shows what Spanish authorities now ask the responsible person named on your listing, and what happens when that person cannot stand behind your product.</p>
+
+<h2>Who writes, and why now</h2>
+<p>In Spain, the consumer authorities of the autonomous communities carry out product safety inspections, coordinated by the Directorate-General for Consumer Affairs. Spain’s national report on the 2026 EU product safety sweep shows how the responsible person is checked. Authorities contacted the responsible person named on online offers and gave them 10 calendar days to confirm four things:</p>
+<ol>
+<li>that it really is the responsible person for that product;</li>
+<li>that its contact details also appear on the physical product;</li>
+<li>that the product is the one described in the technical documentation;</li>
+<li>documented evidence of the periodic checks required by Article 16(2) GPSR.</li>
+</ol>
+<p>The results for the 67 offers checked in Spain were poor. Responsible persons were verified for 66% of the offers. Replies within ten days came for 33%, confirmation of the role for 22%, confirmation of details on the product for 19%, and documented evidence of the checks for 15%. Authorities have taken or plan measures on at least 18 offers, including formal requirements, and do not rule out sanction proceedings for failing to answer.</p>
+
+<h2>What the authority asks, and what your representative needs from you</h2>
+<p>A responsible person can only answer with what the manufacturer has given it. Under Article 4(3) of Regulation (EU) 2019/1020, which Article 16(1) GPSR applies to consumer products, the responsible person must provide the authority, on a reasoned request, with all the information and documents needed to show the product conforms.</p>
+<table>
+<tr><th>What the authority asks</th><th>What the representative needs from the manufacturer</th></tr>
+<tr><td>Confirm you are the responsible person for this product</td><td>A signed written mandate that covers the brand and models actually sold</td></tr>
+<tr><td>Confirm your details are on the physical product</td><td>Photos of the label, packaging or accompanying document showing the responsible person’s name, postal and electronic address</td></tr>
+<tr><td>Confirm the product matches the technical documentation</td><td>Technical documentation, test reports and model or batch identifiers that match the listing</td></tr>
+<tr><td>Evidence of periodic checks (Article 16(2))</td><td>Records of the checks: what was compared, when, and the result</td></tr>
+<tr><td>Communications on safety, withdrawals or conformity</td><td>Complete email chains, in date order, with attachments and delivery confirmations</td></tr>
+<tr><td>Corrective action, if there is a risk</td><td>Who can stop sales, change the listing or recall, and how fast</td></tr>
+</table>
+
+<h2>How the clock runs</h2>
+<p>Spanish administrative deadlines follow Law 39/2015 unless a specific rule says otherwise:</p>
+<ul>
+<li><strong>Notification date.</strong> An electronic notification takes effect when its content is accessed. Where electronic notification is compulsory, it counts as rejected if it is not opened within 10 calendar days of being made available (Article 43). Not opening it does not stop the procedure.</li>
+<li><strong>Working days.</strong> Deadlines in days are working days. Saturdays, Sundays and public holidays are excluded, unless the notice expressly says calendar days (Article 30(2)).</li>
+<li><strong>Start.</strong> Counting starts on the day after notification (Article 30(3)).</li>
+<li><strong>Holidays.</strong> Check national, regional and local holidays. The sweep emails used 10 calendar days, so read each notice.</li>
+</ul>
+<p>In the case above, the notice was opened on a Monday, so day one was Tuesday. With no holidays in between, the tenth working day fell on the Monday two weeks later. The authority also warned that a late or inaccurate answer, or false documents, is an infringement under regional consumer law, and that repeated refusal can be classed as serious or very serious.</p>
+
+<h2>When the name on the listing has no mandate</h2>
+<p>A responsible person without a written mandate for the product will tell the authority so in writing. The reply we prepared set out the facts and attached an earlier written notice telling a former seller to stop using the responsible person’s details, plus the reports sent to a marketplace. About a week after the report, that marketplace said it had decided to remove the listing.</p>
+<p>For the seller, the result is worse than having no representative. The authority now has a written statement that no EU operator stands behind the product, and under Article 16(1) GPSR it cannot be placed on the market. The same happens when a contract has ended but old listings or labels still carry the representative’s name.</p>
+
+<h2>Step by step: be ready before the letter</h2>
+<ol>
+<li><strong>Sign a written mandate</strong> that names the legal entity behind each shop and lists the brands or models.</li>
+<li><strong>Match label and listing.</strong> Show the same responsible person, with the same postal and electronic address, on the product, packaging or accompanying document and in every listing.</li>
+<li><strong>Keep a product file per model:</strong> technical documentation, test reports, photos of labels and instructions in the language of the country of sale.</li>
+<li><strong>Record the periodic checks</strong> your representative performs, and answer its check requests promptly.</li>
+<li><strong>Keep safety emails in one thread per product</strong>, so a complete chain can be exported in date order.</li>
+<li><strong>Agree who answers and how fast.</strong> Your representative may need documents from you within days, not weeks.</li>
+<li><strong>When you change representative,</strong> update listings on every marketplace and the labels on new stock at the same time.</li>
+</ol>
+
+<h2>Common mistakes</h2>
+<ul>
+<li>Copying a representative’s details from another seller or an old listing.</li>
+<li>Leaving the former representative on listings after the contract ends.</li>
+<li>A mandate signed by one company while the shop belongs to another.</li>
+<li>Sending the representative partial email threads or screenshots instead of complete chains.</li>
+<li>Counting the deadline in calendar days when the notice says working days, or the other way round.</li>
+</ul>
+
+<h2>Who this does not apply to</h2>
+<ul>
+<li>Manufacturers established in the EU: they are the responsible person themselves.</li>
+<li>Products placed on the market by an EU importer whose details appear on the product. The authority writes to that importer.</li>
+<li>Products outside the scope of the GPSR, such as medicines or food.</li>
+<li>Cosmetics and medical devices, which have their own responsible person or authorised representative rules.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Does an authority letter mean my product is unsafe?</h3><p>Not necessarily. In the 2026 sweep, authorities contacted responsible persons to check that the information on offers was true. A letter is a check, but an unanswered one can lead to formal measures.</p>
+<h3>Can my representative answer without my help?</h3><p>Only partly. It can confirm its role and its own checks. Technical documentation, test reports and emails with suppliers usually have to come from the manufacturer.</p>
+<h3>What happens if my listing names a representative I never signed with?</h3><p>That representative will tell the authority in writing that it has no mandate and may report the listing to the marketplace. The product then has no EU operator behind it, and the listing can be removed.</p>
+<h3>Is the deadline in calendar days or working days?</h3><p>Read the notice. Under Law 39/2015, days are working days unless the notice says calendar days. Counting starts the day after notification.</p>
+
+<h2>Want a representative who can actually answer?</h2>
+<p>IberTrust Global S.L. acts as EU Responsible Person for non-EU sellers and handles authority requests in Spanish, English and Chinese. Tell us your products and marketplaces, and we will list what the product file needs.</p>
+<p><strong><a href="/quote.html?service=gpsr-eu-responsible-person">Request an EU Responsible Person proposal →</a></strong><br>Or email <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_rqsrc('en')
+RQ_ES='''<p>La notificación no llegó por correo electrónico. Apareció en el buzón de notificaciones electrónicas de la empresa que figuraba como persona responsable en la UE en la oferta de un cable de carga en un marketplace. Un servicio autonómico de inspección de consumo en España ya había recibido una primera respuesta. Ahora pedía más: copia completa, legible y en orden cronológico de todos los correos intercambiados ese mes con el fabricante, proveedores o intermediarios sobre alertas de seguridad, retiradas, especificaciones técnicas o conformidad. Plazo: diez días hábiles.</p>
+<p>Preparamos esa respuesta. El giro: no existía ningún mandato para ese producto. El nombre se había puesto en la oferta sin autorización. Para los vendedores de fuera de la UE, el caso muestra qué piden ahora las autoridades españolas a la persona responsable que aparece en su oferta y qué ocurre cuando esa persona no puede respaldar su producto.</p>
+
+<h2>Quién escribe y por qué ahora</h2>
+<p>En España, las autoridades de consumo de las comunidades autónomas realizan las inspecciones de seguridad de los productos, coordinadas por la Dirección General de Consumo. El informe nacional sobre el barrido europeo de seguridad de productos de 2026 muestra cómo se comprueba a la persona responsable. Las autoridades contactaron con la persona responsable indicada en las ofertas en línea y le dieron 10 días naturales para confirmar cuatro cosas:</p>
+<ol>
+<li>que es efectivamente la persona responsable de ese producto;</li>
+<li>que sus datos de contacto aparecen también en el producto físico;</li>
+<li>que el producto es el descrito en la documentación técnica;</li>
+<li>pruebas documentadas de los controles periódicos exigidos por el artículo 16, apartado 2, del RSGP.</li>
+</ol>
+<p>Los resultados de las 67 ofertas revisadas en España fueron flojos. Se verificó a la persona responsable en el 66 % de las ofertas. Hubo respuesta en los diez días en el 33 %, confirmación del papel en el 22 %, confirmación de los datos en el producto en el 19 % y pruebas documentadas de los controles en el 15 %. Las autoridades han adoptado o prevén medidas en al menos 18 ofertas, entre ellas requerimientos formales, y no descartan expedientes sancionadores por no atender los requerimientos.</p>
+
+<h2>Qué pide la autoridad y qué necesita su representante de usted</h2>
+<p>Una persona responsable solo puede responder con lo que el fabricante le ha dado. Según el artículo 4, apartado 3, del Reglamento (UE) 2019/1020, que el artículo 16, apartado 1, del RSGP aplica a los productos de consumo, la persona responsable debe facilitar a la autoridad, previa solicitud motivada, toda la información y documentación necesarias para demostrar la conformidad del producto.</p>
+<table>
+<tr><th>Qué pide la autoridad</th><th>Qué necesita el representante del fabricante</th></tr>
+<tr><td>Confirmar que es la persona responsable de este producto</td><td>Un mandato escrito firmado que cubra la marca y los modelos realmente vendidos</td></tr>
+<tr><td>Confirmar que sus datos figuran en el producto físico</td><td>Fotos de la etiqueta, el envase o el documento de acompañamiento con el nombre y la dirección postal y electrónica de la persona responsable</td></tr>
+<tr><td>Confirmar que el producto coincide con la documentación técnica</td><td>Documentación técnica, informes de ensayo e identificadores de modelo o lote que coincidan con la oferta</td></tr>
+<tr><td>Pruebas de los controles periódicos (artículo 16, apartado 2)</td><td>Registros de los controles: qué se comparó, cuándo y con qué resultado</td></tr>
+<tr><td>Comunicaciones sobre seguridad, retiradas o conformidad</td><td>Cadenas de correo completas, en orden cronológico, con adjuntos y acuses de entrega</td></tr>
+<tr><td>Medidas correctoras, si hay riesgo</td><td>Quién puede detener las ventas, cambiar la oferta o retirar el producto, y en cuánto tiempo</td></tr>
+</table>
+
+<h2>Cómo corre el plazo</h2>
+<p>Los plazos administrativos en España siguen la Ley 39/2015, salvo norma específica:</p>
+<ul>
+<li><strong>Fecha de notificación.</strong> La notificación electrónica se entiende practicada cuando se accede a su contenido. Si la notificación electrónica es obligatoria, se entiende rechazada cuando pasan 10 días naturales desde su puesta a disposición sin acceder a ella (artículo 43). No abrirla no detiene el procedimiento.</li>
+<li><strong>Días hábiles.</strong> Los plazos en días son hábiles: se excluyen sábados, domingos y festivos, salvo que la notificación indique expresamente días naturales (artículo 30.2).</li>
+<li><strong>Inicio.</strong> Se cuenta a partir del día siguiente a la notificación (artículo 30.3).</li>
+<li><strong>Festivos.</strong> Revise los festivos nacionales, autonómicos y locales. Los correos del barrido daban 10 días naturales, así que lea cada notificación.</li>
+</ul>
+<p>En el caso descrito, la notificación se abrió un lunes, así que el día uno fue el martes. Sin festivos de por medio, el décimo día hábil cayó en el lunes dos semanas después. La autoridad advertía además que una respuesta tardía o inexacta, o documentos falsos, constituyen infracción según la ley autonómica de consumo, y que la negativa reiterada puede calificarse de grave o muy grave.</p>
+
+<h2>Cuando el nombre de la oferta no tiene mandato</h2>
+<p>Una persona responsable sin mandato escrito para el producto lo comunicará por escrito a la autoridad. La respuesta que preparamos expuso los hechos y adjuntó una notificación escrita anterior en la que se pedía a un antiguo vendedor que dejara de usar los datos de la persona responsable, junto con las denuncias enviadas a un marketplace. Una semana después de la denuncia, ese marketplace comunicó que había decidido retirar la oferta.</p>
+<p>Para el vendedor, el resultado es peor que no tener representante. La autoridad tiene ahora una declaración escrita de que ningún operador de la UE respalda el producto y, según el artículo 16, apartado 1, del RSGP, no puede introducirse en el mercado. Lo mismo ocurre cuando el contrato ha terminado pero ofertas o etiquetas antiguas siguen mostrando el nombre del representante.</p>
+
+<h2>Paso a paso: esté preparado antes de la carta</h2>
+<ol>
+<li><strong>Firme un mandato escrito</strong> que identifique a la entidad jurídica detrás de cada tienda y enumere las marcas o modelos.</li>
+<li><strong>Haga coincidir etiqueta y oferta.</strong> Indique la misma persona responsable, con la misma dirección postal y electrónica, en el producto, el envase o el documento de acompañamiento y en todas las ofertas.</li>
+<li><strong>Mantenga un expediente por modelo:</strong> documentación técnica, informes de ensayo, fotos de etiquetas e instrucciones en la lengua del país de venta.</li>
+<li><strong>Registre los controles periódicos</strong> que realiza su representante y responda pronto a sus solicitudes.</li>
+<li><strong>Guarde los correos de seguridad en un hilo por producto</strong>, para poder exportar una cadena completa en orden cronológico.</li>
+<li><strong>Acuerde quién responde y en cuánto tiempo.</strong> Su representante puede necesitar documentos suyos en días, no en semanas.</li>
+<li><strong>Si cambia de representante,</strong> actualice a la vez las ofertas en todos los marketplaces y las etiquetas del stock nuevo.</li>
+</ol>
+
+<h2>Errores frecuentes</h2>
+<ul>
+<li>Copiar los datos de un representante de otro vendedor o de una oferta antigua.</li>
+<li>Dejar al antiguo representante en las ofertas cuando termina el contrato.</li>
+<li>Un mandato firmado por una empresa mientras la tienda pertenece a otra.</li>
+<li>Enviar al representante hilos de correo parciales o capturas en lugar de cadenas completas.</li>
+<li>Contar el plazo en días naturales cuando la notificación dice hábiles, o al revés.</li>
+</ul>
+
+<h2>A quién no se aplica</h2>
+<ul>
+<li>Fabricantes establecidos en la UE: ellos mismos son la persona responsable.</li>
+<li>Productos introducidos en el mercado por un importador de la UE cuyos datos figuran en el producto. La autoridad se dirige a ese importador.</li>
+<li>Productos fuera del ámbito del RSGP, como medicamentos o alimentos.</li>
+<li>Cosméticos y productos sanitarios, que tienen sus propias normas de persona responsable o representante autorizado.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Una carta de la autoridad significa que mi producto es inseguro?</h3><p>No necesariamente. En el barrido de 2026, las autoridades contactaron con las personas responsables para comprobar que la información de las ofertas era veraz. Una carta es un control, pero si no se contesta puede llevar a medidas formales.</p>
+<h3>¿Puede mi representante responder sin mi ayuda?</h3><p>Solo en parte. Puede confirmar su papel y sus propios controles. La documentación técnica, los informes de ensayo y los correos con proveedores suelen tener que venir del fabricante.</p>
+<h3>¿Qué pasa si mi oferta indica un representante con el que nunca firmé?</h3><p>Ese representante comunicará por escrito a la autoridad que no tiene mandato y puede denunciar la oferta al marketplace. El producto se queda sin operador de la UE y la oferta puede ser retirada.</p>
+<h3>¿El plazo es en días naturales o hábiles?</h3><p>Lea la notificación. Según la Ley 39/2015, los días son hábiles salvo que la notificación diga naturales. Se cuenta desde el día siguiente a la notificación.</p>
+
+<h2>¿Quiere un representante que de verdad pueda responder?</h2>
+<p>IberTrust Global S.L. actúa como persona responsable en la UE para vendedores de fuera de la UE y atiende los requerimientos de las autoridades en español, inglés y chino. Indíquenos sus productos y marketplaces y le diremos qué debe contener el expediente de producto.</p>
+<p><strong><a href="/es/quote.html?service=gpsr-eu-responsible-person">Solicitar propuesta de persona responsable en la UE →</a></strong><br>O escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>
+'''+_rqsrc('es')
+RQ_ZH='''<p>这份通知不是通过电子邮件来的，而是出现在一家公司的电子通知信箱里——这家公司被某个电商平台上一款充电线的商品页列为欧盟负责人。西班牙一个自治区的消费检查部门此前已经收到过一次答复，现在要求更多：当月与制造商、供应商或中间商之间就安全警报、产品撤回、技术规格或符合性往来的全部电子邮件，须完整、清晰、按时间顺序提供副本。期限：10 个工作日。</p>
+<p>这份答复是我们准备的。关键在于：这款产品根本没有任何委托。商品页上的名字是未经授权被填上去的。对欧盟境外卖家来说，这个案例说明两件事：西班牙主管机关现在会向您商品页上的负责人要什么；以及当这个负责人无法为您的产品背书时会发生什么。</p>
+
+<h2>谁来函，为什么是现在</h2>
+<p>在西班牙，产品安全检查由各自治区的消费主管机关负责，由消费总局（Dirección General de Consumo）统筹协调。西班牙关于 2026 年欧盟产品安全联合检查（barrido）的国家报告，说明了主管机关如何核查负责人：他们联系网上商品页上列明的负责人，给出 10 个自然日，要求确认四件事：</p>
+<ol>
+<li>确实是该产品的负责人；</li>
+<li>其联系方式也出现在实物产品上；</li>
+<li>产品与技术文件描述的产品一致；</li>
+<li>提供 GPSR 第 16 条第 2 款要求的定期核查的书面证据。</li>
+</ol>
+<p>西班牙检查的 67 个商品页结果不理想：对 66% 的商品页核查了负责人；10 天内回复的占 33%，确认自己是负责人的占 22%，确认实物产品上有其信息的占 19%，提供核查书面证据的只有 15%。主管机关已对至少 18 个商品页采取或计划采取措施，包括正式要求函，并且不排除因不答复而启动处罚程序。</p>
+
+<h2>主管机关要什么，您的代表需要您提供什么</h2>
+<p>负责人只能用制造商交给它的材料来答复。根据第 2019/1020 号条例第 4 条第 3 款（GPSR 第 16 条第 1 款将其适用于消费品），负责人须应主管机关的说明理由的要求，提供证明产品符合性所需的全部信息和文件。</p>
+<table>
+<tr><th>主管机关要求</th><th>代表需要制造商提供</th></tr>
+<tr><td>确认您是该产品的负责人</td><td>签字的书面委托，覆盖实际在售的品牌和型号</td></tr>
+<tr><td>确认实物产品上有您的信息</td><td>标签、包装或随附文件的照片，显示负责人名称、邮寄地址和电子地址</td></tr>
+<tr><td>确认产品与技术文件一致</td><td>与商品页对得上的技术文件、检测报告、型号或批次标识</td></tr>
+<tr><td>定期核查证据（第 16 条第 2 款）</td><td>核查记录：比对了什么、什么时候、结果如何</td></tr>
+<tr><td>关于安全、撤回或符合性的往来</td><td>完整的邮件链，按时间顺序，含附件和送达回执</td></tr>
+<tr><td>如有风险，纠正措施</td><td>谁能停售、改商品页或召回，多快能做到</td></tr>
+</table>
+
+<h2>期限怎么算</h2>
+<p>除特别规定外，西班牙行政期限按第 39/2015 号法律计算：</p>
+<ul>
+<li><strong>通知日。</strong>电子通知在打开查看内容时生效。电子通知属强制的，自送达信箱起 10 个自然日内未打开，视为拒收（第 43 条）。不打开并不会让程序停下来。</li>
+<li><strong>工作日。</strong>以“日”计的期限为工作日，不含周六、周日和节假日，除非通知明确写的是自然日（第 30 条第 2 款）。</li>
+<li><strong>起算。</strong>从通知次日起算（第 30 条第 3 款）。</li>
+<li><strong>节假日。</strong>要核对国家、自治区和地方节假日。联合检查的邮件给的是 10 个自然日，所以每份通知都要看清楚。</li>
+</ul>
+<p>上面这个案例中，通知在周一打开，第 1 天是周二；中间没有节假日，第 10 个工作日落在两周后的周一。主管机关还提醒：逾期或不准确的答复、提供虚假文件，按自治区消费者保护法构成违法；反复拒绝可被定为严重甚至非常严重。</p>
+
+<h2>商品页上的名字没有委托时</h2>
+<p>对该产品没有书面委托的负责人，会以书面形式如实告知主管机关。我们准备的答复陈述了事实，附上此前一份要求某前卖家停止使用负责人信息的书面通知，以及发给某平台的举报。举报约一周后，该平台表示已决定下架这个商品页。</p>
+<p>对卖家来说，结果比没有代表更糟：主管机关手上已有书面声明，表明没有任何欧盟经营者为该产品负责，而按 GPSR 第 16 条第 1 款，这种情况下产品不得投放市场。合同已经结束、但旧商品页或标签上仍印着代表名字的，也是同样的后果。</p>
+
+<h2>分步准备：在来函之前就备好</h2>
+<ol>
+<li><strong>签书面委托</strong>，写明每个店铺背后的法律主体，并列出品牌或型号。</li>
+<li><strong>标签和商品页一致。</strong>在产品、包装或随附文件以及每个商品页上，写同一个负责人、同样的邮寄地址和电子地址。</li>
+<li><strong>每个型号一份产品档案：</strong>技术文件、检测报告、标签照片，以及销售国语言的说明书。</li>
+<li><strong>记录代表做的定期核查</strong>，及时回复代表的核查请求。</li>
+<li><strong>每个产品的安全相关邮件放在同一个邮件线程里</strong>，方便按时间顺序导出完整邮件链。</li>
+<li><strong>约定谁来答复、多快答复。</strong>代表可能需要您在几天内而不是几周内提供文件。</li>
+<li><strong>更换代表时</strong>，所有平台的商品页和新库存的标签要同时更新。</li>
+</ol>
+
+<h2>常见错误</h2>
+<ul>
+<li>从其他卖家或旧商品页复制代表信息。</li>
+<li>合同结束后，商品页上仍留着前代表。</li>
+<li>委托由一家公司签署，店铺却属于另一家公司。</li>
+<li>给代表的是不完整的邮件线程或截图，而不是完整邮件链。</li>
+<li>通知写的是工作日却按自然日算，或者反过来。</li>
+</ul>
+
+<h2>哪些情况不适用</h2>
+<ul>
+<li>在欧盟境内设立的制造商：自己就是负责人。</li>
+<li>由欧盟进口商投放市场、且产品上印有该进口商信息的：主管机关会找该进口商。</li>
+<li>不在 GPSR 范围内的产品，如药品、食品。</li>
+<li>化妆品和医疗器械：各有自己的负责人或授权代表规则。</li>
+</ul>
+
+<h2>常见问题</h2>
+<h3>收到主管机关来函，是否说明我的产品不安全？</h3><p>不一定。2026 年联合检查中，主管机关联系负责人是为了核实商品页信息是否真实。来函是一种核查，但不答复可能导致正式措施。</p>
+<h3>我的代表能不能不靠我自己答复？</h3><p>只能答一部分。它可以确认自己的身份和自己做的核查；技术文件、检测报告和与供应商的邮件，通常要由制造商提供。</p>
+<h3>商品页上写的代表我从没签过约，会怎样？</h3><p>该代表会书面告知主管机关自己没有委托，并可能向平台举报该商品页。产品就没有欧盟经营者负责，商品页可能被下架。</p>
+<h3>期限按自然日还是工作日算？</h3><p>看通知原文。按第 39/2015 号法律，除非通知写明自然日，否则按工作日计，从通知次日起算。</p>
+
+<h2>想要一个真正能答复主管机关的代表？</h2>
+<p>IberTrust Global S.L. 为欧盟境外卖家担任欧盟负责人，可用西班牙语、英语和中文处理主管机关的要求。告诉我们您的产品和销售平台，我们会列出产品档案需要哪些材料。</p>
+<p><strong><a href="/zh/quote.html?service=gpsr-eu-responsible-person">获取欧盟负责人方案 →</a></strong><br>或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>
+'''+_rqsrc('zh')
+POSTS.insert(0,('spain-consumer-authority-requirement-eu-responsible-person-listing',{'date':'2026-11-17',
+ 'en':('A Spanish consumer authority writes to the EU Responsible Person on your listing: the 10-day clock, the evidence it wants, and why a name without a mandate backfires',RQ_EN),
+ 'es':('Una autoridad de consumo española escribe a la persona responsable de su oferta: el plazo de 10 días, las pruebas que pide y por qué un nombre sin mandato se vuelve en su contra',RQ_ES),
+ 'zh':('西班牙消费主管机关致函商品页上的欧盟负责人：10 天期限、要哪些证据，以及没有委托的名字为何会反噬卖家',RQ_ZH),
+ 'desc':{'en':'What Spanish consumer authorities ask the EU Responsible Person named on a marketplace listing (2026 sweep), how the 10-working-day deadline is counted under Law 39/2015, the evidence pack, mistakes, and what happens when there is no mandate.',
+  'es':'Qué piden las autoridades de consumo españolas a la persona responsable de una oferta en línea (barrido 2026), cómo se cuenta el plazo de 10 días hábiles según la Ley 39/2015, las pruebas necesarias, errores y qué pasa si no hay mandato.',
+  'zh':'西班牙消费主管机关会向商品页上的欧盟负责人要什么（2026 年联合检查），按第 39/2015 号法律如何计算 10 个工作日期限，需要哪些证据、常见错误，以及没有委托时会怎样。'},
+ 'faq':{'en':_faq2(RQ_EN,'<h2>FAQ</h2>'),'es':_faq2(RQ_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(RQ_ZH,'<h2>常见问题</h2>')}}))
+
 # ---- Service pages: extra services, "what it is", per-service process, related links, overview groups (2026-11-02) ----
 def _upd(slug,tup):
   for i,s in enumerate(S):
@@ -1872,7 +2118,7 @@ SPROC={ # slug: lang: process steps (overrides PROC)
 REL={ # slug: (related services, related blog posts)
 'mdr-eu-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person','eprel-energy-label'],['how-to-get-eu-compliance-quote']),
 'reach-only-representative':(['gpsr-eu-responsible-person','mdr-eu-authorised-representative','cpnp-cosmetics'],['how-to-get-eu-compliance-quote']),
-'gpsr-eu-responsible-person':(['uk-responsible-person','turkey-authorised-representative','cpnp-cosmetics','eprel-energy-label'],['eu-3-euro-customs-duty-handling-fee-pre-sold-parcels-pallet-bulk-import','marketplace-doc-request-eu-responsible-person-asin-model-test-report','gpsr-responsible-person-guide','do-i-need-eu-responsible-person-gpsr','gpsr-marketplace-sweep-2026-listing-information','marketplace-representative-confirmation-rejected-entity-mismatch','eu-product-liability-directive-2026-non-eu-sellers-responsible-person','eu-customs-product-identifiers-ecommerce-gpsr-label-listing']),
+'gpsr-eu-responsible-person':(['uk-responsible-person','turkey-authorised-representative','cpnp-cosmetics','eprel-energy-label'],['spain-consumer-authority-requirement-eu-responsible-person-listing','eu-3-euro-customs-duty-handling-fee-pre-sold-parcels-pallet-bulk-import','marketplace-doc-request-eu-responsible-person-asin-model-test-report','gpsr-responsible-person-guide','do-i-need-eu-responsible-person-gpsr','gpsr-marketplace-sweep-2026-listing-information','marketplace-representative-confirmation-rejected-entity-mismatch','eu-product-liability-directive-2026-non-eu-sellers-responsible-person','eu-customs-product-identifiers-ecommerce-gpsr-label-listing']),
 'uk-responsible-person':(['gpsr-eu-responsible-person','turkey-authorised-representative'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
 'turkey-authorised-representative':(['gpsr-eu-responsible-person','uk-responsible-person'],['marketplace-representative-confirmation-rejected-entity-mismatch']),
 'epr-packaging-spain':(['weee','batteries','epr-europe','spain-nif-vat'],['spain-packaging-registration-miteco-draft-vs-filed','spain-packaging-declaration-2026-split-year-ppwr','spain-packaging-epr-rea-power-of-attorney-bastanteo','packaging-omnibus-authorised-representative-exemption','ppwr-packaging-label-delay-what-applies-now','gpsr-and-epr-one-provider']),
