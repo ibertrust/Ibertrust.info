@@ -47,9 +47,9 @@ S=[ # slug, EN title, EN short, EN body bullets, ES title, ES short, ES bullets
  ['Scope check for relevant commodities','Due diligence statement support','Supplier information collection'],
  'Apoyo EUDR (deforestación)','Asistencia con las declaraciones de diligencia debida del Reglamento de Deforestación.',
  ['Análisis de alcance','Apoyo en la declaración de diligencia debida','Recogida de información de proveedores']),
-('spain-nif-vat','Spain Tax Services for Foreign Companies','Spanish NIF, VAT registration and returns, OSS, EORI, and fiscal representation where needed, for companies not established in Spain.',
+('spain-nif-vat','Spanish NIF &amp; VAT Registration for Foreign Companies','Spanish NIF (Modelo 036), Spanish VAT registration and returns, OSS, EORI and a fiscal representative in Spain, for companies not established in Spain.',
  ['Spanish NIF for the company (Modelo 036), including the representative\'s NIF','VAT registration, including listing in ROI/VIES','Quarterly VAT returns (Modelo 303), including import VAT deduction, and the annual summary (Modelo 390)','Intra-EU recapitulative statement (Modelo 349)','OSS registration and returns','EORI number','Fiscal representative (representante fiscal) where needed, after a prior assessment','Liaison with the Spanish Tax Agency (AEAT) and the Spanish electronic certificate for online filings'],
- 'Servicios fiscales en España para empresas extranjeras','NIF español, alta y declaraciones de IVA, OSS, EORI y representación fiscal cuando proceda, para empresas no establecidas en España.',
+ 'NIF e IVA en España para empresas extranjeras','NIF español (modelo 036), alta y declaraciones de IVA, OSS, EORI y representante fiscal en España, para empresas no establecidas en España.',
  ['NIF de la empresa (modelo 036), incluido el NIF del representante','Alta en IVA, incluida la inscripción en el ROI/VIES','Declaraciones trimestrales de IVA (modelo 303), incluida la deducción del IVA de importación, y resumen anual (modelo 390)','Declaración recapitulativa de operaciones intracomunitarias (modelo 349)','Alta y declaraciones OSS','Número EORI','Representante fiscal cuando proceda, previa evaluación','Gestión ante la AEAT y certificado electrónico para trámites en línea']),
 ]
 FAQ_EN=[('Do non-EU sellers need an EU Responsible Person?','Yes, under GPSR most consumer products placed on the EU market need an economic operator established in the EU, whose name and contact details appear on the product, packaging or accompanying documents.'),
@@ -84,7 +84,7 @@ ZH_S={ # slug: (title, short, bullets)
  ['在 EPREL 中登记产品','开通供应商账户','能效标签和产品信息表指导']),
 'eudr':('EUDR 尽职调查支持','协助应对《欧盟零毁林法规》的尽职调查声明和供应链溯源要求。',
  ['判断产品是否属于相关商品范围','协助准备尽职调查声明','收集供应商信息']),
-'spain-nif-vat':('外国公司西班牙税务','为未在西班牙设立的外国公司办理西班牙税号（NIF）、增值税注册与申报、OSS、EORI，并按需提供财税代表。',
+'spain-nif-vat':('外国公司西班牙税号（NIF）与增值税登记','为未在西班牙设立的外国公司办理西班牙税号（NIF，036 表）、增值税登记与申报、OSS、EORI，并按需提供财税代表。',
  ['为公司申请西班牙税号（NIF，036 表），含代表人 NIF','增值税登记，含列入 ROI/VIES','增值税季度申报（303 表，含进口增值税抵扣）和年度汇总（390 表）','欧盟内交易汇总申报（349 表）','OSS 注册与申报','办理 EORI','按需担任财税代表（fiscal representative），需先评估','对接西班牙税务局（AEAT），并办理网上申报所需的西班牙电子证书']),
 }
 FAQ_ZH=[('欧盟以外的卖家需要欧盟负责人吗？','需要。GPSR 实施后，投放欧盟市场的大多数消费品都必须有一家设在欧盟境内的经济经营者，其名称和联系方式要标注在产品、包装或随附文件上。'),
@@ -209,6 +209,50 @@ ABOUT={
 <h2>合作流程</h2><ol>{proc}</ol>
 <h2>常见平台</h2><ul><li>亚马逊（Amazon）——包括通过 Amazon Compliance Central 处理负责人申请</li><li>Temu</li><li>SHEIN</li></ul><h2>合作伙伴</h2><ul><li><a href="https://amazonexperts.eu/amazon-eu-compliance/" rel="noopener noreferrer" target="_blank">Amazon Experts</a> — 帮助品牌在欧洲、英国和美国拓展与运营亚马逊业务。与我们在欧盟产品合规（GPSR 欧盟负责人、EPR、化妆品 CPNP）上开展转介合作。</li></ul>'''}
 
+# Cross-border e-commerce experience and Spanish NIF process (2026-11-25). Paths use {p}.
+EXP={
+"en":"""<h2>Our experience with cross-border e-commerce</h2>
+<p>IberTrust Global is a Spanish compliance firm based in Castellón, close to Amazon's fulfilment network in Spain. For about three years we have handled EU compliance for cross-border e-commerce sellers — including sellers from China — and for the agencies and service providers who support them. We act for our clients in dealings with EU authorities, with a clean track record.</p>
+<p>We work from our own office, at a stable address, staffed Monday to Friday from 9:00 to 19:30 to take calls and receive parcels. Our relationships with Spanish producer responsibility organisations (PROs) are well established, so we can act on a client request promptly. We work with Amazon and SHEIN compliance processes, including responsible-person requests through Amazon Compliance Central.</p>
+<p>The formalities we cover are the ones sellers typically need to stay on the EU market: <a href="{p}/services/gpsr-eu-responsible-person.html">EU Responsible Person (GPSR)</a>, UK and Turkey representatives, <a href="{p}/services/epr-packaging-spain.html">Spanish packaging EPR</a>, <a href="{p}/services/weee.html">WEEE</a> and <a href="{p}/services/batteries.html">batteries</a> in Spain and <a href="{p}/services/epr-europe.html">other EU countries</a>, cosmetics <a href="{p}/services/cpnp-cosmetics.html">CPNP</a>, <a href="{p}/services/eprel-energy-label.html">EPREL</a>, and <a href="{p}/services/spain-nif-vat.html">Spanish NIF, VAT registration, OSS, EORI and fiscal representation</a>. IberTrust itself holds an EORI registration and can act as importer of record. Through an import-export partner with more than twenty years' experience, we can also support customs clearance and product recalls.</p>
+<p>Our service fee for registrations is normally invoiced when the work is completed. If a registration is not completed, there is no service fee to pay.</p>
+<p><a class="btn" href="{p}/quote.html">Get a quote</a> or email <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>""",
+"es":"""<h2>Nuestra experiencia en el comercio electrónico transfronterizo</h2>
+<p>IberTrust Global es una firma española de cumplimiento establecida en Castellón, cerca de la red de fulfilment de Amazon en España. Llevamos unos tres años gestionando el cumplimiento en la UE para vendedores de e-commerce transfronterizo —incluidos vendedores de China— y para las agencias y proveedores de servicios que les dan apoyo. Actuamos ante las autoridades de la UE en nombre de nuestros clientes, con un historial limpio.</p>
+<p>Trabajamos desde nuestra propia oficina, en una dirección estable, de lunes a viernes de 9:00 a 19:30 para atender llamadas y recibir paquetes. Nuestra relación con los sistemas colectivos (PRO) españoles está consolidada, así que podemos actuar con rapidez cuando un cliente lo necesita. Trabajamos con los procesos de cumplimiento de Amazon y SHEIN, incluidas las solicitudes de persona responsable a través de Amazon Compliance Central.</p>
+<p>Cubrimos los trámites que un vendedor suele necesitar para permanecer en el mercado de la UE: <a href="{p}/services/gpsr-eu-responsible-person.html">Persona Responsable en la UE (GPSR)</a>, representantes en Reino Unido y Turquía, <a href="{p}/services/epr-packaging-spain.html">EPR de envases en España</a>, <a href="{p}/services/weee.html">RAEE</a> y <a href="{p}/services/batteries.html">pilas</a> en España y <a href="{p}/services/epr-europe.html">otros países de la UE</a>, <a href="{p}/services/cpnp-cosmetics.html">CPNP</a> de cosmética, <a href="{p}/services/eprel-energy-label.html">EPREL</a>, y <a href="{p}/services/spain-nif-vat.html">NIF español, alta de IVA, OSS, EORI y representación fiscal</a>. IberTrust dispone de EORI propio y puede figurar como importador. A través de un socio de importación y exportación con más de veinte años de experiencia, también podemos apoyar el despacho aduanero y las retiradas de producto.</p>
+<p>Nuestros honorarios por registros se facturan, por lo general, cuando el trámite ha concluido. Si el registro no se completa, no hay honorarios que pagar.</p>
+<p><a class="btn" href="{p}/quote.html">Pedir presupuesto</a> o escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>""",
+"zh":"""<h2>我们的跨境电商经验</h2>
+<p>IberTrust Global 是一家设在西班牙卡斯特利翁（Castellón）的合规公司，靠近西班牙亚马逊运营网络。我们已有约三年欧盟合规处理经验，服务在欧销售的跨境电商卖家（含中国卖家）以及为他们对接的服务商和渠道。我们代客户与欧盟各官方沟通，记录良好，从未失手。</p>
+<p>公司拥有自有办公室，地址稳定，周一到周五 9:00–19:30 有人接听电话、接收包裹。我们与西班牙本地回收机构（PRO）合作稳固，能及时处理客户需求；也熟悉亚马逊、SHEIN 等平台的合规流程，包括通过 Amazon Compliance Central 处理负责人申请。</p>
+<p>我们覆盖卖家进入并留在欧盟市场通常需要的手续：<a href="{p}/services/gpsr-eu-responsible-person.html">GPSR 欧盟负责人</a>、英国负责人与土耳其授权代表，西班牙及其他欧盟国家的<a href="{p}/services/epr-packaging-spain.html">包装</a>、<a href="{p}/services/weee.html">WEEE</a>和<a href="{p}/services/batteries.html">电池</a> EPR，化妆品 <a href="{p}/services/cpnp-cosmetics.html">CPNP</a>、<a href="{p}/services/eprel-energy-label.html">EPREL</a>，以及<a href="{p}/services/spain-nif-vat.html">西班牙税号（NIF）、增值税登记、OSS、EORI 和财税代表</a>。IberTrust 自身已登记 EORI，可作为进口方出现在报关单上。进出口合作伙伴有二十多年经验，可提供清关、产品召回等支持。</p>
+<p>登记类服务费通常在办理完成后才收取；注册未完成，无需支付我方服务费。</p>
+<p><a class="btn" href="{p}/quote.html">获取方案</a>，或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>"""}
+NIF_EASE={
+"en":"""<h2>How we make a Spanish NIF application straightforward</h2>
+<p>A Spanish NIF (Modelo 036) is often the first step for a foreign company that will hold stock in Spain, complete a Spanish VAT registration, appoint a fiscal representative in Spain, or finish other Spanish formalities. We draft the power of attorney and all application forms. In a typical case the director only signs the power of attorney before a notary and has it apostilled; we tell you in advance if company documents also need legalisation (companies in the EU, or with a VIES VAT number, are often exempt). We file the representative's NIF and the company NIF together with the Spanish Tax Agency (AEAT). The number is usually issued in three to six weeks; there is no fixed statutory deadline, and actual timing is set by the AEAT. Our service fee is invoiced when the registration is completed.</p>
+<p>See also: <a href="{p}/blog/how-foreign-company-gets-spanish-nif.html">how a foreign company gets a Spanish NIF</a>, <a href="{p}/blog/spanish-nif-vs-vat-eori-oss.html">Spanish NIF versus VAT, EORI and OSS</a>, and <a href="{p}/blog/spanish-nif-apostille-and-sworn-translation.html">apostille and sworn translation</a>.</p>""",
+"es":"""<h2>Cómo simplificamos la solicitud del NIF español</h2>
+<p>El NIF español (modelo 036) suele ser el primer paso para una empresa extranjera que va a tener stock en España, darse de alta en el IVA, nombrar un representante fiscal o completar otros trámites en España. Redactamos el poder de representación y todos los formularios. En un caso habitual, el administrador solo firma el poder ante notario y lo apostilla; le indicamos de antemano si los documentos societarios también necesitan legalización (las empresas de la UE, o con un NIF-IVA en VIES, suelen estar exentas). Presentamos el NIF del representante y el NIF de la empresa juntos ante la Agencia Tributaria (AEAT). El número suele expedirse en tres a seis semanas; no hay un plazo legal fijo, y el tiempo real lo determina la AEAT. Nuestros honorarios se facturan cuando el registro ha concluido.</p>
+<p>Véase también: <a href="{p}/blog/how-foreign-company-gets-spanish-nif.html">cómo obtiene una empresa extranjera el NIF español</a>, <a href="{p}/blog/spanish-nif-vs-vat-eori-oss.html">NIF, IVA, EORI y OSS: qué es cada uno</a>, y <a href="{p}/blog/spanish-nif-apostille-and-sworn-translation.html">apostilla y traducción jurada</a>.</p>""",
+"zh":"""<h2>我们如何把西班牙税号申请办得省心</h2>
+<p>外国公司若要在西班牙存放库存、办理增值税登记、指定财税代表，或完成其他西班牙手续，往往先要取得西班牙税号（NIF，036 表）。授权书和全部申请表格由我们起草。通常只需董事在公证人面前签署授权书并办理海牙认证；若公司文件也需要认证，我们会事先说明（欧盟公司或已有 VIES 增值税号的公司，公司文件往往可免海牙认证）。代表人 NIF 与公司 NIF 一并向西班牙税务局（AEAT）递交。下号通常需要 3–6 周；没有法定期限，实际时间由 AEAT 决定。我方服务费在登记完成后再收取。</p>
+<p>也可阅读：<a href="{p}/blog/how-foreign-company-gets-spanish-nif.html">外国公司如何取得西班牙税号</a>、<a href="{p}/blog/spanish-nif-vs-vat-eori-oss.html">西班牙税号与 VAT、EORI、OSS 的区别</a>，以及<a href="{p}/blog/spanish-nif-apostille-and-sworn-translation.html">海牙认证与宣誓翻译</a>。</p>"""}
+NIF_FAQ={
+"en":[("How long does a Spanish NIF take for a foreign company?","In our experience the representative's NIF and the company NIF are usually issued together in three to six weeks. There is no fixed statutory deadline; actual timing is set by the Spanish Tax Agency (AEAT)."),
+("What do I need to sign for a Spanish NIF application?","We draft the power of attorney and all application forms. In a typical case the director only signs the power of attorney before a notary and has it apostilled. We tell you in advance if company documents also need an apostille (companies in the EU, or with a VIES VAT number, are often exempt)."),
+("When do you invoice for a Spanish NIF or VAT registration?","Our service fee for the registration is invoiced once it is completed. If the registration is not completed, there is no service fee to pay."),
+("Do foreign companies need a fiscal representative in Spain?","It depends on the activity — for example holding stock in Spain or certain VAT situations. We assess the case first and confirm in writing before you appoint us.")],
+"es":[("¿Cuánto tarda el NIF español para una empresa extranjera?","Según nuestra experiencia, el NIF del representante y el NIF de la empresa suelen expedirse juntos en tres a seis semanas. No hay un plazo legal fijo; el tiempo real lo determina la Agencia Tributaria (AEAT)."),
+("¿Qué tengo que firmar para solicitar el NIF?","Redactamos el poder de representación y todos los formularios. En un caso habitual, el administrador solo firma el poder ante notario y lo apostilla. Le indicamos de antemano si los documentos societarios también necesitan apostilla (las empresas de la UE, o con un NIF-IVA en VIES, suelen estar exentas)."),
+("¿Cuándo facturan el NIF o el alta de IVA?","Nuestros honorarios por el registro se facturan cuando este ha concluido. Si el registro no se completa, no hay honorarios que pagar."),
+("¿Necesitan las empresas extranjeras un representante fiscal en España?","Depende de la actividad —por ejemplo, tener stock en España o determinadas situaciones de IVA—. Evaluamos el caso primero y lo confirmamos por escrito antes de que nos nombre.")],
+"zh":[("外国公司申请西班牙税号一般要多久？","根据我们的经验，代表人 NIF 与公司 NIF 通常一并在 3–6 周下达。没有法定期限，实际时间由西班牙税务局（AEAT）决定。"),
+("申请西班牙税号需要我签什么？","授权书和全部申请表格由我们起草。通常只需董事在公证人面前签署授权书并办理海牙认证。若公司文件也需要海牙认证，我们会事先说明（欧盟公司或已有 VIES 增值税号的公司，公司文件往往可免）。"),
+("西班牙税号或增值税登记什么时候收费？","登记类服务费在办理完成后再收取。注册未完成，无需支付我方服务费。"),
+("外国公司在西班牙一定要请财税代表吗？","视业务而定，例如在西班牙存放库存，或某些增值税情形。我们先评估，再书面确认，然后才办理委任。")]}
+
 CSS="""*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:#1b2430;line-height:1.6}a{color:#0b5cad}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}header{border-bottom:1px solid #e5e9f0;background:#fff;position:sticky;top:0;z-index:5}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}.nav img{height:38px;vertical-align:middle}.nav b{margin-left:8px}
@@ -222,31 +266,45 @@ details{border-bottom:1px solid #e5e9f0;padding:14px 0}summary{font-weight:600;c
 .navt{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}.navbtn{display:none}
 @media(max-width:760px){.nav{position:relative}.navbtn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;font-size:13px;font-weight:600;padding:7px 10px;border:1px solid #cfd6df;border-radius:8px;margin-left:auto;margin-right:8px;white-space:nowrap}.navt:focus-visible+.navbtn{outline:2px solid #1b2430}.nav ul{display:none}.navt:checked~ul{display:flex;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid #e3e7ec;box-shadow:0 8px 16px rgba(0,0,0,.08);z-index:50;padding:6px 0}.navt:checked~ul a{display:block;padding:12px 20px}.nav>a>b{display:none}.nav .btn{padding:8px 12px;font-size:13px;white-space:nowrap}.nav>span{display:flex;align-items:center;gap:8px;white-space:nowrap}.nav .lang a{margin-left:4px;font-size:13px}.hero h1{font-size:32px}}"""
 T={'en':dict(home='Home',services='Services',about='About',faq='FAQ',blog='Insights',contact='Contact',quote='Get a quote',all='All services',
- tag='Spain tax & EU product compliance for global sellers',h1='Your partner in Spain for tax, EU Responsible Person and EPR',
- lead='IberTrust Global S.L. helps foreign companies with Spanish NIF, VAT registration and returns, OSS and EORI, and with EU product compliance: GPSR Responsible Person, EPR (packaging, WEEE and batteries), CPNP, medical-device authorised representative, REACH Only Representative, and UK and Turkey representatives — one point of contact.',
- tax_cta='Spain Tax Services for Foreign Companies →',
- home_title='IberTrust Global | Spain Tax, EU Responsible Person & EPR',
+ tag='Spain tax & EU product compliance for global sellers',h1='Spanish NIF, VAT and EU compliance for cross-border e-commerce sellers',
+ lead='IberTrust Global S.L. helps foreign companies with Spanish NIF (Modelo 036), Spanish VAT registration and returns, OSS, EORI and a fiscal representative in Spain, and with EU compliance for cross-border e-commerce sellers: GPSR Responsible Person, EPR (packaging, WEEE and batteries), CPNP, medical-device authorised representative, REACH Only Representative, and UK and Turkey representatives — one point of contact.',
+ tax_cta='Spanish NIF &amp; VAT registration for foreign companies →',
+ home_title='IberTrust Global | Spanish NIF for Foreign Companies, VAT &amp; EU Compliance',
+ home_desc='Spanish NIF for foreign companies, Spanish VAT registration, fiscal representative in Spain, and EU compliance for cross-border e-commerce sellers. One contact in Castellón.',
+ about_title='About IberTrust | EU Compliance for Cross-Border E-commerce Sellers',
+ about_desc='Spanish compliance firm in Castellón: about three years helping cross-border e-commerce sellers with Spanish NIF, VAT, fiscal representation and EU product compliance.',
  trust=['Spanish NIF / VAT / OSS','EORI','GPSR','MDR','REACH','EPR · WEEE · Batteries','CPNP','EN · ES · 中文'],
  based='Registered office: '+ADDR,why='Why IberTrust',inc='What is included',ready='Ready to sell in the EU with confidence?',readyp='Tell us your products, markets and sales channels. We reply with a tailored proposal.'),
  'es':dict(home='Inicio',services='Servicios',about='Nosotros',faq='Preguntas',blog='Blog',contact='Contacto',quote='Pedir presupuesto',all='Todos los servicios',
- tag='Fiscalidad en España y cumplimiento de producto en la UE para vendedores globales',h1='Su socio en España para impuestos, Persona Responsable en la UE y EPR',
- lead='IberTrust Global S.L. ayuda a empresas extranjeras con el NIF español, el alta y las declaraciones de IVA, OSS y EORI, y con el cumplimiento de producto en la UE: Persona Responsable GPSR, EPR (envases, RAEE y pilas), CPNP, representante autorizado de productos sanitarios, representante exclusivo REACH, y representantes en Reino Unido y Turquía — un único interlocutor.',
- tax_cta='Servicios fiscales en España para empresas extranjeras →',
- home_title='IberTrust Global | Impuestos en España, Persona Responsable UE y EPR',
+ tag='Fiscalidad en España y cumplimiento de producto en la UE para vendedores globales',h1='NIF e IVA en España y cumplimiento en la UE para el e-commerce transfronterizo',
+ lead='IberTrust Global S.L. ayuda a empresas extranjeras con el NIF español (modelo 036), el alta y las declaraciones de IVA, OSS, EORI y un representante fiscal en España, y con el cumplimiento en la UE para vendedores de e-commerce transfronterizo: Persona Responsable GPSR, EPR (envases, RAEE y pilas), CPNP, representante autorizado de productos sanitarios, representante exclusivo REACH, y representantes en Reino Unido y Turquía — un único interlocutor.',
+ tax_cta='NIF e IVA en España para empresas extranjeras →',
+ home_title='IberTrust Global | NIF para empresas extranjeras, IVA y cumplimiento en la UE',
+ home_desc='NIF español para empresas extranjeras, alta de IVA, representante fiscal en España y cumplimiento en la UE para vendedores de e-commerce transfronterizo. Un interlocutor en Castellón.',
+ about_title='Nosotros | Cumplimiento en la UE para el e-commerce transfronterizo',
+ about_desc='Firma de cumplimiento en Castellón: unos tres años ayudando a vendedores de e-commerce transfronterizo con el NIF, el IVA, la representación fiscal y el cumplimiento de producto en la UE.',
  trust=['NIF / IVA / OSS','EORI','GPSR','MDR','REACH','EPR · RAEE · Pilas','CPNP','EN · ES · 中文'],
  based='Domicilio social: '+ADDR,why='Por qué IberTrust',inc='Qué incluye',ready='¿Listo para vender en la UE con tranquilidad?',readyp='Indíquenos productos, mercados y canales de venta y le enviaremos una propuesta a medida.'),
  'zh':dict(home='首页',services='服务',about='关于我们',faq='常见问题',blog='合规资讯',contact='联系我们',quote='获取方案',all='全部服务',
- tag='西班牙税务与欧盟产品合规，服务全球卖家',h1='您在西班牙的税务、欧盟负责人与 EPR 合作伙伴',
- lead='IberTrust Global S.L. 帮助外国公司办理西班牙税号（NIF）、增值税注册与申报、OSS 和 EORI，并提供欧盟产品合规服务：GPSR 欧盟负责人、EPR（包装、WEEE、电池）、化妆品 CPNP、医疗器械欧盟授权代表、REACH 唯一代表，以及英国负责人和土耳其授权代表——一个窗口，全程对接。',
- tax_cta='外国公司西班牙税务 →',
- home_title='IberTrust Global | 西班牙税务、欧盟负责人与 EPR',
+ tag='西班牙税务与欧盟产品合规，服务全球卖家',h1='外国公司西班牙税号、增值税与跨境电商欧盟合规',
+ lead='IberTrust Global S.L. 帮助外国公司办理西班牙税号（NIF，036 表）、增值税登记与申报、OSS、EORI 和西班牙财税代表，并为跨境电商卖家提供欧盟产品合规：GPSR 欧盟负责人、EPR（包装、WEEE、电池）、化妆品 CPNP、医疗器械欧盟授权代表、REACH 唯一代表，以及英国负责人和土耳其授权代表——一个窗口，全程对接。',
+ tax_cta='外国公司西班牙税号与增值税登记 →',
+ home_title='IberTrust Global | 外国公司西班牙税号（NIF）、增值税与跨境电商合规',
+ home_desc='为外国公司办理西班牙税号（NIF）、增值税登记、财税代表，以及跨境电商卖家所需的欧盟合规。卡斯特利翁一个窗口对接。',
+ about_title='关于我们 | 跨境电商卖家的欧盟合规服务',
+ about_desc='设在卡斯特利翁的西班牙合规公司：约三年协助跨境电商卖家办理西班牙税号、增值税、财税代表和欧盟产品合规。',
  trust=['西班牙 NIF / VAT / OSS','EORI','GPSR','MDR','REACH','EPR · WEEE · 电池','CPNP','EN · ES · 中文'],
  based='注册地址：'+ADDR,why='为什么选择 IberTrust',inc='服务内容',ready='想安心把产品卖进欧盟？',readyp='告诉我们您的产品、目标市场和销售渠道，我们会给出定制方案。')}
 PFX={'en':'','es':'/es','zh':'/zh'}; HL={'en':'en','es':'es','zh':'zh-Hans'}
 def L(s,lang):  # title, short, bullets for a service tuple
   return (s[1],s[2],s[3]) if lang=='en' else (s[4],s[5],s[6]) if lang=='es' else ZH_S[s[0]]
 ORG={"@context":"https://schema.org","@type":["ProfessionalService","LocalBusiness"],"name":"IberTrust Global S.L.","url":D+"/","logo":D+"/logo.png","email":EMAIL,"telephone":"+34611904867","vatID":"B21813506",
- "legalName":"IBERTRUST GLOBAL, SOCIEDAD LIMITADA","taxID":"B21813506","sameAs":[],"address":{"@type":"PostalAddress","streetAddress":"C/ Pablo Iglesias, 1, Entresuelo A","postalCode":"12003","addressLocality":"Castelló de la Plana","addressRegion":"Castellón","addressCountry":"ES"},"areaServed":"EU","knowsLanguage":["en","es","zh"]}
+ "legalName":"IBERTRUST GLOBAL, SOCIEDAD LIMITADA","taxID":"B21813506","sameAs":[],
+ "description":"Spanish compliance firm in Castellón helping foreign companies and cross-border e-commerce sellers with Spanish NIF, VAT registration, fiscal representation, EORI, OSS, GPSR Responsible Person and EPR.",
+ "address":{"@type":"PostalAddress","streetAddress":"C/ Pablo Iglesias, 1, Entresuelo A","postalCode":"12003","addressLocality":"Castelló de la Plana","addressRegion":"Castellón","addressCountry":"ES"},
+ "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:30"},
+ "areaServed":"EU","knowsLanguage":["en","es","zh"],
+ "knowsAbout":["Spanish NIF","Spanish VAT registration","fiscal representative Spain","OSS","EORI","GPSR Responsible Person","EPR"]}
 
 import re as _re, glob as _glob
 def _pubdate(lang,sl):
@@ -2216,14 +2274,16 @@ for lang in ['en','es','zh']:
   cta=f'<section><div class="wrap"><div class="cta"><h2>{t["ready"]}</h2><p>{t["readyp"]}</p><a class="btn" href="{p}/quote.html">{t["quote"]}</a><p style="margin-top:14px;font-size:14px;opacity:.85">{EMAIL}</p></div></div></section>'
   homecards=''.join(f'<div class="card"><h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p><a href="{p}/services/{s[0]}.html">→</a></div>' for s in S)
   pills=''.join(f'<span>{x}</span>' for x in t['trust'])
+  exp=EXP[lang].format(p=p)
   home=f"""<div class="hero"><div class="wrap"><p class="eyebrow">{t['tag']}</p><h1>{t['h1']}</h1><p>{t['lead']}</p>
 <p><a class="btn" href="{p}/quote.html">{t['quote']}</a> <a class="btn alt" href="{p}/services/">{t['all']}</a></p>
 <p class="taxlink"><a href="{p}/services/spain-nif-vat.html">{t['tax_cta']}</a></p>
 <div class="trust">{pills}</div></div></div>
 <section><div class="wrap"><h2>{t['services']}</h2><div class="grid">{homecards}</div></div></section>
 <section class="muted"><div class="wrap"><h2>{t['why']}</h2><div class="grid">{why}</div></div></section>
-<section><div class="wrap"><h2>{t['faq']}</h2>{faqhtml}</div></section>{cta}"""
-  urls.append(page(lang,'',t['home_title'],t['lead'],home,[faqld]))
+<section><div class="wrap">{exp}</div></section>
+<section class="muted"><div class="wrap"><h2>{t['faq']}</h2>{faqhtml}</div></section>{cta}"""
+  urls.append(page(lang,'',t['home_title'],t.get('home_desc',t['lead']),home,[faqld]))
   urls.append(page(lang,'services/',t['services']+' | IberTrust Global',SVC_DESC[lang],f'<section><div class="wrap"><h1>{t["services"]}</h1>{gcards}</div></section>{cta}'))
   for s in S:
     title,short,bul=L(s,lang)
@@ -2231,6 +2291,10 @@ for lang in ['en','es','zh']:
     sc,docs,probs=DET[s[0]][lang]; h=H[lang]
     sl=SL[lang]; pr=SPROC.get(s[0],{}).get(lang,PROC[lang])
     what=f'<section><div class="wrap"><h2>{sl["what"]}</h2><p>{WHAT[s[0]][lang]}</p></div></section>' if s[0] in WHAT else ''
+    extra_sld=[]
+    if s[0]=='spain-nif-vat':
+      what+=f'<section class="muted"><div class="wrap">{NIF_EASE[lang].format(p=p)}<h2>{t["faq"]}</h2>'+''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q,a in NIF_FAQ[lang])+'</div></section>'
+      extra_sld=[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in NIF_FAQ[lang]]}]
     det=f'<section class="muted"><div class="wrap"><h2>{h[0]}</h2><p>{sc}</p><div class="grid"><div class="card"><h3>{h[1]}</h3><ul>'+''.join(f'<li>{d}</li>' for d in docs)+f'</ul></div><div class="card"><h3>{h[3]}</h3><ul>'+''.join(f'<li>{d}</li>' for d in probs)+f'</ul></div></div><h2>{h[2]}</h2><ol>'+''.join(f'<li>{d}</li>' for d in pr)+'</ol></div></section>'
     SD2={x[0]:x for x in S}; rs,ra=REL.get(s[0],([],[])); BT={sl2:P[lang][0] for sl2,P in POSTS}; BT.update({sl2:ti2 for _,sl2,ti2 in _extra_posts(lang)})
     rel=''
@@ -2240,15 +2304,18 @@ for lang in ['en','es','zh']:
     import urllib.parse as _up
     ask=f'<h2>{sl["ask"]}</h2><p><a class="btn" href="{p}/quote.html?service={s[0]}">{sl["form"]}</a></p><p>{sl["or_"]} <a href="mailto:{EMAIL}?subject={_up.quote(title)}">{EMAIL}</a>. {sl["note"]}</p>'
     body=f'<div class="hero"><div class="wrap"><h1>{title}</h1><p>{short}</p><a class="btn" href="{p}/quote.html?service={s[0]}">{t["quote"]}</a></div></div>{what}<section><div class="wrap"><h2>{sl["do"]}</h2><ul>'+''.join(f'<li>{b}</li>' for b in bul)+f'</ul></div></section>{det}<section><div class="wrap">{rel}{ask}<p><a href="{p}/faq.html">{t["faq"]}</a> · <a href="{p}/services/">{t["all"]}</a></p></div></section>{cta}'
-    urls.append(page(lang,f'services/{s[0]}.html',title+' | IberTrust Global',short,body,[sld]))
+    urls.append(page(lang,f'services/{s[0]}.html',title+' | IberTrust Global',short,body,[sld]+extra_sld))
   about_en='<p>IberTrust Global S.L. is a Spanish company (CIF B21813506) providing Spain tax and EU product compliance services to manufacturers and online sellers from outside the EU. We help with Spanish NIF, VAT, OSS and EORI, act as EU Responsible Person, EPR authorised representative and regulatory contact, and handle cosmetics notifications.</p><p>Our team supports clients in English, Spanish and Mandarin Chinese and works with local environmental compliance partners in Spain.</p>'
   about_es='<p>IberTrust Global S.L. es una empresa española (CIF B21813506) que presta servicios fiscales en España y de cumplimiento de producto en la UE a fabricantes y vendedores online de fuera de la UE: NIF, IVA, OSS y EORI, Persona Responsable, representante autorizado EPR y notificaciones de cosméticos.</p><p>Atendemos en inglés, español y chino mandarín y colaboramos con socios locales de cumplimiento ambiental en España.</p>'
   about_zh='<p>IberTrust Global S.L. 是一家西班牙公司（CIF B21813506），专为外国公司提供西班牙税务和欧盟产品合规服务。我们可以办理西班牙税号（NIF）、增值税、OSS 和 EORI，担任欧盟负责人、EPR 授权代表和监管对接人，并协助化妆品通报。</p><p>团队可用中文、英文和西班牙语服务客户，并与西班牙本地的环保合规伙伴合作。</p>'
   ab=ABOUT[lang].replace('{proc}',''.join(f'<li>{x}</li>' for x in PROC[lang]))
   cd={'en':'Company details','es':'Datos de la empresa','zh':'公司信息'}[lang]
-  urls.append(page(lang,'about.html',t['about']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["about"]}</h1>{ab}<h2>{cd}</h2><p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA<br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a> · +34 611 90 48 67 · <a href="{WA}">WhatsApp</a></p><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div></section>{cta}'))
+  exp=EXP[lang].format(p=p)
+  hours={'en':'Monday to Friday, 9:00–19:30 (Europe/Madrid), for calls and parcels.','es':'De lunes a viernes, 9:00–19:30 (Europe/Madrid), para llamadas y paquetes.','zh':'周一到周五 9:00–19:30（马德里时间），接听电话、接收包裹。'}[lang]
+  urls.append(page(lang,'about.html',t.get('about_title',t['about']+' | IberTrust Global'),t.get('about_desc',t['lead']),f'<section><div class="wrap"><h1>{t["about"]}</h1>{ab}{exp}<h2>{cd}</h2><p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA<br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a> · +34 611 90 48 67 · <a href="{WA}">WhatsApp</a><br>{hours}</p><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div></section>{cta}'))
   urls.append(page(lang,'faq.html',t['faq']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["faq"]}</h1>{faqhtml}</div></section>{cta}',[faqld]))
-  ct=f'<section><div class="wrap"><h1>{t["contact"]}</h1><div class="grid"><div class="card"><h3>{'邮箱' if lang=='zh' else 'Email'}</h3><a href="mailto:{EMAIL}">{EMAIL}</a><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div><div class="card"><h3>{'电话 / WhatsApp' if lang=='zh' else 'Tel / WhatsApp'}</h3>+34 611 90 48 67<br><a href="{WA}">WhatsApp</a></div><div class="card"><h3>IBERTRUST GLOBAL, SOCIEDAD LIMITADA</h3>NIF B21813506<br>{ADDR}</div></div><p>{t["readyp"]}</p></div></section>'
+  hours={'en':'Monday to Friday, 9:00–19:30 (Europe/Madrid), for calls and parcels.','es':'De lunes a viernes, 9:00–19:30 (Europe/Madrid), para llamadas y paquetes.','zh':'周一到周五 9:00–19:30（马德里时间），接听电话、接收包裹。'}[lang]
+  ct=f'<section><div class="wrap"><h1>{t["contact"]}</h1><div class="grid"><div class="card"><h3>{'邮箱' if lang=='zh' else 'Email'}</h3><a href="mailto:{EMAIL}">{EMAIL}</a><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div><div class="card"><h3>{'电话 / WhatsApp' if lang=='zh' else 'Tel / WhatsApp'}</h3>+34 611 90 48 67<br><a href="{WA}">WhatsApp</a><p>{hours}</p></div><div class="card"><h3>IBERTRUST GLOBAL, SOCIEDAD LIMITADA</h3>NIF B21813506<br>{ADDR}<p>{hours}</p></div></div><p>{t["readyp"]}</p></div></section>'
   urls.append(page(lang,'contact.html',t['contact']+' | IberTrust Global',t['readyp'],ct))
   ex=_extra_posts(lang)
   posts=[(sl,ti) for _,sl,ti in ex]+[(sl,P[lang][0]) for sl,P in POSTS]
