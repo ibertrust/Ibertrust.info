@@ -261,10 +261,10 @@ section{padding:56px 0}.muted{background:#f5f7fa}.hero-core{display:flex;flex-wr
 details{border-bottom:1px solid #e5e9f0;padding:14px 0}summary{font-weight:600;cursor:pointer}footer{background:#0b2545;color:#cfd8e3;padding:40px 0;font-size:14px}footer a{color:#fff}
 .lang a{margin-left:8px;font-size:14px}.cta{background:#0b2545;color:#fff;border-radius:14px;padding:36px;text-align:center}
 .navt{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}.navbtn{display:none}
-.hero-fig{margin:28px 0 0}.stock-photo{width:100%;height:280px;object-fit:cover;border-radius:12px;display:block;background:#e8eef4}.photo-cap{margin:8px 0 0;font-size:12px;line-height:1.4;color:#667485}.entries{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}.entry{display:block;background:#fff;border:1px solid #e5e9f0;border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}.entry:hover{border-color:#0b5cad;box-shadow:0 6px 18px rgba(11,37,69,.08)}.entry img{width:100%;height:200px;object-fit:cover;display:block;background:#e8eef4}.entry .pad{padding:20px 22px 24px}.entry h2{margin:0 0 8px;font-size:24px;color:#0b2545}.entry p{margin:0 0 12px;color:#44515f}.entry .go{font-weight:600;color:#0b5cad}.pillar-visual{width:100%;height:200px;object-fit:cover;border-radius:12px;display:block;margin:0 0 16px;background:#e8eef4}.about-visual{margin:0 0 28px}.stats-more{margin:8px 0 0}@media(max-width:760px){.nav{position:relative}.navbtn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;font-size:13px;font-weight:600;padding:7px 10px;border:1px solid #cfd6df;border-radius:8px;margin-left:auto;margin-right:8px;white-space:nowrap}.navt:focus-visible+.navbtn{outline:2px solid #1b2430}.nav ul{display:none}.navt:checked~ul{display:flex;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid #e3e7ec;box-shadow:0 8px 16px rgba(0,0,0,.08);z-index:50;padding:6px 0}.navt:checked~ul a{display:block;padding:12px 20px}.nav>a>b{display:none}.nav .btn{padding:8px 12px;font-size:13px;white-space:nowrap}.nav>span{display:flex;align-items:center;gap:8px;white-space:nowrap}.nav .lang a{margin-left:4px;font-size:13px}.hero h1{font-size:32px}.hero{padding:44px 0}.hero-fig .stock-photo,.about-visual .stock-photo{height:200px}.entries{grid-template-columns:1fr;gap:16px;margin-top:24px}.entry img,.pillar-visual{height:168px}.stat b{font-size:34px}.pillar-head{flex-direction:row}.pillar-head h2{font-size:24px}.steps{flex-direction:column;gap:10px}.has-sub>.sub{position:static;display:block;border:0;box-shadow:none;padding:0 0 6px 8px;min-width:0}.navt:checked~ul .has-sub>.sub{display:block}.hero-core a{display:inline-block}}"""
+.hero-fig{margin:28px 0 0}.stock-photo{width:100%;height:280px;object-fit:cover;border-radius:12px;display:block;background:#e8eef4}.entries{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}.entry{display:block;background:#fff;border:1px solid #e5e9f0;border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}.entry:hover{border-color:#0b5cad;box-shadow:0 6px 18px rgba(11,37,69,.08)}.entry img{width:100%;height:200px;object-fit:cover;display:block;background:#e8eef4}.entry .pad{padding:20px 22px 24px}.entry h2{margin:0 0 8px;font-size:24px;color:#0b2545}.entry p{margin:0 0 12px;color:#44515f}.entry .go{font-weight:600;color:#0b5cad}.pillar-visual{width:100%;height:200px;object-fit:cover;border-radius:12px;display:block;margin:0 0 16px;background:#e8eef4}.about-visual{margin:0 0 28px}.stats-more{margin:8px 0 0}@media(max-width:760px){.nav{position:relative}.navbtn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;font-size:13px;font-weight:600;padding:7px 10px;border:1px solid #cfd6df;border-radius:8px;margin-left:auto;margin-right:8px;white-space:nowrap}.navt:focus-visible+.navbtn{outline:2px solid #1b2430}.nav ul{display:none}.navt:checked~ul{display:flex;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid #e3e7ec;box-shadow:0 8px 16px rgba(0,0,0,.08);z-index:50;padding:6px 0}.navt:checked~ul a{display:block;padding:12px 20px}.nav>a>b{display:none}.nav .btn{padding:8px 12px;font-size:13px;white-space:nowrap}.nav>span{display:flex;align-items:center;gap:8px;white-space:nowrap}.nav .lang a{margin-left:4px;font-size:13px}.hero h1{font-size:32px}.hero{padding:44px 0}.hero-fig .stock-photo,.about-visual .stock-photo{height:200px}.entries{grid-template-columns:1fr;gap:16px;margin-top:24px}.entry img,.pillar-visual{height:168px}.stat b{font-size:34px}.pillar-head{flex-direction:row}.pillar-head h2{font-size:24px}.steps{flex-direction:column;gap:10px}.has-sub>.sub{position:static;display:block;border:0;box-shadow:none;padding:0 0 6px 8px;min-width:0}.navt:checked~ul .has-sub>.sub{display:block}.hero-core a{display:inline-block}}"""
 T={'en':dict(home='Home',services='Services',about='About',faq='FAQ',blog='Insights',contact='Contact',quote='Get a quote',all='All services',
  tag='Two clear areas of work · one point of contact',h1='Tax and product compliance for selling in Europe',
- lead='IberTrust Global S.L. helps foreign companies sell in Europe: Spanish tax compliance and EU product compliance, from one point of contact.',svc_intro='Spanish tax compliance and EU product compliance are listed below. Open a service for the detail.',see_tax='See tax services →',see_prod='See product services →',photo_note='Stock photograph, for illustration only — not an IberTrust office, warehouse or team photo.',more_about='About our team, experience and office →',stats_h='Experience at a glance',
+ lead='IberTrust Global S.L. helps foreign companies sell in Europe: Spanish tax compliance and EU product compliance, from one point of contact.',svc_intro='Spanish tax compliance and EU product compliance are listed below. Open a service for the detail.',see_tax='See tax services →',see_prod='See product services →',alt_hero='Warehouse aisle with goods on shelves',alt_tax='Person signing a document',alt_prod='Sealing a cardboard carton',alt_office='Modern office interior',more_about='About our team, experience and office →',stats_h='Experience at a glance',
  tax_cta='Spanish NIF &amp; VAT registration for foreign companies →',
  tax_block='Tax compliance',prod_block='Product compliance',
  tax_blurb='Spanish NIF, VAT registration and filing, OSS, EORI and fiscal representation for companies not established in Spain.',
@@ -278,7 +278,7 @@ T={'en':dict(home='Home',services='Services',about='About',faq='FAQ',blog='Insig
  based='Registered office: '+ADDR,why='Why IberTrust',inc='What is included',ready='Ready to sell in the EU with confidence?',readyp='Tell us your products, markets and sales channels. We reply with a tailored proposal.'),
  'es':dict(home='Inicio',services='Servicios',about='Nosotros',faq='Preguntas',blog='Blog',contact='Contacto',quote='Pedir presupuesto',all='Todos los servicios',
  tag='Dos áreas claras · un único interlocutor',h1='Cumplimiento fiscal y de producto para vender en Europa',
- lead='IberTrust Global S.L. ayuda a empresas extranjeras a vender en Europa: cumplimiento fiscal en España y cumplimiento de producto en la UE, con un único interlocutor.',svc_intro='El cumplimiento fiscal en España y el cumplimiento de producto en la UE se listan a continuación. Abra cada servicio para ver el detalle.',see_tax='Ver servicios fiscales →',see_prod='Ver servicios de producto →',photo_note='Fotografía de banco de imágenes, solo ilustrativa: no es una oficina, almacén ni foto de equipo de IberTrust.',more_about='Nuestro equipo, experiencia y oficina →',stats_h='La experiencia, en cifras',
+ lead='IberTrust Global S.L. ayuda a empresas extranjeras a vender en Europa: cumplimiento fiscal en España y cumplimiento de producto en la UE, con un único interlocutor.',svc_intro='El cumplimiento fiscal en España y el cumplimiento de producto en la UE se listan a continuación. Abra cada servicio para ver el detalle.',see_tax='Ver servicios fiscales →',see_prod='Ver servicios de producto →',alt_hero='Pasillo de almacén con mercancía en las estanterías',alt_tax='Persona firmando un documento',alt_prod='Cierre de una caja de cartón',alt_office='Interior de una oficina moderna',more_about='Nuestro equipo, experiencia y oficina →',stats_h='La experiencia, en cifras',
  tax_cta='NIF e IVA en España para empresas extranjeras →',
  tax_block='Cumplimiento fiscal',prod_block='Cumplimiento de producto',
  tax_blurb='NIF español, alta y declaraciones de IVA, OSS, EORI y representación fiscal para empresas no establecidas en España.',
@@ -292,7 +292,7 @@ T={'en':dict(home='Home',services='Services',about='About',faq='FAQ',blog='Insig
  based='Domicilio social: '+ADDR,why='Por qué IberTrust',inc='Qué incluye',ready='¿Listo para vender en la UE con tranquilidad?',readyp='Indíquenos productos, mercados y canales de venta y le enviaremos una propuesta a medida.'),
  'zh':dict(home='首页',services='服务',about='关于我们',faq='常见问题',blog='合规资讯',contact='联系我们',quote='获取方案',all='全部服务',
  tag='两大板块，一个窗口',h1='在欧洲销售所需的税务合规与产品合规',
- lead='IberTrust Global S.L. 帮助外国公司在欧洲销售：西班牙税务合规与欧盟产品合规，一个窗口对接。',svc_intro='下方列出西班牙税务合规与欧盟产品合规服务，点进各页查看该项的具体内容。',see_tax='查看税务服务 →',see_prod='查看产品合规服务 →',photo_note='库存示意图，仅作配图，并非 IberTrust 的办公室、仓库或团队实拍。',more_about='了解我们的团队、经验和办公室 →',stats_h='经验数字',
+ lead='IberTrust Global S.L. 帮助外国公司在欧洲销售：西班牙税务合规与欧盟产品合规，一个窗口对接。',svc_intro='下方列出西班牙税务合规与欧盟产品合规服务，点进各页查看该项的具体内容。',see_tax='查看税务服务 →',see_prod='查看产品合规服务 →',alt_hero='货架上摆放货物的仓库通道',alt_tax='正在签署文件',alt_prod='封装纸箱',alt_office='现代办公室内景',more_about='了解我们的团队、经验和办公室 →',stats_h='经验数字',
  tax_cta='外国公司西班牙税号与增值税登记 →',
  tax_block='税务合规',prod_block='产品合规',
  tax_blurb='为未在西班牙设立的外国公司办理西班牙税号（NIF）、增值税登记与申报、OSS、EORI 和财税代表。',
@@ -2328,28 +2328,27 @@ FLOW={
 'es':[('1','Cuéntenos lo que necesita','Empresa, productos, mercados y trámites que precisa'),('2','Propuesta por escrito','Confirmamos el alcance y enviamos una propuesta a medida'),('3','Firma y documentación','El contrato o mandato y, después, la lista de documentos'),('4','Completamos el trámite','Presentaciones, nombramientos y datos para etiquetas o anuncios'),('5','Seguimiento','Declaraciones periódicas, contacto con autoridades y actualizaciones, si se acuerda')],
 'zh':[('1','告诉我们您的需求','公司、产品、市场，以及需要办理的事项'),('2','书面方案','我们确认范围，并发出定制方案'),('3','签约并提交资料','签署委托或服务协议，再按清单提供文件'),('4','我们完成办理','完成登记或委任，并告知标签和商品页需填写的信息'),('5','后续支持','按约定做定期申报、对接官方并同步规则更新')],
 }
-def photo_fig(src, alt, note, extra_class=''):
+def photo_fig(src, alt, extra_class=''):
   return (f'<figure class="{extra_class}">'
           f'<img class="stock-photo" src="{src}" alt="{alt}" width="1600" height="800" loading="lazy">'
-          f'<figcaption class="photo-cap">{note}</figcaption></figure>')
+          f'</figure>')
 def pillars_html(lang,p,photos=False):
   t=T[lang]
   tax_cards=''.join(f'<a class="scard" href="{p}/services/spain-nif-vat.html#{k}">{ICONS[k]}<h3>{ti}</h3><p>{bl}</p></a>' for k,ti,bl in TAX_ITEMS[lang])
   prod_cards=''.join(f'<a class="scard" href="{p}/services/{s[0]}.html">{ICONS.get(s[0],ICONS["prod"])}<h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p></a>' for s in S if s[0]!='spain-nif-vat')
-  tax_img=f'<img class="pillar-visual" src="/assets/photos/pillar-tax.webp" alt="" width="1200" height="720" loading="lazy">' if photos else ''
-  prod_img=f'<img class="pillar-visual" src="/assets/photos/pillar-product.webp" alt="" width="1200" height="720" loading="lazy">' if photos else ''
-  cap=f'<p class="photo-cap">{t["photo_note"]}</p>' if photos else ''
+  tax_img=f'<img class="pillar-visual" src="/assets/photos/pillar-tax.webp" alt="{t["alt_tax"]}" width="1200" height="720" loading="lazy">' if photos else ''
+  prod_img=f'<img class="pillar-visual" src="/assets/photos/pillar-product.webp" alt="{t["alt_prod"]}" width="1200" height="720" loading="lazy">' if photos else ''
   return (
     f'<div class="pillar" id="tax">{tax_img}<div class="pillar-head"><div class="mark">{ICONS["tax"]}</div><div><h2>{t["tax_block"]}</h2><p>{t["tax_blurb"]}</p></div></div><div class="scards">{tax_cards}</div></div>'
-    f'<div class="pillar" id="product">{prod_img}<div class="pillar-head"><div class="mark">{ICONS["prod"]}</div><div><h2>{t["prod_block"]}</h2><p>{t["prod_blurb"]}</p></div></div><div class="scards">{prod_cards}</div>{cap}</div>'
+    f'<div class="pillar" id="product">{prod_img}<div class="pillar-head"><div class="mark">{ICONS["prod"]}</div><div><h2>{t["prod_block"]}</h2><p>{t["prod_blurb"]}</p></div></div><div class="scards">{prod_cards}</div></div>'
   )
 def home_entries_html(lang,p):
   t=T[lang]
   return (
     f'<div class="entries">'
-    f'<a class="entry" id="tax" href="{p}/services/#tax"><img src="/assets/photos/pillar-tax.webp" alt="" width="1200" height="720" loading="lazy"><div class="pad"><h2>{t["tax_block"]}</h2><p>{t["tax_blurb"]}</p><span class="go">{t["see_tax"]}</span></div></a>'
-    f'<a class="entry" id="product" href="{p}/services/#product"><img src="/assets/photos/pillar-product.webp" alt="" width="1200" height="720" loading="lazy"><div class="pad"><h2>{t["prod_block"]}</h2><p>{t["prod_blurb"]}</p><span class="go">{t["see_prod"]}</span></div></a>'
-    f'</div><p class="photo-cap">{t["photo_note"]}</p>'
+    f'<a class="entry" id="tax" href="{p}/services/#tax"><img src="/assets/photos/pillar-tax.webp" alt="{t["alt_tax"]}" width="1200" height="720" loading="lazy"><div class="pad"><h2>{t["tax_block"]}</h2><p>{t["tax_blurb"]}</p><span class="go">{t["see_tax"]}</span></div></a>'
+    f'<a class="entry" id="product" href="{p}/services/#product"><img src="/assets/photos/pillar-product.webp" alt="{t["alt_prod"]}" width="1200" height="720" loading="lazy"><div class="pad"><h2>{t["prod_block"]}</h2><p>{t["prod_blurb"]}</p><span class="go">{t["see_prod"]}</span></div></a>'
+    f'</div>'
   )
 def stats_html(lang,p):
   t=T[lang]; a,b,c,d=STATS[lang]
@@ -2378,7 +2377,7 @@ for lang in ['en','es','zh']:
   entries=home_entries_html(lang,p)
   stats=stats_html(lang,p)
   flow=flow_html(lang)
-  hero_fig=photo_fig('/assets/photos/home-hero.webp',t['h1'],t['photo_note'],'hero-fig')
+  hero_fig=photo_fig('/assets/photos/home-hero.webp',t['alt_hero'],'hero-fig')
   home=f"""<div class="hero"><div class="wrap"><p class="eyebrow">{t['tag']}</p><h1>{t['h1']}</h1><p>{t['lead']}</p>
 <p><a class="btn" href="{p}/quote.html">{t['quote']}</a> <a class="btn alt" href="{p}/contact.html">{t['contact']}</a></p>
 <p class="hero-core"><a href="#tax">{t['tax_block']}</a> <a href="#product">{t['prod_block']}</a></p>
@@ -2422,7 +2421,7 @@ for lang in ['en','es','zh']:
   cd={'en':'Company details','es':'Datos de la empresa','zh':'公司信息'}[lang]
   exp=EXP[lang].format(p=p)
   hours={'en':'Monday to Friday, 9:00–19:30 (Europe/Madrid), for calls and parcels.','es':'De lunes a viernes, 9:00–19:30 (Europe/Madrid), para llamadas y paquetes.','zh':'周一到周五 9:00–19:30（马德里时间），接听电话、接收包裹。'}[lang]
-  about_fig=photo_fig('/assets/photos/about-office.webp',cd,t['photo_note'],'about-visual')
+  about_fig=photo_fig('/assets/photos/about-office.webp',t['alt_office'],'about-visual')
   urls.append(page(lang,'about.html',t.get('about_title',t['about']+' | IberTrust Global'),t.get('about_desc',t['lead']),f'<section><div class="wrap"><h1>{t["about"]}</h1>{about_fig}{ab}{exp}<h2>{cd}</h2><p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA<br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a> · +34 611 90 48 67 · <a href="{WA}">WhatsApp</a><br>{hours}</p><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div></section>{cta}'))
   urls.append(page(lang,'faq.html',t['faq']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["faq"]}</h1>{faqhtml}</div></section>{cta}',[faqld]))
   hours={'en':'Monday to Friday, 9:00–19:30 (Europe/Madrid), for calls and parcels.','es':'De lunes a viernes, 9:00–19:30 (Europe/Madrid), para llamadas y paquetes.','zh':'周一到周五 9:00–19:30（马德里时间），接听电话、接收包裹。'}[lang]
