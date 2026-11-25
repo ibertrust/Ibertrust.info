@@ -192,21 +192,21 @@ FAQS=[ # slug, lang:(question, answer, article title, article html)
 ABOUT={
 'en':'''<p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA (Ibertrust Global, S.L.) is a Spanish company providing product compliance services for selling in Europe.</p>
 <h2>Who we serve</h2><ul><li>Manufacturers and brands outside the EU</li><li>Cross-border e-commerce sellers</li><li>Channel partners such as agencies, logistics providers and service providers who need a reliable compliance partner for their clients</li></ul>
-<h2>What we cover</h2><ul><li>Spain tax services for foreign companies: NIF, VAT registration and returns, OSS, EORI, and fiscal representation where needed</li><li>Responsible Person under GPSR for the EU, <a href="/services/uk-responsible-person.html">UK Responsible Person</a> and <a href="/services/turkey-authorised-representative.html">Turkey Authorised Representative</a></li><li>Spanish packaging law (Royal Decree 1055/2022): producer registration and authorised representation</li><li>WEEE and batteries EPR in Spain</li><li>Cosmetics Responsible Person and CPNP notification</li></ul>
+{pillars}
 <h2>Why work with us</h2><ul><li>A local Spanish company, established in the EU</li><li>We work in Chinese, English and Spanish</li><li>One point of contact for GPSR, EPR, CPNP and tax registration</li><li>Hands-on experience diagnosing and fixing rejected responsible-person requests on marketplaces: store not listed in the agreement, company name mismatch, wrong address</li></ul>
-<h2>How working with us goes</h2><ol>{proc}</ol>
+{flow}
 <h2>Platforms our clients sell on</h2><ul><li>Amazon — including responsible-person requests handled through Amazon Compliance Central</li><li>Temu</li><li>SHEIN</li></ul><h2>Partners</h2><ul><li><a href="https://amazonexperts.eu/amazon-eu-compliance/" rel="noopener noreferrer" target="_blank">Amazon Experts</a> — Amazon growth and marketplace management for brands selling across Europe, the UK and the US. Referral partnership for EU product compliance (GPSR Responsible Person, EPR, cosmetics CPNP).</li></ul>''',
 'es':'''<p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA (Ibertrust Global, S.L.) es una empresa española de servicios de cumplimiento de producto para vender en Europa.</p>
 <h2>A quién ayudamos</h2><ul><li>Fabricantes y marcas de fuera de la UE</li><li>Vendedores de e-commerce transfronterizo</li><li>Socios de canal —agencias, operadores logísticos y proveedores de servicios— que necesitan un socio de cumplimiento fiable para sus clientes</li></ul>
-<h2>Qué cubrimos</h2><ul><li>Servicios fiscales en España para empresas extranjeras: NIF, alta y declaraciones de IVA, OSS, EORI y representación fiscal cuando proceda</li><li>Persona Responsable GPSR en la UE, <a href="/es/services/uk-responsible-person.html">Persona Responsable en Reino Unido</a> y <a href="/es/services/turkey-authorised-representative.html">Representante autorizado en Turquía</a></li><li>Ley de envases en España (RD 1055/2022): registro de productor y representación autorizada</li><li>EPR de RAEE y pilas en España</li><li>Persona Responsable de cosméticos y notificación CPNP</li></ul>
+{pillars}
 <h2>Por qué trabajar con nosotros</h2><ul><li>Empresa española, establecida en la UE</li><li>Trabajamos en chino, inglés y español</li><li>Un único interlocutor para GPSR, EPR, CPNP y registros fiscales</li><li>Experiencia práctica diagnosticando y corrigiendo solicitudes de persona responsable rechazadas en marketplaces: tienda no incluida en el contrato, nombre de empresa que no coincide, dirección incorrecta</li></ul>
-<h2>Cómo trabajamos</h2><ol>{proc}</ol>
+{flow}
 <h2>Plataformas</h2><ul><li>Amazon — incluidas solicitudes de persona responsable gestionadas a través de Amazon Compliance Central</li><li>Temu</li><li>SHEIN</li></ul><h2>Socios</h2><ul><li><a href="https://amazonexperts.eu/amazon-eu-compliance/" rel="noopener noreferrer" target="_blank">Amazon Experts</a> — crecimiento y gestión en Amazon para marcas que venden en Europa, Reino Unido y EE. UU. Colaboración por referidos en cumplimiento de producto en la UE (Persona Responsable GPSR, EPR, cosméticos CPNP).</li></ul>''',
 'zh':'''<p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA（Ibertrust Global, S.L.）是一家西班牙公司，为进入欧洲市场的产品提供合规服务。</p>
 <h2>我们服务谁</h2><ul><li>欧盟以外的工厂和品牌</li><li>跨境电商卖家</li><li>渠道合作伙伴：代运营、物流、服务商等需要可靠合规伙伴来服务自己客户的机构</li></ul>
-<h2>服务范围</h2><ul><li>外国公司西班牙税务：税号（NIF）、增值税注册与申报、OSS、EORI，以及按需财税代表</li><li>GPSR 欧盟负责人、<a href="/zh/services/uk-responsible-person.html">英国负责人</a>、<a href="/zh/services/turkey-authorised-representative.html">土耳其授权代表</a></li><li>西班牙包装法（皇家法令 1055/2022）：生产者注册和授权代表</li><li>西班牙 WEEE 和电池 EPR</li><li>化妆品欧盟负责人与 CPNP 通报</li></ul>
+{pillars}
 <h2>为什么选择我们</h2><ul><li>西班牙本地公司，在欧盟境内设立</li><li>中文、英文、西班牙语沟通</li><li>GPSR、EPR、CPNP、税号一个窗口对接</li><li>实际诊断并解决过平台上被驳回的负责人申请：店铺未列入委托协议、公司名称不一致、地址错误等</li></ul>
-<h2>合作流程</h2><ol>{proc}</ol>
+{flow}
 <h2>常见平台</h2><ul><li>亚马逊（Amazon）——包括通过 Amazon Compliance Central 处理负责人申请</li><li>Temu</li><li>SHEIN</li></ul><h2>合作伙伴</h2><ul><li><a href="https://amazonexperts.eu/amazon-eu-compliance/" rel="noopener noreferrer" target="_blank">Amazon Experts</a> — 帮助品牌在欧洲、英国和美国拓展与运营亚马逊业务。与我们在欧盟产品合规（GPSR 欧盟负责人、EPR、化妆品 CPNP）上开展转介合作。</li></ul>'''}
 
 # Cross-border e-commerce experience and Spanish NIF process (2026-11-25). Paths use {p}.
@@ -215,21 +215,21 @@ EXP={
 <p>IberTrust Global is a Spanish compliance firm based in Castellón, close to Amazon's fulfilment network in Spain. Our team, with members from Spain and China, has worked in cross-border import-export, online e-commerce trade and product compliance since 2011, and has extensive experience in these areas. We handle EU compliance for cross-border e-commerce sellers — including sellers from China — and for the agencies and service providers who support them. We act for our clients in dealings with EU authorities, with a clean track record.</p>
 <div class="stats"><div class="stat"><b>50,000+</b><span>ASIN-level EU Responsible Person requests handled by our team via Amazon Compliance Central</span></div><div class="stat"><b>400+</b><span>sellers served as EU Responsible Person</span></div></div>
 <p>We work from our own office, at a stable address, staffed Monday to Friday from 9:00 to 19:30 to take calls and receive parcels. Our relationships with Spanish producer responsibility organisations (PROs) are well established, so we can act on a client request promptly. We work with Amazon and SHEIN compliance processes, including responsible-person requests through Amazon Compliance Central.</p>
-<p>The formalities we cover are the ones sellers typically need to stay on the EU market: <a href="{p}/services/gpsr-eu-responsible-person.html">EU Responsible Person (GPSR)</a>, UK and Turkey representatives, <a href="{p}/services/epr-packaging-spain.html">Spanish packaging EPR</a>, <a href="{p}/services/weee.html">WEEE</a> and <a href="{p}/services/batteries.html">batteries</a> in Spain and <a href="{p}/services/epr-europe.html">other EU countries</a>, cosmetics <a href="{p}/services/cpnp-cosmetics.html">CPNP</a>, <a href="{p}/services/eprel-energy-label.html">EPREL</a>, and <a href="{p}/services/spain-nif-vat.html">Spanish NIF, VAT registration, OSS, EORI and fiscal representation</a>. IberTrust itself holds an EORI registration and can act as importer of record. Through an import-export partner with more than twenty years' experience, we can also support customs clearance and product recalls.</p>
+<p>Under tax compliance we handle <a href="{p}/services/spain-nif-vat.html">Spanish NIF, VAT registration, OSS, EORI and fiscal representation</a>. IberTrust itself holds an EORI registration and can act as importer of record. Under product compliance we cover the <a href="{p}/services/gpsr-eu-responsible-person.html">EU Responsible Person (GPSR)</a>, UK and Turkey representatives, <a href="{p}/services/epr-packaging-spain.html">Spanish packaging EPR</a>, <a href="{p}/services/weee.html">WEEE</a> and <a href="{p}/services/batteries.html">batteries</a> in Spain and <a href="{p}/services/epr-europe.html">other EU countries</a>, cosmetics <a href="{p}/services/cpnp-cosmetics.html">CPNP</a>, <a href="{p}/services/eprel-energy-label.html">EPREL</a> and EUDR. Through an import-export partner with more than twenty years' experience, we can also support customs clearance and product recalls.</p>
 <p>Our service fee for registrations is normally invoiced when the work is completed. If a registration is not completed, there is no service fee to pay.</p>
 <p><a class="btn" href="{p}/quote.html">Get a quote</a> or email <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>""",
 "es":"""<h2>Nuestra experiencia en el comercio electrónico transfronterizo</h2>
 <p>IberTrust Global es una firma española de cumplimiento establecida en Castellón, cerca de la red de fulfilment de Amazon en España. Nuestro equipo, con miembros de España y de China, se dedica desde 2011 al comercio transfronterizo de importación y exportación, al e-commerce online y al cumplimiento de producto, y cuenta con una amplia experiencia. Gestionamos el cumplimiento en la UE para vendedores de e-commerce transfronterizo —incluidos vendedores de China— y para las agencias y proveedores de servicios que les dan apoyo. Actuamos ante las autoridades de la UE en nombre de nuestros clientes, con un historial limpio.</p>
 <div class="stats"><div class="stat"><b>50,000+</b><span>Solicitudes de Persona Responsable en la UE a nivel de ASIN gestionadas por nuestro equipo a través de Amazon Compliance Central</span></div><div class="stat"><b>400+</b><span>vendedores a los que hemos servido como Persona Responsable en la UE</span></div></div>
 <p>Trabajamos desde nuestra propia oficina, en una dirección estable, de lunes a viernes de 9:00 a 19:30 para atender llamadas y recibir paquetes. Nuestra relación con los sistemas colectivos (PRO) españoles está consolidada, así que podemos actuar con rapidez cuando un cliente lo necesita. Trabajamos con los procesos de cumplimiento de Amazon y SHEIN, incluidas las solicitudes de persona responsable a través de Amazon Compliance Central.</p>
-<p>Cubrimos los trámites que un vendedor suele necesitar para permanecer en el mercado de la UE: <a href="{p}/services/gpsr-eu-responsible-person.html">Persona Responsable en la UE (GPSR)</a>, representantes en Reino Unido y Turquía, <a href="{p}/services/epr-packaging-spain.html">EPR de envases en España</a>, <a href="{p}/services/weee.html">RAEE</a> y <a href="{p}/services/batteries.html">pilas</a> en España y <a href="{p}/services/epr-europe.html">otros países de la UE</a>, <a href="{p}/services/cpnp-cosmetics.html">CPNP</a> de cosmética, <a href="{p}/services/eprel-energy-label.html">EPREL</a>, y <a href="{p}/services/spain-nif-vat.html">NIF español, alta de IVA, OSS, EORI y representación fiscal</a>. IberTrust dispone de EORI propio y puede figurar como importador. A través de un socio de importación y exportación con más de veinte años de experiencia, también podemos apoyar el despacho aduanero y las retiradas de producto.</p>
+<p>En cumplimiento fiscal nos ocupamos del <a href="{p}/services/spain-nif-vat.html">NIF español, el alta de IVA, OSS, EORI y la representación fiscal</a>. IberTrust dispone de EORI propio y puede figurar como importador. En cumplimiento de producto cubrimos la <a href="{p}/services/gpsr-eu-responsible-person.html">Persona Responsable en la UE (GPSR)</a>, los representantes en Reino Unido y Turquía, el <a href="{p}/services/epr-packaging-spain.html">EPR de envases en España</a>, <a href="{p}/services/weee.html">RAEE</a> y <a href="{p}/services/batteries.html">pilas</a> en España y <a href="{p}/services/epr-europe.html">otros países de la UE</a>, el <a href="{p}/services/cpnp-cosmetics.html">CPNP</a> de cosmética, <a href="{p}/services/eprel-energy-label.html">EPREL</a> y el EUDR. A través de un socio de importación y exportación con más de veinte años de experiencia, también podemos apoyar el despacho aduanero y las retiradas de producto.</p>
 <p>Nuestros honorarios por registros se facturan, por lo general, cuando el trámite ha concluido. Si el registro no se completa, no hay honorarios que pagar.</p>
 <p><a class="btn" href="{p}/quote.html">Pedir presupuesto</a> o escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>""",
 "zh":"""<h2>我们的跨境电商经验</h2>
 <p>IberTrust Global 是一家设在西班牙卡斯特利翁（Castellón）的合规公司，靠近西班牙亚马逊运营网络。团队成员来自西班牙和中国，自 2011 年起从事跨境进出口、线上电商贸易和产品合规，经验丰富。我们为在欧销售的跨境电商卖家（含中国卖家）以及为他们对接的服务商和渠道处理欧盟合规。我们代客户与欧盟各官方沟通，记录良好，从未失手。</p>
 <div class="stats"><div class="stat"><b>50,000+</b><span>我们团队通过 Amazon Compliance Central 处理的 ASIN 级欧盟负责人申请</span></div><div class="stat"><b>400+</b><span>我们作为欧盟负责人服务的卖家</span></div></div>
 <p>公司拥有自有办公室，地址稳定，周一到周五 9:00–19:30 有人接听电话、接收包裹。我们与西班牙本地回收机构（PRO）合作稳固，能及时处理客户需求；也熟悉亚马逊、SHEIN 等平台的合规流程，包括通过 Amazon Compliance Central 处理负责人申请。</p>
-<p>我们覆盖卖家进入并留在欧盟市场通常需要的手续：<a href="{p}/services/gpsr-eu-responsible-person.html">GPSR 欧盟负责人</a>、英国负责人与土耳其授权代表，西班牙及其他欧盟国家的<a href="{p}/services/epr-packaging-spain.html">包装</a>、<a href="{p}/services/weee.html">WEEE</a>和<a href="{p}/services/batteries.html">电池</a> EPR，化妆品 <a href="{p}/services/cpnp-cosmetics.html">CPNP</a>、<a href="{p}/services/eprel-energy-label.html">EPREL</a>，以及<a href="{p}/services/spain-nif-vat.html">西班牙税号（NIF）、增值税登记、OSS、EORI 和财税代表</a>。IberTrust 自身已登记 EORI，可作为进口方出现在报关单上。进出口合作伙伴有二十多年经验，可提供清关、产品召回等支持。</p>
+<p>税务合规方面，我们办理<a href="{p}/services/spain-nif-vat.html">西班牙税号（NIF）、增值税登记、OSS、EORI 和财税代表</a>。IberTrust 自身已登记 EORI，可作为进口方出现在报关单上。产品合规方面，我们提供<a href="{p}/services/gpsr-eu-responsible-person.html">GPSR 欧盟负责人</a>、英国负责人与土耳其授权代表，西班牙及其他欧盟国家的<a href="{p}/services/epr-packaging-spain.html">包装</a>、<a href="{p}/services/weee.html">WEEE</a>和<a href="{p}/services/batteries.html">电池</a> EPR，化妆品 <a href="{p}/services/cpnp-cosmetics.html">CPNP</a>、<a href="{p}/services/eprel-energy-label.html">EPREL</a> 和 EUDR。进出口合作伙伴有二十多年经验，可提供清关、产品召回等支持。</p>
 <p>登记类服务费通常在办理完成后才收取；注册未完成，无需支付我方服务费。</p>
 <p><a class="btn" href="{p}/quote.html">获取方案</a>，或发邮件至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>"""}
 NIF_EASE={
@@ -263,37 +263,49 @@ CSS="""*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,s
 .btn{display:inline-block;background:#0b5cad;color:#fff!important;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600}.btn.alt{background:#fff;color:#0b5cad!important;border:1px solid #0b5cad}
 .hero{background:linear-gradient(135deg,#0b2545,#0b5cad);color:#fff;padding:80px 0}.hero h1{font-size:44px;line-height:1.15;margin:0 0 16px}.hero p{font-size:19px;max-width:760px;opacity:.92}.hero .eyebrow{font-size:14px;letter-spacing:.06em;text-transform:uppercase;opacity:.9;margin:0 0 12px;font-weight:600}.hero .taxlink{margin:18px 0 0;font-size:17px}.hero .taxlink a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}.card{border:1px solid #e5e9f0;border-radius:12px;padding:22px;background:#fff}.card h3{margin-top:0}
-section{padding:56px 0}.muted{background:#f5f7fa}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:24px 0 8px}.stat{background:#f5f7fa;border:1px solid #e5e9f0;border-radius:12px;padding:24px 22px;text-align:center}.stat b{display:block;font-size:40px;line-height:1.15;color:#0b2545;letter-spacing:-0.02em}.stat span{display:block;margin-top:8px;font-size:15px;color:#44515f;line-height:1.45}.trust{display:flex;flex-wrap:wrap;gap:12px}.trust span{background:rgba(255,255,255,.15);color:#fff;border-radius:20px;padding:6px 14px;font-size:14px}
+section{padding:56px 0}.muted{background:#f5f7fa}.hero-core{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}.hero-core a{color:#fff;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.45);border-radius:8px;padding:8px 14px;font-size:15px}.hero-core a:hover{background:rgba(255,255,255,.12)}.pillar{margin:0 0 40px}.pillar:last-child{margin-bottom:0}.pillar-head{display:flex;align-items:flex-start;gap:16px;margin:0 0 20px}.pillar-head .mark{flex:0 0 56px;width:56px;height:56px;border-radius:14px;background:#e8f1fa;color:#0b5cad;display:flex;align-items:center;justify-content:center}.pillar-head .mark svg{width:30px;height:30px}.pillar-head h2{margin:0 0 6px;font-size:28px;line-height:1.2}.pillar-head p{margin:0;max-width:720px;color:#44515f}.scards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.scard{display:block;border:1px solid #e5e9f0;border-radius:12px;padding:20px;background:#fff;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}.scard:hover{border-color:#0b5cad;box-shadow:0 6px 18px rgba(11,37,69,.08)}.scard .ico{color:#0b5cad;margin-bottom:10px;display:block}.scard h3{margin:0 0 6px;font-size:17px;color:#0b2545}.scard p{margin:0;font-size:14px;color:#44515f}.steps{list-style:none;margin:0;padding:0;display:flex;gap:12px;align-items:stretch}.steps li{flex:1;background:#fff;border:1px solid #e5e9f0;border-radius:12px;padding:18px 16px;position:relative}.steps li b{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#0b5cad;color:#fff;font-size:13px;margin-bottom:10px}.steps li strong{display:block;margin:0 0 4px;font-size:15px}.steps li p{margin:0;font-size:13px;color:#44515f;line-height:1.45}.has-sub{position:relative}.has-sub>.sub{display:none;position:absolute;top:calc(100% - 2px);left:0;background:#fff;border:1px solid #e5e9f0;border-radius:10px;padding:8px 0 10px;min-width:260px;box-shadow:0 10px 28px rgba(11,37,69,.12);z-index:80}.has-sub:hover>.sub,.has-sub:focus-within>.sub{display:block}.sub .lab{display:block;padding:8px 16px 2px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#667;font-weight:700}.sub a{display:block;padding:8px 16px;text-decoration:none;color:#1b2430;font-weight:500}.sub a:hover{background:#f5f7fa}.ft-lab{display:block;color:#fff;font-weight:700;margin:0 0 8px}.ft-lab+.ft-lab{margin-top:16px}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:24px 0 8px}.stat{background:#f5f7fa;border:1px solid #e5e9f0;border-radius:12px;padding:24px 22px;text-align:center}.stat b{display:block;font-size:40px;line-height:1.15;color:#0b2545;letter-spacing:-0.02em}.stat span{display:block;margin-top:8px;font-size:15px;color:#44515f;line-height:1.45}.trust{display:flex;flex-wrap:wrap;gap:12px}.trust span{background:rgba(255,255,255,.15);color:#fff;border-radius:20px;padding:6px 14px;font-size:14px}
 details{border-bottom:1px solid #e5e9f0;padding:14px 0}summary{font-weight:600;cursor:pointer}footer{background:#0b2545;color:#cfd8e3;padding:40px 0;font-size:14px}footer a{color:#fff}
 .lang a{margin-left:8px;font-size:14px}.cta{background:#0b2545;color:#fff;border-radius:14px;padding:36px;text-align:center}
 .navt{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}.navbtn{display:none}
-@media(max-width:760px){.nav{position:relative}.navbtn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;font-size:13px;font-weight:600;padding:7px 10px;border:1px solid #cfd6df;border-radius:8px;margin-left:auto;margin-right:8px;white-space:nowrap}.navt:focus-visible+.navbtn{outline:2px solid #1b2430}.nav ul{display:none}.navt:checked~ul{display:flex;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid #e3e7ec;box-shadow:0 8px 16px rgba(0,0,0,.08);z-index:50;padding:6px 0}.navt:checked~ul a{display:block;padding:12px 20px}.nav>a>b{display:none}.nav .btn{padding:8px 12px;font-size:13px;white-space:nowrap}.nav>span{display:flex;align-items:center;gap:8px;white-space:nowrap}.nav .lang a{margin-left:4px;font-size:13px}.hero h1{font-size:32px}.stat b{font-size:34px}}"""
+@media(max-width:760px){.nav{position:relative}.navbtn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;font-size:13px;font-weight:600;padding:7px 10px;border:1px solid #cfd6df;border-radius:8px;margin-left:auto;margin-right:8px;white-space:nowrap}.navt:focus-visible+.navbtn{outline:2px solid #1b2430}.nav ul{display:none}.navt:checked~ul{display:flex;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid #e3e7ec;box-shadow:0 8px 16px rgba(0,0,0,.08);z-index:50;padding:6px 0}.navt:checked~ul a{display:block;padding:12px 20px}.nav>a>b{display:none}.nav .btn{padding:8px 12px;font-size:13px;white-space:nowrap}.nav>span{display:flex;align-items:center;gap:8px;white-space:nowrap}.nav .lang a{margin-left:4px;font-size:13px}.hero h1{font-size:32px}.stat b{font-size:34px}.pillar-head{flex-direction:row}.pillar-head h2{font-size:24px}.steps{flex-direction:column;gap:10px}.has-sub>.sub{position:static;display:block;border:0;box-shadow:none;padding:0 0 6px 8px;min-width:0}.navt:checked~ul .has-sub>.sub{display:block}.hero-core a{display:inline-block}}"""
 T={'en':dict(home='Home',services='Services',about='About',faq='FAQ',blog='Insights',contact='Contact',quote='Get a quote',all='All services',
- tag='Spain tax & EU product compliance for global sellers',h1='Spanish NIF, VAT and EU compliance for cross-border e-commerce sellers',
- lead='IberTrust Global S.L. helps foreign companies with Spanish NIF (Modelo 036), Spanish VAT registration and returns, OSS, EORI and a fiscal representative in Spain, and with EU compliance for cross-border e-commerce sellers: GPSR Responsible Person, EPR (packaging, WEEE and batteries), CPNP, medical-device authorised representative, REACH Only Representative, and UK and Turkey representatives — one point of contact.',
+ tag='Two clear areas of work · one point of contact',h1='Tax and product compliance for selling in Europe',
+ lead='IberTrust Global S.L. helps foreign companies sell in Europe in two areas. Tax compliance in Spain: NIF, VAT registration and filing, OSS, EORI and fiscal representation. Product compliance: EU, UK and Turkey Responsible Person, EPR for packaging, WEEE and batteries, cosmetics CPNP, EPREL and EUDR.',
  tax_cta='Spanish NIF &amp; VAT registration for foreign companies →',
- home_title='IberTrust Global | Spanish NIF for Foreign Companies, VAT &amp; EU Compliance',
- home_desc='Spanish NIF for foreign companies, Spanish VAT registration, fiscal representative in Spain, and EU compliance for cross-border e-commerce sellers. One contact in Castellón.',
+ tax_block='Tax compliance',prod_block='Product compliance',
+ tax_blurb='Spanish NIF, VAT registration and filing, OSS, EORI and fiscal representation for companies not established in Spain.',
+ prod_blurb='EU, UK and Turkey Responsible Person services, EPR for packaging, WEEE and batteries, cosmetics CPNP, EPREL, EUDR and related product formalities.',
+ how='How it works',
+ home_title='IberTrust Global | Tax and Product Compliance for Selling in Europe',
+ home_desc='Tax compliance in Spain (NIF, VAT, OSS, EORI, fiscal representative) and product compliance (GPSR, EPR, CPNP, EPREL, EUDR) for companies selling in Europe.',
  about_title='About IberTrust | EU Compliance for Cross-Border E-commerce Sellers',
  about_desc='Spanish compliance firm in Castellón. Our team, with members from Spain and China, has worked in cross-border import-export, online e-commerce trade and product compliance since 2011, and helps sellers with Spanish NIF, VAT, fiscal representation and EU product compliance.',
  trust=['Spanish NIF / VAT / OSS','EORI','GPSR','MDR','REACH','EPR · WEEE · Batteries','CPNP','EN · ES · 中文'],
  based='Registered office: '+ADDR,why='Why IberTrust',inc='What is included',ready='Ready to sell in the EU with confidence?',readyp='Tell us your products, markets and sales channels. We reply with a tailored proposal.'),
  'es':dict(home='Inicio',services='Servicios',about='Nosotros',faq='Preguntas',blog='Blog',contact='Contacto',quote='Pedir presupuesto',all='Todos los servicios',
- tag='Fiscalidad en España y cumplimiento de producto en la UE para vendedores globales',h1='NIF e IVA en España y cumplimiento en la UE para el e-commerce transfronterizo',
- lead='IberTrust Global S.L. ayuda a empresas extranjeras con el NIF español (modelo 036), el alta y las declaraciones de IVA, OSS, EORI y un representante fiscal en España, y con el cumplimiento en la UE para vendedores de e-commerce transfronterizo: Persona Responsable GPSR, EPR (envases, RAEE y pilas), CPNP, representante autorizado de productos sanitarios, representante exclusivo REACH, y representantes en Reino Unido y Turquía — un único interlocutor.',
+ tag='Dos áreas claras · un único interlocutor',h1='Cumplimiento fiscal y de producto para vender en Europa',
+ lead='IberTrust Global S.L. ayuda a empresas extranjeras a vender en Europa en dos áreas. Cumplimiento fiscal en España: NIF, alta y declaraciones de IVA, OSS, EORI y representación fiscal. Cumplimiento de producto: Persona Responsable en la UE, Reino Unido y Turquía, EPR de envases, RAEE y pilas, CPNP, EPREL y EUDR.',
  tax_cta='NIF e IVA en España para empresas extranjeras →',
- home_title='IberTrust Global | NIF para empresas extranjeras, IVA y cumplimiento en la UE',
- home_desc='NIF español para empresas extranjeras, alta de IVA, representante fiscal en España y cumplimiento en la UE para vendedores de e-commerce transfronterizo. Un interlocutor en Castellón.',
+ tax_block='Cumplimiento fiscal',prod_block='Cumplimiento de producto',
+ tax_blurb='NIF español, alta y declaraciones de IVA, OSS, EORI y representación fiscal para empresas no establecidas en España.',
+ prod_blurb='Persona Responsable en la UE, Reino Unido y Turquía, EPR de envases, RAEE y pilas, CPNP de cosmética, EPREL, EUDR y demás trámites de producto.',
+ how='Cómo trabajamos',
+ home_title='IberTrust Global | Cumplimiento fiscal y de producto para vender en Europa',
+ home_desc='Cumplimiento fiscal en España (NIF, IVA, OSS, EORI, representante fiscal) y cumplimiento de producto (GPSR, EPR, CPNP, EPREL, EUDR) para empresas que venden en Europa.',
  about_title='Nosotros | Cumplimiento en la UE para el e-commerce transfronterizo',
  about_desc='Firma de cumplimiento en Castellón. Nuestro equipo, con miembros de España y de China, se dedica desde 2011 al comercio transfronterizo de importación y exportación, al e-commerce y al cumplimiento de producto, y ayuda a los vendedores con el NIF, el IVA, la representación fiscal y el cumplimiento en la UE.',
  trust=['NIF / IVA / OSS','EORI','GPSR','MDR','REACH','EPR · RAEE · Pilas','CPNP','EN · ES · 中文'],
  based='Domicilio social: '+ADDR,why='Por qué IberTrust',inc='Qué incluye',ready='¿Listo para vender en la UE con tranquilidad?',readyp='Indíquenos productos, mercados y canales de venta y le enviaremos una propuesta a medida.'),
  'zh':dict(home='首页',services='服务',about='关于我们',faq='常见问题',blog='合规资讯',contact='联系我们',quote='获取方案',all='全部服务',
- tag='西班牙税务与欧盟产品合规，服务全球卖家',h1='外国公司西班牙税号、增值税与跨境电商欧盟合规',
- lead='IberTrust Global S.L. 帮助外国公司办理西班牙税号（NIF，036 表）、增值税登记与申报、OSS、EORI 和西班牙财税代表，并为跨境电商卖家提供欧盟产品合规：GPSR 欧盟负责人、EPR（包装、WEEE、电池）、化妆品 CPNP、医疗器械欧盟授权代表、REACH 唯一代表，以及英国负责人和土耳其授权代表——一个窗口，全程对接。',
+ tag='两大板块，一个窗口',h1='在欧洲销售所需的税务合规与产品合规',
+ lead='IberTrust Global S.L. 帮助外国公司在欧洲销售，服务分为两大板块。税务合规：西班牙税号（NIF）、增值税登记与申报、OSS、EORI 和财税代表。产品合规：欧盟、英国和土耳其负责人，包装、WEEE 和电池 EPR，化妆品 CPNP，EPREL 和 EUDR。一个窗口对接。',
  tax_cta='外国公司西班牙税号与增值税登记 →',
- home_title='IberTrust Global | 外国公司西班牙税号（NIF）、增值税与跨境电商合规',
- home_desc='为外国公司办理西班牙税号（NIF）、增值税登记、财税代表，以及跨境电商卖家所需的欧盟合规。卡斯特利翁一个窗口对接。',
+ tax_block='税务合规',prod_block='产品合规',
+ tax_blurb='为未在西班牙设立的外国公司办理西班牙税号（NIF）、增值税登记与申报、OSS、EORI 和财税代表。',
+ prod_blurb='欧盟、英国和土耳其负责人（GPSR）、包装/WEEE/电池 EPR、化妆品 CPNP、EPREL、EUDR 及其他产品合规手续。',
+ how='合作流程',
+ home_title='IberTrust Global | 在欧洲销售所需的税务合规与产品合规',
+ home_desc='西班牙税务合规（NIF、增值税、OSS、EORI、财税代表）与产品合规（GPSR、EPR、CPNP、EPREL、EUDR），服务在欧洲销售的公司。',
  about_title='关于我们 | 跨境电商卖家的欧盟合规服务',
  about_desc='设在卡斯特利翁的西班牙合规公司。团队成员来自西班牙和中国，自 2011 年起从事跨境进出口、线上电商贸易和产品合规，经验丰富，协助卖家办理西班牙税号、增值税、财税代表和欧盟产品合规。',
  trust=['西班牙 NIF / VAT / OSS','EORI','GPSR','MDR','REACH','EPR · WEEE · 电池','CPNP','EN · ES · 中文'],
@@ -334,7 +346,14 @@ def page(lang,path,title,desc,body,extra_ld=None):
   t=T[lang]; p=PFX[lang]
   alt_en=D+'/'+path; alt_es=D+'/es/'+path; alt_zh=D+'/zh/'+path; me=D+p+'/'+path
   ld=[ORG]+(extra_ld or [])
-  nav=''.join(f'<li><a href="{p}/{h}">{n}</a></li>' for h,n in [('services/',t['services']),('about.html',t['about']),('faq.html',t['faq']),('blog/',t['blog']),('contact.html',t['contact'])])
+  taxn=t.get('tax_block','Tax compliance'); prodn=t.get('prod_block','Product compliance')
+  nav=(f'<li class="has-sub"><a href="{p}/services/">{t["services"]}</a><ul class="sub">'
+       f'<li class="lab">{taxn}</li><li><a href="{p}/services/#tax">{taxn}</a></li>'
+       f'<li class="lab">{prodn}</li><li><a href="{p}/services/#product">{prodn}</a></li>'
+       f'<li><a href="{p}/services/">{t["all"]}</a></li></ul></li>'
+       + ''.join(f'<li><a href="{p}/{h}">{n}</a></li>' for h,n in [('about.html',t['about']),('faq.html',t['faq']),('blog/',t['blog']),('contact.html',t['contact'])]))
+  ft_tax=''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S if s[0]=='spain-nif-vat')
+  ft_prod=''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S if s[0]!='spain-nif-vat')
   html=f"""<!doctype html><html lang="{HL[lang]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content="{desc}"><link rel="canonical" href="{me}">
 <link rel="alternate" hreflang="en" href="{alt_en}"><link rel="alternate" hreflang="es" href="{alt_es}"><link rel="alternate" hreflang="zh-Hans" href="{alt_zh}"><link rel="alternate" hreflang="x-default" href="{alt_en}">
@@ -345,7 +364,7 @@ def page(lang,path,title,desc,body,extra_ld=None):
 <span><a class="btn" href="{p}/quote.html">{t['quote']}</a><span class="lang"><a href="/{path}">EN</a><a href="/es/{path}">ES</a><a href="/zh/{path}">中文</a></span></span></div></header>
 <main>{body}</main>
 <footer><div class="wrap grid"><div><b style="color:#fff">IberTrust Global S.L.</b><br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a><br>+34 611 90 48 67 · <a href="{WA}">WhatsApp</a></div>
-<div>{''.join(f'<a href="{p}/services/{s[0]}.html">{L(s,lang)[0]}</a><br>' for s in S)}</div>
+<div><span class="ft-lab">{taxn}</span>{ft_tax}<span class="ft-lab">{prodn}</span>{ft_prod}</div>
 <div><a href="{p}/privacy.html">{ {'en':'Privacy','es':'Privacidad','zh':'隐私政策'}[lang] }</a><br><a href="{p}/terms.html">{ {'en':'Terms','es':'Condiciones','zh':'使用条款'}[lang] }</a><br>© {datetime.date.today().year} IberTrust Global S.L.</div></div></footer></body></html>"""
   out=os.path.join(R,(p[1:]+'/' if p else '')+path)
   if out.endswith('/'): out+='index.html'
@@ -2262,32 +2281,101 @@ SL={'en':dict(what='What it is',do='What we do',rel='Related services',art='Rela
  'es':dict(what='Qué es',do='Qué hacemos',rel='Servicios relacionados',art='Artículos relacionados',ask='Consulte por este servicio',form='Solicitar presupuesto de este servicio',or_='o escriba a',note='Le responderemos por email con una propuesta escrita.'),
  'zh':dict(what='这是什么',do='我们做什么',rel='相关服务',art='相关文章',ask='咨询这项服务',form='获取这项服务的方案',or_='或发邮件至',note='我们会通过邮件回复书面方案。')}
 
+
+def _svg(d):
+  return '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+d+'</svg>'
+ICONS={
+'tax':_svg('<path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/>'),
+'prod':_svg('<path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/>'),
+'nif':_svg('<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>'),
+'vat':_svg('<path d="M4 19h16M6 16V8l6-3 6 3v8"/>'),
+'oss':_svg('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>'),
+'eori':_svg('<path d="M3 7h13l5 5v8H3V7z"/><path d="M16 7v5h5"/>'),
+'fiscal':_svg('<path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"/><path d="M4 21a8 8 0 0 1 16 0"/>'),
+'gpsr-eu-responsible-person':_svg('<path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/>'),
+'uk-responsible-person':_svg('<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 9h8M8 13h5"/>'),
+'turkey-authorised-representative':_svg('<circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/>'),
+'mdr-eu-authorised-representative':_svg('<path d="M12 21c4-3 7-6.2 7-10a7 7 0 1 0-14 0c0 3.8 3 7 7 10z"/><path d="M12 8v5M12 15h.01"/>'),
+'reach-only-representative':_svg('<path d="M9 3h6l1 4h5v4h-2l-1 10H7L6 11H4V7h5L9 3z"/>'),
+'epr-packaging-spain':_svg('<path d="M12 3l8 4v4l-8 4-8-4V7l8-4z"/><path d="M4 11v6l8 4 8-4v-6"/>'),
+'weee':_svg('<rect x="6" y="4" width="12" height="14" rx="2"/><path d="M9 21h6M12 18v3"/>'),
+'batteries':_svg('<rect x="6" y="7" width="12" height="12" rx="2"/><path d="M10 7V5h4v2M9 13h6"/>'),
+'epr-europe':_svg('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>'),
+'cpnp-cosmetics':_svg('<path d="M9 7V4h6v3M8 7h8l1 13H7L8 7z"/>'),
+'cpsr-cosmetic-safety-report':_svg('<path d="M7 3h8l5 5v13H7z"/><path d="M15 3v5h5M9 13h6M9 17h4"/>'),
+'eprel-energy-label':_svg('<path d="M13 2L4 14h7l-1 8 10-14h-7l1-8z"/>'),
+'eudr':_svg('<path d="M12 22c6-4 8-8 8-12a8 8 0 1 0-16 0c0 4 2 8 8 12z"/><path d="M12 8v5M12 16h.01"/>'),
+'eudr-traceability-report':_svg('<path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="15" r="3"/>'),
+}
+TAX_ITEMS={
+'en':[
+ ('nif','Spanish NIF','Company tax ID (Modelo 036), including the representative\'s NIF'),
+ ('vat','VAT registration &amp; filing','VAT registration and quarterly and annual returns (Modelo 303 and 390)'),
+ ('oss','OSS','One-Stop Shop registration and returns for EU distance sales'),
+ ('eori','EORI','EORI number for customs formalities'),
+ ('fiscal','Fiscal representative','Representante fiscal in Spain, after a prior assessment'),
+],
+'es':[
+ ('nif','NIF español','Número de identificación fiscal (modelo 036), incluido el NIF del representante'),
+ ('vat','Alta y declaraciones de IVA','Alta en IVA y declaraciones trimestrales y anuales (modelos 303 y 390)'),
+ ('oss','OSS','Alta y declaraciones en la ventanilla única para ventas a distancia en la UE'),
+ ('eori','EORI','Número EORI para trámites aduaneros'),
+ ('fiscal','Representante fiscal','Representante fiscal en España, previa evaluación'),
+],
+'zh':[
+ ('nif','西班牙税号（NIF）','公司税号（036 表），含代表人 NIF'),
+ ('vat','增值税登记与申报','增值税登记及季报、年报（303 表和 390 表）'),
+ ('oss','OSS','欧盟远程销售的一站式登记与申报'),
+ ('eori','EORI','办理海关手续所需的 EORI 编号'),
+ ('fiscal','财税代表','西班牙财税代表（representante fiscal），需先评估'),
+]}
+FLOW={
+'en':[('1','Tell us what you need','Your company, products, markets and which formalities you need'),('2','Written proposal','We confirm the scope and send a tailored proposal'),('3','Sign and send documents','The mandate or service agreement, then the document checklist'),('4','We complete the work','Filings, appointments and the details for labels or listings'),('5','Ongoing support','Periodic returns, authority contact and updates where agreed')],
+'es':[('1','Cuéntenos lo que necesita','Empresa, productos, mercados y trámites que precisa'),('2','Propuesta por escrito','Confirmamos el alcance y enviamos una propuesta a medida'),('3','Firma y documentación','El contrato o mandato y, después, la lista de documentos'),('4','Completamos el trámite','Presentaciones, nombramientos y datos para etiquetas o anuncios'),('5','Seguimiento','Declaraciones periódicas, contacto con autoridades y actualizaciones, si se acuerda')],
+'zh':[('1','告诉我们您的需求','公司、产品、市场，以及需要办理的事项'),('2','书面方案','我们确认范围，并发出定制方案'),('3','签约并提交资料','签署委托或服务协议，再按清单提供文件'),('4','我们完成办理','完成登记或委任，并告知标签和商品页需填写的信息'),('5','后续支持','按约定做定期申报、对接官方并同步规则更新')],
+}
+def pillars_html(lang,p):
+  t=T[lang]
+  tax_cards=''.join(f'<a class="scard" href="{p}/services/spain-nif-vat.html#{k}">{ICONS[k]}<h3>{ti}</h3><p>{bl}</p></a>' for k,ti,bl in TAX_ITEMS[lang])
+  prod_cards=''.join(f'<a class="scard" href="{p}/services/{s[0]}.html">{ICONS.get(s[0],ICONS["prod"])}<h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p></a>' for s in S if s[0]!='spain-nif-vat')
+  return (
+    f'<div class="pillar" id="tax"><div class="pillar-head"><div class="mark">{ICONS["tax"]}</div><div><h2>{t["tax_block"]}</h2><p>{t["tax_blurb"]}</p></div></div><div class="scards">{tax_cards}</div></div>'
+    f'<div class="pillar" id="product"><div class="pillar-head"><div class="mark">{ICONS["prod"]}</div><div><h2>{t["prod_block"]}</h2><p>{t["prod_blurb"]}</p></div></div><div class="scards">{prod_cards}</div></div>'
+  )
+def flow_html(lang):
+  t=T[lang]
+  items=''.join(f'<li><b>{n}</b><strong>{ti}</strong><p>{d}</p></li>' for n,ti,d in FLOW[lang])
+  return f'<h2>{t["how"]}</h2><ol class="steps">{items}</ol>'
+
 for lang in ['en','es','zh']:
   t=T[lang]; p=PFX[lang]
   cards=''.join(f'<div class="card"><h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p><a href="{p}/services/{s[0]}.html">→</a></div>' for s in S)
   SD={s[0]:s for s in S}
-  gcards=''.join(f'<h2>{gn[lang]}</h2><div class="grid">'+''.join(f'<div class="card"><h3><a href="{p}/services/{k}.html">{L(SD[k],lang)[0]}</a></h3><p>{L(SD[k],lang)[1]}</p><a href="{p}/services/{k}.html">→</a></div>' for k in ks)+'</div>' for _,gn,ks in GROUPS)
+  gcards=pillars_html(lang,p)
   faq=[(F[lang][0],F[lang][1]) for sl,F in FAQS]; more={'en':'Read the full answer','es':'Leer la respuesta completa','zh':'查看完整解答'}[lang]
   faqhtml=''.join(f'<details><summary>{F[lang][0]}</summary><p>{F[lang][1]}</p><p><a href="{p}/blog/{sl}.html">{more} →</a></p></details>' for sl,F in FAQS)
   faqld={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faq]}
-  why_en=['One contact for Spain tax, GPSR, EPR, packaging, WEEE, batteries and CPNP','Spanish company (CIF B21813506) with EU establishment','Support in English, Spanish and Mandarin Chinese','Hands-on experience with e-commerce and marketplace requirements','Clear onboarding: mandate, documents, label review, registration']
-  why_es=['Un interlocutor para fiscalidad en España, GPSR, EPR, envases, RAEE, pilas y CPNP','Empresa española (CIF B21813506) establecida en la UE','Atención en inglés, español y chino mandarín','Experiencia práctica con e-commerce y marketplaces','Alta clara: mandato, documentos, revisión de etiquetas, registro']
-  why_zh=['西班牙税务、GPSR、EPR、包装、WEEE、电池、CPNP 一个窗口统一对接','西班牙注册公司（CIF B21813506），在欧盟境内设有实体','中文、英文、西班牙语沟通，无语言障碍','熟悉跨境电商和各大平台的合规要求','流程清晰：签署委托、收集资料、审核标签、完成注册']
+  why_en=['One contact for both tax compliance and product compliance','Spanish company (CIF B21813506) with EU establishment','Support in English, Spanish and Mandarin Chinese','Hands-on experience with e-commerce and marketplace requirements','Clear onboarding: mandate, documents, label review, registration']
+  why_es=['Un interlocutor para el cumplimiento fiscal y el cumplimiento de producto','Empresa española (CIF B21813506) establecida en la UE','Atención en inglés, español y chino mandarín','Experiencia práctica con e-commerce y marketplaces','Alta clara: mandato, documentos, revisión de etiquetas, registro']
+  why_zh=['税务合规和产品合规，一个窗口统一对接','西班牙注册公司（CIF B21813506），在欧盟境内设有实体','中文、英文、西班牙语沟通，无语言障碍','熟悉跨境电商和各大平台的合规要求','流程清晰：签署委托、收集资料、审核标签、完成注册']
   why=''.join(f'<div class="card">✔ {w}</div>' for w in {'en':why_en,'es':why_es,'zh':why_zh}[lang])
   cta=f'<section><div class="wrap"><div class="cta"><h2>{t["ready"]}</h2><p>{t["readyp"]}</p><a class="btn" href="{p}/quote.html">{t["quote"]}</a><p style="margin-top:14px;font-size:14px;opacity:.85">{EMAIL}</p></div></div></section>'
   homecards=''.join(f'<div class="card"><h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p><a href="{p}/services/{s[0]}.html">→</a></div>' for s in S)
   pills=''.join(f'<span>{x}</span>' for x in t['trust'])
   exp=EXP[lang].format(p=p)
+  pillars=pillars_html(lang,p)
+  flow=flow_html(lang)
   home=f"""<div class="hero"><div class="wrap"><p class="eyebrow">{t['tag']}</p><h1>{t['h1']}</h1><p>{t['lead']}</p>
 <p><a class="btn" href="{p}/quote.html">{t['quote']}</a> <a class="btn alt" href="{p}/services/">{t['all']}</a></p>
-<p class="taxlink"><a href="{p}/services/spain-nif-vat.html">{t['tax_cta']}</a></p>
+<p class="hero-core"><a href="#tax">{t['tax_block']}</a> <a href="#product">{t['prod_block']}</a></p>
 <div class="trust">{pills}</div></div></div>
-<section><div class="wrap"><h2>{t['services']}</h2><div class="grid">{homecards}</div></div></section>
-<section class="muted"><div class="wrap"><h2>{t['why']}</h2><div class="grid">{why}</div></div></section>
-<section><div class="wrap">{exp}</div></section>
-<section class="muted"><div class="wrap"><h2>{t['faq']}</h2>{faqhtml}</div></section>{cta}"""
+<section><div class="wrap">{pillars}</div></section>
+<section class="muted"><div class="wrap">{flow}</div></section>
+<section><div class="wrap"><h2>{t['why']}</h2><div class="grid">{why}</div></div></section>
+<section class="muted"><div class="wrap">{exp}</div></section>
+<section><div class="wrap"><h2>{t['faq']}</h2>{faqhtml}</div></section>{cta}"""
   urls.append(page(lang,'',t['home_title'],t.get('home_desc',t['lead']),home,[faqld]))
-  urls.append(page(lang,'services/',t['services']+' | IberTrust Global',SVC_DESC[lang],f'<section><div class="wrap"><h1>{t["services"]}</h1>{gcards}</div></section>{cta}'))
+  urls.append(page(lang,'services/',t['services']+' | IberTrust Global',SVC_DESC[lang],f'<section><div class="wrap"><h1>{t["services"]}</h1><p>{t["lead"]}</p>{gcards}</div></section>{cta}'))
   for s in S:
     title,short,bul=L(s,lang)
     sld={"@context":"https://schema.org","@type":"Service","name":title,"description":short,"provider":{"@type":"Organization","name":"IberTrust Global S.L."},"areaServed":"EU"}
@@ -2306,12 +2394,19 @@ for lang in ['en','es','zh']:
     if ra: rel+=f'<h2>{sl["art"]}</h2><ul>'+''.join(f'<li><a href="{p}/blog/{a}.html">{BT[a]}</a></li>' for a in ra)+'</ul>'
     import urllib.parse as _up
     ask=f'<h2>{sl["ask"]}</h2><p><a class="btn" href="{p}/quote.html?service={s[0]}">{sl["form"]}</a></p><p>{sl["or_"]} <a href="mailto:{EMAIL}?subject={_up.quote(title)}">{EMAIL}</a>. {sl["note"]}</p>'
-    body=f'<div class="hero"><div class="wrap"><h1>{title}</h1><p>{short}</p><a class="btn" href="{p}/quote.html?service={s[0]}">{t["quote"]}</a></div></div>{what}<section><div class="wrap"><h2>{sl["do"]}</h2><ul>'+''.join(f'<li>{b}</li>' for b in bul)+f'</ul></div></section>{det}<section><div class="wrap">{rel}{ask}<p><a href="{p}/faq.html">{t["faq"]}</a> · <a href="{p}/services/">{t["all"]}</a></p></div></section>{cta}'
+    ids=('nif','vat','oss','eori','eori','oss','fiscal','aeat') if s[0]=='spain-nif-vat' else ('',)*len(bul)
+    # 8 bullets: NIF, VAT, 303, 349, OSS, EORI, fiscal, AEAT — map first, second, fifth, sixth, seventh
+    bid={'nif':0,'vat':1,'oss':4,'eori':5,'fiscal':6}
+    def _li(i,b):
+      for k,j in bid.items():
+        if s[0]=='spain-nif-vat' and i==j: return f'<li id="{k}">{b}</li>'
+      return f'<li>{b}</li>'
+    body=f'<div class="hero"><div class="wrap"><h1>{title}</h1><p>{short}</p><a class="btn" href="{p}/quote.html?service={s[0]}">{t["quote"]}</a></div></div>{what}<section><div class="wrap"><h2>{sl["do"]}</h2><ul>'+''.join(_li(i,b) for i,b in enumerate(bul))+f'</ul></div></section>{det}<section><div class="wrap">{rel}{ask}<p><a href="{p}/faq.html">{t["faq"]}</a> · <a href="{p}/services/">{t["all"]}</a></p></div></section>{cta}'
     urls.append(page(lang,f'services/{s[0]}.html',title+' | IberTrust Global',short,body,[sld]+extra_sld))
   about_en='<p>IberTrust Global S.L. is a Spanish company (CIF B21813506) providing Spain tax and EU product compliance services to manufacturers and online sellers from outside the EU. We help with Spanish NIF, VAT, OSS and EORI, act as EU Responsible Person, EPR authorised representative and regulatory contact, and handle cosmetics notifications.</p><p>Our team supports clients in English, Spanish and Mandarin Chinese and works with local environmental compliance partners in Spain.</p>'
   about_es='<p>IberTrust Global S.L. es una empresa española (CIF B21813506) que presta servicios fiscales en España y de cumplimiento de producto en la UE a fabricantes y vendedores online de fuera de la UE: NIF, IVA, OSS y EORI, Persona Responsable, representante autorizado EPR y notificaciones de cosméticos.</p><p>Atendemos en inglés, español y chino mandarín y colaboramos con socios locales de cumplimiento ambiental en España.</p>'
   about_zh='<p>IberTrust Global S.L. 是一家西班牙公司（CIF B21813506），专为外国公司提供西班牙税务和欧盟产品合规服务。我们可以办理西班牙税号（NIF）、增值税、OSS 和 EORI，担任欧盟负责人、EPR 授权代表和监管对接人，并协助化妆品通报。</p><p>团队可用中文、英文和西班牙语服务客户，并与西班牙本地的环保合规伙伴合作。</p>'
-  ab=ABOUT[lang].replace('{proc}',''.join(f'<li>{x}</li>' for x in PROC[lang]))
+  ab=ABOUT[lang].replace('{pillars}',pillars_html(lang,p)).replace('{flow}',flow_html(lang))
   cd={'en':'Company details','es':'Datos de la empresa','zh':'公司信息'}[lang]
   exp=EXP[lang].format(p=p)
   hours={'en':'Monday to Friday, 9:00–19:30 (Europe/Madrid), for calls and parcels.','es':'De lunes a viernes, 9:00–19:30 (Europe/Madrid), para llamadas y paquetes.','zh':'周一到周五 9:00–19:30（马德里时间），接听电话、接收包裹。'}[lang]
