@@ -265,6 +265,16 @@ details{border-bottom:1px solid #e5e9f0;padding:14px 0}summary{font-weight:600;c
 import faq_groups as _faqg
 CSS+=_faqg.FAQ_CSS
 
+CSS+="""
+.hero-split .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}.hero-photo{margin:0}.hero-photo img{width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;border-radius:16px;display:block;box-shadow:0 18px 40px rgba(0,0,0,.28);border:3px solid rgba(255,255,255,.22);background:#1c4d86}
+.hero-ico{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,.16);color:#fff;margin:0 0 14px}.hero-ico svg{width:28px;height:28px}
+.expband{padding:44px 0 40px;background:#fff;border-bottom:1px solid #e5e9f0}.expband h2,.about-xcards+h2{margin:0 0 18px}.xcards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0 0 6px}.xcard{border-radius:14px;padding:20px 18px 18px;border:1px solid transparent;display:flex;flex-direction:column;gap:6px}.xcard .xi{width:44px;height:44px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;background:#fff;box-shadow:0 2px 8px rgba(11,37,69,.1);margin-bottom:6px}.xcard b{display:block;font-size:38px;line-height:1.1;letter-spacing:-.02em;color:#0b2545}.xcard b small{font-size:15px;font-weight:600;letter-spacing:0;margin:0 6px 0 0}.xcard b small:last-child:not(:first-child){margin:0 0 0 6px}.xcard .xt{font-size:14px;line-height:1.45;color:#33414f}
+.x1{background:#e8f1fa;border-color:#cfe2f5}.x1 .xi{color:#0b5cad}.x2{background:#e6f6f1;border-color:#c5e8dd}.x2 .xi{color:#0f8a6a}.x3{background:#fff4e0;border-color:#f6ddb0}.x3 .xi{color:#c77a00}.x4{background:#efeafb;border-color:#dcd2f4}.x4 .xi{color:#6a45c9}
+.xnote{margin:14px 0 0;font-size:16px;font-weight:600;color:#0b2545}.about-xcards{margin:8px 0 28px}.about-visual{margin:28px 0}.about-visual img,.post-visual img{width:100%;aspect-ratio:16/9;height:auto;object-fit:cover;object-position:center 35%;border-radius:14px;display:block;background:#e8eef4}.post-visual{margin:0 0 24px}.entry img{aspect-ratio:3/2;height:auto}.entry-ico{display:inline-flex;width:44px;height:44px;border-radius:12px;background:#e8f1fa;color:#0b5cad;align-items:center;justify-content:center;margin:0 0 10px}.pillar-visual{aspect-ratio:21/9;height:auto;object-position:center 35%}
+@media(max-width:900px){.xcards{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.hero-split .wrap{grid-template-columns:1fr;gap:26px}.hero-photo img{aspect-ratio:16/10}.xcards{grid-template-columns:1fr;gap:12px}.xcard{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:14px;row-gap:2px;padding:16px}.xcard .xi{margin:0;flex:0 0 44px}.xcard b{font-size:30px;flex:1 1 0;min-width:0}.xcard .xt{flex:0 0 100%}.expband{padding:32px 0}.entry img{aspect-ratio:16/10;height:auto}.pillar-visual{aspect-ratio:16/10;height:auto}.about-visual img,.post-visual img{aspect-ratio:16/10}}
+"""
+
 T={'en':dict(home='Home',services='Services',about='About',faq='FAQ',blog='Insights',contact='Contact',quote='Get a quote',all='All services',
  tag='Two clear areas of work · one point of contact',h1='Tax and product compliance for selling in Europe',
  lead='IberTrust Global S.L. helps foreign companies sell in Europe: Spanish tax compliance and EU product compliance, from one point of contact.',svc_intro='Spanish tax compliance and EU product compliance are listed below. Open a service for the detail.',see_tax='See tax services →',see_prod='See product services →',alt_hero='Warehouse aisle with goods on shelves',alt_tax='Person signing a document',alt_prod='Sealing a cardboard carton',alt_office='Modern office interior',more_about='About our team, experience and office →',stats_h='Experience at a glance',
@@ -2484,16 +2494,56 @@ FLOW={
 'es':[('1','Cuéntenos lo que necesita','Empresa, productos, mercados y trámites que precisa'),('2','Propuesta por escrito','Confirmamos el alcance y enviamos una propuesta a medida'),('3','Firma y documentación','El contrato o mandato y, después, la lista de documentos'),('4','Completamos el trámite','Presentaciones, nombramientos y datos para etiquetas o anuncios'),('5','Seguimiento','Declaraciones periódicas, contacto con autoridades y actualizaciones, si se acuerda')],
 'zh':[('1','告訴我們您的需求','公司、產品、市場，以及需要辦理的事項'),('2','書面方案','我們確認範圍，並發出度身訂造的方案'),('3','簽約並提交資料','簽署委託或服務協議，再按清單提供文件'),('4','我們完成辦理','完成登記或委任，並告知標籤和商品頁需填寫的資料'),('5','後續支持','按約定做定期申報、對接官方並同步規則更新')],
 }
-def photo_fig(src, alt, extra_class=''):
-  return (f'<figure class="{extra_class}">'
-          f'<img class="stock-photo" src="{src}" alt="{alt}" width="1600" height="800" loading="lazy">'
-          f'</figure>')
+PH={ # file -> (en, es, zh) alt text; stock photographs, described as scenes (never as IberTrust staff or premises)
+'meeting-table':('Colleagues around a meeting table with laptops and documents (stock photo)','Compañeros de trabajo alrededor de una mesa de reunión con portátiles y documentos (foto de archivo)','同事圍坐會議桌，桌上有手提電腦和文件（圖庫照片）'),
+'team-meeting':('Group of colleagues discussing a project with a laptop (stock photo)','Grupo de compañeros hablando de un proyecto con un portátil (foto de archivo)','一組同事圍着手提電腦討論項目（圖庫照片）'),
+'team-laptop':('Colleagues sitting together and working on a laptop (stock photo)','Compañeros sentados juntos trabajando con un portátil (foto de archivo)','同事坐在一起用手提電腦工作（圖庫照片）'),
+'tax-documents':('Two colleagues going through tax documents with a calculator and laptop (stock photo)','Dos compañeros revisando documentos fiscales con calculadora y portátil (foto de archivo)','兩位同事對着計算機和手提電腦核對稅務文件（圖庫照片）'),
+'parcel-documents':('Person checking a document while holding a parcel in a storage room (stock photo)','Persona revisando un documento con un paquete en la mano en un almacén (foto de archivo)','在倉庫中手持包裹、核對文件的人（圖庫照片）'),
+'handshake-table':('Business partners shaking hands across a table (stock photo)','Socios comerciales dándose la mano sobre una mesa (foto de archivo)','商務夥伴隔着桌子握手（圖庫照片）'),
+'handshake-colleagues':('Two business partners shaking hands in front of a screen in an office (stock photo)','Dos socios comerciales dándose la mano delante de una pantalla en una oficina (foto de archivo)','兩位商務夥伴在辦公室屏幕前握手（圖庫照片）'),
+'review-documents':('Two colleagues reviewing documents together beside a laptop (stock photo)','Dos compañeras revisando documentos junto a un portátil (foto de archivo)','兩位同事一起查看文件，旁邊放着手提電腦（圖庫照片）'),
+'planning-office':('Colleagues planning together around a laptop (stock photo)','Compañeros planificando juntos alrededor de un portátil (foto de archivo)','同事圍着手提電腦一起商討計劃（圖庫照片）'),
+'packing-orders':('Person packing online orders into cardboard boxes at a desk with a laptop (stock photo)','Persona preparando pedidos online en cajas de cartón junto a un portátil (foto de archivo)','有人在放着手提電腦的桌旁把網店訂單裝進紙箱（圖庫照片）'),
+'warehouse-computer':('Warehouse worker entering shipment data on a computer (stock photo)','Trabajadora de almacén introduciendo datos de envíos en un ordenador (foto de archivo)','倉庫員工在電腦上輸入貨運資料（圖庫照片）'),
+'warehouse-checking':('Warehouse worker checking shipments next to shelves of parcels (stock photo)','Operario de almacén revisando envíos junto a estanterías con paquetes (foto de archivo)','倉庫員工在擺滿包裹的貨架旁核對貨件（圖庫照片）'),
+'accounting-office':('Colleagues working on accounts together in an office (stock photo)','Compañeros trabajando juntos en la contabilidad en una oficina (foto de archivo)','同事在辦公室一起處理賬目（圖庫照片）'),
+'laptops-documents':('Professionals working on laptops and documents at a meeting table (stock photo)','Profesionales trabajando con portátiles y documentos en una mesa de reuniones (foto de archivo)','專業人士在會議桌上用手提電腦處理文件（圖庫照片）'),
+}
+SVC_PH={'spain-nif-vat':'tax-documents','gpsr-eu-responsible-person':'meeting-table','mdr-eu-authorised-representative':'handshake-colleagues','reach-only-representative':'review-documents','uk-responsible-person':'team-laptop','turkey-authorised-representative':'planning-office','epr-packaging-spain':'packing-orders','weee':'warehouse-computer','batteries':'warehouse-checking','epr-europe':'team-meeting','cpnp-cosmetics':'parcel-documents','cpsr-cosmetic-safety-report':'accounting-office','eprel-energy-label':'laptops-documents','eudr':'planning-office','eudr-traceability-report':'review-documents'}
+POST_PH={'oss-10000-threshold-2027-stock-in-another-eu-country':'review-documents','spanish-nif-vs-vat-eori-oss':'accounting-office','how-foreign-company-gets-spanish-nif':'planning-office','spanish-nif-apostille-and-sworn-translation':'tax-documents','spanish-representative-nif-not-always-a-director':'handshake-colleagues','spain-consumer-authority-requirement-eu-responsible-person-listing':'laptops-documents','eu-3-euro-customs-duty-handling-fee-pre-sold-parcels-pallet-bulk-import':'packing-orders','spain-dgt-written-tax-consultation-non-eu-seller-representation':'meeting-table','marketplace-doc-request-eu-responsible-person-asin-model-test-report':'team-laptop','spain-packaging-registration-miteco-draft-vs-filed':'parcel-documents'}
+def ph_alt(name,lang): return PH[name][{'en':0,'es':1,'zh':2}[lang]]
+def ph_img(name,lang,cls='',eager=False):
+  ld='' if eager else ' loading="lazy"'
+  fp=' fetchpriority="high"' if eager else ''
+  return f'<img{(" class=%s"%chr(34)+cls+chr(34)) if cls else ""} src="/assets/photos/{name}.webp" alt="{ph_alt(name,lang)}" width="1200" height="800"{ld}{fp} decoding="async">'
+def ph_fig(name,lang,cls=''):
+  return f'<figure class="ph {cls}">{ph_img(name,lang)}</figure>'
+def _xi(d):
+  return '<svg viewBox="0 0 24 24" aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+d+'</svg>'
+XICON=[_xi('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>'),
+ _xi('<path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-2a4 4 0 0 0-3-3.9M16 4.2a3.5 3.5 0 0 1 0 7.6"/>'),
+ _xi('<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5M9 14l2 2 4-4"/>'),
+ _xi('<path d="M8 12l3 3 5-6"/><path d="M12 3l8 3.5v5.5c0 4.6-3.2 7.8-8 9-4.8-1.2-8-4.4-8-9V6.5L12 3z"/>')]
+XT={
+'en':dict(h="Our team's experience",c1p='Since',c1b='2011',c1s='',c1t="Our team's experience in cross-border import-export, online e-commerce trade and product compliance",c2b='400+',c2t='cross-border e-commerce sellers served',c3b='50,000+',c3t='ASIN-level EU Responsible Person requests handled by our team via Amazon Compliance Central',c4b='PRO',c4t='Well-established relationships with Spanish producer responsibility organisations (PROs)',note='Our team has members from Spain and China.'),
+'es':dict(h='La experiencia de nuestro equipo',c1p='Desde',c1b='2011',c1s='',c1t='La experiencia de nuestro equipo en importación y exportación transfronteriza, comercio electrónico online y cumplimiento de producto',c2b='400+',c2t='vendedores de e-commerce transfronterizo a los que hemos dado servicio',c3b='50,000+',c3t='Solicitudes de Persona Responsable en la UE a nivel de ASIN gestionadas por nuestro equipo a través de Amazon Compliance Central',c4b='PRO',c4t='Relación consolidada con los sistemas colectivos (PRO) españoles',note='Nuestro equipo cuenta con miembros de España y de China.'),
+'zh':dict(h='團隊經驗',c1p='自',c1b='2011',c1s='年起',c1t='我們團隊從事跨境進出口、線上電商貿易和產品合規的經驗',c2b='400+',c2t='我們已服務的跨境電商賣家',c3b='50,000+',c3t='我們團隊通過 Amazon Compliance Central 處理的 ASIN 級歐盟負責人申請',c4b='PRO',c4t='與西班牙本地回收機構（PRO）合作穩固',note='團隊成員來自西班牙和中國。'),
+}
+def xcards_html(lang):
+  x=XT[lang]
+  pre=f'<small>{x["c1p"]}</small>'; suf=f'<small>{x["c1s"]}</small>' if x['c1s'] else ''
+  cs=[(f'{pre}{x["c1b"]}{suf}',x['c1t']),(x['c2b'],x['c2t']),(x['c3b'],x['c3t']),(x['c4b'],x['c4t'])]
+  return '<div class="xcards">'+''.join(f'<div class="xcard x{i+1}"><span class="xi">{XICON[i]}</span><b>{b}</b><span class="xt">{tx}</span></div>' for i,(b,tx) in enumerate(cs))+f'</div><p class="xnote">{x["note"]}</p>'
+def exp_band(lang,p):
+  x=XT[lang]
+  return f'<section class="expband"><div class="wrap"><h2>{x["h"]}</h2>{xcards_html(lang)}<p class="stats-more"><a href="{p}/about.html">{T[lang]["more_about"]}</a></p></div></section>'
 def pillars_html(lang,p,photos=False):
   t=T[lang]
   tax_cards=''.join(f'<a class="scard" href="{p}/services/spain-nif-vat.html#{k}">{ICONS[k]}<h3>{ti}</h3><p>{bl}</p></a>' for k,ti,bl in TAX_ITEMS[lang])
   prod_cards=''.join(f'<a class="scard" href="{p}/services/{s[0]}.html">{ICONS.get(s[0],ICONS["prod"])}<h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p></a>' for s in S if s[0]!='spain-nif-vat')
-  tax_img=f'<img class="pillar-visual" src="/assets/photos/pillar-tax.webp" alt="{t["alt_tax"]}" width="1200" height="720" loading="lazy">' if photos else ''
-  prod_img=f'<img class="pillar-visual" src="/assets/photos/pillar-product.webp" alt="{t["alt_prod"]}" width="1200" height="720" loading="lazy">' if photos else ''
+  tax_img=ph_img('tax-documents',lang,'pillar-visual') if photos else ''
+  prod_img=ph_img('parcel-documents',lang,'pillar-visual') if photos else ''
   return (
     f'<div class="pillar" id="tax">{tax_img}<div class="pillar-head"><div class="mark">{ICONS["tax"]}</div><div><h2>{t["tax_block"]}</h2><p>{t["tax_blurb"]}</p></div></div><div class="scards">{tax_cards}</div></div>'
     f'<div class="pillar" id="product">{prod_img}<div class="pillar-head"><div class="mark">{ICONS["prod"]}</div><div><h2>{t["prod_block"]}</h2><p>{t["prod_blurb"]}</p></div></div><div class="scards">{prod_cards}</div></div>'
@@ -2502,15 +2552,10 @@ def home_entries_html(lang,p):
   t=T[lang]
   return (
     f'<div class="entries">'
-    f'<a class="entry" id="tax" href="{p}/services/#tax"><img src="/assets/photos/pillar-tax.webp" alt="{t["alt_tax"]}" width="1200" height="720" loading="lazy"><div class="pad"><h2>{t["tax_block"]}</h2><p>{t["tax_blurb"]}</p><span class="go">{t["see_tax"]}</span></div></a>'
-    f'<a class="entry" id="product" href="{p}/services/#product"><img src="/assets/photos/pillar-product.webp" alt="{t["alt_prod"]}" width="1200" height="720" loading="lazy"><div class="pad"><h2>{t["prod_block"]}</h2><p>{t["prod_blurb"]}</p><span class="go">{t["see_prod"]}</span></div></a>'
+    f'<a class="entry" id="tax" href="{p}/services/#tax">{ph_img("tax-documents",lang)}<div class="pad"><span class="entry-ico">{ICONS["tax"]}</span><h2>{t["tax_block"]}</h2><p>{t["tax_blurb"]}</p><span class="go">{t["see_tax"]}</span></div></a>'
+    f'<a class="entry" id="product" href="{p}/services/#product">{ph_img("parcel-documents",lang)}<div class="pad"><span class="entry-ico">{ICONS["prod"]}</span><h2>{t["prod_block"]}</h2><p>{t["prod_blurb"]}</p><span class="go">{t["see_prod"]}</span></div></a>'
     f'</div>'
   )
-def stats_html(lang,p):
-  t=T[lang]; a,b,c,d=STATS[lang]
-  return (f'<h2>{t["stats_h"]}</h2><div class="stats"><div class="stat">{a}<span>{b}</span></div>'
-          f'<div class="stat">{c}<span>{d}</span></div></div>'
-          f'<p class="stats-more"><a href="{p}/about.html">{t["more_about"]}</a></p>')
 def flow_html(lang):
   t=T[lang]
   items=''.join(f'<li><b>{n}</b><strong>{ti}</strong><p>{d}</p></li>' for n,ti,d in FLOW[lang])
@@ -2532,16 +2577,16 @@ for lang in ['en','es','zh']:
   cta=f'<section><div class="wrap"><div class="cta"><h2>{t["ready"]}</h2><p>{t["readyp"]}</p><a class="btn" href="{p}/quote.html">{t["quote"]}</a><p style="margin-top:14px;font-size:14px;opacity:.85">{EMAIL}</p></div></div></section>'
   homecards=''.join(f'<div class="card"><h3>{L(s,lang)[0]}</h3><p>{L(s,lang)[1]}</p><a href="{p}/services/{s[0]}.html">→</a></div>' for s in S)
   entries=home_entries_html(lang,p)
-  stats=stats_html(lang,p)
+  band=exp_band(lang,p)
   flow=flow_html(lang)
-  hero_fig=photo_fig('/assets/photos/home-hero.webp',t['alt_hero'],'hero-fig')
-  home=f"""<div class="hero"><div class="wrap"><p class="eyebrow">{t['tag']}</p><h1>{t['h1']}</h1><p>{t['lead']}</p>
+  home=f"""<div class="hero hero-split"><div class="wrap"><div class="hero-text"><p class="eyebrow">{t['tag']}</p><h1>{t['h1']}</h1><p>{t['lead']}</p>
 <p><a class="btn" href="{p}/quote.html">{t['quote']}</a> <a class="btn alt" href="{p}/contact.html">{t['contact']}</a></p>
-<p class="hero-core"><a href="#tax">{t['tax_block']}</a> <a href="#product">{t['prod_block']}</a></p>
+<p class="hero-core"><a href="#tax">{t['tax_block']}</a> <a href="#product">{t['prod_block']}</a></p></div>
+<figure class="hero-photo">{ph_img('handshake-table',lang,eager=True)}</figure>
 </div></div>
-<section id="overview"><div class="wrap">{hero_fig}{entries}</div></section>
-<section class="muted"><div class="wrap">{stats}</div></section>
-<section><div class="wrap">{flow}</div></section>{cta}"""
+{band}
+<section id="overview"><div class="wrap">{entries}</div></section>
+<section class="muted"><div class="wrap">{flow}</div></section>{cta}"""
   urls.append(page(lang,'',t['home_title'],t.get('home_desc',t['lead']),home,[faqld]))
   urls.append(page(lang,'services/',t['services']+' | IberTrust Global',SVC_DESC[lang],f'<section><div class="wrap"><h1>{t["services"]}</h1><p>{t["svc_intro"]}</p>{pillars_html(lang,p,photos=True)}</div></section>{cta}'))
   for s in S:
@@ -2569,7 +2614,9 @@ for lang in ['en','es','zh']:
       for k,j in bid.items():
         if s[0]=='spain-nif-vat' and i==j: return f'<li id="{k}">{b}</li>'
       return f'<li>{b}</li>'
-    body=f'<div class="hero"><div class="wrap"><h1>{title}</h1><p>{short}</p><a class="btn" href="{p}/quote.html?service={s[0]}">{t["quote"]}</a></div></div>{what}<section><div class="wrap"><h2>{sl["do"]}</h2><ul>'+''.join(_li(i,b) for i,b in enumerate(bul))+f'</ul></div></section>{det}<section><div class="wrap">{rel}{ask}<p><a href="{p}/faq.html">{t["faq"]}</a> · <a href="{p}/services/">{t["all"]}</a></p></div></section>{cta}'
+    _ph=SVC_PH.get(s[0]); _ic=ICONS['tax'] if s[0]=='spain-nif-vat' else ICONS.get(s[0],ICONS['prod'])
+    _hf=f'<figure class="hero-photo">{ph_img(_ph,lang,eager=True)}</figure>' if _ph else ''
+    body=f'<div class="hero{" hero-split" if _ph else ""}"><div class="wrap"><div class="hero-text"><span class="hero-ico">{_ic}</span><h1>{title}</h1><p>{short}</p><a class="btn" href="{p}/quote.html?service={s[0]}">{t["quote"]}</a></div>{_hf}</div></div>{what}<section><div class="wrap"><h2>{sl["do"]}</h2><ul>'+''.join(_li(i,b) for i,b in enumerate(bul))+f'</ul></div></section>{det}<section><div class="wrap">{rel}{ask}<p><a href="{p}/faq.html">{t["faq"]}</a> · <a href="{p}/services/">{t["all"]}</a></p></div></section>{cta}'
     urls.append(page(lang,f'services/{s[0]}.html',title+' | IberTrust Global',short,body,[sld]+extra_sld))
   about_en='<p>IberTrust Global S.L. is a Spanish company (CIF B21813506) providing Spain tax and EU product compliance services to manufacturers and online sellers from outside the EU. We help with Spanish NIF, VAT, OSS and EORI, act as EU Responsible Person, EPR authorised representative and regulatory contact, and handle cosmetics notifications.</p><p>Our team supports clients in English, Spanish and Mandarin Chinese and works with local environmental compliance partners in Spain.</p>'
   about_es='<p>IberTrust Global S.L. es una empresa española (CIF B21813506) que presta servicios fiscales en España y de cumplimiento de producto en la UE a fabricantes y vendedores online de fuera de la UE: NIF, IVA, OSS y EORI, Persona Responsable, representante autorizado EPR y notificaciones de cosméticos.</p><p>Atendemos en inglés, español y chino mandarín y colaboramos con socios locales de cumplimiento ambiental en España.</p>'
@@ -2578,8 +2625,8 @@ for lang in ['en','es','zh']:
   cd={'en':'Company details','es':'Datos de la empresa','zh':'公司資料'}[lang]
   exp=EXP[lang].format(p=p)
   hours={'en':'Monday to Friday, 9:00–19:30 (Europe/Madrid), for calls and parcels.','es':'De lunes a viernes, 9:00–19:30 (Europe/Madrid), para llamadas y paquetes.','zh':'星期一至星期五 9:00–19:30（馬德里時間），接聽電話、接收包裹。'}[lang]
-  about_fig=photo_fig('/assets/photos/about-office.webp',t['alt_office'],'about-visual')
-  urls.append(page(lang,'about.html',t.get('about_title',t['about']+' | IberTrust Global'),t.get('about_desc',t['lead']),f'<section><div class="wrap"><h1>{t["about"]}</h1>{about_fig}{ab}{exp}<h2>{cd}</h2><p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA<br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a> · +34 611 90 48 67 · <a href="{WA}">WhatsApp</a><br>{hours}</p><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div></section>{cta}'))
+  about_fig=ph_fig('team-meeting',lang,'about-visual')
+  urls.append(page(lang,'about.html',t.get('about_title',t['about']+' | IberTrust Global'),t.get('about_desc',t['lead']),f'<section><div class="wrap"><h1>{t["about"]}</h1><div class="about-xcards">{xcards_html(lang)}</div>{exp}{about_fig}{ab}<h2>{cd}</h2><p>IBERTRUST GLOBAL, SOCIEDAD LIMITADA<br>NIF B21813506<br>{ADDR}<br><a href="mailto:{EMAIL}">{EMAIL}</a> · +34 611 90 48 67 · <a href="{WA}">WhatsApp</a><br>{hours}</p><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div></section>{cta}'))
   urls.append(page(lang,'faq.html',t['faq']+' | IberTrust Global',t['lead'],f'<section><div class="wrap"><h1>{t["faq"]}</h1>{page_faqhtml}</div></section>{cta}',[page_faqld]))
   hours={'en':'Monday to Friday, 9:00–19:30 (Europe/Madrid), for calls and parcels.','es':'De lunes a viernes, 9:00–19:30 (Europe/Madrid), para llamadas y paquetes.','zh':'星期一至星期五 9:00–19:30（馬德里時間），接聽電話、接收包裹。'}[lang]
   ct=f'<section><div class="wrap"><h1>{t["contact"]}</h1><div class="grid"><div class="card"><h3>{'電郵' if lang=='zh' else 'Email'}</h3><a href="mailto:{EMAIL}">{EMAIL}</a><p><a class="btn" href="{p}/quote.html">{t["quote"]}</a></p></div><div class="card"><h3>{'電話 / WhatsApp' if lang=='zh' else 'Tel / WhatsApp'}</h3>+34 611 90 48 67<br><a href="{WA}">WhatsApp</a><p>{hours}</p></div><div class="card"><h3>IBERTRUST GLOBAL, SOCIEDAD LIMITADA</h3>NIF B21813506<br>{ADDR}<p>{hours}</p></div></div><p>{t["readyp"]}</p></div></section>'
@@ -2592,7 +2639,7 @@ for lang in ['en','es','zh']:
   for sl,P in POSTS:
     ti,txt=P[lang]; pub=P.get('date') or _pubdate(lang,sl)
     art={"@context":"https://schema.org","@type":"Article","headline":ti,"inLanguage":HL[lang],"datePublished":pub,"author":{"@type":"Organization","name":"IberTrust Global S.L."},"publisher":{"@type":"Organization","name":"IberTrust Global S.L."}}
-    urls.append(page(lang,f'blog/{sl}.html',ti+' | IberTrust Global',P.get('desc',{}).get(lang,ti),f'<section><div class="wrap"><article><h1>{ti}</h1><p><small>{pub} · IberTrust Global</small></p>{txt}</article></div></section>',[art]+([P['faq'][lang]] if 'faq' in P else [])))
+    urls.append(page(lang,f'blog/{sl}.html',ti+' | IberTrust Global',P.get('desc',{}).get(lang,ti),f'<section><div class="wrap"><article><h1>{ti}</h1><p><small>{pub} · IberTrust Global</small></p>{ph_fig(POST_PH[sl],lang,'post-visual') if sl in POST_PH else ''}{txt}</article></div></section>',[art]+([P['faq'][lang]] if 'faq' in P else [])))
 
 QF={'en':dict(t='Request a quote',intro='Tell us about your company and products. We reply by email with a tailored proposal.',co='Company',em='Email',pr='Products / platforms (e.g. toys on Amazon DE)',sv='Services needed',ms='Message',send='Send request',alt='Prefer email? Write to us directly:',copy='Copy',copied='Copied',subj='New quote request – ibertrust.info',ty='Thank you',typ='We have received your request and will reply by email.',back='Back to home'),
  'es':dict(t='Solicitar presupuesto',intro='Cuéntenos sobre su empresa y sus productos. Le responderemos por email con una propuesta a medida.',co='Empresa',em='Email',pr='Productos / plataformas (p. ej. juguetes en Amazon ES)',sv='Servicios que necesita',ms='Mensaje',send='Enviar solicitud',alt='¿Prefiere el email? Escríbanos directamente:',copy='Copiar',copied='Copiado',subj='Nueva solicitud de presupuesto (ES) – ibertrust.info',ty='Gracias',typ='Hemos recibido su solicitud y le responderemos por email.',back='Volver al inicio'),
