@@ -2122,6 +2122,159 @@ POSTS.insert(0,('how-foreign-company-gets-spanish-nif',{'date':'2026-11-24',
   'zh':'外國公司如何用 036 表申請西班牙稅號：所需材料、提交方式、通常 3 至 6 周的辦理週期，以及與增值稅號、EORI、OSS 的關係。'},
  'faq':{'en':_faq2(NIF1_EN,'<h2>FAQ</h2>'),'es':_faq2(NIF1_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(NIF1_ZH,'<h2>常見問題</h2>')}}))
 
+# ---- Post 2026-11-26: OSS €10,000 threshold from 1 January 2027 (ViDA) ----
+def _oico(d):
+  return '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+d+'</svg>'
+_OI={'stock':_oico('<path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-7h10v7M7 17h10"/>'),
+ 'world':_oico('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>'),
+ 'ship':_oico('<path d="M3 7h13l5 5v8H3V7z"/><path d="M16 7v5h5"/>'),
+ 'home':_oico('<path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/>')}
+def _ostats(items):
+  return '<div class="stats">'+''.join('<div class="stat"><b>'+a+'</b><span>'+b+'</span></div>' for a,b in items)+'</div>'
+def _ocards(items):
+  return '<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">'+''.join('<div class="card">'+_OI[k]+'<h3>'+h+'</h3><p>'+t+'</p></div>' for k,h,t in items)+'</div>'
+def _osteps(items):
+  return '<ol class="steps" style="flex-wrap:wrap">'+''.join('<li style="min-width:170px"><b>'+str(i+1)+'</b><strong>'+h+'</strong><p>'+t+'</p></li>' for i,(h,t) in enumerate(items))+'</ol>'
+_OSRC_URLS=dict(
+ dir='https://eur-lex.europa.eu/eli/dir/2025/516/oj/eng',
+ notes='https://vat-one-stop-shop.ec.europa.eu/document/download/774b31ca-03c6-4fb1-8209-9e447aeeb1e9_en?filename=Explanatory+Notes_revised_1Jan2027_0.pdf',
+ guide='https://vat-one-stop-shop.ec.europa.eu/document/download/55f4ec9d-83e6-4942-9e8d-11d44c243087_en?filename=OSS%2BGuidelines_revised_1Jan2027_0.pdf',
+ vida='https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en',
+ ioss='https://taxation-customs.ec.europa.eu/news/commission-welcomes-council-agreement-removing-eur150-threshold-vat-import-one-stop-shop-2026-11-09_en',
+ aeat='https://sede.agenciatributaria.gob.es/Sede/iva/iva-comercio-electronico.html')
+def _osrc(lab,names,tail):
+  u=_OSRC_URLS
+  return '<p><small>'+lab+' '+'; '.join('<a href="'+u[k]+'">'+n+'</a>' for k,n in names)+'. '+tail+'</small></p>\n'
+
+OSS27_EN=('<p><em>A typical scenario</em></p>\n'
+'<p>A small homeware brand is registered in Italy and ships most orders from its own warehouse near Milan. Its sales to consumers in other EU countries from that warehouse come to about €8,000 a year, so it charges Italian VAT on them: it is below the EU\'s €10,000 threshold. Last spring it also sent pallets to a fulfilment centre in Spain to deliver faster to Spanish and Portuguese customers. Those orders went onto the same invoices, with the same Italian VAT. “We\'re under the threshold,” the founder says. The question that matters is a different one: <strong>where did each parcel start its journey?</strong></p>\n'
+'<p>From <strong>1 January 2027</strong>, EU law answers that question in black and white. Here is what changes, what does not, and a five-step check you can run on your own sales data before the new year.</p>\n'
+'<h2>What changes on 1 January 2027</h2>\n'
+'<p>The €10,000 threshold in Article 59c of the VAT Directive lets a business established in a single EU country keep charging its home VAT on cross-border sales to consumers (intra-EU distance sales of goods, plus telecom, broadcasting and electronic services) as long as the total stays within €10,000 in the current and the previous calendar year. Council Directive (EU) 2025/516, the “VAT in the Digital Age” (ViDA) package, amends that article from 1 January 2027 in two ways:</p>\n'
+'<ul><li><strong>Only goods dispatched from the country where you are established count.</strong> Sales shipped from stock held in another Member State are left out of the calculation. They follow the normal rule: VAT of the country where the transport ends.</li>\n'
+'<li><strong>Registering for the Union OSS counts as opting out of the threshold.</strong> Once you are in the OSS Union scheme, you are deemed to have chosen destination taxation, and that option covers at least two calendar years.</li></ul>\n'
+'<p>The European Commission\'s revised Explanatory Notes point out that the first change writes into law a guideline the EU VAT Committee had already agreed and that was already applied in practice. In other words, the Italian brand in our scenario does not have a 2027 problem; it already has one. What 2027 removes is the room to argue.</p>\n'
++_ostats([('€10,000','Counted only on sales shipped from your country of establishment, from 1 January 2027'),('2 years','Minimum period of the destination-VAT option; joining the Union OSS counts as opting'),('1 July 2028','Next phase: wider OSS, a transfer-of-own-goods module and, once adopted, no €150 IOSS cap')])+'\n'
+'<h2>Who is affected, and how</h2>\n'
++_ocards([('stock','EU seller with stock in another country','Sales from that stock sit outside the threshold. Sales to consumers in a third country are taxed there (through OSS or a local VAT number); sales to consumers in the stock country are domestic sales there.'),
+ ('world','Seller established outside the EU','The threshold never applied to you. You can use the Union OSS for distance sales from EU stock; your OSS country is the one the goods ship from. Marketplaces are the deemed supplier for sales they facilitate from your EU stock.'),
+ ('ship','Shipping from outside the EU','The IOSS covers imported consignments up to €150. From 2027 it cannot be combined with the EU SME exemption scheme. The €150 cap is due to go from 1 July 2028.'),
+ ('home','Shipping only from your home country','Nothing changes in substance: add up all cross-border consumer sales of goods and electronic services from your home country, this year and last.')])+'\n'
+'<h2>A five-step check on your own sales</h2>\n'
++_osteps([('Map every dispatch point','Own warehouse, 3PL, marketplace fulfilment network (including stock a programme moves for you), and suppliers shipping from outside the EU.'),
+ ('Tag each consumer order by origin','Home country, EU stock elsewhere, or outside the EU. Use where the parcel left from, not which company issued the invoice.'),
+ ('Test the threshold on home dispatches only','Cross-border consumer sales from home plus electronic services, this year and last. Over €10,000, or registered for OSS: destination VAT.'),
+ ('Treat foreign stock separately','Holding stock in another EU country normally requires a VAT registration there. Local sales go on that return; cross-border sales are taxed at destination.'),
+ ('Check who declares what','Marketplace sales may be declared by the platform as deemed supplier; your own webshop sales are yours. Note the two-year OSS lock-in and keep evidence per order.')])+'\n'
+'<p>Run the five steps on the Italian brand and the picture is clear. Its €8,000 shipped from Milan can stay under Italian VAT while it remains outside OSS. Its Portuguese orders from Spain carry Portuguese VAT. Its Spanish orders from Spain are Spanish domestic sales. None of the Spanish-stock orders should have carried Italian VAT.</p>\n'
+'<h2>If the stock is in Spain</h2>\n'
+'<ul><li><strong>Spanish registration.</strong> A business that holds goods in Spain will normally need a Spanish NIF and VAT registration (Modelo 036) and will report its sales made in Spain on Spanish VAT returns.</li>\n'
+'<li><strong>Your OSS does not move to Spain if you are EU-established.</strong> The OSS country is your country of establishment, so the Italian brand declares its Portuguese orders from Spanish stock in its Italian OSS return.</li>\n'
+'<li><strong>Sellers from outside the EU</strong> whose goods ship from Spain can choose Spain as their OSS country and file the Spanish OSS return (Modelo 369) with the Spanish Tax Agency (AEAT). If goods ship from several EU countries, the choice binds for the current year and the two following.</li>\n'
+'<li><strong>Input VAT stays out of OSS.</strong> Spanish VAT paid on costs in Spain cannot be recovered through an OSS return; it goes through the Spanish VAT return or the refund procedure.</li></ul>\n'
+'<h2>Three misreadings we expect to see in January</h2>\n'
+'<ol><li><strong>“We are small, so the threshold covers everything.”</strong> It only covers what you ship from home.</li>\n'
+'<li><strong>“OSS means we do not need a Spanish VAT number.”</strong> OSS covers cross-border consumer sales. It does not cover your domestic sales in Spain from Spanish stock, or your Spanish input VAT.</li>\n'
+'<li><strong>“The IOSS €150 limit has already gone.”</strong> On 9 November 2026 EU countries reached a general approach in the Council on removing it. The Commission gives 1 July 2028 as the date, once the EU Customs Data Hub is operational, and the European Parliament is being consulted again before formal adoption. Until then, consignments above €150 stay outside IOSS.</li></ol>\n'
+'<h2>FAQ</h2>\n'
+'<h3>Does the €10,000 threshold apply to a company established outside the EU?</h3><p>No. It requires establishment in a single EU Member State. Sellers established outside the EU, or in more than one Member State, charge VAT of the destination country on intra-EU distance sales from the first euro.</p>\n'
+'<h3>We are established in one EU country and also hold stock in Spain. What counts towards the threshold?</h3><p>From 1 January 2027, only cross-border consumer sales dispatched from your country of establishment, plus any telecom, broadcasting and electronic services. Sales from your Spanish stock are excluded and are taxed where the goods arrive.</p>\n'
+'<h3>Can we register for OSS for just a few months?</h3><p>Registering for the Union OSS is treated as opting for destination taxation, and that option covers at least two calendar years. Do not plan on switching back to home-country VAT under the threshold within that period.</p>\n'
+'<h3>Can we declare stock transfers through OSS in 2027?</h3><p>No. The transfer-of-own-goods module belongs to the Single VAT Registration phase that the Commission schedules from 1 July 2028. In 2027, stock held in another EU country normally still requires a VAT registration there.</p>\n'
+'<h2>Check your set-up before January</h2>\n'
+'<p>IberTrust Global S.L. works in two blocks: <strong>tax compliance</strong> (Spanish NIF, VAT, OSS, EORI and fiscal representation) and <strong>product compliance</strong> (GPSR, packaging EPR, WEEE and batteries, CPNP, EPREL, EUDR). Our team members have worked in cross-border import and export, online retail and product compliance since 2011, and we have supported more than 400 cross-border e-commerce sellers. Tell us where your goods ship from and where you sell, and we will tell you which registrations your flows need in Spain.</p>\n'
+'<p><strong><a href="/quote.html?service=spain-nif-vat">Request a quote for Spain tax services →</a></strong><br>Or see our <a href="/services/spain-nif-vat.html">Spain tax services</a>, read <a href="/blog/spanish-nif-vs-vat-eori-oss.html">Spanish NIF vs VAT, EORI and OSS</a>, or email <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>\n'
++_osrc('Sources:',[('dir','Council Directive (EU) 2025/516, recital 36 and amended Article 59c (applicable from 1 January 2027)'),('notes','European Commission, Explanatory Notes on VAT e-commerce rules, revised for 1 January 2027 (July 2026), sections 1A and 3.2.7a'),('guide','European Commission, Guide to the VAT One Stop Shop, revised for 1 January 2027'),('vida','European Commission, VAT in the Digital Age (ViDA) timeline'),('ioss','European Commission, “Commission welcomes Council agreement on removing the €150 threshold for the VAT Import One-Stop Shop” (9 November 2026)'),('aeat','AEAT, IVA y comercio electrónico')],'The scenario is illustrative. The Commission\'s Explanatory Notes are not legally binding. General information, not legal advice.'))
+
+OSS27_ES=('<p><em>Un escenario típico</em></p>\n'
+'<p>Una pequeña marca de artículos para el hogar está registrada en Italia y envía la mayoría de sus pedidos desde su propio almacén cerca de Milán. Sus ventas a consumidores de otros países de la UE desde ese almacén rondan los 8.000 € al año, así que les aplica el IVA italiano: está por debajo del umbral de 10.000 € de la UE. La pasada primavera también envió palés a un centro logístico en España para entregar más rápido a clientes españoles y portugueses. Esos pedidos se facturaron igual, con el mismo IVA italiano. «Estamos por debajo del umbral», dice el fundador. Pero la pregunta que importa es otra: <strong>¿desde dónde salió cada paquete?</strong></p>\n'
+'<p>A partir del <strong>1 de enero de 2027</strong>, el Derecho de la UE responde a esa pregunta sin ambigüedad. Explicamos qué cambia, qué no cambia y una comprobación en cinco pasos que puede hacer con sus propios datos de ventas antes de fin de año.</p>\n'
+'<h2>Qué cambia el 1 de enero de 2027</h2>\n'
+'<p>El umbral de 10.000 € del artículo 59 quater de la Directiva del IVA permite a una empresa establecida en un único país de la UE seguir aplicando el IVA de su país a las ventas transfronterizas a consumidores (ventas a distancia intracomunitarias de bienes y servicios de telecomunicaciones, radiodifusión y electrónicos) mientras el total no supere 10.000 € en el año natural en curso y en el anterior. La Directiva (UE) 2025/516 del Consejo, el paquete «IVA en la era digital» (ViDA), modifica ese artículo desde el 1 de enero de 2027 en dos puntos:</p>\n'
+'<ul><li><strong>Solo cuentan los bienes expedidos desde el país donde está establecido.</strong> Las ventas enviadas desde un stock situado en otro Estado miembro quedan fuera del cálculo y siguen la regla general: IVA del país donde termina el transporte.</li>\n'
+'<li><strong>Darse de alta en el OSS de la Unión equivale a renunciar al umbral.</strong> Quien está en el régimen de la Unión se considera que ha optado por la tributación en destino, y esa opción abarca al menos dos años naturales.</li></ul>\n'
+'<p>Las Notas explicativas revisadas de la Comisión Europea señalan que el primer cambio incorpora a la ley una directriz que el Comité del IVA ya había acordado y que ya se aplicaba en la práctica. Es decir, la marca italiana de nuestro ejemplo no tiene un problema de 2027: ya lo tiene ahora. Lo que 2027 elimina es el margen de interpretación.</p>\n'
++_ostats([('10.000 €','Se calcula solo con las ventas enviadas desde su país de establecimiento, desde el 1 de enero de 2027'),('2 años','Duración mínima de la opción por el IVA en destino; el alta en el OSS de la Unión cuenta como opción'),('1 jul. 2028','Siguiente fase: OSS ampliado, módulo de transferencias de bienes propios y, cuando se adopte, IOSS sin límite de 150 €')])+'\n'
+'<h2>A quién afecta y cómo</h2>\n'
++_ocards([('stock','Vendedor de la UE con stock en otro país','Las ventas desde ese stock quedan fuera del umbral. Las ventas a consumidores de un tercer país tributan allí (por OSS o con un NIF-IVA local); las ventas a consumidores del país del stock son ventas interiores de ese país.'),
+ ('world','Vendedor establecido fuera de la UE','El umbral nunca le ha sido aplicable. Puede usar el OSS de la Unión para ventas a distancia desde stock en la UE; su país OSS es aquel desde el que se envían los bienes. Los marketplaces son proveedor presunto de las ventas que facilitan desde su stock en la UE.'),
+ ('ship','Envíos desde fuera de la UE','El IOSS cubre envíos importados de hasta 150 €. Desde 2027 no puede combinarse con el régimen de franquicia de pymes de la UE. Está previsto que el límite de 150 € desaparezca el 1 de julio de 2028.'),
+ ('home','Envíos solo desde su país','En el fondo no cambia nada: sume todas las ventas transfronterizas a consumidores de bienes y servicios electrónicos desde su país, de este año y del anterior.')])+'\n'
+'<h2>Comprobación en cinco pasos</h2>\n'
++_osteps([('Localice cada punto de envío','Almacén propio, operador logístico, red logística del marketplace (incluido el stock que un programa mueve por usted) y proveedores que envían desde fuera de la UE.'),
+ ('Etiquete cada pedido por origen','País de establecimiento, stock en otro país de la UE o fuera de la UE. Lo que cuenta es desde dónde sale el paquete, no qué empresa emite la factura.'),
+ ('Calcule el umbral solo con envíos desde su país','Ventas transfronterizas a consumidores desde su país más servicios electrónicos, este año y el anterior. Más de 10.000 € o alta en OSS: IVA en destino.'),
+ ('Trate aparte el stock en otro país','Tener stock en otro país de la UE normalmente exige registrarse allí a efectos del IVA. Las ventas locales van en esa declaración; las transfronterizas tributan en destino.'),
+ ('Compruebe quién declara qué','Las ventas en marketplace pueden ser declaradas por la plataforma como proveedor presunto; las de su tienda online son suyas. Tenga en cuenta los dos años del OSS y guarde pruebas de cada pedido.')])+'\n'
+'<p>Si aplicamos los cinco pasos a la marca italiana, el resultado es claro. Los 8.000 € enviados desde Milán pueden seguir con IVA italiano mientras no se dé de alta en el OSS. Los pedidos portugueses servidos desde España llevan IVA portugués. Los pedidos españoles servidos desde España son ventas interiores en España. Ninguno de los pedidos servidos desde el stock español debía llevar IVA italiano.</p>\n'
+'<h2>Si el stock está en España</h2>\n'
+'<ul><li><strong>Alta en España.</strong> Una empresa que tiene mercancía en España normalmente necesitará un NIF español y el alta en el IVA (modelo 036), y declarará sus ventas realizadas en España en las autoliquidaciones del IVA español.</li>\n'
+'<li><strong>Si está establecido en la UE, su OSS no se traslada a España.</strong> El país OSS es el de establecimiento, así que la marca italiana declara sus pedidos portugueses servidos desde España en su declaración OSS italiana.</li>\n'
+'<li><strong>Los vendedores de fuera de la UE</strong> cuyos bienes salen de España pueden elegir España como país OSS y presentar el modelo 369 ante la Agencia Tributaria (AEAT). Si envían desde varios países de la UE, la elección les vincula en el año en curso y los dos siguientes.</li>\n'
+'<li><strong>El IVA soportado no va en el OSS.</strong> El IVA español pagado en gastos en España no se recupera en la declaración OSS, sino en la autoliquidación del IVA español o mediante el procedimiento de devolución.</li></ul>\n'
+'<h2>Tres malentendidos que esperamos ver en enero</h2>\n'
+'<ol><li><strong>«Somos pequeños, así que el umbral lo cubre todo».</strong> Solo cubre lo que envía desde su país.</li>\n'
+'<li><strong>«Con el OSS no necesitamos NIF-IVA español».</strong> El OSS cubre las ventas transfronterizas a consumidores. No cubre sus ventas interiores en España desde stock español ni su IVA soportado español.</li>\n'
+'<li><strong>«El límite de 150 € del IOSS ya ha desaparecido».</strong> El 9 de noviembre de 2026 los países de la UE alcanzaron en el Consejo una orientación general para suprimirlo. La Comisión indica el 1 de julio de 2028, cuando esté operativo el Centro de Datos Aduaneros de la UE, y el Parlamento Europeo será consultado de nuevo antes de la adopción formal. Hasta entonces, los envíos de más de 150 € quedan fuera del IOSS.</li></ol>\n'
+'<h2>Preguntas frecuentes</h2>\n'
+'<h3>¿Se aplica el umbral de 10.000 € a una empresa establecida fuera de la UE?</h3><p>No. Exige estar establecido en un único Estado miembro. Los vendedores establecidos fuera de la UE, o en más de un Estado miembro, aplican el IVA del país de destino a las ventas a distancia intracomunitarias desde el primer euro.</p>\n'
+'<h3>Estamos establecidos en un país de la UE y también tenemos stock en España. ¿Qué cuenta para el umbral?</h3><p>Desde el 1 de enero de 2027, solo las ventas transfronterizas a consumidores enviadas desde su país de establecimiento, más los servicios de telecomunicaciones, radiodifusión y electrónicos. Las ventas desde su stock en España quedan excluidas y tributan donde llegan los bienes.</p>\n'
+'<h3>¿Podemos darnos de alta en el OSS solo unos meses?</h3><p>El alta en el OSS de la Unión se trata como opción por la tributación en destino, y esa opción abarca al menos dos años naturales. No cuente con volver al IVA de su país bajo el umbral dentro de ese periodo.</p>\n'
+'<h3>¿Podemos declarar las transferencias de stock por el OSS en 2027?</h3><p>No. El módulo de transferencias de bienes propios pertenece a la fase de registro único a efectos del IVA que la Comisión prevé desde el 1 de julio de 2028. En 2027, el stock situado en otro país de la UE normalmente sigue exigiendo registrarse allí a efectos del IVA.</p>\n'
+'<h2>Revise su estructura antes de enero</h2>\n'
+'<p>IberTrust Global S.L. trabaja en dos bloques: <strong>cumplimiento fiscal</strong> (NIF español, IVA, OSS, EORI y representación fiscal) y <strong>cumplimiento de producto</strong> (GPSR, RAP de envases, RAEE y pilas, CPNP, EPREL, EUDR). Los miembros de nuestro equipo trabajan desde 2011 en importación y exportación transfronteriza, comercio electrónico y cumplimiento de producto, y hemos acompañado a más de 400 vendedores de comercio electrónico transfronterizo. Díganos desde dónde se envían sus bienes y dónde vende, y le indicaremos qué registros necesitan sus flujos en España.</p>\n'
+'<p><strong><a href="/es/quote.html?service=spain-nif-vat">Solicitar presupuesto de servicios fiscales en España →</a></strong><br>O consulte nuestros <a href="/es/services/spain-nif-vat.html">servicios fiscales en España</a>, lea <a href="/es/blog/spanish-nif-vs-vat-eori-oss.html">NIF, NIF-IVA, EORI y OSS</a>, o escriba a <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>.</p>\n'
++_osrc('Fuentes:',[('dir','Directiva (UE) 2025/516 del Consejo, considerando 36 y artículo 59 quater modificado (aplicable desde el 1 de enero de 2027)'),('notes','Comisión Europea, Notas explicativas sobre las normas del IVA en el comercio electrónico, revisadas para el 1 de enero de 2027 (julio de 2026), apartados 1A y 3.2.7a'),('guide','Comisión Europea, Guía de la ventanilla única del IVA (OSS), revisada para el 1 de enero de 2027'),('vida','Comisión Europea, calendario de «IVA en la era digital» (ViDA)'),('ioss','Comisión Europea, noticia sobre el acuerdo del Consejo para suprimir el umbral de 150 € del IOSS (9 de noviembre de 2026)'),('aeat','AEAT, IVA y comercio electrónico')],'El escenario es ilustrativo. Las Notas explicativas de la Comisión no son jurídicamente vinculantes. Información general, no asesoramiento jurídico.'))
+
+OSS27_ZH=('<p><em>一個典型場景</em></p>\n'
+'<p>一個家居小品牌在意大利註冊，大部分訂單由米蘭附近的自家貨倉發出。從這個貨倉賣給其他歐盟國家消費者的銷售額每年約 8,000 歐元，所以一直收意大利增值稅：未超過歐盟 10,000 歐元的門檻。去年春天，品牌把幾板貨送到西班牙的物流倉，好讓西班牙和葡萄牙客人更快收貨。這些訂單照樣開同一種發票、收同樣的意大利增值稅。創辦人說：「我哋未過門檻。」但真正要問的是另一個問題：<strong>每個包裹是從哪裏發出的？</strong></p>\n'
+'<p>由 <strong>2027 年 1 月 1 日</strong>起，歐盟法例把這個問題寫得清清楚楚。下面說明甚麼改變、甚麼不變，並附上一個五步自查，年底前就可以用自己的銷售數據做一次。</p>\n'
+'<h2>2027 年 1 月 1 日起有何改變</h2>\n'
+'<p>《增值稅指令》第 59c 條的 10,000 歐元門檻，容許只在一個歐盟國家設立的企業，在本年及上一個公曆年跨境賣給消費者的總額（歐盟內商品遠程銷售，加上電訊、廣播及電子服務）不超過 10,000 歐元時，繼續收本國增值稅。理事會指令 (EU) 2025/516，即「數碼時代增值稅」（ViDA）方案，由 2027 年 1 月 1 日起在兩方面修改這一條：</p>\n'
+'<ul><li><strong>只計從設立國發出的商品。</strong>從存放在另一個成員國的庫存發出的銷售，不計入門檻，按一般規則處理：收運輸終點國的增值稅。</li>\n'
+'<li><strong>登記歐盟 OSS（聯盟計劃）即等於放棄門檻。</strong>一旦加入 OSS 聯盟計劃，即視為選擇按目的地徵稅，而且這個選擇至少覆蓋兩個公曆年。</li></ul>\n'
+'<p>歐盟委員會修訂後的《解釋說明》指出，第一項改變是把歐盟增值稅委員會早已議定、實務上早已執行的指引寫入法例。換句話說，例子中的意大利品牌不是 2027 年才有問題，而是現在已經有問題。2027 年只是把可爭辯的空間拿走。</p>\n'
++_ostats([('€10,000','由 2027 年 1 月 1 日起，只按從設立國發出的銷售計算'),('2 年','選擇目的地徵稅的最短期限；加入歐盟 OSS 即視為作出選擇'),('2028 年 7 月 1 日','下一階段：OSS 擴大、自有貨物調撥模組，以及（正式通過後）IOSS 取消 150 歐元上限')])+'\n'
+'<h2>誰受影響、怎樣影響</h2>\n'
++_ocards([('stock','在其他國家有庫存的歐盟賣家','從該庫存發出的銷售不計入門檻。賣給第三國消費者的，在當地繳稅（經 OSS 或當地增值稅號）；賣給庫存所在國消費者的，屬當地的境內銷售。'),
+ ('world','在歐盟以外設立的賣家','門檻從來不適用於您。歐盟庫存發出的遠程銷售可以用歐盟 OSS 申報，OSS 登記國就是貨物發出的國家。經平台促成、從您歐盟庫存發出的銷售，由平台作為視同供應商處理增值稅。'),
+ ('ship','從歐盟以外直接發貨','IOSS 適用於 150 歐元以下的進口包裹。由 2027 年起，IOSS 不可與歐盟中小企業免稅計劃同時使用。150 歐元上限預計由 2028 年 7 月 1 日起取消。'),
+ ('home','只從本國發貨','實質沒有改變：把本年及上年從本國發出、跨境賣給消費者的商品和電子服務加總即可。')])+'\n'
+'<h2>五步自查</h2>\n'
++_osteps([('列出所有發貨點','自家貨倉、第三方物流、平台物流網絡（包括平台計劃替您調撥的庫存），以及從歐盟以外直接發貨的供應商。'),
+ ('按發貨地標記每張消費者訂單','設立國、歐盟其他國家庫存，還是歐盟以外。看包裹從哪裏發出，不是看哪間公司開發票。'),
+ ('門檻只計從設立國發出的訂單','從本國跨境賣給消費者的商品加電子服務，本年及上年合計。超過 10,000 歐元或已登記 OSS：按目的地徵稅。'),
+ ('其他國家的庫存另行處理','在另一個歐盟國家存貨，通常須在當地登記增值稅。當地銷售在當地申報；從該庫存跨境發出的，按目的地徵稅。'),
+ ('確認由誰申報','平台銷售可能由平台作為視同供應商申報；自家網店的銷售由您自己申報。留意 OSS 兩年鎖定期，並保存每張訂單的證明。')])+'\n'
+'<p>用這五步看那個意大利品牌，答案很清楚：從米蘭發出的 8,000 歐元，在未登記 OSS 前可繼續收意大利增值稅；從西班牙發去葡萄牙的訂單，收葡萄牙增值稅；從西班牙發給西班牙客人的訂單，是西班牙境內銷售。從西班牙庫存發出的訂單，沒有一張應該收意大利增值稅。</p>\n'
+'<h2>如果庫存在西班牙</h2>\n'
+'<ul><li><strong>在西班牙登記。</strong>在西班牙存貨的企業，通常需要西班牙稅號（NIF）並登記增值稅（036 表），並在西班牙增值稅申報表中申報在西班牙發生的銷售。</li>\n'
+'<li><strong>歐盟設立的賣家，OSS 不會轉到西班牙。</strong>OSS 登記國是設立國，所以意大利品牌從西班牙庫存發去葡萄牙的訂單，在意大利的 OSS 申報表中申報。</li>\n'
+'<li><strong>歐盟以外的賣家</strong>如貨物從西班牙發出，可選西班牙作 OSS 登記國，向西班牙稅務局（AEAT）提交 369 表。如從多個歐盟國家發貨，選擇後本年及其後兩年都要沿用。</li>\n'
+'<li><strong>進項稅不經 OSS。</strong>在西班牙支付的西班牙增值稅，不能經 OSS 申報表抵扣，要經西班牙增值稅申報或退稅程序處理。</li></ul>\n'
+'<h2>預計一月會常見的三個誤解</h2>\n'
+'<ol><li><strong>「我哋規模細，門檻全部包晒。」</strong>門檻只包從本國發出的貨。</li>\n'
+'<li><strong>「有 OSS 就不用西班牙增值稅號。」</strong>OSS 只涵蓋跨境賣給消費者的銷售，不涵蓋從西班牙庫存在西班牙境內的銷售，也不涵蓋西班牙進項稅。</li>\n'
+'<li><strong>「IOSS 150 歐元上限已經取消。」</strong>2026 年 11 月 9 日，歐盟各國在理事會就取消上限達成總體立場。歐盟委員會給出的日期是 2028 年 7 月 1 日，前提是歐盟海關數據中心投入運作；正式通過前歐洲議會還會再次獲諮詢。在此之前，150 歐元以上的包裹仍不在 IOSS 範圍內。</li></ol>\n'
+'<h2>常見問題</h2>\n'
+'<h3>10,000 歐元門檻適用於歐盟以外設立的公司嗎？</h3><p>不適用。門檻要求只在一個歐盟成員國設立。在歐盟以外設立、或在多於一個成員國設立的賣家，歐盟內遠程銷售由第一歐元起就要收目的地國增值稅。</p>\n'
+'<h3>我們在一個歐盟國家設立，同時在西班牙有庫存，哪些銷售計入門檻？</h3><p>由 2027 年 1 月 1 日起，只計從設立國發出、跨境賣給消費者的銷售，加上電訊、廣播及電子服務。從西班牙庫存發出的銷售不計入，在貨物到達的國家繳稅。</p>\n'
+'<h3>可以只登記 OSS 幾個月嗎？</h3><p>登記歐盟 OSS 視為選擇按目的地徵稅，這個選擇至少覆蓋兩個公曆年。期內不要打算再用門檻轉回本國增值稅。</p>\n'
+'<h3>2027 年可以經 OSS 申報庫存調撥嗎？</h3><p>不可以。自有貨物調撥模組屬於歐盟委員會安排在 2028 年 7 月 1 日起實施的單一增值稅登記階段。2027 年在其他歐盟國家存貨，通常仍須在當地登記增值稅。</p>\n'
+'<h2>一月前先檢查您的架構</h2>\n'
+'<p>IberTrust Global S.L. 的服務分兩大塊：<strong>稅務合規</strong>（西班牙稅號 NIF、增值稅、OSS、EORI、財稅代表）和<strong>產品合規</strong>（GPSR、包裝 EPR、WEEE 及電池、CPNP、EPREL、EUDR）。團隊成員來自西班牙和中國，自 2011 年起從事跨境進出口、線上電商貿易和產品合規，曾服務 400 多個跨境電商賣家。告訴我們貨物從哪裏發出、在哪些地方銷售，我們會告訴您在西班牙需要辦哪些登記。</p>\n'
+'<p><strong><a href="/zh/quote.html?service=spain-nif-vat">索取西班牙稅務服務報價 →</a></strong><br>或查看我們的<a href="/zh/services/spain-nif-vat.html">西班牙稅務服務</a>、閱讀<a href="/zh/blog/spanish-nif-vs-vat-eori-oss.html">西班牙 NIF、增值稅號、EORI 與 OSS 的區別</a>，或發電郵至 <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>。</p>\n'
++_osrc('來源：',[('dir','理事會指令 (EU) 2025/516，序言第 36 段及經修訂的第 59c 條（2027 年 1 月 1 日起適用）'),('notes','歐盟委員會《增值稅電商規則解釋說明》2027 年 1 月 1 日修訂版（2026 年 7 月），第 1A 及 3.2.7a 節'),('guide','歐盟委員會《增值稅一站式服務（OSS）指南》2027 年 1 月 1 日修訂版'),('vida','歐盟委員會「數碼時代增值稅」（ViDA）時間表'),('ioss','歐盟委員會：歡迎理事會就取消 IOSS 150 歐元門檻達成協議（2026 年 11 月 9 日）'),('aeat','西班牙稅務局（AEAT）：增值稅與電子商務')],'場景僅作說明。歐盟委員會的《解釋說明》不具法律約束力。本文為一般性資訊，不構成法律意見。'))
+
+POSTS.insert(0,('oss-10000-threshold-2027-stock-in-another-eu-country',{'date':'2026-11-26',
+ 'en':('OSS from 2027: sales from stock in another EU country no longer count towards the €10,000 threshold — a 5-step check for sellers with stock in Spain',OSS27_EN),
+ 'es':('OSS desde 2027: las ventas desde stock en otro país de la UE ya no cuentan para el umbral de 10.000 € — comprobación en 5 pasos si tiene stock en España',OSS27_ES),
+ 'zh':('2027 年起的 OSS：其他歐盟國家庫存發出的銷售不再計入 10,000 歐元門檻——西班牙有庫存的賣家五步自查',OSS27_ZH),
+ 'desc':{'en':'From 1 January 2027 (ViDA), only sales shipped from your country of establishment count towards the €10,000 OSS threshold, and joining OSS locks in destination VAT for two years. What it means for stock in Spain, plus a 5-step check.',
+  'es':'Desde el 1 de enero de 2027 (ViDA), solo las ventas enviadas desde su país de establecimiento cuentan para el umbral OSS de 10.000 €, y el alta en el OSS fija el IVA en destino dos años. Qué supone para el stock en España y comprobación en 5 pasos.',
+  'zh':'由 2027 年 1 月 1 日起（ViDA），只有從設立國發出的銷售計入 OSS 10,000 歐元門檻，登記 OSS 即鎖定目的地徵稅兩年。對西班牙庫存的影響及五步自查。'},
+ 'faq':{'en':_faq2(OSS27_EN,'<h2>FAQ</h2>'),'es':_faq2(OSS27_ES,'<h2>Preguntas frecuentes</h2>'),'zh':_faq2(OSS27_ZH,'<h2>常見問題</h2>')}}))
+
 # ---- Service pages: extra services, "what it is", per-service process, related links, overview groups (2026-11-02) ----
 def _upd(slug,tup):
   for i,s in enumerate(S):
@@ -2264,7 +2417,7 @@ REL={ # slug: (related services, related blog posts)
 'eprel-energy-label':(['weee','batteries','gpsr-eu-responsible-person'],['how-to-get-eu-compliance-quote']),
 'eudr':(['eudr-traceability-report'],['eudr-dds-who-files-one-statement-many-shipments','how-to-get-eu-compliance-quote']),
 'eudr-traceability-report':(['eudr'],['eudr-dds-who-files-one-statement-many-shipments','how-to-get-eu-compliance-quote']),
-'spain-nif-vat':(['epr-packaging-spain','epr-europe'],['how-foreign-company-gets-spanish-nif','spanish-nif-vs-vat-eori-oss','spanish-representative-nif-not-always-a-director','spanish-nif-apostille-and-sworn-translation','spain-dgt-written-tax-consultation-non-eu-seller-representation','spanish-nif-without-apostille-online-sellers','spanish-nif-translation-english-french-italian-no-sworn-translator']),
+'spain-nif-vat':(['epr-packaging-spain','epr-europe'],['oss-10000-threshold-2027-stock-in-another-eu-country','how-foreign-company-gets-spanish-nif','spanish-nif-vs-vat-eori-oss','spanish-representative-nif-not-always-a-director','spanish-nif-apostille-and-sworn-translation','spain-dgt-written-tax-consultation-non-eu-seller-representation','spanish-nif-without-apostille-online-sellers','spanish-nif-translation-english-french-italian-no-sworn-translator']),
 }
 GROUPS=[('tax',{'en':'Spain tax services for foreign companies','es':'Servicios fiscales en España para empresas extranjeras','zh':'海外公司西班牙稅務'},['spain-nif-vat']),
 ('rep',{'en':'Representatives','es':'Representantes','zh':'代表服務'},['gpsr-eu-responsible-person','mdr-eu-authorised-representative','reach-only-representative','uk-responsible-person','turkey-authorised-representative']),
