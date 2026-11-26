@@ -20,5 +20,24 @@ All files are stored as WebP (1200 × 800, 90 KB or smaller) in `assets/photos/`
 | `planning-office.webp` | 8117474 | Ivan S | https://www.pexels.com/photo/8117474/ |
 | `accounting-office.webp` | 7654438 | Pavel Danilyuk | https://www.pexels.com/photo/7654438/ |
 | `laptops-documents.webp` | 7644013 | MART PRODUCTION | https://www.pexels.com/photo/7644013/ |
+| `clipboard-aisle.webp` | 6169027 | Tima Miroshnichenko | https://www.pexels.com/photo/6169027/ |
+| `talking-colleagues.webp` | 7414215 | RDNE Stock project | https://www.pexels.com/photo/7414215/ |
+| `team-smiling.webp` | 3184338 | fauxels | https://www.pexels.com/photo/3184338/ |
+| `carton-clipboard.webp` | 6169033 | Tima Miroshnichenko | https://www.pexels.com/photo/6169033/ |
+| `desk-review.webp` | 5673481 | Sora Shimazaki | https://www.pexels.com/photo/5673481/ |
+| `warehouse-pallets.webp` | 4481259 | Tiger Lily | https://www.pexels.com/photo/4481259/ |
+| `conference-room.webp` | 1181406 | Christina Morillo | https://www.pexels.com/photo/1181406/ |
+| `laptop-files.webp` | 7651708 | Kindel Media | https://www.pexels.com/photo/7651708/ |
+| `presenting-office.webp` | 1181533 | Christina Morillo | https://www.pexels.com/photo/1181533/ |
+| `colleagues-table.webp` | 3184291 | fauxels | https://www.pexels.com/photo/3184291/ |
+| `checking-forms.webp` | 8439750 | Kampus Production | https://www.pexels.com/photo/8439750/ |
+| `desk-handshake.webp` | 5668516 | Sora Shimazaki | https://www.pexels.com/photo/5668516/ |
+| `parcel-manager.webp` | 7516364 | SHVETS production | https://www.pexels.com/photo/7516364/ |
+| `paperwork-desk.webp` | 7222858 | MART PRODUCTION | https://www.pexels.com/photo/7222858/ |
+| `colleagues-desk.webp` | 8297490 | Mikhail Nilov | https://www.pexels.com/photo/8297490/ |
+| `office-handshake.webp` | 8112174 | Pavel Danilyuk | https://www.pexels.com/photo/8112174/ |
+| `files-together.webp` | 8101498 | Mikhail Nilov | https://www.pexels.com/photo/8101498/ |
+| `project-table.webp` | 7688169 | Kindel Media | https://www.pexels.com/photo/7688169/ |
+| `warehouse-two.webp` | 6169644 | Tima Miroshnichenko | https://www.pexels.com/photo/6169644/ |
 
 Images carry no on-page captions. Alt text describes the scene (for example colleagues at a meeting table, or a warehouse worker checking parcels) and marks it as a stock photo; it never presents the picture as IberTrust staff, premises or clients. Photos were cropped to 3:2 and compressed.
